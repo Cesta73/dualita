@@ -20,7 +20,7 @@ Stato: 🟡 aperto · ✅ risolto
 ## D3 — Avversario "Weaponmaster" senza statistiche 🟡
 - **SRD p.72**: l'elenco degli avversari di Tier 1 include "Weaponmaster", e anche gli ambienti alle pagine 105 e 109 lo citano.
 - **Problema**: nelle pagine 74-83 **non c'è il suo blocco statistiche**.
-- **Proposta**: lo mettiamo nell'elenco degli avversari come "statistiche non disponibili nell'SRD", senza inventare valori. Durante l'estrazione dei dati controllerò se mancano anche altri avversari.
+- **Proposta**: lo mettiamo nell'elenco degli avversari come "statistiche non disponibili nell'SRD", senza inventare valori. Ho controllato tutti gli avversari: oltre a questo manca solo "Stag Knight" (D6). Gli altri 127 hanno il loro blocco.
 
 ## D4 — Stress massimo 🟡 (minore)
 - **SRD p.5**: "Ogni PG parte con 6 slot Stress". **SRD p.39**: "Lo Stress massimo di un PG è determinato dalla sua classe".
@@ -44,5 +44,4 @@ Stato: 🟡 aperto · ✅ risolto
 - p.14 "Legendary Hybrid": l'attacco non indica il tipo di danno → trattato come **fisico**, come tutte le altre forme bestiali.
 - p.15 "Mythic Hybrid": tratto e gittata sono scritti in ordine invertito ("Strength Melee") → letti correttamente.
 - p.73 l'elenco scrive "Outer Realms Corruptor", il blocco a p.98 scrive "Corrupter" → usato il nome del blocco.
-- p.72 l'elenco mette "Zombie Pack" nel Tier 1, ma il blocco a p.83 dice **Tier 2** → usato il valore del blocco.
 - p.98 "Outer Realms Abomination" ha come modificatore d'attacco "+2d4" invece di un numero fisso → salvato come dadi da aggiungere al tiro d'attacco.
