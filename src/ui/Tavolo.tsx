@@ -8,6 +8,7 @@ import { useTable } from '../net/useTable';
 import { Condividi } from './componenti/Condividi';
 import { EsitoTiro } from './componenti/EsitoTiro';
 import { Partecipanti } from './componenti/Partecipanti';
+import { SceltaPersonaggio } from './componenti/SceltaPersonaggio';
 import { Paura } from './componenti/Paura';
 import { Bottone, Riquadro } from './componenti/Riquadro';
 import { TiraDadi } from './componenti/TiraDadi';
@@ -65,6 +66,7 @@ export default function Tavolo() {
   const stato = useTable(fase === 'dentro' ? tableId : null, userId);
   const io = stato.members.find((m) => m.user_id === userId);
   const isGm = io?.role === 'gm';
+  const mioPersonaggio = io?.character_id ? stato.characters[io.character_id] ?? null : null;
 
   // Animazione solo per i tiri arrivati mentre si è al tavolo (non per quelli già presenti all'apertura)
   const ultimo = stato.rolls[0];
@@ -139,17 +141,19 @@ export default function Tavolo() {
 
       <div className="grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <div className="min-w-0 space-y-4">
-          {!isGm && io && <TiraDadi tableId={tableId} hope={io.hope} onErrore={onErrore} />}
+          {!isGm && io && <SceltaPersonaggio tableId={tableId} attuale={mioPersonaggio} onErrore={onErrore} />}
+          {!isGm && io && <TiraDadi tableId={tableId} hope={mioPersonaggio ? mioPersonaggio.hope : io.hope} personaggio={mioPersonaggio} onErrore={onErrore} />}
           {isGm && (
             <Riquadro titolo="Sei il GM">
               <p className="text-sm text-tenue">
                 I giocatori tirano dai loro telefoni: vedrai qui ogni risultato in tempo reale e la Paura si aggiorna da sola.
+                Nell'elenco "Al tavolo" trovi i personaggi scelti dai giocatori: tocca il nome per aprire la scheda.
                 Le richieste di tiro e gli avversari arriveranno nella Fase 4.
               </p>
             </Riquadro>
           )}
           <div className="lg:hidden">{ultimo && <EsitoTiro roll={ultimo} anima={anima} />}</div>
-          <Partecipanti tableId={tableId} members={stato.members} online={stato.online} me={userId} isGm={isGm} onErrore={onErrore} />
+          <Partecipanti tableId={tableId} members={stato.members} characters={stato.characters} online={stato.online} me={userId} isGm={isGm} onErrore={onErrore} />
         </div>
 
         <div className="space-y-4">

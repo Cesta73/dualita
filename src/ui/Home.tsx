@@ -88,6 +88,11 @@ export default function Home() {
         </Riquadro>
       </div>
 
+      <Riquadro titolo="I miei personaggi" className="mt-4">
+        <p className="mb-3 text-sm text-tenue">Crea un personaggio passo passo oppure guarda quelli che hai già.</p>
+        <Link to="/personaggi"><Bottone>Apri i miei personaggi</Bottone></Link>
+      </Riquadro>
+
       {!nomeValido && <p className="mt-4 text-sm text-tenue">Scrivi prima il tuo nome.</p>}
       {errore && <p role="alert" className="mt-4 text-fallimento">{errore}</p>}
 

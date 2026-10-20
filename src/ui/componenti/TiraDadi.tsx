@@ -3,7 +3,9 @@
 import { useEffect, useState } from 'react';
 import type { GlossaryKey } from '../../i18n/glossario';
 import { term } from '../../i18n/glossario';
+import type { CharacterRow } from '../../net/characters';
 import { requestRoll } from '../../net/tables';
+import type { Trait } from '../../rules';
 import { Aiuto } from './Aiuto';
 import { Bottone, Riquadro } from './Riquadro';
 
@@ -33,7 +35,14 @@ function Contatore({ valore, onChange, min, max, etichetta, segno = false }: {
   );
 }
 
-export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: number; onErrore: (e: Error) => void }) {
+export function TiraDadi({ tableId, hope, personaggio, onErrore }: {
+  tableId: string;
+  hope: number;
+  /** Se c'è, tratti ed Esperienze vengono dalla scheda */
+  personaggio?: CharacterRow | null;
+  onErrore: (e: Error) => void;
+}) {
+  const scheda = personaggio?.data.derived ?? null;
   const [tratto, setTratto] = useState<GlossaryKey | ''>('agility');
   const [valoreTratto, setValoreTratto] = useState(0);
   const [conDifficolta, setConDifficolta] = useState(true);
@@ -53,6 +62,9 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
     }
   }, [esperienze]);
 
+  const elencoEsperienze: Esperienza[] = scheda ? scheda.experiences.map((e) => ({ nome: e.name, bonus: e.bonus })) : esperienze;
+  // Valore del tratto: dalla scheda (con i modificatori dell'equipaggiamento) oppure inserito a mano
+  const valoreEffettivo = scheda && tratto ? scheda.traits[tratto as Trait] : valoreTratto;
   const costo = usate.size; // SRD p.38: 1 Speranza per Esperienza
   const speranzaInsufficiente = costo > hope;
 
@@ -63,8 +75,8 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
       const label = `${reazione ? 'Reazione' : 'Tiro'}${tratto ? ` di ${term(tratto)}` : ''}`;
       await requestRoll(tableId, label, {
         kind: reazione ? 'reaction' : 'action',
-        traitModifier: valoreTratto,
-        experiences: [...usate].map((i) => ({ name: esperienze[i].nome, bonus: esperienze[i].bonus })),
+        traitModifier: valoreEffettivo,
+        experiences: [...usate].map((i) => ({ name: elencoEsperienze[i].nome, bonus: elencoEsperienze[i].bonus })),
         advantage: vantaggio === 'vantaggio' ? 1 : 0,
         disadvantage: vantaggio === 'svantaggio' ? 1 : 0,
         difficulty: conDifficolta ? difficolta : null,
@@ -103,9 +115,15 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
               {TRATTI.map((t) => <option key={t} value={t}>{term(t)}</option>)}
               <option value="">Nessun tratto</option>
             </select>
-            <Contatore valore={valoreTratto} onChange={setValoreTratto} min={-5} max={10} etichetta="valore del tratto" segno />
+            {scheda ? (
+              <span className="w-14 text-center text-xl font-semibold tabular-nums" aria-label="valore del tratto dalla scheda">
+                {valoreEffettivo > 0 ? `+${valoreEffettivo}` : valoreEffettivo}
+              </span>
+            ) : (
+              <Contatore valore={valoreTratto} onChange={setValoreTratto} min={-5} max={10} etichetta="valore del tratto" segno />
+            )}
           </div>
-          <p className="mt-1 text-xs text-tenue">Per ora inserisci a mano il valore del tratto: dalla Fase 2 arriverà dalla scheda.</p>
+          <p className="mt-1 text-xs text-tenue">{scheda ? `Valore preso dalla scheda di ${personaggio!.name}.` : 'Senza personaggio scegli il valore a mano.'}</p>
         </div>
 
         <div>
@@ -136,9 +154,9 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
             {term('experience')} (1 {term('hope')} ciascuna)
             <Aiuto termine="experience">Spendi 1 Speranza per aggiungere il bonus di un'Esperienza adatta al tiro. Va deciso prima di tirare.</Aiuto>
           </span>
-          {esperienze.length === 0 && <p className="text-sm text-tenue">Nessuna Esperienza. Aggiungine una qui sotto (a livello 1 valgono +2).</p>}
+          {elencoEsperienze.length === 0 && <p className="text-sm text-tenue">Nessuna Esperienza. Aggiungine una qui sotto (a livello 1 valgono +2).</p>}
           <ul className="space-y-1">
-            {esperienze.map((e, i) => (
+            {elencoEsperienze.map((e, i) => (
               <li key={`${e.nome}-${i}`} className="flex items-center gap-2">
                 <label className="flex min-h-11 flex-1 items-center gap-2">
                   <input
@@ -149,11 +167,11 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
                   />
                   {e.nome} <span className="text-tenue">+{e.bonus}</span>
                 </label>
-                <button type="button" className="text-sm text-tenue hover:text-fallimento" onClick={() => { setEsperienze((l) => l.filter((_, j) => j !== i)); setUsate(new Set()); }} aria-label={`Elimina ${e.nome}`}>Elimina</button>
+                {!scheda && <button type="button" className="text-sm text-tenue hover:text-fallimento" onClick={() => { setEsperienze((l) => l.filter((_, j) => j !== i)); setUsate(new Set()); }} aria-label={`Elimina ${e.nome}`}>Elimina</button>}
               </li>
             ))}
           </ul>
-          <div className="mt-2 flex gap-2">
+          {!scheda && <div className="mt-2 flex gap-2">
             <input
               value={nuovaEsp}
               onChange={(e) => setNuovaEsp(e.target.value)}
@@ -163,7 +181,7 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
               onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); if (nuovaEsp.trim()) { setEsperienze((l) => [...l, { nome: nuovaEsp.trim(), bonus: 2 }]); setNuovaEsp(''); } } }}
             />
             <Bottone type="button" onClick={() => { if (nuovaEsp.trim()) { setEsperienze((l) => [...l, { nome: nuovaEsp.trim(), bonus: 2 }]); setNuovaEsp(''); } }}>Aggiungi</Bottone>
-          </div>
+          </div>}
           {speranzaInsufficiente && <p className="mt-1 text-sm text-fallimento">Non hai abbastanza Speranza ({hope}) per {costo} Esperienze.</p>}
         </div>
 

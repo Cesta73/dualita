@@ -19,6 +19,7 @@ export interface TableMember {
   display_name: string;
   role: 'gm' | 'player';
   hope: number;
+  character_id: string | null;
   joined_at: string;
 }
 

@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { RealtimeChannel } from '@supabase/supabase-js';
 import { supabase } from './supabase';
+import { tableCharacters, type CharacterRow } from './characters';
 import { loadTableState, type GameTable, type RollRecord, type TableMember } from './tables';
 
 export type ConnectionStatus = 'connessione' | 'online' | 'offline';
@@ -12,6 +13,8 @@ export interface TableState {
   /** null = Paura nascosta a questo utente */
   fear: number | null;
   rolls: RollRecord[];
+  /** personaggi scelti dai giocatori, per id */
+  characters: Record<string, CharacterRow>;
   /** id degli utenti collegati in questo momento */
   online: Set<string>;
   status: ConnectionStatus;
@@ -19,7 +22,7 @@ export interface TableState {
 }
 
 const empty: TableState = {
-  table: null, members: [], fear: null, rolls: [], online: new Set(), status: 'connessione', error: null,
+  table: null, members: [], fear: null, rolls: [], characters: {}, online: new Set(), status: 'connessione', error: null,
 };
 
 export function useTable(tableId: string | null, userId: string | null) {
@@ -31,7 +34,8 @@ export function useTable(tableId: string | null, userId: string | null) {
     if (!tableId) return;
     try {
       const s = await loadTableState(tableId);
-      setState((prev) => ({ ...prev, ...s, error: null }));
+      const pg = await tableCharacters(s.members.map((m) => m.character_id).filter(Boolean) as string[]);
+      setState((prev) => ({ ...prev, ...s, characters: Object.fromEntries(pg.map((c) => [c.id, c])), error: null }));
     } catch (e) {
       setState((prev) => ({ ...prev, error: (e as Error).message }));
     }
@@ -48,9 +52,13 @@ export function useTable(tableId: string | null, userId: string | null) {
         const roll = p.new as RollRecord;
         setState((s) => (s.rolls.some((r) => r.id === roll.id) ? s : { ...s, rolls: [roll, ...s.rolls].slice(0, 50) }));
       })
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'table_members', filter }, async () => {
-        const { data } = await supabase.from('table_members').select('*').eq('table_id', tableId).order('joined_at');
-        if (data) setState((s) => ({ ...s, members: data as TableMember[] }));
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'table_members', filter }, () => {
+        // un giocatore è entrato, ha cambiato nome o personaggio: ricarico membri e schede
+        void reload();
+      })
+      .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'characters' }, (p) => {
+        const row = p.new as CharacterRow;
+        setState((s) => (s.characters[row.id] ? { ...s, characters: { ...s.characters, [row.id]: row } } : s));
       })
       .on('postgres_changes', { event: '*', schema: 'public', table: 'table_fear', filter }, (p) => {
         const row = p.new as { fear?: number };
