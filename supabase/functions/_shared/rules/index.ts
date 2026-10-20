@@ -4,3 +4,4 @@ export * from './dice.ts';
 export * from './resources.ts';
 export * from './actionRoll.ts';
 export * from './damage.ts';
+export * from './character.ts';
