@@ -41,5 +41,5 @@
 - [x] Funzione server `tira-dadi` (stesso motore delle regole; pubblicata dal pannello con `npm run funzione:unica`)
 - [x] Schermate: home, ingresso con codice/link/QR, tavolo con tiro, esito, Speranza, Paura, registro
 - [x] Prova completa riuscita (tiro, tempo reale, 5 controlli di sicurezza)
-- [ ] GitHub + GitHub Pages + pubblicazione automatica
+- [x] GitHub (github.com/Cesta73/dualita) + GitHub Pages + pubblicazione automatica → https://cesta73.github.io/dualita/
 - [ ] Prova con 2-3 telefoni veri
