@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+/* Palette (proposta, da approvare): colori tenui, buon contrasto, nessun effetto vistoso.
+   Per cambiare un colore in tutta l'app basta modificarlo qui. */
+@theme {
+  --color-fondo: #1b1e24;
+  --color-superficie: #242831;
+  --color-superficie-2: #2d323d;
+  --color-bordo: #3a404d;
+  --color-testo: #ece8e1;
+  --color-tenue: #a9adb7;
+  --color-speranza: #d9bb74;      /* oro tenue */
+  --color-speranza-fondo: #3a3324;
+  --color-paura: #a796d4;         /* lavanda */
+  --color-paura-fondo: #2f2a42;
+  --color-successo: #94c29d;      /* salvia */
+  --color-fallimento: #d69a9a;    /* rosa antico */
+  --color-accento: #8bbcbf;       /* verde acqua polveroso */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-titolo: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+html, body, #root { min-height: 100%; }
+body {
+  background: var(--color-fondo);
+  color: var(--color-testo);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Animazione dei dadi al momento del tiro */
+@keyframes rotola {
+  0% { transform: rotate(0deg) scale(0.9); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+.dado-rotola { animation: rotola 0.7s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .dado-rotola { animation: none; }
+}

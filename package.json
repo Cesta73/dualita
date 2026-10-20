@@ -9,11 +9,15 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "sync:regole": "node scripts/sincronizza-regole.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "qrcode.react": "^4.2.0",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
