@@ -45,3 +45,12 @@ Stato: 🟡 aperto · ✅ risolto
 - p.15 "Mythic Hybrid": tratto e gittata sono scritti in ordine invertito ("Strength Melee") → letti correttamente.
 - p.73 l'elenco scrive "Outer Realms Corruptor", il blocco a p.98 scrive "Corrupter" → usato il nome del blocco.
 - p.98 "Outer Realms Abomination" ha come modificatore d'attacco "+2d4" invece di un numero fisso → salvato come dadi da aggiungere al tiro d'attacco.
+
+## D9 — Critico in un Tiro di Squadra: chi libera lo Stress? 🟡
+- **SRD p.38**: nel Tiro di Squadra si sceglie un tiro che "si applica a entrambe le azioni". Con Speranza tutti i PG coinvolti guadagnano 1 Speranza; con Paura il GM guadagna 1 Paura per PG.
+- **Problema**: l'SRD non dice cosa succede allo Stress se il tiro scelto è un **critico**. Il critico normale (p.36) libera 1 Stress, ma non è chiaro se lo liberano entrambi i PG o solo chi ha tirato.
+- **Proposta attuale nel codice**: visto che il tiro "vale per entrambe le azioni", **entrambi** liberano 1 Stress. Conferma oppure dimmi "solo chi ha tirato".
+
+## D10 — Riflettori dopo un "Successo con Paura" 🟡 (minore)
+- **SRD p.36**: solo per i fallimenti dice esplicitamente che "i riflettori passano al GM". **SRD p.37 e p.63**: il GM fa una mossa anche quando un giocatore "tira con Paura".
+- **Proposta attuale**: dopo un Successo con Paura l'app segnala al GM che **può fare una mossa**, senza togliere automaticamente i riflettori al giocatore.
