@@ -42,4 +42,6 @@
 - [x] Schermate: home, ingresso con codice/link/QR, tavolo con tiro, esito, Speranza, Paura, registro
 - [x] Prova completa riuscita (tiro, tempo reale, 5 controlli di sicurezza)
 - [x] GitHub (github.com/Cesta73/dualita) + GitHub Pages + pubblicazione automatica → https://cesta73.github.io/dualita/
-- [ ] Prova con 2-3 telefoni veri
+- [x] Prova sul telefono di Gianluca (Android): corretto il layout con caratteri grandi
+
+**Fase 1 completata il 20/10/2026.**
