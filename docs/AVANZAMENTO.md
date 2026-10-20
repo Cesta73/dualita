@@ -49,8 +49,8 @@
 ## Fase 2 — Creazione del personaggio (in corso)
 Decisioni (20/10/2026): niente email per ora (personaggio legato al dispositivo, "Collega email" facoltativo più avanti);
 traduzioni scritte da Claude e riviste da Gianluca dopo, con calma.
-- [ ] Traduzione testi per la creazione (classi, fondamenti, stirpi, comunità, carte liv. 1, domande, equip. Tier 1)
-- [ ] Regole della creazione + calcoli derivati, con test
-- [ ] Tabella personaggi + RLS; Speranza sulla scheda
+- [x] Traduzione testi per la creazione (classi, fondamenti, stirpi, comunità, carte liv. 1, domande, equip. Tier 1)
+- [x] Regole della creazione + calcoli derivati, con test (`src/rules/character.ts`)
+- [x] Tabella personaggi + RLS; Speranza sulla scheda (8 controlli di sicurezza superati)
 - [ ] Procedura guidata in 9 passi
 - [ ] Il GM vede i personaggi; il tiro usa i tratti della scheda
