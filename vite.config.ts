@@ -7,7 +7,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   // GitHub Pages pubblica l'app in /<nome-repository>/ (nessun dominio personalizzato).
   // Da confermare quando creeremo il repository nella Fase 1.
-  base: '/daggerheart-it/',
+  base: '/dualita/',
   plugins: [react(), tailwindcss()],
   test: {
     include: ['src/**/*.test.ts'],

@@ -156,6 +156,8 @@ Highborne, Loreborne, Orderborne (32) · Ridgeborne, Seaborne, Slyborne, Underbo
 
 ## 7. Ambientazione "The Witherwild" — pag. 113-118
 
+> ⚠️ **Esclusa dall'app**: la DPCGL 2.0 (sez. 1.9.3) non permette di adattare le ambientazioni. Indice lasciato solo come riferimento.
+
 | Argomento | Pag. |
 |---|---|
 | Cosa sono le ambientazioni, presentazione, tono, temi, panoramica | 113 |

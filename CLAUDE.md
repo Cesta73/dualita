@@ -1,4 +1,4 @@
-# CLAUDE.md — Webapp "Daggerheart in italiano"
+# CLAUDE.md — Webapp "Dualità" (Daggerheart in italiano)
 
 Queste sono le regole permanenti del progetto. Leggile all'inizio di ogni sessione e rispettale sempre.
 
@@ -25,6 +25,8 @@ Webapp per giocare a Daggerheart (gioco di ruolo, 1 GM + 2-5 giocatori), interam
 - Il contenuto dell'SRD è "Public Game Content" sotto la **Darrington Press Community Gaming License (DPCGL)**.
 - Inserisci nell'app una pagina "Crediti e licenza" con la dicitura di attribuzione richiesta dalla DPCGL e il link www.darringtonpress.com/license.
 - Non usare il logo ufficiale di Daggerheart, né illustrazioni o testi del manuale base (solo l'SRD).
+- **Niente ambientazioni (Campaign Frames, es. Witherwild)**: la DPCGL 2.0 (sez. 1.9.3) ne vieta l'adattamento senza permesso scritto.
+- Fonte: **SRD 1.0** (esiste anche un SRD 2.0: per ora restiamo sull'1.0, decisione del 20/10/2026).
 - Se l'app un giorno diventa pubblica, ricordami di rileggere la DPCGL prima della pubblicazione.
 
 ## Stack tecnico (scelte già fatte — non cambiarle senza chiedere)
@@ -32,7 +34,8 @@ Webapp per giocare a Daggerheart (gioco di ruolo, 1 GM + 2-5 giocatori), interam
 - **Multigiocatore in rete fin dall'inizio**: **Supabase** (database Postgres + Realtime + Auth anonima). L'utente ha già un account Supabase.
 - Codice su **GitHub** e pubblicazione con **GitHub Pages** (gratis), così basta aprire un link dal telefono.
   - Pubblicazione automatica con **GitHub Actions**: a ogni push sul ramo `main` l'app si ricompila e va online.
-  - Impostare `base` in `vite.config.ts` col nome del repository (es. `/daggerheart-it/`), oppure `/` se useremo un dominio personalizzato (es. `daggerheart.gianlucacestarollo.com`).
+  - Impostare `base` in `vite.config.ts` col nome del repository: `/dualita/` (nessun dominio personalizzato).
+  - **Nome dell'app: "Dualità"**. La licenza non permette "Daggerheart" nel titolo: si usa solo in modo descrittivo ("compatibile con Daggerheart™"). Vedi `docs/LICENZA_NOTE.md`.
   - GitHub Pages non gestisce i percorsi delle app a pagina singola: usare **HashRouter** (link tipo `.../#/tavolo/ABC123`), così i link d'invito funzionano sempre.
   - Il repository sarà probabilmente **pubblico** (GitHub Pages gratis lo richiede). Quindi: nessun segreto nel codice. La chiave *publishable/anon* di Supabase può stare nel frontend solo perché la sicurezza è garantita dalla Row Level Security; la chiave *service_role* non deve MAI finire nel repository.
   - Le variabili Supabase per la build vanno nei **Secrets di GitHub Actions**: spiegami passo passo dove inserirle.

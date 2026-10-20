@@ -1,10 +1,12 @@
 # Avanzamento del progetto
 
 ## Decisioni prese (20/10/2026)
-- Ambientazione Witherwild: inclusa.
+- Ambientazione Witherwild: **esclusa** (la licenza DPCGL 2.0 non permette di adattarla; deciso il 20/10/2026).
+- Nome dell'app: **Dualità** (la licenza non permette "Daggerheart" nel titolo).
+- Fonte regole: SRD 1.0 (l'SRD 2.0 si valuterà più avanti).
 - Traduzione: nomi e numeri subito in italiano; testi lunghi (carte dominio, avversari) tradotti a blocchi quando servono.
 - Nessun dominio personalizzato: l'app sarà su `<utente>.github.io/<repository>/`.
-- Supabase: stesso account del progetto "cosa guardiamo stasera".
+- Supabase: progetto nuovo "daggerheart-it" (ref pqyprhcwbmdijxuovuhg) sull'account (altro account Supabase).
 - Paura del GM visibile a tutti di base; il GM può nasconderla.
 - L'app deve essere ottimizzata anche per computer (PC e Mac), non solo per telefono: layout a più colonne su schermo grande.
 

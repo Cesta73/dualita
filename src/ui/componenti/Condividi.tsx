@@ -19,7 +19,7 @@ export function Condividi({ code }: { code: string }) {
       /* il browser non permette la copia: il link resta visibile */
     }
   };
-  const condividi = () => navigator.share?.({ title: 'Daggerheart – invito al tavolo', text: `Codice tavolo: ${code}`, url: link });
+  const condividi = () => navigator.share?.({ title: 'Dualità – invito al tavolo', text: `Codice tavolo: ${code}`, url: link });
   return (
     <div className="flex flex-col items-center gap-3 text-center sm:flex-row sm:text-left">
       <div className="rounded-xl bg-testo p-2">

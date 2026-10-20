@@ -39,8 +39,8 @@ export default function Home() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8">
-      <h1 className="font-titolo text-3xl">Daggerheart in italiano</h1>
-      <p className="mt-1 text-tenue">Un tavolo virtuale per giocare insieme, ognuno dal proprio telefono.</p>
+      <h1 className="font-titolo text-3xl">Dualità</h1>
+      <p className="mt-1 text-tenue">Tavolo virtuale in italiano compatibile con Daggerheart™: si gioca insieme, ognuno dal proprio telefono.</p>
 
       <div className="mt-6">
         <label className="mb-1 block text-sm text-tenue" htmlFor="nome">Il tuo nome</label>
