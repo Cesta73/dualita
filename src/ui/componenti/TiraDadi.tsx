@@ -91,7 +91,7 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
   });
 
   const scelta = (attivo: boolean) =>
-    `min-h-11 flex-1 rounded-xl border px-3 text-sm ${attivo ? 'border-accento bg-accento/15 text-testo' : 'border-bordo text-tenue hover:text-testo'}`;
+    `min-h-11 min-w-0 grow basis-28 rounded-xl border px-2 py-1 text-sm leading-tight [overflow-wrap:normal] ${attivo ? 'border-accento bg-accento/15 text-testo' : 'border-bordo text-tenue hover:text-testo'}`;
 
   return (
     <Riquadro titolo={<>Tira i dadi<Aiuto termine="dualityDice">Si tirano due d12: uno per la Speranza e uno per la Paura. Si somma tutto e si confronta con la Difficoltà. Il dado più alto dice se il tiro è "con Speranza" o "con Paura".</Aiuto></>}>
@@ -99,7 +99,7 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
         <div>
           <label className="mb-1 block text-sm text-tenue" htmlFor="tratto">{term('trait')}</label>
           <div className="flex flex-wrap items-center gap-3">
-            <select id="tratto" value={tratto} onChange={(e) => setTratto(e.target.value as GlossaryKey | '')} className="min-h-11 flex-1 rounded-xl border border-bordo bg-superficie-2 px-3">
+            <select id="tratto" value={tratto} onChange={(e) => setTratto(e.target.value as GlossaryKey | '')} className="min-h-11 min-w-0 flex-1 basis-36 rounded-xl border border-bordo bg-superficie-2 px-3">
               {TRATTI.map((t) => <option key={t} value={t}>{term(t)}</option>)}
               <option value="">Nessun tratto</option>
             </select>
@@ -124,10 +124,10 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
             {term('advantage')} / {term('disadvantage')}
             <Aiuto termine="advantage">Il vantaggio aggiunge un d6 al totale, lo svantaggio lo toglie. Se hai entrambi si annullano.</Aiuto>
           </span>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <button type="button" className={scelta(vantaggio === 'nessuno')} onClick={() => setVantaggio('nessuno')}>Nessuno</button>
-            <button type="button" className={scelta(vantaggio === 'vantaggio')} onClick={() => setVantaggio('vantaggio')}>+d6 {term('advantage')}</button>
-            <button type="button" className={scelta(vantaggio === 'svantaggio')} onClick={() => setVantaggio('svantaggio')}>−d6 {term('disadvantage')}</button>
+            <button type="button" className={scelta(vantaggio === 'vantaggio')} onClick={() => setVantaggio('vantaggio')}>{term('advantage')} <span className="text-xs opacity-70">+d6</span></button>
+            <button type="button" className={scelta(vantaggio === 'svantaggio')} onClick={() => setVantaggio('svantaggio')}>{term('disadvantage')} <span className="text-xs opacity-70">−d6</span></button>
           </div>
         </div>
 

@@ -137,8 +137,8 @@ export default function Tavolo() {
       {mostraInvito && <Riquadro className="mb-4"><Condividi code={stato.table.code} /></Riquadro>}
       {errore && <p role="alert" className="mb-4 rounded-xl border border-fallimento/50 bg-fallimento/10 p-3 text-fallimento">{errore}</p>}
 
-      <div className="grid gap-4 lg:grid-cols-2">
-        <div className="space-y-4">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+        <div className="min-w-0 space-y-4">
           {!isGm && io && <TiraDadi tableId={tableId} hope={io.hope} onErrore={onErrore} />}
           {isGm && (
             <Riquadro titolo="Sei il GM">

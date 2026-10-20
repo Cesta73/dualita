@@ -26,6 +26,7 @@ body {
   color: var(--color-testo);
   font-family: var(--font-sans);
   -webkit-tap-highlight-color: transparent;
+  overflow-wrap: break-word;
 }
 
 /* Animazione dei dadi al momento del tiro */

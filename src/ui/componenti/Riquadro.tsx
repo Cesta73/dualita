@@ -6,7 +6,7 @@ export function Riquadro({ titolo, azioni, children, className = '' }: {
   className?: string;
 }) {
   return (
-    <section className={`rounded-2xl border border-bordo bg-superficie p-4 ${className}`}>
+    <section className={`min-w-0 rounded-2xl border border-bordo bg-superficie p-4 ${className}`}>
       {(titolo || azioni) && (
         <header className="mb-3 flex items-center justify-between gap-2">
           {titolo && <h2 className="font-titolo text-lg">{titolo}</h2>}

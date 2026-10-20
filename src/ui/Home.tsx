@@ -55,7 +55,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="mt-6 grid gap-4 md:grid-cols-2">
+      <div className="mt-6 grid grid-cols-[minmax(0,1fr)] gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <Riquadro titolo="Entra in un tavolo">
           <p className="mb-3 text-sm text-tenue">Scrivi il codice di 6 caratteri che ti ha mandato il GM, oppure apri direttamente il suo link.</p>
           <form onSubmit={(e) => { e.preventDefault(); entra(); }} className="flex gap-2">
@@ -66,7 +66,7 @@ export default function Home() {
               placeholder="ABC234"
               aria-label="Codice del tavolo"
               autoCapitalize="characters"
-              className="min-h-12 w-36 rounded-xl border border-bordo bg-superficie-2 px-3 font-mono text-xl tracking-widest"
+              className="min-h-12 w-36 min-w-0 rounded-xl border border-bordo bg-superficie-2 px-3 font-mono text-xl tracking-widest"
             />
             <Bottone type="submit" variante="primario" disabled={codice.trim().length !== 6 || !nomeValido}>Entra</Bottone>
           </form>
