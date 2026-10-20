@@ -6,7 +6,7 @@
 - Fonte regole: SRD 1.0 (l'SRD 2.0 si valuterà più avanti).
 - Traduzione: nomi e numeri subito in italiano; testi lunghi (carte dominio, avversari) tradotti a blocchi quando servono.
 - Nessun dominio personalizzato: l'app sarà su `<utente>.github.io/<repository>/`.
-- Supabase: progetto nuovo "daggerheart-it" (ref pqyprhcwbmdijxuovuhg) sull'account (altro account Supabase).
+- Supabase: progetto **"dualita"** (ref `zvumkzrmunivfivwzkpt`, Irlanda) nell'organizzazione di (account Supabase personale), accanto a "cosa-guardiamo-stasera".
 - Paura del GM visibile a tutti di base; il GM può nasconderla.
 - L'app deve essere ottimizzata anche per computer (PC e Mac), non solo per telefono: layout a più colonne su schermo grande.
 
@@ -34,3 +34,12 @@
 - Testi delle carte dominio → prima della Fase 2 (almeno livello 1)
 - Armi, armature, oggetti → Fase 2 / Fase 5
 - Avversari e ambienti (nomi delle capacità e testi) → Fase 4
+
+## Fase 1 — Dadi della Dualità + tavolo in rete (in corso)
+- [x] Motore delle regole in `src/rules/` con test (dadi, esiti, vantaggio, Esperienze, reazione, Tiro di Squadra, danni)
+- [x] Supabase: tabelle + Row Level Security (`supabase/migrations/`), accesso anonimo attivo
+- [x] Funzione server `tira-dadi` (stesso motore delle regole; pubblicata dal pannello con `npm run funzione:unica`)
+- [x] Schermate: home, ingresso con codice/link/QR, tavolo con tiro, esito, Speranza, Paura, registro
+- [x] Prova completa riuscita (tiro, tempo reale, 5 controlli di sicurezza)
+- [ ] GitHub + GitHub Pages + pubblicazione automatica
+- [ ] Prova con 2-3 telefoni veri

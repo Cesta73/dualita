@@ -21,13 +21,13 @@ function caricaEsperienze(): Esperienza[] {
   }
 }
 
-function Contatore({ valore, onChange, min, max, etichetta }: {
-  valore: number; onChange: (v: number) => void; min: number; max: number; etichetta: string;
+function Contatore({ valore, onChange, min, max, etichetta, segno = false }: {
+  valore: number; onChange: (v: number) => void; min: number; max: number; etichetta: string; segno?: boolean;
 }) {
   return (
     <span className="inline-flex items-center gap-1" role="group" aria-label={etichetta}>
       <button type="button" className="h-11 w-11 rounded-xl border border-bordo bg-superficie-2 text-lg disabled:opacity-40" disabled={valore <= min} onClick={() => onChange(valore - 1)} aria-label={`Diminuisci ${etichetta}`}>−</button>
-      <span className="w-12 text-center text-xl font-semibold tabular-nums">{valore > 0 ? `+${valore}` : valore}</span>
+      <span className="w-12 text-center text-xl font-semibold tabular-nums">{segno && valore > 0 ? `+${valore}` : valore}</span>
       <button type="button" className="h-11 w-11 rounded-xl border border-bordo bg-superficie-2 text-lg disabled:opacity-40" disabled={valore >= max} onClick={() => onChange(valore + 1)} aria-label={`Aumenta ${etichetta}`}>+</button>
     </span>
   );
@@ -103,7 +103,7 @@ export function TiraDadi({ tableId, hope, onErrore }: { tableId: string; hope: n
               {TRATTI.map((t) => <option key={t} value={t}>{term(t)}</option>)}
               <option value="">Nessun tratto</option>
             </select>
-            <Contatore valore={valoreTratto} onChange={setValoreTratto} min={-5} max={10} etichetta="valore del tratto" />
+            <Contatore valore={valoreTratto} onChange={setValoreTratto} min={-5} max={10} etichetta="valore del tratto" segno />
           </div>
           <p className="mt-1 text-xs text-tenue">Per ora inserisci a mano il valore del tratto: dalla Fase 2 arriverà dalla scheda.</p>
         </div>

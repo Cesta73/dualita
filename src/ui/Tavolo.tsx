@@ -34,6 +34,10 @@ export default function Tavolo() {
         if (t) {
           setTableId(t.id);
           setFase('dentro');
+        } else if (savedName()) {
+          // il nome è già ricordato su questo dispositivo: si entra subito
+          setTableId(await joinTable(code, savedName()));
+          if (attivo) setFase('dentro');
         } else {
           setFase('ingresso');
         }
