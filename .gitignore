@@ -1,0 +1,11 @@
+# Sistema
+.DS_Store
+
+# Dipendenze e build
+node_modules/
+dist/
+
+# Segreti: MAI su git
+.env
+.env.*
+!.env.example
