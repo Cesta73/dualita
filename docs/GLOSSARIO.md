@@ -1,6 +1,6 @@
 # Glossario italiano ↔ inglese
 
-Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confermare.
+Generato da `src/i18n/glossario.ts` (314 termini). Approvato da Gianluca il 20/10/2026.
 
 ## Nucleo del gioco
 
@@ -17,7 +17,7 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | **Riflettori** | Spotlight | 35 |  |
 | **Tracciatore dei riflettori** | Spotlight Tracker | 36 |  |
 | **Mossa** | Move | 36 |  |
-| ⚠️ **Capacità** | Feature |  | Non "caratteristica", per non confonderla con i Tratti |
+| **Capacità** | Feature |  | Non "caratteristica", per non confonderla con i Tratti |
 | **Capacità Speranza** | Hope Feature | 38 |  |
 | **Capacità Paura** | Fear Feature | 37 |  |
 | **Personaggio giocante** (PG) | Player Character | 3 |  |
@@ -27,7 +27,7 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | **Sessione** | Session | 3 |  |
 | **Sessione zero** | Session Zero |  |  |
 | **Scena** | Scene | 35 |  |
-| ⚠️ **Fascia** | Tier | 42 | Alternativa: lasciare "Tier" |
+| **Fascia** | Tier | 42 |  |
 | **Livello** | Level | 42 |  |
 | **Gettone** | Token |  |  |
 
@@ -76,7 +76,7 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | **Liberare** | Clear |  |  |
 | **Competenza** | Proficiency | 5 |  |
 | **Esperienza** | Experience | 5 |  |
-| ⚠️ **Storia personale** | Background | 5 |  |
+| **Storia personale** | Background | 5 |  |
 | **Domande sulla storia personale** | Background Questions | 5 |  |
 | **Legami** | Connections | 6 |  |
 | **Descrizione del personaggio** | Character Description | 4 |  |
@@ -129,14 +129,14 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | **Druido** | Druid | 10 |  |
 | **Guardiano** | Guardian | 15 |  |
 | **Ranger** | Ranger | 16 |  |
-| ⚠️ **Ladro** | Rogue | 19 | Alternativa: Furfante |
+| **Furfante** | Rogue | 19 |  |
 | **Serafino** | Seraph | 20 |  |
 | **Stregone** | Sorcerer | 22 |  |
 | **Guerriero** | Warrior | 23 |  |
 | **Mago** | Wizard | 25 |  |
 | **Forma bestiale** | Beastform | 12 |  |
 | **Compagno animale** | Ranger Companion | 18 |  |
-| ⚠️ **Dado di Incoraggiamento** | Rally Die | 9 |  |
+| **Dado di Incoraggiamento** | Rally Die | 9 |  |
 | **Dadi della Preghiera** | Prayer Dice | 20 |  |
 | **Attacco furtivo** | Sneak Attack | 19 |  |
 | **Celato** | Cloaked | 19 | Versione potenziata di Nascosto |
@@ -147,21 +147,21 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | Italiano | Inglese (SRD) | Pag. | Note |
 |---|---|---|---|
 | **Trovatore** | Troubadour | 9 |  |
-| ⚠️ **Paroliere** | Wordsmith | 9 |  |
+| **Affabulatore** | Wordsmith | 9 |  |
 | **Custode del Rinnovamento** | Warden of Renewal | 11 |  |
 | **Custode degli Elementi** | Warden of the Elements | 11 |  |
 | **Incrollabile** | Stalwart | 16 |  |
 | **Vendetta** | Vengeance | 16 |  |
 | **Legato alle Bestie** | Beastbound | 17 |  |
-| ⚠️ **Cercasentieri** | Wayfinder | 17 |  |
+| **Esploratore** | Wayfinder | 17 |  |
 | **Viandante Notturno** | Nightwalker | 19 |  |
-| ⚠️ **Consorteria** | Syndicate | 20 | "Sindacato" in italiano fa pensare ai lavoratori |
+| **Mafioso** | Syndicate | 20 |  |
 | **Portatore Divino** | Divine Wielder | 21 |  |
 | **Sentinella Alata** | Winged Sentinel | 21 |  |
 | **Origine Elementale** | Elemental Origin | 22 |  |
 | **Origine Primordiale** | Primal Origin | 22 |  |
-| ⚠️ **Richiamo dell'Audace** | Call of the Brave | 24 |  |
-| ⚠️ **Richiamo dello Sterminatore** | Call of the Slayer | 24 |  |
+| **Richiamo dell'Audace** | Call of the Brave | 24 |  |
+| **Richiamo dello Sterminatore** | Call of the Slayer | 24 |  |
 | **Scuola della Conoscenza** | School of Knowledge | 25 |  |
 | **Scuola della Guerra** | School of War | 25 |  |
 
@@ -176,7 +176,7 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | **Codice** | Codex | 7 |  |
 | **Grazia** | Grace | 7 |  |
 | **Mezzanotte** | Midnight | 7 |  |
-| ⚠️ **Selva** | Sage | 7 | È il dominio della natura; "Saggio" sarebbe fuorviante |
+| **Natura** | Sage | 7 |  |
 | **Splendore** | Splendor | 7 |  |
 | **Valore** | Valor | 7 |  |
 
@@ -185,7 +185,7 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | Italiano | Inglese (SRD) | Pag. | Note |
 |---|---|---|---|
 | **Carta dominio** | Domain Card | 8 |  |
-| ⚠️ **Carte attive** | Loadout | 8 | "Equipaggiamento attivo" si confonderebbe con armi e armature (Equipment) |
+| **Carte attive** | Loadout | 8 | "Equipaggiamento attivo" si confonderebbe con armi e armature (Equipment) |
 | **Deposito** | Vault | 8 |  |
 | **Costo di richiamo** | Recall Cost | 8 |  |
 | **Abilità** | Ability | 8 |  |
@@ -219,15 +219,15 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 
 | Italiano | Inglese (SRD) | Pag. | Note |
 |---|---|---|---|
-| ⚠️ **Altolocati** | Highborne | 32 |  |
-| ⚠️ **Eruditi** | Loreborne | 32 |  |
-| ⚠️ **Disciplinati** | Orderborne | 32 |  |
-| ⚠️ **Montanari** | Ridgeborne | 33 |  |
-| ⚠️ **Marittimi** | Seaborne | 33 |  |
-| ⚠️ **Malavitosi** | Slyborne | 33 |  |
-| ⚠️ **Sotterranei** | Underborne | 33 |  |
-| ⚠️ **Nomadi** | Wanderborne | 34 |  |
-| ⚠️ **Silvani** | Wildborne | 34 |  |
+| **Altolocati** | Highborne | 32 |  |
+| **Eruditi** | Loreborne | 32 |  |
+| **Disciplinati** | Orderborne | 32 |  |
+| **Montanari** | Ridgeborne | 33 |  |
+| **Marittimi** | Seaborne | 33 |  |
+| **Malavitosi** | Slyborne | 33 |  |
+| **Sotterranei** | Underborne | 33 |  |
+| **Nomadi** | Wanderborne | 34 |  |
+| **Silvani** | Wildborne | 34 |  |
 
 ## Combattimento e danni
 
@@ -236,7 +236,7 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | **Soglie di Danno** | Damage Thresholds | 39 |  |
 | **Danno Lieve** | Minor Damage | 39 |  |
 | **Danno Grave** | Major Damage | 39 |  |
-| ⚠️ **Danno Gravissimo** | Severe Damage | 39 | "Critico" si confonderebbe con il Successo critico |
+| **Danno Gravissimo** | Severe Damage | 39 | "Critico" si confonderebbe con il Successo critico |
 | **Danno Massiccio** | Massive Damage | 39 |  |
 | **Danno critico** | Critical Damage | 39 |  |
 | **Danno fisico** (fis) | Physical Damage | 40 |  |
@@ -271,7 +271,7 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 |---|---|---|---|
 | **Condizione** | Condition | 41 |  |
 | **Nascosto** | Hidden | 41 |  |
-| ⚠️ **Trattenuto** | Restrained | 41 | Alternativa: Immobilizzato |
+| **Trattenuto** | Restrained | 41 |  |
 | **Vulnerabile** | Vulnerable | 41 |  |
 | **Temporaneo** | Temporary | 41 |  |
 | **Condizione speciale** | Special Condition | 41 |  |
@@ -300,7 +300,7 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | Italiano | Inglese (SRD) | Pag. | Note |
 |---|---|---|---|
 | **Mossa della Morte** | Death Move | 42 |  |
-| ⚠️ **Fine gloriosa** | Blaze of Glory | 42 |  |
+| **Fine gloriosa** | Blaze of Glory | 42 |  |
 | **Evitare la morte** | Avoid Death | 42 |  |
 | **Rischiare il tutto** | Risk It All | 42 |  |
 | **Cicatrice** | Scar | 42 |  |
@@ -392,7 +392,7 @@ Generato da `src/i18n/glossario.ts` (314 termini). ⚠️ = traduzione da confer
 | **Orda** | Horde | 70 |  |
 | **Capo** | Leader | 70 |  |
 | **Gregario** | Minion | 70 |  |
-| ⚠️ **Tiratore** | Ranged | 70 |  |
+| **A distanza** | Ranged | 70 |  |
 | **Furtivo** | Skulk | 70 |  |
 | **Sociale** | Social | 70 |  |
 | **Solitario** | Solo | 70 |  |

@@ -1,6 +1,6 @@
 // Glossario ufficiale dell'app: ogni termine di gioco si traduce in UN SOLO modo.
 // Fonte dei termini inglesi: Daggerheart SRD 1.0 (docs/DH-SRD.pdf).
-// Le voci con `daConfermare` aspettano la decisione di Gianluca (vedi docs/GLOSSARIO.md).
+// Approvato da Gianluca il 20/10/2026. Per cambiare un termine, chiedere prima a lui.
 
 export type GlossaryCategory =
   | 'nucleo'
@@ -39,8 +39,6 @@ export interface GlossaryEntry {
   page?: number;
   /** Nota per la scelta della traduzione */
   note?: string;
-  /** true = traduzione proposta, in attesa di approvazione */
-  daConfermare?: boolean;
 }
 
 export const glossario = {
@@ -61,7 +59,6 @@ export const glossario = {
     en: 'Feature',
     category: 'nucleo',
     note: 'Non "caratteristica", per non confonderla con i Tratti',
-    daConfermare: true,
   },
   hopeFeature: { it: 'Capacità Speranza', en: 'Hope Feature', category: 'nucleo', page: 38 },
   fearFeature: { it: 'Capacità Paura', en: 'Fear Feature', category: 'nucleo', page: 37 },
@@ -77,8 +74,6 @@ export const glossario = {
     en: 'Tier',
     category: 'nucleo',
     page: 42,
-    note: 'Alternativa: lasciare "Tier"',
-    daConfermare: true,
   },
   level: { it: 'Livello', en: 'Level', category: 'nucleo', page: 42 },
   token: { it: 'Gettone', en: 'Token', category: 'nucleo' },
@@ -122,7 +117,7 @@ export const glossario = {
   clear: { it: 'Liberare', en: 'Clear', category: 'personaggio' },
   proficiency: { it: 'Competenza', en: 'Proficiency', category: 'personaggio', page: 5 },
   experience: { it: 'Esperienza', en: 'Experience', category: 'personaggio', page: 5 },
-  background: { it: 'Storia personale', en: 'Background', category: 'personaggio', page: 5, daConfermare: true },
+  background: { it: 'Storia personale', en: 'Background', category: 'personaggio', page: 5 },
   backgroundQuestions: { it: 'Domande sulla storia personale', en: 'Background Questions', category: 'personaggio', page: 5 },
   connections: { it: 'Legami', en: 'Connections', category: 'personaggio', page: 6 },
   characterDescription: { it: 'Descrizione del personaggio', en: 'Character Description', category: 'personaggio', page: 4 },
@@ -169,14 +164,14 @@ export const glossario = {
   druid: { it: 'Druido', en: 'Druid', category: 'classi', page: 10 },
   guardian: { it: 'Guardiano', en: 'Guardian', category: 'classi', page: 15 },
   ranger: { it: 'Ranger', en: 'Ranger', category: 'classi', page: 16 },
-  rogue: { it: 'Ladro', en: 'Rogue', category: 'classi', page: 19, note: 'Alternativa: Furfante', daConfermare: true },
+  rogue: { it: 'Furfante', en: 'Rogue', category: 'classi', page: 19 },
   seraph: { it: 'Serafino', en: 'Seraph', category: 'classi', page: 20 },
   sorcerer: { it: 'Stregone', en: 'Sorcerer', category: 'classi', page: 22 },
   warrior: { it: 'Guerriero', en: 'Warrior', category: 'classi', page: 23 },
   wizard: { it: 'Mago', en: 'Wizard', category: 'classi', page: 25 },
   beastform: { it: 'Forma bestiale', en: 'Beastform', category: 'classi', page: 12 },
   rangerCompanion: { it: 'Compagno animale', en: 'Ranger Companion', category: 'classi', page: 18 },
-  rallyDie: { it: 'Dado di Incoraggiamento', en: 'Rally Die', category: 'classi', page: 9, daConfermare: true },
+  rallyDie: { it: 'Dado di Incoraggiamento', en: 'Rally Die', category: 'classi', page: 9 },
   prayerDice: { it: 'Dadi della Preghiera', en: 'Prayer Dice', category: 'classi', page: 20 },
   sneakAttack: { it: 'Attacco furtivo', en: 'Sneak Attack', category: 'classi', page: 19 },
   cloaked: { it: 'Celato', en: 'Cloaked', category: 'classi', page: 19, note: 'Versione potenziata di Nascosto' },
@@ -184,28 +179,26 @@ export const glossario = {
 
   // ── SOTTOCLASSI ────────────────────────────────────────────────
   troubadour: { it: 'Trovatore', en: 'Troubadour', category: 'sottoclassi', page: 9 },
-  wordsmith: { it: 'Paroliere', en: 'Wordsmith', category: 'sottoclassi', page: 9, daConfermare: true },
+  wordsmith: { it: 'Affabulatore', en: 'Wordsmith', category: 'sottoclassi', page: 9 },
   wardenOfRenewal: { it: 'Custode del Rinnovamento', en: 'Warden of Renewal', category: 'sottoclassi', page: 11 },
   wardenOfTheElements: { it: 'Custode degli Elementi', en: 'Warden of the Elements', category: 'sottoclassi', page: 11 },
   stalwart: { it: 'Incrollabile', en: 'Stalwart', category: 'sottoclassi', page: 16 },
   vengeance: { it: 'Vendetta', en: 'Vengeance', category: 'sottoclassi', page: 16 },
   beastbound: { it: 'Legato alle Bestie', en: 'Beastbound', category: 'sottoclassi', page: 17 },
-  wayfinder: { it: 'Cercasentieri', en: 'Wayfinder', category: 'sottoclassi', page: 17, daConfermare: true },
+  wayfinder: { it: 'Esploratore', en: 'Wayfinder', category: 'sottoclassi', page: 17 },
   nightwalker: { it: 'Viandante Notturno', en: 'Nightwalker', category: 'sottoclassi', page: 19 },
   syndicate: {
-    it: 'Consorteria',
+    it: 'Mafioso',
     en: 'Syndicate',
     category: 'sottoclassi',
     page: 20,
-    note: '"Sindacato" in italiano fa pensare ai lavoratori',
-    daConfermare: true,
   },
   divineWielder: { it: 'Portatore Divino', en: 'Divine Wielder', category: 'sottoclassi', page: 21 },
   wingedSentinel: { it: 'Sentinella Alata', en: 'Winged Sentinel', category: 'sottoclassi', page: 21 },
   elementalOrigin: { it: 'Origine Elementale', en: 'Elemental Origin', category: 'sottoclassi', page: 22 },
   primalOrigin: { it: 'Origine Primordiale', en: 'Primal Origin', category: 'sottoclassi', page: 22 },
-  callOfTheBrave: { it: "Richiamo dell'Audace", en: 'Call of the Brave', category: 'sottoclassi', page: 24, daConfermare: true },
-  callOfTheSlayer: { it: 'Richiamo dello Sterminatore', en: 'Call of the Slayer', category: 'sottoclassi', page: 24, daConfermare: true },
+  callOfTheBrave: { it: "Richiamo dell'Audace", en: 'Call of the Brave', category: 'sottoclassi', page: 24 },
+  callOfTheSlayer: { it: 'Richiamo dello Sterminatore', en: 'Call of the Slayer', category: 'sottoclassi', page: 24 },
   schoolOfKnowledge: { it: 'Scuola della Conoscenza', en: 'School of Knowledge', category: 'sottoclassi', page: 25 },
   schoolOfWar: { it: 'Scuola della Guerra', en: 'School of War', category: 'sottoclassi', page: 25 },
 
@@ -218,12 +211,10 @@ export const glossario = {
   grace: { it: 'Grazia', en: 'Grace', category: 'domini', page: 7 },
   midnight: { it: 'Mezzanotte', en: 'Midnight', category: 'domini', page: 7 },
   sage: {
-    it: 'Selva',
+    it: 'Natura',
     en: 'Sage',
     category: 'domini',
     page: 7,
-    note: 'È il dominio della natura; "Saggio" sarebbe fuorviante',
-    daConfermare: true,
   },
   splendor: { it: 'Splendore', en: 'Splendor', category: 'domini', page: 7 },
   valor: { it: 'Valore', en: 'Valor', category: 'domini', page: 7 },
@@ -236,7 +227,6 @@ export const glossario = {
     category: 'carte',
     page: 8,
     note: '"Equipaggiamento attivo" si confonderebbe con armi e armature (Equipment)',
-    daConfermare: true,
   },
   vault: { it: 'Deposito', en: 'Vault', category: 'carte', page: 8 },
   recallCost: { it: 'Costo di richiamo', en: 'Recall Cost', category: 'carte', page: 8 },
@@ -265,15 +255,15 @@ export const glossario = {
   simiah: { it: 'Simiah', en: 'Simiah', category: 'stirpi', page: 31, note: 'Nome proprio, non tradotto' },
 
   // ── COMUNITÀ (SRD p.32-34) ─────────────────────────────────────
-  highborne: { it: 'Altolocati', en: 'Highborne', category: 'comunita', page: 32, daConfermare: true },
-  loreborne: { it: 'Eruditi', en: 'Loreborne', category: 'comunita', page: 32, daConfermare: true },
-  orderborne: { it: 'Disciplinati', en: 'Orderborne', category: 'comunita', page: 32, daConfermare: true },
-  ridgeborne: { it: 'Montanari', en: 'Ridgeborne', category: 'comunita', page: 33, daConfermare: true },
-  seaborne: { it: 'Marittimi', en: 'Seaborne', category: 'comunita', page: 33, daConfermare: true },
-  slyborne: { it: 'Malavitosi', en: 'Slyborne', category: 'comunita', page: 33, daConfermare: true },
-  underborne: { it: 'Sotterranei', en: 'Underborne', category: 'comunita', page: 33, daConfermare: true },
-  wanderborne: { it: 'Nomadi', en: 'Wanderborne', category: 'comunita', page: 34, daConfermare: true },
-  wildborne: { it: 'Silvani', en: 'Wildborne', category: 'comunita', page: 34, daConfermare: true },
+  highborne: { it: 'Altolocati', en: 'Highborne', category: 'comunita', page: 32 },
+  loreborne: { it: 'Eruditi', en: 'Loreborne', category: 'comunita', page: 32 },
+  orderborne: { it: 'Disciplinati', en: 'Orderborne', category: 'comunita', page: 32 },
+  ridgeborne: { it: 'Montanari', en: 'Ridgeborne', category: 'comunita', page: 33 },
+  seaborne: { it: 'Marittimi', en: 'Seaborne', category: 'comunita', page: 33 },
+  slyborne: { it: 'Malavitosi', en: 'Slyborne', category: 'comunita', page: 33 },
+  underborne: { it: 'Sotterranei', en: 'Underborne', category: 'comunita', page: 33 },
+  wanderborne: { it: 'Nomadi', en: 'Wanderborne', category: 'comunita', page: 34 },
+  wildborne: { it: 'Silvani', en: 'Wildborne', category: 'comunita', page: 34 },
 
   // ── COMBATTIMENTO E DANNI ──────────────────────────────────────
   damageThresholds: { it: 'Soglie di Danno', en: 'Damage Thresholds', category: 'combattimento', page: 39 },
@@ -285,7 +275,6 @@ export const glossario = {
     category: 'combattimento',
     page: 39,
     note: '"Critico" si confonderebbe con il Successo critico',
-    daConfermare: true,
   },
   massiveDamage: { it: 'Danno Massiccio', en: 'Massive Damage', category: 'combattimento', page: 39 },
   criticalDamage: { it: 'Danno critico', en: 'Critical Damage', category: 'combattimento', page: 39 },
@@ -315,7 +304,7 @@ export const glossario = {
   // ── CONDIZIONI (SRD p.41) ──────────────────────────────────────
   condition: { it: 'Condizione', en: 'Condition', category: 'condizioni', page: 41 },
   hidden: { it: 'Nascosto', en: 'Hidden', category: 'condizioni', page: 41 },
-  restrained: { it: 'Trattenuto', en: 'Restrained', category: 'condizioni', page: 41, note: 'Alternativa: Immobilizzato', daConfermare: true },
+  restrained: { it: 'Trattenuto', en: 'Restrained', category: 'condizioni', page: 41 },
   vulnerable: { it: 'Vulnerabile', en: 'Vulnerable', category: 'condizioni', page: 41 },
   temporary: { it: 'Temporaneo', en: 'Temporary', category: 'condizioni', page: 41 },
   specialCondition: { it: 'Condizione speciale', en: 'Special Condition', category: 'condizioni', page: 41 },
@@ -338,7 +327,7 @@ export const glossario = {
 
   // ── MORTE (SRD p.42) ───────────────────────────────────────────
   deathMove: { it: 'Mossa della Morte', en: 'Death Move', category: 'morte', page: 42 },
-  blazeOfGlory: { it: 'Fine gloriosa', en: 'Blaze of Glory', category: 'morte', page: 42, daConfermare: true },
+  blazeOfGlory: { it: 'Fine gloriosa', en: 'Blaze of Glory', category: 'morte', page: 42 },
   avoidDeath: { it: 'Evitare la morte', en: 'Avoid Death', category: 'morte', page: 42 },
   riskItAll: { it: 'Rischiare il tutto', en: 'Risk It All', category: 'morte', page: 42 },
   scar: { it: 'Cicatrice', en: 'Scar', category: 'morte', page: 42 },
@@ -415,7 +404,7 @@ export const glossario = {
   horde: { it: 'Orda', en: 'Horde', category: 'avversari', page: 70 },
   leader: { it: 'Capo', en: 'Leader', category: 'avversari', page: 70 },
   minion: { it: 'Gregario', en: 'Minion', category: 'avversari', page: 70 },
-  rangedType: { it: 'Tiratore', en: 'Ranged', category: 'avversari', page: 70, daConfermare: true },
+  rangedType: { it: 'A distanza', en: 'Ranged', category: 'avversari', page: 70 },
   skulk: { it: 'Furtivo', en: 'Skulk', category: 'avversari', page: 70 },
   social: { it: 'Sociale', en: 'Social', category: 'avversari', page: 70 },
   solo: { it: 'Solitario', en: 'Solo', category: 'avversari', page: 70 },
