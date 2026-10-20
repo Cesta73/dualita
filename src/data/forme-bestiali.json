@@ -1,0 +1,840 @@
+[
+  {
+    "id": "agile-scout",
+    "nome": "Ricognitore agile",
+    "nomeOriginale": "Agile Scout",
+    "tier": 1,
+    "pagina": 12,
+    "esempiOriginale": "Fox, Mouse, Weasel, etc.",
+    "tratto": "agility",
+    "bonusTratto": 1,
+    "bonusEvasione": 2,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "agility",
+      "dado": 4,
+      "bonus": 0,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "deceive",
+      "locate",
+      "sneak"
+    ],
+    "capacita": [
+      {
+        "id": "agile",
+        "nome": "Agile",
+        "nomeOriginale": "Agile",
+        "testoOriginale": "Your movement is silent, and you can spend a Hope to move up to Far range without rolling."
+      },
+      {
+        "id": "fragile",
+        "nome": "Fragile",
+        "nomeOriginale": "Fragile",
+        "testoOriginale": "When you take Major or greater damage, you drop out of Beastform."
+      }
+    ]
+  },
+  {
+    "id": "household-friend",
+    "nome": "Amico di casa",
+    "nomeOriginale": "Household Friend",
+    "tier": 1,
+    "pagina": 12,
+    "esempiOriginale": "Cat, Dog, Rabbit, etc.",
+    "tratto": "instinct",
+    "bonusTratto": 1,
+    "bonusEvasione": 2,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "instinct",
+      "dado": 6,
+      "bonus": 0,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "climb",
+      "locate",
+      "protect"
+    ],
+    "capacita": [
+      {
+        "id": "companion",
+        "nome": "Compagno",
+        "nomeOriginale": "Companion",
+        "testoOriginale": "When you Help an Ally, you can roll a d8 as your advantage die."
+      },
+      {
+        "id": "fragile",
+        "nome": "Fragile",
+        "nomeOriginale": "Fragile",
+        "testoOriginale": "When you take Major or greater damage, you drop out of Beastform."
+      }
+    ]
+  },
+  {
+    "id": "nimble-grazer",
+    "nome": "Erbivoro lesto",
+    "nomeOriginale": "Nimble Grazer",
+    "tier": 1,
+    "pagina": 12,
+    "esempiOriginale": "Deer, Gazelle, Goat, etc.",
+    "tratto": "agility",
+    "bonusTratto": 1,
+    "bonusEvasione": 3,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "agility",
+      "dado": 6,
+      "bonus": 0,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "leap",
+      "sneak",
+      "sprint"
+    ],
+    "capacita": [
+      {
+        "id": "elusive-prey",
+        "nome": "Preda sfuggente",
+        "nomeOriginale": "Elusive Prey",
+        "testoOriginale": "When an attack roll against you would succeed, you can mark a Stress and roll a d4. Add the result to your Evasion against this attack."
+      },
+      {
+        "id": "fragile",
+        "nome": "Fragile",
+        "nomeOriginale": "Fragile",
+        "testoOriginale": "When you take Major or greater damage, you drop out of Beastform."
+      }
+    ]
+  },
+  {
+    "id": "pack-predator",
+    "nome": "Predatore da branco",
+    "nomeOriginale": "Pack Predator",
+    "tier": 1,
+    "pagina": 12,
+    "esempiOriginale": "Coyote, Hyena, Wolf, etc.",
+    "tratto": "strength",
+    "bonusTratto": 2,
+    "bonusEvasione": 1,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "strength",
+      "dado": 8,
+      "bonus": 2,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "attack",
+      "sprint",
+      "track"
+    ],
+    "capacita": [
+      {
+        "id": "hobbling-strike",
+        "nome": "Colpo azzoppante",
+        "nomeOriginale": "Hobbling Strike",
+        "testoOriginale": "When you succeed on an attack against a target within Melee range, you can mark a Stress to make the target temporarily Vulnerable."
+      },
+      {
+        "id": "pack-hunting",
+        "nome": "Caccia in branco",
+        "nomeOriginale": "Pack Hunting",
+        "testoOriginale": "When you succeed on an attack against the same target as an ally who acts immediately before you, add a d8 to your damage roll."
+      }
+    ]
+  },
+  {
+    "id": "aquatic-scout",
+    "nome": "Ricognitore acquatico",
+    "nomeOriginale": "Aquatic Scout",
+    "tier": 1,
+    "pagina": 12,
+    "esempiOriginale": "Eel, Fish, Octopus, etc.",
+    "tratto": "agility",
+    "bonusTratto": 1,
+    "bonusEvasione": 2,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "agility",
+      "dado": 4,
+      "bonus": 0,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "navigate",
+      "sneak",
+      "swim"
+    ],
+    "capacita": [
+      {
+        "id": "aquatic",
+        "nome": "Acquatico",
+        "nomeOriginale": "Aquatic",
+        "testoOriginale": "You can breathe and move naturally underwater."
+      },
+      {
+        "id": "fragile",
+        "nome": "Fragile",
+        "nomeOriginale": "Fragile",
+        "testoOriginale": "When you take Major or greater damage, you drop out of Beastform."
+      }
+    ]
+  },
+  {
+    "id": "stalking-arachnid",
+    "nome": "Aracnide in agguato",
+    "nomeOriginale": "Stalking Arachnid",
+    "tier": 1,
+    "pagina": 13,
+    "esempiOriginale": "Tarantula, Wolf Spider, etc.",
+    "tratto": "finesse",
+    "bonusTratto": 1,
+    "bonusEvasione": 2,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "finesse",
+      "dado": 6,
+      "bonus": 1,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "attack",
+      "climb",
+      "sneak"
+    ],
+    "capacita": [
+      {
+        "id": "venomous-bite",
+        "nome": "Morso velenoso",
+        "nomeOriginale": "Venomous Bite",
+        "testoOriginale": "When you succeed on an attack against a target within Melee range, the target becomes temporarily Poisoned. A Poisoned creature takes 1d10 direct physical damage each time they act."
+      },
+      {
+        "id": "webslinger",
+        "nome": "Tessitela",
+        "nomeOriginale": "Webslinger",
+        "testoOriginale": "You can create a strong web material useful for both adventuring and battle. The web is resilient enough to support one creature. You can temporarily Restrain a target within Close range by succeeding on a Finesse Roll against them."
+      }
+    ]
+  },
+  {
+    "id": "armored-sentry",
+    "nome": "Sentinella corazzata",
+    "nomeOriginale": "Armored Sentry",
+    "tier": 2,
+    "pagina": 13,
+    "esempiOriginale": "Armadillo, Pangolin, Turtle, etc.",
+    "tratto": "strength",
+    "bonusTratto": 1,
+    "bonusEvasione": 1,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "strength",
+      "dado": 8,
+      "bonus": 2,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "dig",
+      "locate",
+      "protect"
+    ],
+    "capacita": [
+      {
+        "id": "armored-shell",
+        "nome": "Guscio corazzato",
+        "nomeOriginale": "Armored Shell",
+        "testoOriginale": "Your hardened exterior gives you resistance to physical damage. Additionally, mark an Armor Slot to retract into your shell. While in your shell, physical damage is reduced by a number equal to your Armor Score (after applying resistance), but you can't perform other actions without leaving this form."
+      },
+      {
+        "id": "cannonball",
+        "nome": "Palla di cannone",
+        "nomeOriginale": "Cannonball",
+        "testoOriginale": "Mark a Stress to allow an ally to throw or launch you at an adversary. To do so, the ally makes an attack roll using Agility or Strength (their choice) against a target within Close range. On a success, the adversary takes d12+2 physical damage using the thrower's Proficiency. You can spend a Hope to target an additional adversary within Very Close range of the first. The second target takes half the damage dealt to the first target."
+      }
+    ]
+  },
+  {
+    "id": "powerful-beast",
+    "nome": "Bestia possente",
+    "nomeOriginale": "Powerful Beast",
+    "tier": 2,
+    "pagina": 13,
+    "esempiOriginale": "Bear, Bull, Moose, etc.",
+    "tratto": "strength",
+    "bonusTratto": 1,
+    "bonusEvasione": 3,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "strength",
+      "dado": 10,
+      "bonus": 4,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "navigate",
+      "protect",
+      "scare"
+    ],
+    "capacita": [
+      {
+        "id": "rampage",
+        "nome": "Furia distruttiva",
+        "nomeOriginale": "Rampage",
+        "testoOriginale": "When you roll a 1 on a damage die, you can roll a d10 and add the result to the damage roll. Additionally, before you make an attack roll, you can mark a Stress to gain a +1 bonus to your Proficiency for that attack."
+      },
+      {
+        "id": "thick-hide",
+        "nome": "Pelle coriacea",
+        "nomeOriginale": "Thick Hide",
+        "testoOriginale": "You gain a +2 bonus to your damage thresholds."
+      }
+    ]
+  },
+  {
+    "id": "mighty-strider",
+    "nome": "Corridore possente",
+    "nomeOriginale": "Mighty Strider",
+    "tier": 2,
+    "pagina": 13,
+    "esempiOriginale": "Camel, Horse, Zebra, etc.",
+    "tratto": "agility",
+    "bonusTratto": 1,
+    "bonusEvasione": 2,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "agility",
+      "dado": 8,
+      "bonus": 1,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "leap",
+      "navigate",
+      "sprint"
+    ],
+    "capacita": [
+      {
+        "id": "carrier",
+        "nome": "Portatore",
+        "nomeOriginale": "Carrier",
+        "testoOriginale": "You can carry up to two willing allies with you when you move."
+      },
+      {
+        "id": "trample",
+        "nome": "Travolgere",
+        "nomeOriginale": "Trample",
+        "testoOriginale": "Mark a Stress to move up to Close range in a straight line and make an attack against all targets within Melee range of the line. Targets you succeed against take d8+1 physical damage using your Proficiency and are temporarily Vulnerable."
+      }
+    ]
+  },
+  {
+    "id": "striking-serpent",
+    "nome": "Serpente scattante",
+    "nomeOriginale": "Striking Serpent",
+    "tier": 2,
+    "pagina": 13,
+    "esempiOriginale": "Cobra, Rattlesnake, Viper, etc.",
+    "tratto": "finesse",
+    "bonusTratto": 1,
+    "bonusEvasione": 2,
+    "attacco": {
+      "gittata": "veryClose",
+      "tratto": "finesse",
+      "dado": 8,
+      "bonus": 4,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "climb",
+      "deceive",
+      "sprint"
+    ],
+    "capacita": [
+      {
+        "id": "venomous-strike",
+        "nome": "Colpo velenoso",
+        "nomeOriginale": "Venomous Strike",
+        "testoOriginale": "Make an attack against any number of targets within Very Close range. On a success, a target is temporarily Poisoned. A Poisoned creature takes 1d10 physical direct damage each time they act."
+      },
+      {
+        "id": "warning-hiss",
+        "nome": "Sibilo di avvertimento",
+        "nomeOriginale": "Warning Hiss",
+        "testoOriginale": "Mark a Stress t o force any number of targets within Melee range to move back to Very Close range."
+      }
+    ]
+  },
+  {
+    "id": "pouncing-predator",
+    "nome": "Predatore che balza",
+    "nomeOriginale": "Pouncing Predator",
+    "tier": 2,
+    "pagina": 13,
+    "esempiOriginale": "Cheetah, Lion, Panther, etc.",
+    "tratto": "instinct",
+    "bonusTratto": 1,
+    "bonusEvasione": 3,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "instinct",
+      "dado": 8,
+      "bonus": 6,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "attack",
+      "climb",
+      "sneak"
+    ],
+    "capacita": [
+      {
+        "id": "fleet",
+        "nome": "Veloce",
+        "nomeOriginale": "Fleet",
+        "testoOriginale": "Spend a Hope to move up to Far range without rolling."
+      },
+      {
+        "id": "takedown",
+        "nome": "Atterramento",
+        "nomeOriginale": "Takedown",
+        "testoOriginale": "Mark a Stress to move into Melee range of a target and make an attack roll against them. On a success, you gain a +2 bonus to your Proficiency for this attack and the target must mark a Stress."
+      }
+    ]
+  },
+  {
+    "id": "winged-beast",
+    "nome": "Bestia alata",
+    "nomeOriginale": "Winged Beast",
+    "tier": 2,
+    "pagina": 13,
+    "esempiOriginale": "Hawk, Owl, Raven, etc.",
+    "tratto": "finesse",
+    "bonusTratto": 1,
+    "bonusEvasione": 3,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "finesse",
+      "dado": 4,
+      "bonus": 2,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "deceive",
+      "locate",
+      "scare"
+    ],
+    "capacita": [
+      {
+        "id": "bird-s-eye-view",
+        "nome": "A volo d'uccello",
+        "nomeOriginale": "Bird's-Eye View",
+        "testoOriginale": "You can fly at will. Once per rest while you are airborne, you can ask the GM a question about the scene below you without needing to roll. The first time a character makes a roll to act on this information, they gain advantage on the roll."
+      },
+      {
+        "id": "hollow-bones",
+        "nome": "Ossa cave",
+        "nomeOriginale": "Hollow Bones",
+        "testoOriginale": "You gain a -2 penalty to your damage thresholds."
+      }
+    ]
+  },
+  {
+    "id": "great-predator",
+    "nome": "Grande predatore",
+    "nomeOriginale": "Great Predator",
+    "tier": 3,
+    "pagina": 14,
+    "esempiOriginale": "Dire Wolf, Velociraptor, Sabertooth Tiger, etc.",
+    "tratto": "strength",
+    "bonusTratto": 2,
+    "bonusEvasione": 2,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "strength",
+      "dado": 12,
+      "bonus": 8,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "attack",
+      "sneak",
+      "sprint"
+    ],
+    "capacita": [
+      {
+        "id": "carrier",
+        "nome": "Portatore",
+        "nomeOriginale": "Carrier",
+        "testoOriginale": "You can carry up to two willing allies with you when you move."
+      },
+      {
+        "id": "vicious-maul",
+        "nome": "Sbranare",
+        "nomeOriginale": "Vicious Maul",
+        "testoOriginale": "When you succeed on an attack against a target, you can spend a Hope to make them temporarily Vulnerable and gain a +1 bonus to your Proficiency for this attack."
+      }
+    ]
+  },
+  {
+    "id": "mighty-lizard",
+    "nome": "Lucertola possente",
+    "nomeOriginale": "Mighty Lizard",
+    "tier": 3,
+    "pagina": 14,
+    "esempiOriginale": "Alligator, Crocodile, Gila Monster, etc.",
+    "tratto": "instinct",
+    "bonusTratto": 2,
+    "bonusEvasione": 1,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "instinct",
+      "dado": 10,
+      "bonus": 7,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "attack",
+      "sneak",
+      "track"
+    ],
+    "capacita": [
+      {
+        "id": "physical-defense",
+        "nome": "Difesa fisica",
+        "nomeOriginale": "Physical Defense",
+        "testoOriginale": "You gain a +3 bonus to your damage thresholds."
+      },
+      {
+        "id": "snapping-strike",
+        "nome": "Morsa fulminea",
+        "nomeOriginale": "Snapping Strike",
+        "testoOriginale": "When you succeed on an attack against a target within Melee range, you can spend a Hope to clamp that opponent in your jaws, making them temporarily Restrained and Vulnerable."
+      }
+    ]
+  },
+  {
+    "id": "great-winged-beast",
+    "nome": "Grande bestia alata",
+    "nomeOriginale": "Great Winged Beast",
+    "tier": 3,
+    "pagina": 14,
+    "esempiOriginale": "Giant Eagle, Falcon, etc.",
+    "tratto": "finesse",
+    "bonusTratto": 2,
+    "bonusEvasione": 3,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "finesse",
+      "dado": 8,
+      "bonus": 6,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "deceive",
+      "distract",
+      "locate"
+    ],
+    "capacita": [
+      {
+        "id": "bird-s-eye-view",
+        "nome": "A volo d'uccello",
+        "nomeOriginale": "Bird's-Eye View",
+        "testoOriginale": "You can fly at will. Once per rest while you are airborne, you can ask the GM a question about the scene below you without needing to roll. The first time a character makes a roll to act on this information, they gain advantage on the roll."
+      },
+      {
+        "id": "carrier",
+        "nome": "Portatore",
+        "nomeOriginale": "Carrier",
+        "testoOriginale": "You can carry up to two willing allies with you when you move."
+      }
+    ]
+  },
+  {
+    "id": "aquatic-predator",
+    "nome": "Predatore acquatico",
+    "nomeOriginale": "Aquatic Predator",
+    "tier": 3,
+    "pagina": 14,
+    "esempiOriginale": "Dolphin, Orca, Shark, etc.",
+    "tratto": "agility",
+    "bonusTratto": 2,
+    "bonusEvasione": 4,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "agility",
+      "dado": 10,
+      "bonus": 6,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "attack",
+      "swim",
+      "track"
+    ],
+    "capacita": [
+      {
+        "id": "aquatic",
+        "nome": "Acquatico",
+        "nomeOriginale": "Aquatic",
+        "testoOriginale": "You can breathe and move naturally underwater."
+      },
+      {
+        "id": "vicious-maul",
+        "nome": "Sbranare",
+        "nomeOriginale": "Vicious Maul",
+        "testoOriginale": "When you succeed on an attack against a target, you can spend a Hope to make them Vulnerable and gain a +1 bonus to your Proficiency for this attack."
+      }
+    ]
+  },
+  {
+    "id": "legendary-beast",
+    "nome": "Bestia leggendaria",
+    "nomeOriginale": "Legendary Beast",
+    "tier": 3,
+    "pagina": 14,
+    "esempiOriginale": "Upgraded Tier 1 Options",
+    "tratto": null,
+    "capacita": [
+      {
+        "id": "evolved",
+        "nome": "Evoluto",
+        "nomeOriginale": "Evolved",
+        "testoOriginale": "Pick a Tier 1 Beastform option and become a larger, more powerful version of that creature. While you're in this form, you retain all traits and features from the original form and gain the following bonuses:\n• A +6 bonus to damage rolls\n• A +1 bonus to the trait used by this form\n• A +2 bonus to Evasion"
+      }
+    ]
+  },
+  {
+    "id": "legendary-hybrid",
+    "nome": "Ibrido leggendario",
+    "nomeOriginale": "Legendary Hybrid",
+    "tier": 3,
+    "pagina": 14,
+    "esempiOriginale": "Griffon, Sphinx, etc.",
+    "tratto": "strength",
+    "bonusTratto": 2,
+    "bonusEvasione": 3,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "strength",
+      "dado": 10,
+      "bonus": 8,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [],
+    "capacita": [
+      {
+        "id": "hybrid-features",
+        "nome": "Tratti ibridi",
+        "nomeOriginale": "Hybrid Features",
+        "testoOriginale": "To transform into this creature, mark an additional Stress. Choose any two Beastform options from Tiers 1-2. Choose a total of four advantages and two features from those options."
+      }
+    ]
+  },
+  {
+    "id": "massive-behemoth",
+    "nome": "Behemoth colossale",
+    "nomeOriginale": "Massive Behemoth",
+    "tier": 4,
+    "pagina": 14,
+    "esempiOriginale": "Elephant, Mammoth, Rhinoceros, etc.",
+    "tratto": "strength",
+    "bonusTratto": 3,
+    "bonusEvasione": 1,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "strength",
+      "dado": 12,
+      "bonus": 12,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "locate",
+      "protect",
+      "scare",
+      "sprint"
+    ],
+    "capacita": [
+      {
+        "id": "carrier",
+        "nome": "Portatore",
+        "nomeOriginale": "Carrier",
+        "testoOriginale": "You can carry up to four willing allies with you when you move."
+      },
+      {
+        "id": "demolish",
+        "nome": "Demolire",
+        "nomeOriginale": "Demolish",
+        "testoOriginale": "Spend a Hope to move up to Far range in a straight line and make an attack against all targets within Melee range of the line. Targets you succeed against take d8+10 physical damage using your Proficiency and are temporarily Vulnerable."
+      },
+      {
+        "id": "undaunted",
+        "nome": "Impavido",
+        "nomeOriginale": "Undaunted",
+        "testoOriginale": "You gain a +2 bonus to all your damage thresholds."
+      }
+    ]
+  },
+  {
+    "id": "terrible-lizard",
+    "nome": "Lucertola terribile",
+    "nomeOriginale": "Terrible Lizard",
+    "tier": 4,
+    "pagina": 14,
+    "esempiOriginale": "Brachiosaurus, Tyrannosaurus, etc.",
+    "tratto": "strength",
+    "bonusTratto": 3,
+    "bonusEvasione": 2,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "strength",
+      "dado": 12,
+      "bonus": 10,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "attack",
+      "deceive",
+      "scare",
+      "track"
+    ],
+    "capacita": [
+      {
+        "id": "devastating-strikes",
+        "nome": "Colpi devastanti",
+        "nomeOriginale": "Devastating Strikes",
+        "testoOriginale": "When you deal Severe damage to a target within Melee range, you can mark a Stress to force them to mark an additional Hit Point."
+      },
+      {
+        "id": "massive-stride",
+        "nome": "Passo poderoso",
+        "nomeOriginale": "Massive Stride",
+        "testoOriginale": "You can move up to Far range without rolling. You ignore rough terain (at the GM's discretion) due to your size."
+      }
+    ]
+  },
+  {
+    "id": "mythic-aerial-hunter",
+    "nome": "Cacciatore aereo mitico",
+    "nomeOriginale": "Mythic Aerial Hunter",
+    "tier": 4,
+    "pagina": 15,
+    "esempiOriginale": "Dragon, Pterodactyl, Roc, Wyvern, etc.",
+    "tratto": "finesse",
+    "bonusTratto": 3,
+    "bonusEvasione": 4,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "finesse",
+      "dado": 10,
+      "bonus": 11,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "attack",
+      "deceive",
+      "locate",
+      "navigate"
+    ],
+    "capacita": [
+      {
+        "id": "carrier",
+        "nome": "Portatore",
+        "nomeOriginale": "Carrier",
+        "testoOriginale": "You can carry up to three willing allies with you when you move."
+      },
+      {
+        "id": "deadly-raptor",
+        "nome": "Rapace letale",
+        "nomeOriginale": "Deadly Raptor",
+        "testoOriginale": "You can fly at will and move up to Far range as part of your action. When you move in a straight line into Melee range of a target from at least Close range and make an attack against that target in the same action, you can reroll all damage dice that rolled a result lower than your Proficiency."
+      }
+    ]
+  },
+  {
+    "id": "epic-aquatic-beast",
+    "nome": "Bestia acquatica epica",
+    "nomeOriginale": "Epic Aquatic Beast",
+    "tier": 4,
+    "pagina": 15,
+    "esempiOriginale": "Giant Squid, Whale, etc.",
+    "tratto": "agility",
+    "bonusTratto": 3,
+    "bonusEvasione": 3,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "agility",
+      "dado": 10,
+      "bonus": 10,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [
+      "locate",
+      "protect",
+      "scare",
+      "track"
+    ],
+    "capacita": [
+      {
+        "id": "ocean-master",
+        "nome": "Signore dell'oceano",
+        "nomeOriginale": "Ocean Master",
+        "testoOriginale": "You can breathe and move naturally underwater. When you succeed on an attack against a target within Melee range, you can temporarily Restrain them."
+      },
+      {
+        "id": "unyielding",
+        "nome": "Inflessibile",
+        "nomeOriginale": "Unyielding",
+        "testoOriginale": "When you would mark an Armor Slot, roll a d6. On a result of 5 or higher, reduce the severity by one threshold without marking an Armor Slot."
+      }
+    ]
+  },
+  {
+    "id": "mythic-beast",
+    "nome": "Bestia mitica",
+    "nomeOriginale": "Mythic Beast",
+    "tier": 4,
+    "pagina": 15,
+    "esempiOriginale": "Upgraded Tier 1 or Tier 2 Options",
+    "tratto": null,
+    "capacita": [
+      {
+        "id": "evolved",
+        "nome": "Evoluto",
+        "nomeOriginale": "Evolved",
+        "testoOriginale": "Pick a Tier 1 or Tier 2 Beastform option and become a larger, more powerful version of that creature. While you're in this form, you retain all traits and features from the original form and gain the following bonuses:\n• A +9 bonus to damage rolls\n• A +2 bonus to the trait used by this form\n• A +3 bonus to Evasion\n• Your damage die increases by one size (d6 becomes d8, d8 becomes d10, etc.)"
+      }
+    ]
+  },
+  {
+    "id": "mythic-hybrid",
+    "nome": "Ibrido mitico",
+    "nomeOriginale": "Mythic Hybrid",
+    "tier": 4,
+    "pagina": 15,
+    "esempiOriginale": "Chimera, Cockatrice, Manticore, etc.",
+    "tratto": "strength",
+    "bonusTratto": 3,
+    "bonusEvasione": 2,
+    "attacco": {
+      "gittata": "melee",
+      "tratto": "strength",
+      "dado": 12,
+      "bonus": 10,
+      "tipoDanno": "fisico"
+    },
+    "vantaggioSuOriginale": [],
+    "capacita": [
+      {
+        "id": "hybrid-features",
+        "nome": "Tratti ibridi",
+        "nomeOriginale": "Hybrid Features",
+        "testoOriginale": "To transform into this creature, mark 2 additional Stress. Choose any three Beastform options from Tiers 1-3. Choose a total of five advantages and three features from those options."
+      }
+    ]
+  }
+]

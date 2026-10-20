@@ -26,3 +26,23 @@ Stato: 🟡 aperto · ✅ risolto
 - **SRD p.5**: "Ogni PG parte con 6 slot Stress". **SRD p.39**: "Lo Stress massimo di un PG è determinato dalla sua classe".
 - **Problema**: le pagine delle classi non riportano un valore di Stress diverso da 6.
 - **Proposta**: Stress iniziale = 6 per tutti; gli aumenti arrivano da avanzamenti e carte.
+
+## D5 — Mancano le armi magiche primarie di Tier 3 🟡
+- **SRD p.48**: la pagina del Tier 3 ha solo la tabella "Physical Weapons". Le armi magiche ci sono per i Tier 1, 2 e 4 (p.45, 47 e 50), ma **non per il Tier 3**.
+- **Proposta**: lasciamo il vuoto e non inventiamo armi. Un personaggio incantatore di livello 5-7 può tenere un'arma magica di Tier 2 o usare un'arma fisica. Da riprendere nella Fase 5.
+
+## D6 — Avversario "Stag Knight" senza statistiche 🟡
+- **SRD p.72-73**: l'elenco del Tier 3 cita "Stag Knight", ma il blocco statistiche **non c'è**. È lo stesso caso del Weaponmaster (D3).
+- **Proposta**: come per D3.
+
+## D7 — Significato di "Horde (X/HP)" 🟡
+- **SRD p.75-99**: gli avversari di tipo Orda riportano accanto al tipo un valore come "Horde (10/HP)". Per esempio lo Sciame di ratti ha "(10/HP)" e le Zanzare giganti "(5/HP)".
+- **Problema**: l'SRD non spiega il numero. Probabilmente indica quante creature rappresenta ogni Punto Ferita.
+- **Proposta**: lo salviamo nel campo `creaturePerPF` e lo mostriamo solo come informazione al GM, senza meccaniche automatiche.
+
+## D8 — Piccoli refusi dell'SRD (gestiti, da conoscere) ✅
+- p.14 "Legendary Hybrid": l'attacco non indica il tipo di danno → trattato come **fisico**, come tutte le altre forme bestiali.
+- p.15 "Mythic Hybrid": tratto e gittata sono scritti in ordine invertito ("Strength Melee") → letti correttamente.
+- p.73 l'elenco scrive "Outer Realms Corruptor", il blocco a p.98 scrive "Corrupter" → usato il nome del blocco.
+- p.72 l'elenco mette "Zombie Pack" nel Tier 1, ma il blocco a p.83 dice **Tier 2** → usato il valore del blocco.
+- p.98 "Outer Realms Abomination" ha come modificatore d'attacco "+2d4" invece di un numero fisso → salvato come dadi da aggiungere al tiro d'attacco.

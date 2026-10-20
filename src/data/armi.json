@@ -1,0 +1,3799 @@
+[
+  {
+    "id": "broadsword",
+    "nome": "Spada larga",
+    "nomeOriginale": "Broadsword",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "pagina": 45
+  },
+  {
+    "id": "longsword",
+    "nome": "Spada lunga",
+    "nomeOriginale": "Longsword",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "battleaxe",
+    "nome": "Ascia da battaglia",
+    "nomeOriginale": "Battleaxe",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "greatsword",
+    "nome": "Spadone",
+    "nomeOriginale": "Greatsword",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "massive",
+      "nome": "Massiccia",
+      "nomeOriginale": "Massive",
+      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 45
+  },
+  {
+    "id": "mace",
+    "nome": "Mazza",
+    "nomeOriginale": "Mace",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 1
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "warhammer",
+    "nome": "Martello da guerra",
+    "nomeOriginale": "Warhammer",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "pagina": 45
+  },
+  {
+    "id": "dagger",
+    "nome": "Pugnale",
+    "nomeOriginale": "Dagger",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 1
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "quarterstaff",
+    "nome": "Bastone ferrato",
+    "nomeOriginale": "Quarterstaff",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "instinct",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "cutlass",
+    "nome": "Sciabola",
+    "nomeOriginale": "Cutlass",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 1
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "rapier",
+    "nome": "Stocco",
+    "nomeOriginale": "Rapier",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "pagina": 45
+  },
+  {
+    "id": "halberd",
+    "nome": "Alabarda",
+    "nomeOriginale": "Halberd",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 45
+  },
+  {
+    "id": "spear",
+    "nome": "Lancia",
+    "nomeOriginale": "Spear",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "finesse",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 45
+  },
+  {
+    "id": "shortbow",
+    "nome": "Arco corto",
+    "nomeOriginale": "Shortbow",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "agility",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "crossbow",
+    "nome": "Balestra",
+    "nomeOriginale": "Crossbow",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 1
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "longbow",
+    "nome": "Arco lungo",
+    "nomeOriginale": "Longbow",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "agility",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 8,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 45
+  },
+  {
+    "id": "arcane-gauntlets",
+    "nome": "Guanti arcani",
+    "nomeOriginale": "Arcane Gauntlets",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 3
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "hallowed-axe",
+    "nome": "Ascia consacrata",
+    "nomeOriginale": "Hallowed Axe",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 1
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "glowing-rings",
+    "nome": "Anelli luminosi",
+    "nomeOriginale": "Glowing Rings",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "agility",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 1
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "hand-runes",
+    "nome": "Rune della mano",
+    "nomeOriginale": "Hand Runes",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "instinct",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 0
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "returning-blade",
+    "nome": "Lama che ritorna",
+    "nomeOriginale": "Returning Blade",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "finesse",
+    "gittata": "close",
+    "danno": {
+      "dado": 8,
+      "bonus": 0
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "returning",
+      "nome": "Che ritorna",
+      "nomeOriginale": "Returning",
+      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+    },
+    "pagina": 45
+  },
+  {
+    "id": "shortstaff",
+    "nome": "Bastone corto",
+    "nomeOriginale": "Shortstaff",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "instinct",
+    "gittata": "close",
+    "danno": {
+      "dado": 8,
+      "bonus": 1
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "dualstaff",
+    "nome": "Bastone doppio",
+    "nomeOriginale": "Dualstaff",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "instinct",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 3
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "scepter",
+    "nome": "Scettro",
+    "nomeOriginale": "Scepter",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "presence",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 0
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "versatile",
+      "nome": "Versatile",
+      "nomeOriginale": "Versatile",
+      "testoOriginale": "This weapon can also be used with these statistics—Presence, Melee, d8."
+    },
+    "pagina": 45
+  },
+  {
+    "id": "wand",
+    "nome": "Bacchetta",
+    "nomeOriginale": "Wand",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "knowledge",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 1
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 45
+  },
+  {
+    "id": "greatstaff",
+    "nome": "Gran bastone",
+    "nomeOriginale": "Greatstaff",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "knowledge",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 6,
+      "bonus": 0
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "powerful",
+      "nome": "Potente",
+      "nomeOriginale": "Powerful",
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 45
+  },
+  {
+    "id": "improved-broadsword",
+    "nome": "Spada larga migliorata",
+    "nomeOriginale": "Improved Broadsword",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "pagina": 46
+  },
+  {
+    "id": "improved-longsword",
+    "nome": "Spada lunga migliorata",
+    "nomeOriginale": "Improved Longsword",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 46
+  },
+  {
+    "id": "improved-battleaxe",
+    "nome": "Ascia da battaglia migliorata",
+    "nomeOriginale": "Improved Battleaxe",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 46
+  },
+  {
+    "id": "improved-greatsword",
+    "nome": "Spadone migliorato",
+    "nomeOriginale": "Improved Greatsword",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "massive",
+      "nome": "Massiccia",
+      "nomeOriginale": "Massive",
+      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 46
+  },
+  {
+    "id": "improved-mace",
+    "nome": "Mazza migliorata",
+    "nomeOriginale": "Improved Mace",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 46
+  },
+  {
+    "id": "improved-warhammer",
+    "nome": "Martello da guerra migliorato",
+    "nomeOriginale": "Improved Warhammer",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "pagina": 46
+  },
+  {
+    "id": "improved-dagger",
+    "nome": "Pugnale migliorato",
+    "nomeOriginale": "Improved Dagger",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 46
+  },
+  {
+    "id": "improved-quarterstaff",
+    "nome": "Bastone ferrato migliorato",
+    "nomeOriginale": "Improved Quarterstaff",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "instinct",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 46
+  },
+  {
+    "id": "improved-cutlass",
+    "nome": "Sciabola migliorata",
+    "nomeOriginale": "Improved Cutlass",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 46
+  },
+  {
+    "id": "improved-rapier",
+    "nome": "Stocco migliorato",
+    "nomeOriginale": "Improved Rapier",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "pagina": 46
+  },
+  {
+    "id": "improved-halberd",
+    "nome": "Alabarda migliorata",
+    "nomeOriginale": "Improved Halberd",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 5
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 46
+  },
+  {
+    "id": "improved-spear",
+    "nome": "Lancia migliorata",
+    "nomeOriginale": "Improved Spear",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 5
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 46
+  },
+  {
+    "id": "improved-shortbow",
+    "nome": "Arco corto migliorato",
+    "nomeOriginale": "Improved Shortbow",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 46
+  },
+  {
+    "id": "improved-crossbow",
+    "nome": "Balestra migliorata",
+    "nomeOriginale": "Improved Crossbow",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 46
+  },
+  {
+    "id": "improved-longbow",
+    "nome": "Arco lungo migliorato",
+    "nomeOriginale": "Improved Longbow",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 8,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 46
+  },
+  {
+    "id": "gilded-falchion",
+    "nome": "Falcione dorato",
+    "nomeOriginale": "Gilded Falchion",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "powerful",
+      "nome": "Potente",
+      "nomeOriginale": "Powerful",
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 46
+  },
+  {
+    "id": "knuckle-blades",
+    "nome": "Lame da pugno",
+    "nomeOriginale": "Knuckle Blades",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "brutal",
+      "nome": "Brutale",
+      "nomeOriginale": "Brutal",
+      "testoOriginale": "When you roll the maximum value on a damage die, roll an additional damage die."
+    },
+    "pagina": 46
+  },
+  {
+    "id": "urok-broadsword",
+    "nome": "Spada larga di Urok",
+    "nomeOriginale": "Urok Broadsword",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "deadly",
+      "nome": "Letale",
+      "nomeOriginale": "Deadly",
+      "testoOriginale": "When you deal Severe damage, the target must mark an additional HP."
+    },
+    "pagina": 46
+  },
+  {
+    "id": "bladed-whip",
+    "nome": "Frusta a lame",
+    "nomeOriginale": "Bladed Whip",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 8,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "pagina": 46
+  },
+  {
+    "id": "steelforged-halberd",
+    "nome": "Alabarda d'acciaio forgiato",
+    "nomeOriginale": "Steelforged Halberd",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 8,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "scary",
+      "nome": "Spaventosa",
+      "nomeOriginale": "Scary",
+      "testoOriginale": "On a successful attack, the target must mark a Stress."
+    },
+    "pagina": 46
+  },
+  {
+    "id": "war-scythe",
+    "nome": "Falce da guerra",
+    "nomeOriginale": "War Scythe",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 8,
+      "bonus": 5
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "pagina": 46
+  },
+  {
+    "id": "blunderbuss",
+    "nome": "Trombone",
+    "nomeOriginale": "Blunderbuss",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "close",
+    "danno": {
+      "dado": 8,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "reloading",
+      "nome": "Da ricaricare",
+      "nomeOriginale": "Reloading",
+      "testoOriginale": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+    },
+    "pagina": 46
+  },
+  {
+    "id": "greatbow",
+    "nome": "Grande arco",
+    "nomeOriginale": "Greatbow",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "powerful",
+      "nome": "Potente",
+      "nomeOriginale": "Powerful",
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 46
+  },
+  {
+    "id": "finehair-bow",
+    "nome": "Arco di crine fine",
+    "nomeOriginale": "Finehair Bow",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 6,
+      "bonus": 5
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "pagina": 46
+  },
+  {
+    "id": "improved-arcane-gauntlets",
+    "nome": "Guanti arcani migliorati",
+    "nomeOriginale": "Improved Arcane Gauntlets",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 6
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 47
+  },
+  {
+    "id": "improved-hallowed-axe",
+    "nome": "Ascia consacrata migliorata",
+    "nomeOriginale": "Improved Hallowed Axe",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 47
+  },
+  {
+    "id": "improved-glowing-rings",
+    "nome": "Anelli luminosi migliorati",
+    "nomeOriginale": "Improved Glowing Rings",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 5
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 47
+  },
+  {
+    "id": "improved-hand-runes",
+    "nome": "Rune della mano migliorate",
+    "nomeOriginale": "Improved Hand Runes",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "instinct",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 3
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 47
+  },
+  {
+    "id": "improved-returning-blade",
+    "nome": "Lama che ritorna migliorata",
+    "nomeOriginale": "Improved Returning Blade",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "close",
+    "danno": {
+      "dado": 8,
+      "bonus": 3
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "returning",
+      "nome": "Che ritorna",
+      "nomeOriginale": "Returning",
+      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "improved-shortstaff",
+    "nome": "Bastone corto migliorato",
+    "nomeOriginale": "Improved Shortstaff",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "instinct",
+    "gittata": "close",
+    "danno": {
+      "dado": 8,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 47
+  },
+  {
+    "id": "improved-dualstaff",
+    "nome": "Bastone doppio migliorato",
+    "nomeOriginale": "Improved Dualstaff",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "instinct",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 6
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 47
+  },
+  {
+    "id": "improved-scepter",
+    "nome": "Scettro migliorato",
+    "nomeOriginale": "Improved Scepter",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "presence",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 3
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "versatile",
+      "nome": "Versatile",
+      "nomeOriginale": "Versatile",
+      "testoOriginale": "This weapon can also be used with these statistics—Presence, Melee, d8+3."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "improved-wand",
+    "nome": "Bacchetta migliorata",
+    "nomeOriginale": "Improved Wand",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "knowledge",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 47
+  },
+  {
+    "id": "improved-greatstaff",
+    "nome": "Gran bastone migliorato",
+    "nomeOriginale": "Improved Greatstaff",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "knowledge",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 6,
+      "bonus": 3
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "powerful",
+      "nome": "Potente",
+      "nomeOriginale": "Powerful",
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "ego-blade",
+    "nome": "Lama dell'ego",
+    "nomeOriginale": "Ego Blade",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "pompous",
+      "nome": "Pomposa",
+      "nomeOriginale": "Pompous",
+      "testoOriginale": "You must have a Presence of 0 or lower to use this weapon."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "casting-sword",
+    "nome": "Spada incantatrice",
+    "nomeOriginale": "Casting Sword",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "versatile",
+      "nome": "Versatile",
+      "nomeOriginale": "Versatile",
+      "testoOriginale": "This weapon can also be used with these statistics—Knowledge, Far, d6+3."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "devouring-dagger",
+    "nome": "Pugnale divoratore",
+    "nomeOriginale": "Devouring Dagger",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "scary",
+      "nome": "Spaventosa",
+      "nomeOriginale": "Scary",
+      "testoOriginale": "On a successful attack, the target must mark a Stress."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "hammer-of-exota",
+    "nome": "Martello di Exota",
+    "nomeOriginale": "Hammer of Exota",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "instinct",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 6
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "eruptive",
+      "nome": "Eruttiva",
+      "nomeOriginale": "Eruptive",
+      "testoOriginale": "On a successful attack against a target within Melee range, all other adversaries within Very Close range must succeed on a reaction roll (14) or take half damage."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "yutari-bloodbow",
+    "nome": "Arco di sangue yutari",
+    "nomeOriginale": "Yutari Bloodbow",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "brutal",
+      "nome": "Brutale",
+      "nomeOriginale": "Brutal",
+      "testoOriginale": "When you roll the maximum value on a damage die, roll an additional damage die."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "elder-bow",
+    "nome": "Arco antico",
+    "nomeOriginale": "Elder Bow",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "instinct",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "powerful",
+      "nome": "Potente",
+      "nomeOriginale": "Powerful",
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "scepter-of-elias",
+    "nome": "Scettro di Elias",
+    "nomeOriginale": "Scepter of Elias",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "presence",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 3
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "invigorating",
+      "nome": "Rinvigorente",
+      "nomeOriginale": "Invigorating",
+      "testoOriginale": "On a successful attack, roll a d4. On a result of 4, clear a Stress."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "wand-of-enthrallment",
+    "nome": "Bacchetta dell'ammaliamento",
+    "nomeOriginale": "Wand of Enthrallment",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "presence",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "persuasive",
+      "nome": "Persuasiva",
+      "nomeOriginale": "Persuasive",
+      "testoOriginale": "Before you make a Presence Roll, you can mark a Stress to gain a +2 bonus to the result."
+    },
+    "pagina": 47
+  },
+  {
+    "id": "keepers-staff",
+    "nome": "Bastone del custode",
+    "nomeOriginale": "Keeper's Staff",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "knowledge",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "pagina": 47
+  },
+  {
+    "id": "advanced-broadsword",
+    "nome": "Spada larga avanzata",
+    "nomeOriginale": "Advanced Broadsword",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "pagina": 48
+  },
+  {
+    "id": "advanced-longsword",
+    "nome": "Spada lunga avanzata",
+    "nomeOriginale": "Advanced Longsword",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 48
+  },
+  {
+    "id": "advanced-battleaxe",
+    "nome": "Ascia da battaglia avanzata",
+    "nomeOriginale": "Advanced Battleaxe",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 48
+  },
+  {
+    "id": "advanced-greatsword",
+    "nome": "Spadone avanzato",
+    "nomeOriginale": "Advanced Greatsword",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "massive",
+      "nome": "Massiccia",
+      "nomeOriginale": "Massive",
+      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "advanced-mace",
+    "nome": "Mazza avanzata",
+    "nomeOriginale": "Advanced Mace",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 48
+  },
+  {
+    "id": "advanced-warhammer",
+    "nome": "Martello da guerra avanzato",
+    "nomeOriginale": "Advanced Warhammer",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "pagina": 48
+  },
+  {
+    "id": "advanced-dagger",
+    "nome": "Pugnale avanzato",
+    "nomeOriginale": "Advanced Dagger",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 48
+  },
+  {
+    "id": "advanced-quarterstaff",
+    "nome": "Bastone ferrato avanzato",
+    "nomeOriginale": "Advanced Quarterstaff",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "instinct",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 48
+  },
+  {
+    "id": "advanced-cutlass",
+    "nome": "Sciabola avanzata",
+    "nomeOriginale": "Advanced Cutlass",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 48
+  },
+  {
+    "id": "advanced-rapier",
+    "nome": "Stocco avanzato",
+    "nomeOriginale": "Advanced Rapier",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "advanced-halberd",
+    "nome": "Alabarda avanzata",
+    "nomeOriginale": "Advanced Halberd",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 8
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 48
+  },
+  {
+    "id": "advanced-spear",
+    "nome": "Lancia avanzata",
+    "nomeOriginale": "Advanced Spear",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "finesse",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 8
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 48
+  },
+  {
+    "id": "advanced-shortbow",
+    "nome": "Arco corto avanzato",
+    "nomeOriginale": "Advanced Shortbow",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 48
+  },
+  {
+    "id": "advanced-crossbow",
+    "nome": "Balestra avanzata",
+    "nomeOriginale": "Advanced Crossbow",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 48
+  },
+  {
+    "id": "advanced-longbow",
+    "nome": "Arco lungo avanzato",
+    "nomeOriginale": "Advanced Longbow",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 8,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 48
+  },
+  {
+    "id": "flickerfly-blade",
+    "nome": "Lama di guizzafalena",
+    "nomeOriginale": "Flickerfly Blade",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 5
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "sharpwing",
+      "nome": "Alatagliente",
+      "nomeOriginale": "Sharpwing",
+      "testoOriginale": "Gain a bonus to your damage rolls equal to your Agility."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "bravesword",
+    "nome": "Spada dei prodi",
+    "nomeOriginale": "Bravesword",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "brave",
+      "nome": "Coraggiosa",
+      "nomeOriginale": "Brave",
+      "testoOriginale": "-1 to Evasion; +3 to Severe damage threshold"
+    },
+    "pagina": 48
+  },
+  {
+    "id": "hammer-of-wrath",
+    "nome": "Martello dell'ira",
+    "nomeOriginale": "Hammer of Wrath",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "devastating",
+      "nome": "Devastante",
+      "nomeOriginale": "Devastating",
+      "testoOriginale": "Before you make an attack roll, you can mark a Stress to use a d20 as your damage die."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "labrys-axe",
+    "nome": "Labrys",
+    "nomeOriginale": "Labrys Axe",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "protective",
+      "nome": "Protettiva",
+      "nomeOriginale": "Protective",
+      "testoOriginale": "+1 to Armor Score"
+    },
+    "pagina": 48
+  },
+  {
+    "id": "meridian-cutlass",
+    "nome": "Sciabola meridiana",
+    "nomeOriginale": "Meridian Cutlass",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 5
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "dueling",
+      "nome": "Da duello",
+      "nomeOriginale": "Dueling",
+      "testoOriginale": "When there are no other creatures within Close range of the target, gain advantage on your attack roll against them."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "retractable-saber",
+    "nome": "Sciabola retrattile",
+    "nomeOriginale": "Retractable Saber",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "retractable",
+      "nome": "Retrattile",
+      "nomeOriginale": "Retractable",
+      "testoOriginale": "The blade can be hidden in the hilt to avoid detection."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "double-flail",
+    "nome": "Doppio flagello",
+    "nomeOriginale": "Double Flail",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 8
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "powerful",
+      "nome": "Potente",
+      "nomeOriginale": "Powerful",
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "talon-blades",
+    "nome": "Lame ad artiglio",
+    "nomeOriginale": "Talon Blades",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "finesse",
+    "gittata": "close",
+    "danno": {
+      "dado": 10,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "brutal",
+      "nome": "Brutale",
+      "nomeOriginale": "Brutal",
+      "testoOriginale": "When you roll the maximum value on a damage die, roll an additional damage die."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "black-powder-revolver",
+    "nome": "Revolver a polvere nera",
+    "nomeOriginale": "Black Powder Revolver",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 8
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reloading",
+      "nome": "Da ricaricare",
+      "nomeOriginale": "Reloading",
+      "testoOriginale": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "spiked-bow",
+    "nome": "Arco chiodato",
+    "nomeOriginale": "Spiked Bow",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 6,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "versatile",
+      "nome": "Versatile",
+      "nomeOriginale": "Versatile",
+      "testoOriginale": "This weapon can also be used with these statistics—Agility, Melee, d10+5."
+    },
+    "pagina": 48
+  },
+  {
+    "id": "legendary-broadsword",
+    "nome": "Spada larga leggendaria",
+    "nomeOriginale": "Legendary Broadsword",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "pagina": 49
+  },
+  {
+    "id": "legendary-longsword",
+    "nome": "Spada lunga leggendaria",
+    "nomeOriginale": "Legendary Longsword",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 12
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 49
+  },
+  {
+    "id": "legendary-battleaxe",
+    "nome": "Ascia da battaglia leggendaria",
+    "nomeOriginale": "Legendary Battleaxe",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 12
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 49
+  },
+  {
+    "id": "legendary-greatsword",
+    "nome": "Spadone leggendario",
+    "nomeOriginale": "Legendary Greatsword",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 12
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "massive",
+      "nome": "Massiccia",
+      "nomeOriginale": "Massive",
+      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "legendary-mace",
+    "nome": "Mazza leggendaria",
+    "nomeOriginale": "Legendary Mace",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 10
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 49
+  },
+  {
+    "id": "legendary-warhammer",
+    "nome": "Martello da guerra leggendario",
+    "nomeOriginale": "Legendary Warhammer",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 12
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "pagina": 49
+  },
+  {
+    "id": "legendary-dagger",
+    "nome": "Pugnale leggendario",
+    "nomeOriginale": "Legendary Dagger",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 10
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 49
+  },
+  {
+    "id": "legendary-quarterstaff",
+    "nome": "Bastone ferrato leggendario",
+    "nomeOriginale": "Legendary Quarterstaff",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "instinct",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 12
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 49
+  },
+  {
+    "id": "legendary-cutlass",
+    "nome": "Sciabola leggendaria",
+    "nomeOriginale": "Legendary Cutlass",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 10
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 49
+  },
+  {
+    "id": "legendary-rapier",
+    "nome": "Stocco leggendario",
+    "nomeOriginale": "Legendary Rapier",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "legendary-halberd",
+    "nome": "Alabarda leggendaria",
+    "nomeOriginale": "Legendary Halberd",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 11
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 49
+  },
+  {
+    "id": "legendary-spear",
+    "nome": "Lancia leggendaria",
+    "nomeOriginale": "Legendary Spear",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 11
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 49
+  },
+  {
+    "id": "legendary-shortbow",
+    "nome": "Arco corto leggendario",
+    "nomeOriginale": "Legendary Shortbow",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 12
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 49
+  },
+  {
+    "id": "legendary-crossbow",
+    "nome": "Balestra leggendaria",
+    "nomeOriginale": "Legendary Crossbow",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 10
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 49
+  },
+  {
+    "id": "legendary-longbow",
+    "nome": "Arco lungo leggendario",
+    "nomeOriginale": "Legendary Longbow",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 8,
+      "bonus": 12
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "cumbersome",
+      "nome": "Ingombrante",
+      "nomeOriginale": "Cumbersome",
+      "testoOriginale": "-1 to Finesse"
+    },
+    "pagina": 49
+  },
+  {
+    "id": "dual-ended-sword",
+    "nome": "Spada a doppia lama",
+    "nomeOriginale": "Dual-Ended Sword",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "impact-gauntlet",
+    "nome": "Guanto d'impatto",
+    "nomeOriginale": "Impact Gauntlet",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 11
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "concussive",
+      "nome": "Contundente",
+      "nomeOriginale": "Concussive",
+      "testoOriginale": "On a successful attack, you can spend a Hope to knock the target back to Far range."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "sledge-axe",
+    "nome": "Ascia-maglio",
+    "nomeOriginale": "Sledge Axe",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 13
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "destructive",
+      "nome": "Distruttiva",
+      "nomeOriginale": "Destructive",
+      "testoOriginale": "-1 to Agility; on a successful attack, all adversaries within Very Close range must mark a Stress."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "curved-dagger",
+    "nome": "Pugnale ricurvo",
+    "nomeOriginale": "Curved Dagger",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "serrated",
+      "nome": "Seghettata",
+      "nomeOriginale": "Serrated",
+      "testoOriginale": "When you roll a 1 on a damage die, it deals 8 damage instead."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "extended-polearm",
+    "nome": "Arma inastata lunga",
+    "nomeOriginale": "Extended Polearm",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 8,
+      "bonus": 10
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "long",
+      "nome": "Lunga",
+      "nomeOriginale": "Long",
+      "testoOriginale": "This weapon's attack targets all adversaries in a line within range."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "swinging-ropeblade",
+    "nome": "Lama a corda",
+    "nomeOriginale": "Swinging Ropeblade",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "presence",
+    "gittata": "close",
+    "danno": {
+      "dado": 8,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "grappling",
+      "nome": "Avvinghiante",
+      "nomeOriginale": "Grappling",
+      "testoOriginale": "On a successful attack, you can spend a Hope to Restrain the target or pull them into Melee range with you."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "ricochet-axes",
+    "nome": "Asce di rimbalzo",
+    "nomeOriginale": "Ricochet Axes",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 11
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "bouncing",
+      "nome": "Rimbalzante",
+      "nomeOriginale": "Bouncing",
+      "testoOriginale": "Mark 1 or more Stress to hit that many targets in range of the attack."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "aantari-bow",
+    "nome": "Arco aantari",
+    "nomeOriginale": "Aantari Bow",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 11
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "pagina": 49
+  },
+  {
+    "id": "hand-cannon",
+    "nome": "Cannone a mano",
+    "nomeOriginale": "Hand Cannon",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 6,
+      "bonus": 12
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reloading",
+      "nome": "Da ricaricare",
+      "nomeOriginale": "Reloading",
+      "testoOriginale": "After you make an attack, roll a d6. On a 1, you must mark a Stress to reload this weapon before you can fire it again."
+    },
+    "pagina": 49
+  },
+  {
+    "id": "legendary-arcane-gauntlets",
+    "nome": "Guanti arcani leggendari",
+    "nomeOriginale": "Legendary Arcane Gauntlets",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 12
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 50
+  },
+  {
+    "id": "legendary-hallowed-axe",
+    "nome": "Ascia consacrata leggendaria",
+    "nomeOriginale": "Legendary Hallowed Axe",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 10
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 50
+  },
+  {
+    "id": "legendary-glowing-rings",
+    "nome": "Anelli luminosi leggendari",
+    "nomeOriginale": "Legendary Glowing Rings",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 11
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 50
+  },
+  {
+    "id": "legendary-hand-runes",
+    "nome": "Rune della mano leggendarie",
+    "nomeOriginale": "Legendary Hand Runes",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "instinct",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 10,
+      "bonus": 9
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 50
+  },
+  {
+    "id": "legendary-returning-blade",
+    "nome": "Lama che ritorna leggendaria",
+    "nomeOriginale": "Legendary Returning Blade",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "close",
+    "danno": {
+      "dado": 8,
+      "bonus": 9
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "returning",
+      "nome": "Che ritorna",
+      "nomeOriginale": "Returning",
+      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "legendary-shortstaff",
+    "nome": "Bastone corto leggendario",
+    "nomeOriginale": "Legendary Shortstaff",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "instinct",
+    "gittata": "close",
+    "danno": {
+      "dado": 8,
+      "bonus": 10
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 50
+  },
+  {
+    "id": "legendary-dualstaff",
+    "nome": "Bastone doppio leggendario",
+    "nomeOriginale": "Legendary Dualstaff",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "instinct",
+    "gittata": "far",
+    "danno": {
+      "dado": 8,
+      "bonus": 12
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": null,
+    "pagina": 50
+  },
+  {
+    "id": "legendary-scepter",
+    "nome": "Scettro leggendario",
+    "nomeOriginale": "Legendary Scepter",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "presence",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 9
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "versatile",
+      "nome": "Versatile",
+      "nomeOriginale": "Versatile",
+      "testoOriginale": "This weapon can also be used with these statistics—Presence, Melee, d8+6."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "legendary-wand",
+    "nome": "Bacchetta leggendaria",
+    "nomeOriginale": "Legendary Wand",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "knowledge",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 10
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 50
+  },
+  {
+    "id": "legendary-greatstaff",
+    "nome": "Gran bastone leggendario",
+    "nomeOriginale": "Legendary Greatstaff",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "knowledge",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 6,
+      "bonus": 9
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "powerful",
+      "nome": "Potente",
+      "nomeOriginale": "Powerful",
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "sword-of-light-and-flame",
+    "nome": "Spada di luce e fiamma",
+    "nomeOriginale": "Sword of Light & Flame",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 11
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "hot",
+      "nome": "Rovente",
+      "nomeOriginale": "Hot",
+      "testoOriginale": "This weapon cuts through solid material."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "siphoning-gauntlets",
+    "nome": "Guanti prosciuganti",
+    "nomeOriginale": "Siphoning Gauntlets",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "presence",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 9
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "lifestealing",
+      "nome": "Rubavita",
+      "nomeOriginale": "Lifestealing",
+      "testoOriginale": "On a successful attack, roll a d6. On a result of 6, clear a Hit Point or clear a Stress."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "midas-scythe",
+    "nome": "Falce di Mida",
+    "nomeOriginale": "Midas Scythe",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "knowledge",
+    "gittata": "melee",
+    "danno": {
+      "dado": 10,
+      "bonus": 9
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "greedy",
+      "nome": "Avida",
+      "nomeOriginale": "Greedy",
+      "testoOriginale": "Spend a handful of gold to gain a +1 bonus to your Proficiency on a damage roll."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "floating-bladeshards",
+    "nome": "Schegge di lama fluttuanti",
+    "nomeOriginale": "Floating Bladeshards",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "instinct",
+    "gittata": "close",
+    "danno": {
+      "dado": 8,
+      "bonus": 9
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "powerful",
+      "nome": "Potente",
+      "nomeOriginale": "Powerful",
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "bloodstaff",
+    "nome": "Bastone di sangue",
+    "nomeOriginale": "Bloodstaff",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "instinct",
+    "gittata": "far",
+    "danno": {
+      "dado": 20,
+      "bonus": 7
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "painful",
+      "nome": "Dolorosa",
+      "nomeOriginale": "Painful",
+      "testoOriginale": "Each time you make a successful attack, you must mark a Stress."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "thistlebow",
+    "nome": "Arco di cardo",
+    "nomeOriginale": "Thistlebow",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "instinct",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 13
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "pagina": 50
+  },
+  {
+    "id": "wand-of-essek",
+    "nome": "Bacchetta di Essek",
+    "nomeOriginale": "Wand of Essek",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "knowledge",
+    "gittata": "far",
+    "danno": {
+      "dado": 8,
+      "bonus": 13
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "timebending",
+      "nome": "Piegatempo",
+      "nomeOriginale": "Timebending",
+      "testoOriginale": "You can choose the target of your attack after making your attack roll."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "magus-revolver",
+    "nome": "Revolver del magus",
+    "nomeOriginale": "Magus Revolver",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 6,
+      "bonus": 13
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reloading",
+      "nome": "Da ricaricare",
+      "nomeOriginale": "Reloading",
+      "testoOriginale": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "fusion-gloves",
+    "nome": "Guanti di fusione",
+    "nomeOriginale": "Fusion Gloves",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "knowledge",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 6,
+      "bonus": 9
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "bonded",
+      "nome": "Legata",
+      "nomeOriginale": "Bonded",
+      "testoOriginale": "Gain a bonus to your damage rolls equal to your level."
+    },
+    "pagina": 50
+  },
+  {
+    "id": "shortsword",
+    "nome": "Spada corta",
+    "nomeOriginale": "Shortsword",
+    "categoria": "secondaria",
+    "tier": 1,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "paired",
+      "nome": "In coppia",
+      "nomeOriginale": "Paired",
+      "testoOriginale": "+2 to primary weapon damage to targets within Melee range"
+    },
+    "pagina": 51
+  },
+  {
+    "id": "round-shield",
+    "nome": "Scudo rotondo",
+    "nomeOriginale": "Round Shield",
+    "categoria": "secondaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 4,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "protective",
+      "nome": "Protettiva",
+      "nomeOriginale": "Protective",
+      "testoOriginale": "+1 to Armor Score"
+    },
+    "pagina": 51
+  },
+  {
+    "id": "tower-shield",
+    "nome": "Scudo torre",
+    "nomeOriginale": "Tower Shield",
+    "categoria": "secondaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 6,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "barrier",
+      "nome": "Barriera",
+      "nomeOriginale": "Barrier",
+      "testoOriginale": "+2 to Armor Score; -1 to Evasion"
+    },
+    "pagina": 51
+  },
+  {
+    "id": "small-dagger",
+    "nome": "Pugnaletto",
+    "nomeOriginale": "Small Dagger",
+    "categoria": "secondaria",
+    "tier": 1,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "paired",
+      "nome": "In coppia",
+      "nomeOriginale": "Paired",
+      "testoOriginale": "+2 to primary weapon damage to targets within Melee range"
+    },
+    "pagina": 51
+  },
+  {
+    "id": "whip",
+    "nome": "Frusta",
+    "nomeOriginale": "Whip",
+    "categoria": "secondaria",
+    "tier": 1,
+    "tratto": "presence",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 6,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "startling",
+      "nome": "Sorprendente",
+      "nomeOriginale": "Startling",
+      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+    },
+    "pagina": 51
+  },
+  {
+    "id": "grappler",
+    "nome": "Rampino",
+    "nomeOriginale": "Grappler",
+    "categoria": "secondaria",
+    "tier": 1,
+    "tratto": "finesse",
+    "gittata": "close",
+    "danno": {
+      "dado": 6,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "hooked",
+      "nome": "Uncinata",
+      "nomeOriginale": "Hooked",
+      "testoOriginale": "On a successful attack, you can pull the target into Melee range."
+    },
+    "pagina": 51
+  },
+  {
+    "id": "hand-crossbow",
+    "nome": "Balestra a mano",
+    "nomeOriginale": "Hand Crossbow",
+    "categoria": "secondaria",
+    "tier": 1,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 1
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 51
+  },
+  {
+    "id": "improved-shortsword",
+    "nome": "Spada corta migliorata",
+    "nomeOriginale": "Improved Shortsword",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "paired",
+      "nome": "In coppia",
+      "nomeOriginale": "Paired",
+      "testoOriginale": "+3 to primary weapon damage to targets within Melee range"
+    },
+    "pagina": 51
+  },
+  {
+    "id": "improved-round-shield",
+    "nome": "Scudo rotondo migliorato",
+    "nomeOriginale": "Improved Round Shield",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 4,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "protective",
+      "nome": "Protettiva",
+      "nomeOriginale": "Protective",
+      "testoOriginale": "+2 to Armor Score"
+    },
+    "pagina": 51
+  },
+  {
+    "id": "improved-tower-shield",
+    "nome": "Scudo torre migliorato",
+    "nomeOriginale": "Improved Tower Shield",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 6,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "barrier",
+      "nome": "Barriera",
+      "nomeOriginale": "Barrier",
+      "testoOriginale": "+3 to Armor Score; -1 to Evasion"
+    },
+    "pagina": 51
+  },
+  {
+    "id": "improved-small-dagger",
+    "nome": "Pugnaletto migliorato",
+    "nomeOriginale": "Improved Small Dagger",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "paired",
+      "nome": "In coppia",
+      "nomeOriginale": "Paired",
+      "testoOriginale": "+3 to primary weapon damage to targets within Melee range"
+    },
+    "pagina": 51
+  },
+  {
+    "id": "improved-whip",
+    "nome": "Frusta migliorata",
+    "nomeOriginale": "Improved Whip",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "presence",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 6,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "startling",
+      "nome": "Sorprendente",
+      "nomeOriginale": "Startling",
+      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+    },
+    "pagina": 51
+  },
+  {
+    "id": "improved-grappler",
+    "nome": "Rampino migliorato",
+    "nomeOriginale": "Improved Grappler",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "close",
+    "danno": {
+      "dado": 6,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "hooked",
+      "nome": "Uncinata",
+      "nomeOriginale": "Hooked",
+      "testoOriginale": "On a successful attack, you can pull the target into Melee range."
+    },
+    "pagina": 51
+  },
+  {
+    "id": "improved-hand-crossbow",
+    "nome": "Balestra a mano migliorata",
+    "nomeOriginale": "Improved Hand Crossbow",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 51
+  },
+  {
+    "id": "spiked-shield",
+    "nome": "Scudo chiodato",
+    "nomeOriginale": "Spiked Shield",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 6,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "double-duty",
+      "nome": "Doppio uso",
+      "nomeOriginale": "Double Duty",
+      "testoOriginale": "+1 to Armor Score; +1 to primary weapon damage within Melee range"
+    },
+    "pagina": 51
+  },
+  {
+    "id": "parrying-dagger",
+    "nome": "Pugnale da parata",
+    "nomeOriginale": "Parrying Dagger",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 6,
+      "bonus": 2
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "parry",
+      "nome": "Parata",
+      "nomeOriginale": "Parry",
+      "testoOriginale": "When you are attacked, roll this weapon's damage dice. If any of the attacker's damage dice rolled the same value as your dice, the matching results are discarded from the attacker's damage dice before the damage you take is totaled."
+    },
+    "pagina": 51
+  },
+  {
+    "id": "returning-axe",
+    "nome": "Ascia che ritorna",
+    "nomeOriginale": "Returning Axe",
+    "categoria": "secondaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "close",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "returning",
+      "nome": "Che ritorna",
+      "nomeOriginale": "Returning",
+      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+    },
+    "pagina": 51
+  },
+  {
+    "id": "advanced-shortsword",
+    "nome": "Spada corta avanzata",
+    "nomeOriginale": "Advanced Shortsword",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "paired",
+      "nome": "In coppia",
+      "nomeOriginale": "Paired",
+      "testoOriginale": "+4 to primary weapon damage to targets within Melee range"
+    },
+    "pagina": 52
+  },
+  {
+    "id": "advanced-round-shield",
+    "nome": "Scudo rotondo avanzato",
+    "nomeOriginale": "Advanced Round Shield",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 4,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "protective",
+      "nome": "Protettiva",
+      "nomeOriginale": "Protective",
+      "testoOriginale": "+3 to Armor Score"
+    },
+    "pagina": 52
+  },
+  {
+    "id": "advanced-tower-shield",
+    "nome": "Scudo torre avanzato",
+    "nomeOriginale": "Advanced Tower Shield",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "barrier",
+      "nome": "Barriera",
+      "nomeOriginale": "Barrier",
+      "testoOriginale": "+4 to Armor Score; -1 to Evasion"
+    },
+    "pagina": 52
+  },
+  {
+    "id": "advanced-small-dagger",
+    "nome": "Pugnaletto avanzato",
+    "nomeOriginale": "Advanced Small Dagger",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "paired",
+      "nome": "In coppia",
+      "nomeOriginale": "Paired",
+      "testoOriginale": "+4 to primary weapon damage to targets within Melee range"
+    },
+    "pagina": 52
+  },
+  {
+    "id": "advanced-whip",
+    "nome": "Frusta avanzata",
+    "nomeOriginale": "Advanced Whip",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "presence",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "startling",
+      "nome": "Sorprendente",
+      "nomeOriginale": "Startling",
+      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "advanced-grappler",
+    "nome": "Rampino avanzato",
+    "nomeOriginale": "Advanced Grappler",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "finesse",
+    "gittata": "close",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "hooked",
+      "nome": "Uncinata",
+      "nomeOriginale": "Hooked",
+      "testoOriginale": "On a successful attack, you can pull the target into Melee range."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "advanced-hand-crossbow",
+    "nome": "Balestra a mano avanzata",
+    "nomeOriginale": "Advanced Hand Crossbow",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 5
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 52
+  },
+  {
+    "id": "buckler",
+    "nome": "Brocchiere",
+    "nomeOriginale": "Buckler",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 4,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "deflecting",
+      "nome": "Deviante",
+      "nomeOriginale": "Deflecting",
+      "testoOriginale": "When you are attacked, you can mark an Armor Slot to gain a bonus to your Evasion equal to your Armor Score against the attack."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "powered-gauntlet",
+    "nome": "Guanto potenziato",
+    "nomeOriginale": "Powered Gauntlet",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "knowledge",
+    "gittata": "close",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "charged",
+      "nome": "Carica",
+      "nomeOriginale": "Charged",
+      "testoOriginale": "Mark a Stress to gain a +1 bonus to your Proficiency on a primary weapon attack."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "hand-sling",
+    "nome": "Fionda a mano",
+    "nomeOriginale": "Hand Sling",
+    "categoria": "secondaria",
+    "tier": 3,
+    "tratto": "finesse",
+    "gittata": "veryFar",
+    "danno": {
+      "dado": 6,
+      "bonus": 4
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "versatile",
+      "nome": "Versatile",
+      "nomeOriginale": "Versatile",
+      "testoOriginale": "This weapon can also be used with these statistics—Finesse, Close, d8+4."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "legendary-shortsword",
+    "nome": "Spada corta leggendaria",
+    "nomeOriginale": "Legendary Shortsword",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "paired",
+      "nome": "In coppia",
+      "nomeOriginale": "Paired",
+      "testoOriginale": "+5 to primary weapon damage to targets within Melee range"
+    },
+    "pagina": 52
+  },
+  {
+    "id": "legendary-round-shield",
+    "nome": "Scudo rotondo leggendario",
+    "nomeOriginale": "Legendary Round Shield",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 4,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "protective",
+      "nome": "Protettiva",
+      "nomeOriginale": "Protective",
+      "testoOriginale": "+4 to Armor Score"
+    },
+    "pagina": 52
+  },
+  {
+    "id": "legendary-tower-shield",
+    "nome": "Scudo torre leggendario",
+    "nomeOriginale": "Legendary Tower Shield",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 6,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "barrier",
+      "nome": "Barriera",
+      "nomeOriginale": "Barrier",
+      "testoOriginale": "+5 to Armor Score; -1 to Evasion."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "legendary-small-dagger",
+    "nome": "Pugnaletto leggendario",
+    "nomeOriginale": "Legendary Small Dagger",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "paired",
+      "nome": "In coppia",
+      "nomeOriginale": "Paired",
+      "testoOriginale": "+5 to primary weapon damage to targets within Melee range"
+    },
+    "pagina": 52
+  },
+  {
+    "id": "legendary-whip",
+    "nome": "Frusta leggendaria",
+    "nomeOriginale": "Legendary Whip",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "presence",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 6,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "startling",
+      "nome": "Sorprendente",
+      "nomeOriginale": "Startling",
+      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "legendary-grappler",
+    "nome": "Rampino leggendario",
+    "nomeOriginale": "Legendary Grappler",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "close",
+    "danno": {
+      "dado": 6,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "hooked",
+      "nome": "Uncinata",
+      "nomeOriginale": "Hooked",
+      "testoOriginale": "On a successful attack, you can pull the target into Melee range."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "legendary-hand-crossbow",
+    "nome": "Balestra a mano leggendaria",
+    "nomeOriginale": "Legendary Hand Crossbow",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "finesse",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 7
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": null,
+    "pagina": 52
+  },
+  {
+    "id": "braveshield",
+    "nome": "Scudo dei prodi",
+    "nomeOriginale": "Braveshield",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 4,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "sheltering",
+      "nome": "Riparante",
+      "nomeOriginale": "Sheltering",
+      "testoOriginale": "When you mark an Armor Slot, it reduces damage for you and all allies within Melee range of you who took the same damage."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "knuckle-claws",
+    "nome": "Artigli da pugno",
+    "nomeOriginale": "Knuckle Claws",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 6,
+      "bonus": 8
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "doubled-up",
+      "nome": "Raddoppiata",
+      "nomeOriginale": "Doubled Up",
+      "testoOriginale": "When you make an attack with your primary weapon, you can deal damage to another target within Melee range."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "primer-shard",
+    "nome": "Scheggia d'innesco",
+    "nomeOriginale": "Primer Shard",
+    "categoria": "secondaria",
+    "tier": 4,
+    "tratto": "instinct",
+    "gittata": "veryClose",
+    "danno": {
+      "dado": 4,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "locked-on",
+      "nome": "Agganciato",
+      "nomeOriginale": "Locked On",
+      "testoOriginale": "On a successful attack, your next attack against the same target with your primary weapon automatically succeeds."
+    },
+    "pagina": 52
+  },
+  {
+    "id": "light-frame-wheelchair",
+    "nome": "Sedia a rotelle leggera",
+    "nomeOriginale": "Light-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 0
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "sediaARotelle": true,
+    "pagina": 53
+  },
+  {
+    "id": "improved-light-frame-wheelchair",
+    "nome": "Sedia a rotelle leggera migliorata",
+    "nomeOriginale": "Improved Light-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "sediaARotelle": true,
+    "pagina": 53
+  },
+  {
+    "id": "advanced-light-frame-wheelchair",
+    "nome": "Sedia a rotelle leggera avanzata",
+    "nomeOriginale": "Advanced Light-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "sediaARotelle": true,
+    "pagina": 53
+  },
+  {
+    "id": "legendary-light-frame-wheelchair",
+    "nome": "Sedia a rotelle leggera leggendaria",
+    "nomeOriginale": "Legendary Light-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "agility",
+    "gittata": "melee",
+    "danno": {
+      "dado": 8,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "quick",
+      "nome": "Rapida",
+      "nomeOriginale": "Quick",
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    "sediaARotelle": true,
+    "pagina": 53
+  },
+  {
+    "id": "heavy-frame-wheelchair",
+    "nome": "Sedia a rotelle pesante",
+    "nomeOriginale": "Heavy-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 3
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "sediaARotelle": true,
+    "pagina": 54
+  },
+  {
+    "id": "improved-heavy-frame-wheelchair",
+    "nome": "Sedia a rotelle pesante migliorata",
+    "nomeOriginale": "Improved Heavy-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 6
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "sediaARotelle": true,
+    "pagina": 54
+  },
+  {
+    "id": "advanced-heavy-frame-wheelchair",
+    "nome": "Sedia a rotelle pesante avanzata",
+    "nomeOriginale": "Advanced Heavy-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 9
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "sediaARotelle": true,
+    "pagina": 54
+  },
+  {
+    "id": "legendary-heavy-frame-wheelchair",
+    "nome": "Sedia a rotelle pesante leggendaria",
+    "nomeOriginale": "Legendary Heavy-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "strength",
+    "gittata": "melee",
+    "danno": {
+      "dado": 12,
+      "bonus": 12
+    },
+    "tipoDanno": "fisico",
+    "impugnatura": 2,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "sediaARotelle": true,
+    "pagina": 54
+  },
+  {
+    "id": "arcane-frame-wheelchair",
+    "nome": "Sedia a rotelle arcana",
+    "nomeOriginale": "Arcane-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 1,
+    "tratto": "spellcast",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 0
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "sediaARotelle": true,
+    "pagina": 54
+  },
+  {
+    "id": "improved-arcane-frame-wheelchair",
+    "nome": "Sedia a rotelle arcana migliorata",
+    "nomeOriginale": "Improved Arcane-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 2,
+    "tratto": "spellcast",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 3
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "sediaARotelle": true,
+    "pagina": 54
+  },
+  {
+    "id": "advanced-arcane-frame-wheelchair",
+    "nome": "Sedia a rotelle arcana avanzata",
+    "nomeOriginale": "Advanced Arcane-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 3,
+    "tratto": "spellcast",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 6
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "sediaARotelle": true,
+    "pagina": 54
+  },
+  {
+    "id": "legendary-arcane-frame-wheelchair",
+    "nome": "Sedia a rotelle arcana leggendaria",
+    "nomeOriginale": "Legendary Arcane-Frame Wheelchair",
+    "categoria": "primaria",
+    "tier": 4,
+    "tratto": "spellcast",
+    "gittata": "far",
+    "danno": {
+      "dado": 6,
+      "bonus": 9
+    },
+    "tipoDanno": "magico",
+    "impugnatura": 1,
+    "capacita": {
+      "id": "reliable",
+      "nome": "Affidabile",
+      "nomeOriginale": "Reliable",
+      "testoOriginale": "+1 to attack rolls"
+    },
+    "sediaARotelle": true,
+    "pagina": 54
+  }
+]

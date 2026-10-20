@@ -1,0 +1,594 @@
+[
+  {
+    "id": "gambeson-armor",
+    "nome": "Gambesone",
+    "nomeOriginale": "Gambeson Armor",
+    "tier": 1,
+    "soglieBase": {
+      "grave": 5,
+      "gravissimo": 11
+    },
+    "punteggioBase": 3,
+    "capacita": {
+      "id": "flexible",
+      "nome": "Flessibile",
+      "nomeOriginale": "Flexible",
+      "testoOriginale": "+1 to Evasion"
+    },
+    "pagina": 55
+  },
+  {
+    "id": "leather-armor",
+    "nome": "Armatura di cuoio",
+    "nomeOriginale": "Leather Armor",
+    "tier": 1,
+    "soglieBase": {
+      "grave": 6,
+      "gravissimo": 13
+    },
+    "punteggioBase": 3,
+    "capacita": null,
+    "pagina": 55
+  },
+  {
+    "id": "chainmail-armor",
+    "nome": "Cotta di maglia",
+    "nomeOriginale": "Chainmail Armor",
+    "tier": 1,
+    "soglieBase": {
+      "grave": 7,
+      "gravissimo": 15
+    },
+    "punteggioBase": 4,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "pagina": 55
+  },
+  {
+    "id": "full-plate-armor",
+    "nome": "Armatura a piastre completa",
+    "nomeOriginale": "Full Plate Armor",
+    "tier": 1,
+    "soglieBase": {
+      "grave": 8,
+      "gravissimo": 17
+    },
+    "punteggioBase": 4,
+    "capacita": {
+      "id": "very-heavy",
+      "nome": "Molto pesante",
+      "nomeOriginale": "Very Heavy",
+      "testoOriginale": "-2 to Evasion; -1 to Agility"
+    },
+    "pagina": 55
+  },
+  {
+    "id": "improved-gambeson-armor",
+    "nome": "Gambesone migliorato",
+    "nomeOriginale": "Improved Gambeson Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 7,
+      "gravissimo": 16
+    },
+    "punteggioBase": 4,
+    "capacita": {
+      "id": "flexible",
+      "nome": "Flessibile",
+      "nomeOriginale": "Flexible",
+      "testoOriginale": "+1 to Evasion"
+    },
+    "pagina": 55
+  },
+  {
+    "id": "improved-leather-armor",
+    "nome": "Armatura di cuoio migliorata",
+    "nomeOriginale": "Improved Leather Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 9,
+      "gravissimo": 20
+    },
+    "punteggioBase": 4,
+    "capacita": null,
+    "pagina": 55
+  },
+  {
+    "id": "improved-chainmail-armor",
+    "nome": "Cotta di maglia migliorata",
+    "nomeOriginale": "Improved Chainmail Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 11,
+      "gravissimo": 24
+    },
+    "punteggioBase": 5,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "pagina": 55
+  },
+  {
+    "id": "improved-full-plate-armor",
+    "nome": "Armatura a piastre completa migliorata",
+    "nomeOriginale": "Improved Full Plate Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 13,
+      "gravissimo": 28
+    },
+    "punteggioBase": 5,
+    "capacita": {
+      "id": "very-heavy",
+      "nome": "Molto pesante",
+      "nomeOriginale": "Very Heavy",
+      "testoOriginale": "-2 to Evasion; -1 to Agility"
+    },
+    "pagina": 55
+  },
+  {
+    "id": "elundrian-chain-armor",
+    "nome": "Maglia elundriana",
+    "nomeOriginale": "Elundrian Chain Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 9,
+      "gravissimo": 21
+    },
+    "punteggioBase": 4,
+    "capacita": {
+      "id": "warded",
+      "nome": "Protetta da rune",
+      "nomeOriginale": "Warded",
+      "testoOriginale": "You reduce incoming magic damage by your Armor Score before applying it to your damage thresholds."
+    },
+    "pagina": 55
+  },
+  {
+    "id": "harrowbone-armor",
+    "nome": "Armatura d'osso tormentato",
+    "nomeOriginale": "Harrowbone Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 9,
+      "gravissimo": 21
+    },
+    "punteggioBase": 4,
+    "capacita": {
+      "id": "resilient",
+      "nome": "Resiliente",
+      "nomeOriginale": "Resilient",
+      "testoOriginale": "Before you mark your last Armor Slot, roll a d6. On a result of 6, reduce the severity by one threshold without marking an Armor Slot."
+    },
+    "pagina": 55
+  },
+  {
+    "id": "irontree-breastplate-armor",
+    "nome": "Corazza di alberferro",
+    "nomeOriginale": "Irontree Breastplate Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 9,
+      "gravissimo": 20
+    },
+    "punteggioBase": 4,
+    "capacita": {
+      "id": "reinforced",
+      "nome": "Rinforzata",
+      "nomeOriginale": "Reinforced",
+      "testoOriginale": "When you mark your last Armor Slot, increase your damage thresholds by +2 until you clear at least 1 Armor Slot."
+    },
+    "pagina": 55
+  },
+  {
+    "id": "runetan-floating-armor",
+    "nome": "Armatura fluttuante runetana",
+    "nomeOriginale": "Runetan Floating Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 9,
+      "gravissimo": 20
+    },
+    "punteggioBase": 4,
+    "capacita": {
+      "id": "shifting",
+      "nome": "Mutevole",
+      "nomeOriginale": "Shifting",
+      "testoOriginale": "When you are targeted for an attack, you can mark an Armor Slot to give the attack roll against you disadvantage."
+    },
+    "pagina": 55
+  },
+  {
+    "id": "tyris-soft-armor",
+    "nome": "Armatura morbida di Tyris",
+    "nomeOriginale": "Tyris Soft Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 8,
+      "gravissimo": 18
+    },
+    "punteggioBase": 5,
+    "capacita": {
+      "id": "quiet",
+      "nome": "Silenziosa",
+      "nomeOriginale": "Quiet",
+      "testoOriginale": "You gain a +2 bonus to rolls you make to move silently."
+    },
+    "pagina": 55
+  },
+  {
+    "id": "rosewild-armor",
+    "nome": "Armatura di rosaselvatica",
+    "nomeOriginale": "Rosewild Armor",
+    "tier": 2,
+    "soglieBase": {
+      "grave": 11,
+      "gravissimo": 23
+    },
+    "punteggioBase": 5,
+    "capacita": {
+      "id": "hopeful",
+      "nome": "Speranzosa",
+      "nomeOriginale": "Hopeful",
+      "testoOriginale": "When you would spend a Hope, you can mark an Armor Slot instead."
+    },
+    "pagina": 55
+  },
+  {
+    "id": "advanced-gambeson-armor",
+    "nome": "Gambesone avanzato",
+    "nomeOriginale": "Advanced Gambeson Armor",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 9,
+      "gravissimo": 23
+    },
+    "punteggioBase": 5,
+    "capacita": {
+      "id": "flexible",
+      "nome": "Flessibile",
+      "nomeOriginale": "Flexible",
+      "testoOriginale": "+1 to Evasion"
+    },
+    "pagina": 56
+  },
+  {
+    "id": "advanced-leather-armor",
+    "nome": "Armatura di cuoio avanzata",
+    "nomeOriginale": "Advanced Leather Armor",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 11,
+      "gravissimo": 27
+    },
+    "punteggioBase": 5,
+    "capacita": null,
+    "pagina": 56
+  },
+  {
+    "id": "advanced-chainmail-armor",
+    "nome": "Cotta di maglia avanzata",
+    "nomeOriginale": "Advanced Chainmail Armor",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 13,
+      "gravissimo": 31
+    },
+    "punteggioBase": 6,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "pagina": 56
+  },
+  {
+    "id": "advanced-full-plate-armor",
+    "nome": "Armatura a piastre completa avanzata",
+    "nomeOriginale": "Advanced Full Plate Armor",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 15,
+      "gravissimo": 35
+    },
+    "punteggioBase": 6,
+    "capacita": {
+      "id": "very-heavy",
+      "nome": "Molto pesante",
+      "nomeOriginale": "Very Heavy",
+      "testoOriginale": "-2 to Evasion; -1 to Agility"
+    },
+    "pagina": 56
+  },
+  {
+    "id": "bellamoi-fine-armor",
+    "nome": "Armatura fine bellamoi",
+    "nomeOriginale": "Bellamoi Fine Armor",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 11,
+      "gravissimo": 27
+    },
+    "punteggioBase": 5,
+    "capacita": {
+      "id": "gilded",
+      "nome": "Dorata",
+      "nomeOriginale": "Gilded",
+      "testoOriginale": "+1 to Presence"
+    },
+    "pagina": 56
+  },
+  {
+    "id": "dragonscale-armor",
+    "nome": "Armatura di scaglie di drago",
+    "nomeOriginale": "Dragonscale Armor",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 11,
+      "gravissimo": 27
+    },
+    "punteggioBase": 5,
+    "capacita": {
+      "id": "impenetrable",
+      "nome": "Impenetrabile",
+      "nomeOriginale": "Impenetrable",
+      "testoOriginale": "Once per short rest, when you would mark your last Hit Point, you can instead mark a Stress."
+    },
+    "pagina": 56
+  },
+  {
+    "id": "spiked-plate-armor",
+    "nome": "Armatura a piastre chiodata",
+    "nomeOriginale": "Spiked Plate Armor",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 10,
+      "gravissimo": 25
+    },
+    "punteggioBase": 5,
+    "capacita": {
+      "id": "sharp",
+      "nome": "Acuminata",
+      "nomeOriginale": "Sharp",
+      "testoOriginale": "On a successful attack against a target within Melee range, add a d4 to the damage roll."
+    },
+    "pagina": 56
+  },
+  {
+    "id": "bladefare-armor",
+    "nome": "Armatura paralame",
+    "nomeOriginale": "Bladefare Armor",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 16,
+      "gravissimo": 39
+    },
+    "punteggioBase": 6,
+    "capacita": {
+      "id": "physical",
+      "nome": "Fisica",
+      "nomeOriginale": "Physical",
+      "testoOriginale": "You can't mark an Armor Slot to reduce magic damage."
+    },
+    "pagina": 56
+  },
+  {
+    "id": "monetts-cloak",
+    "nome": "Mantello di Monett",
+    "nomeOriginale": "Monett's Cloak",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 16,
+      "gravissimo": 39
+    },
+    "punteggioBase": 6,
+    "capacita": {
+      "id": "magic",
+      "nome": "Magica",
+      "nomeOriginale": "Magic",
+      "testoOriginale": "You can't mark an Armor Slot to reduce physical damage."
+    },
+    "pagina": 56
+  },
+  {
+    "id": "runes-of-fortification",
+    "nome": "Rune della fortificazione",
+    "nomeOriginale": "Runes of Fortification",
+    "tier": 3,
+    "soglieBase": {
+      "grave": 17,
+      "gravissimo": 43
+    },
+    "punteggioBase": 6,
+    "capacita": {
+      "id": "painful",
+      "nome": "Dolorosa",
+      "nomeOriginale": "Painful",
+      "testoOriginale": "Each time you mark an Armor Slot, you must mark a Stress."
+    },
+    "pagina": 56
+  },
+  {
+    "id": "legendary-gambeson-armor",
+    "nome": "Gambesone leggendario",
+    "nomeOriginale": "Legendary Gambeson Armor",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 11,
+      "gravissimo": 32
+    },
+    "punteggioBase": 6,
+    "capacita": {
+      "id": "flexible",
+      "nome": "Flessibile",
+      "nomeOriginale": "Flexible",
+      "testoOriginale": "+1 to Evasion"
+    },
+    "pagina": 56
+  },
+  {
+    "id": "legendary-leather-armor",
+    "nome": "Armatura di cuoio leggendaria",
+    "nomeOriginale": "Legendary Leather Armor",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 13,
+      "gravissimo": 36
+    },
+    "punteggioBase": 6,
+    "capacita": null,
+    "pagina": 56
+  },
+  {
+    "id": "legendary-chainmail-armor",
+    "nome": "Cotta di maglia leggendaria",
+    "nomeOriginale": "Legendary Chainmail Armor",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 15,
+      "gravissimo": 40
+    },
+    "punteggioBase": 7,
+    "capacita": {
+      "id": "heavy",
+      "nome": "Pesante",
+      "nomeOriginale": "Heavy",
+      "testoOriginale": "-1 to Evasion"
+    },
+    "pagina": 56
+  },
+  {
+    "id": "legendary-full-plate-armor",
+    "nome": "Armatura a piastre completa leggendaria",
+    "nomeOriginale": "Legendary Full Plate Armor",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 17,
+      "gravissimo": 44
+    },
+    "punteggioBase": 7,
+    "capacita": {
+      "id": "very-heavy",
+      "nome": "Molto pesante",
+      "nomeOriginale": "Very Heavy",
+      "testoOriginale": "-2 to Evasion; -1 to Agility"
+    },
+    "pagina": 56
+  },
+  {
+    "id": "dunamis-silkchain",
+    "nome": "Maglia di seta dunamis",
+    "nomeOriginale": "Dunamis Silkchain",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 13,
+      "gravissimo": 36
+    },
+    "punteggioBase": 7,
+    "capacita": {
+      "id": "timeslowing",
+      "nome": "Rallentatempo",
+      "nomeOriginale": "Timeslowing",
+      "testoOriginale": "Mark an Armor Slot to roll a d4 and add its result as a bonus to your Evasion against an incoming attack."
+    },
+    "pagina": 56
+  },
+  {
+    "id": "channeling-armor",
+    "nome": "Armatura canalizzante",
+    "nomeOriginale": "Channeling Armor",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 13,
+      "gravissimo": 36
+    },
+    "punteggioBase": 5,
+    "capacita": {
+      "id": "channeling",
+      "nome": "Canalizzante",
+      "nomeOriginale": "Channeling",
+      "testoOriginale": "+1 to Spellcast Rolls"
+    },
+    "pagina": 56
+  },
+  {
+    "id": "emberwoven-armor",
+    "nome": "Armatura intessuta di braci",
+    "nomeOriginale": "Emberwoven Armor",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 13,
+      "gravissimo": 36
+    },
+    "punteggioBase": 6,
+    "capacita": {
+      "id": "burning",
+      "nome": "Ardente",
+      "nomeOriginale": "Burning",
+      "testoOriginale": "When an adversary attacks you within Melee range, they mark a Stress."
+    },
+    "pagina": 56
+  },
+  {
+    "id": "full-fortified-armor",
+    "nome": "Armatura fortificata completa",
+    "nomeOriginale": "Full Fortified Armor",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 15,
+      "gravissimo": 40
+    },
+    "punteggioBase": 4,
+    "capacita": {
+      "id": "fortified",
+      "nome": "Fortificata",
+      "nomeOriginale": "Fortified",
+      "testoOriginale": "When you mark an Armor Slot, you reduce the severity of an attack by two thresholds instead of one."
+    },
+    "pagina": 56
+  },
+  {
+    "id": "veritas-opal-armor",
+    "nome": "Armatura d'opale veritas",
+    "nomeOriginale": "Veritas Opal Armor",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 13,
+      "gravissimo": 36
+    },
+    "punteggioBase": 6,
+    "capacita": {
+      "id": "truthseeking",
+      "nome": "Cercaverità",
+      "nomeOriginale": "Truthseeking",
+      "testoOriginale": "This armor glows when another creature within Close range tells a lie."
+    },
+    "pagina": 56
+  },
+  {
+    "id": "savior-chainmail",
+    "nome": "Cotta del salvatore",
+    "nomeOriginale": "Savior Chainmail",
+    "tier": 4,
+    "soglieBase": {
+      "grave": 18,
+      "gravissimo": 48
+    },
+    "punteggioBase": 8,
+    "capacita": {
+      "id": "difficult",
+      "nome": "Difficile",
+      "nomeOriginale": "Difficult",
+      "testoOriginale": "-1 to all character traits and Evasion"
+    },
+    "pagina": 56
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "stride-potion",
+    "nome": "Pozione dello Scatto",
+    "nomeOriginale": "Stride Potion",
+    "tiro": 1,
+    "pagina": 59,
+    "testoOriginale": "You gain a +1 bonus to your next Agility Roll."
+  },
+  {
+    "id": "bolster-potion",
+    "nome": "Pozione del Rinforzo",
+    "nomeOriginale": "Bolster Potion",
+    "tiro": 2,
+    "pagina": 59,
+    "testoOriginale": "You gain a +1 bonus to your next Strength Roll."
+  },
+  {
+    "id": "control-potion",
+    "nome": "Pozione del Controllo",
+    "nomeOriginale": "Control Potion",
+    "tiro": 3,
+    "pagina": 59,
+    "testoOriginale": "You gain a +1 bonus to your next Finesse Roll."
+  },
+  {
+    "id": "attune-potion",
+    "nome": "Pozione della Sintonia",
+    "nomeOriginale": "Attune Potion",
+    "tiro": 4,
+    "pagina": 59,
+    "testoOriginale": "You gain a +1 bonus to your next Instinct Roll."
+  },
+  {
+    "id": "charm-potion",
+    "nome": "Pozione del Fascino",
+    "nomeOriginale": "Charm Potion",
+    "tiro": 5,
+    "pagina": 59,
+    "testoOriginale": "You gain a +1 bonus to your next Presence Roll."
+  },
+  {
+    "id": "enlighten-potion",
+    "nome": "Pozione dell'Illuminazione",
+    "nomeOriginale": "Enlighten Potion",
+    "tiro": 6,
+    "pagina": 59,
+    "testoOriginale": "You gain a +1 bonus to your next Knowledge Roll."
+  },
+  {
+    "id": "minor-health-potion",
+    "nome": "Pozione di Salute minore",
+    "nomeOriginale": "Minor Health Potion",
+    "tiro": 7,
+    "pagina": 59,
+    "testoOriginale": "Clear 1d4 HP."
+  },
+  {
+    "id": "minor-stamina-potion",
+    "nome": "Pozione di Vigore minore",
+    "nomeOriginale": "Minor Stamina Potion",
+    "tiro": 8,
+    "pagina": 59,
+    "testoOriginale": "Clear 1d4 Stress."
+  },
+  {
+    "id": "grindletooth-venom",
+    "nome": "Veleno di dentemacina",
+    "nomeOriginale": "Grindletooth Venom",
+    "tiro": 9,
+    "pagina": 59,
+    "testoOriginale": "You can apply this venom to a weapon that deals physical damage to add a d6 to your next damage roll with that weapon."
+  },
+  {
+    "id": "varik-leaves",
+    "nome": "Foglie di varik",
+    "nomeOriginale": "Varik Leaves",
+    "tiro": 10,
+    "pagina": 59,
+    "testoOriginale": "You can eat these paired leaves to immediately gain 2 Hope."
+  },
+  {
+    "id": "vial-of-moondrip",
+    "nome": "Fiala di goccialuna",
+    "nomeOriginale": "Vial of Moondrip",
+    "tiro": 11,
+    "pagina": 59,
+    "testoOriginale": "When you drink the contents of this vial, you can see in total darkness until your next rest."
+  },
+  {
+    "id": "unstable-arcane-shard",
+    "nome": "Scheggia arcana instabile",
+    "nomeOriginale": "Unstable Arcane Shard",
+    "tiro": 12,
+    "pagina": 59,
+    "testoOriginale": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 1d20 magic damage."
+  },
+  {
+    "id": "potion-of-stability",
+    "nome": "Pozione di stabilità",
+    "nomeOriginale": "Potion of Stability",
+    "tiro": 13,
+    "pagina": 59,
+    "testoOriginale": "You can drink this potion to choose one additional downtime move."
+  },
+  {
+    "id": "improved-grindletooth-venom",
+    "nome": "Veleno di dentemacina migliorato",
+    "nomeOriginale": "Improved Grindletooth Venom",
+    "tiro": 14,
+    "pagina": 59,
+    "testoOriginale": "You can apply this venom to a weapon that deals physical damage to add a d8 to your next damage roll with that weapon."
+  },
+  {
+    "id": "morphing-clay",
+    "nome": "Argilla mutaforma",
+    "nomeOriginale": "Morphing Clay",
+    "tiro": 15,
+    "pagina": 60,
+    "testoOriginale": "You can spend a Hope to use this clay, altering your face enough to make you unrecognizable until your next rest."
+  },
+  {
+    "id": "vial-of-darksmoke",
+    "nome": "Fiala di fumo nero",
+    "nomeOriginale": "Vial of Darksmoke",
+    "tiro": 16,
+    "pagina": 60,
+    "testoOriginale": "When an adversary attacks you, use this vial and roll a number of d6s equal to your Agility. Add the highest result to your Evasion against the attack."
+  },
+  {
+    "id": "jumping-root",
+    "nome": "Radice saltellante",
+    "nomeOriginale": "Jumping Root",
+    "tiro": 17,
+    "pagina": 60,
+    "testoOriginale": "Eat this root to leap up to Far range once without needing to roll."
+  },
+  {
+    "id": "snap-powder",
+    "nome": "Polvere schioccante",
+    "nomeOriginale": "Snap Powder",
+    "tiro": 18,
+    "pagina": 60,
+    "testoOriginale": "Mark a Stress and clear a HP."
+  },
+  {
+    "id": "health-potion",
+    "nome": "Pozione di Salute",
+    "nomeOriginale": "Health Potion",
+    "tiro": 19,
+    "pagina": 60,
+    "testoOriginale": "Clear 1d4+1 HP."
+  },
+  {
+    "id": "stamina-potion",
+    "nome": "Pozione di Vigore",
+    "nomeOriginale": "Stamina Potion",
+    "tiro": 20,
+    "pagina": 60,
+    "testoOriginale": "Clear 1d4+1 Stress."
+  },
+  {
+    "id": "armor-stitcher",
+    "nome": "Ricucitore d'armature",
+    "nomeOriginale": "Armor Stitcher",
+    "tiro": 21,
+    "pagina": 60,
+    "testoOriginale": "You can use this stitcher to spend any number of Hope and clear that many Armor Slots."
+  },
+  {
+    "id": "gill-salve",
+    "nome": "Unguento branchiale",
+    "nomeOriginale": "Gill Salve",
+    "tiro": 22,
+    "pagina": 60,
+    "testoOriginale": "You can apply this salve to your neck to breathe underwater for a number of minutes equal to your level."
+  },
+  {
+    "id": "replication-parchment",
+    "nome": "Pergamena replicante",
+    "nomeOriginale": "Replication Parchment",
+    "tiro": 23,
+    "pagina": 60,
+    "testoOriginale": "By touching this piece of parchment to another, you can perfectly copy the second parchment's contents. Once used, this parchment becomes mundane paper."
+  },
+  {
+    "id": "improved-arcane-shard",
+    "nome": "Scheggia arcana migliorata",
+    "nomeOriginale": "Improved Arcane Shard",
+    "tiro": 24,
+    "pagina": 60,
+    "testoOriginale": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 2d20 magic damage."
+  },
+  {
+    "id": "major-stride-potion",
+    "nome": "Pozione dello Scatto maggiore",
+    "nomeOriginale": "Major Stride Potion",
+    "tiro": 25,
+    "pagina": 60,
+    "testoOriginale": "You gain a +1 bonus to your Agility until your next rest."
+  },
+  {
+    "id": "major-bolster-potion",
+    "nome": "Pozione del Rinforzo maggiore",
+    "nomeOriginale": "Major Bolster Potion",
+    "tiro": 26,
+    "pagina": 60,
+    "testoOriginale": "You gain a +1 bonus to your Strength until your next rest."
+  },
+  {
+    "id": "major-control-potion",
+    "nome": "Pozione del Controllo maggiore",
+    "nomeOriginale": "Major Control Potion",
+    "tiro": 27,
+    "pagina": 60,
+    "testoOriginale": "You gain a +1 bonus to your Finesse until your next rest."
+  },
+  {
+    "id": "major-attune-potion",
+    "nome": "Pozione della Sintonia maggiore",
+    "nomeOriginale": "Major Attune Potion",
+    "tiro": 28,
+    "pagina": 60,
+    "testoOriginale": "You gain a +1 bonus to your Instinct until your next rest."
+  },
+  {
+    "id": "major-charm-potion",
+    "nome": "Pozione del Fascino maggiore",
+    "nomeOriginale": "Major Charm Potion",
+    "tiro": 29,
+    "pagina": 60,
+    "testoOriginale": "You gain a +1 bonus to your Presence until your next rest."
+  },
+  {
+    "id": "major-enlighten-potion",
+    "nome": "Pozione dell'Illuminazione maggiore",
+    "nomeOriginale": "Major Enlighten Potion",
+    "tiro": 30,
+    "pagina": 60,
+    "testoOriginale": "You gain a +1 bonus to your Knowledge until your next rest."
+  },
+  {
+    "id": "blood-of-the-yorgi",
+    "nome": "Sangue dello yorgi",
+    "nomeOriginale": "Blood of the Yorgi",
+    "tiro": 31,
+    "pagina": 60,
+    "testoOriginale": "You can drink this blood to disappear from where you are and immediately reappear at a point you can see within Very Far range."
+  },
+  {
+    "id": "homets-secret-potion",
+    "nome": "Pozione segreta di Homet",
+    "nomeOriginale": "Homet's Secret Potion",
+    "tiro": 32,
+    "pagina": 60,
+    "testoOriginale": "After drinking this potion, the next successful attack you make critically succeeds."
+  },
+  {
+    "id": "redthorn-saliva",
+    "nome": "Saliva di spinarossa",
+    "nomeOriginale": "Redthorn Saliva",
+    "tiro": 33,
+    "pagina": 60,
+    "testoOriginale": "You can apply this saliva to a weapon that deals physical damage to add a d12 to your next damage roll with that weapon."
+  },
+  {
+    "id": "channelstone",
+    "nome": "Pietra canalizzatrice",
+    "nomeOriginale": "Channelstone",
+    "tiro": 34,
+    "pagina": 60,
+    "testoOriginale": "You can use this stone to take a spell or grimoire from your vault, use it once, and return it to your vault."
+  },
+  {
+    "id": "mythic-dust",
+    "nome": "Polvere mitica",
+    "nomeOriginale": "Mythic Dust",
+    "tiro": 35,
+    "pagina": 60,
+    "testoOriginale": "You can apply this dust to a weapon that deals magic damage to add a d12 to your next damage roll with that weapon."
+  },
+  {
+    "id": "acidpaste",
+    "nome": "Pasta acida",
+    "nomeOriginale": "Acidpaste",
+    "tiro": 36,
+    "pagina": 60,
+    "testoOriginale": "This paste eats away walls and other surfaces in bright flashes."
+  },
+  {
+    "id": "hopehold-flare",
+    "nome": "Razzo della Speranza",
+    "nomeOriginale": "Hopehold Flare",
+    "tiro": 37,
+    "pagina": 60,
+    "testoOriginale": "When you use this flare, allies within Close range roll a d6 when they spend a Hope. On a result of 6, they gain the effect of that Hope without spending it. The flare lasts until the end of the scene."
+  },
+  {
+    "id": "major-arcane-shard",
+    "nome": "Scheggia arcana maggiore",
+    "nomeOriginale": "Major Arcane Shard",
+    "tiro": 38,
+    "pagina": 60,
+    "testoOriginale": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 4d20 magic damage."
+  },
+  {
+    "id": "featherbone",
+    "nome": "Osso piuma",
+    "nomeOriginale": "Featherbone",
+    "tiro": 39,
+    "pagina": 60,
+    "testoOriginale": "You can use this bone to control your falling speed for a number of minutes equal to your level."
+  },
+  {
+    "id": "circle-of-the-void",
+    "nome": "Cerchio del vuoto",
+    "nomeOriginale": "Circle of the Void",
+    "tiro": 40,
+    "pagina": 60,
+    "testoOriginale": "Mark a Stress to create a void that extends up to Far range. No magic can be cast inside the void, and creatures within the void are immune to magic damage."
+  },
+  {
+    "id": "sun-tree-sap",
+    "nome": "Linfa dell'albero solare",
+    "nomeOriginale": "Sun Tree Sap",
+    "tiro": 41,
+    "pagina": 60,
+    "testoOriginale": "Consume this sap to roll a d6. On a result of 5-6, clear 2 HP. On a result of 2-4, clear 3 Stress. On a result of 1, see through the veil of death and return changed, gaining one scar."
+  },
+  {
+    "id": "dripfang-poison",
+    "nome": "Veleno di zannagocciante",
+    "nomeOriginale": "Dripfang Poison",
+    "tiro": 42,
+    "pagina": 60,
+    "testoOriginale": "A creature who consumes this poison takes 8d10 direct magic damage."
+  },
+  {
+    "id": "major-health-potion",
+    "nome": "Pozione di Salute maggiore",
+    "nomeOriginale": "Major Health Potion",
+    "tiro": 43,
+    "pagina": 60,
+    "testoOriginale": "Clear 1d4+2 HP."
+  },
+  {
+    "id": "major-stamina-potion",
+    "nome": "Pozione di Vigore maggiore",
+    "nomeOriginale": "Major Stamina Potion",
+    "tiro": 44,
+    "pagina": 60,
+    "testoOriginale": "Clear 1d4+2 Stress."
+  },
+  {
+    "id": "ogre-musk",
+    "nome": "Muschio d'orco",
+    "nomeOriginale": "Ogre Musk",
+    "tiro": 45,
+    "pagina": 60,
+    "testoOriginale": "You can use this musk to prevent anyone from tracking you by mundane or magical means until your next rest."
+  },
+  {
+    "id": "wingsprout",
+    "nome": "Germoglio d'ali",
+    "nomeOriginale": "Wingsprout",
+    "tiro": 46,
+    "pagina": 60,
+    "testoOriginale": "You gain magic wings that allow you to fly for a number of minutes equal to your level."
+  },
+  {
+    "id": "jar-of-lost-voices",
+    "nome": "Barattolo delle voci perdute",
+    "nomeOriginale": "Jar of Lost Voices",
+    "tiro": 47,
+    "pagina": 60,
+    "testoOriginale": "You can open this jar to release a deafening echo of voices for a number of minutes equal to your Instinct. Creatures within Far range unprepared for the sound take 6d8 magic damage."
+  },
+  {
+    "id": "dragonbloom-tea",
+    "nome": "Tè di fiordrago",
+    "nomeOriginale": "Dragonbloom Tea",
+    "tiro": 48,
+    "pagina": 60,
+    "testoOriginale": "You can drink this tea to unleash a fiery breath attack. Make an Instinct Roll against all adversaries in front of you within Close range. Targets you succeed against take d20 physical damage using your Proficiency."
+  },
+  {
+    "id": "bridge-seed",
+    "nome": "Seme ponte",
+    "nomeOriginale": "Bridge Seed",
+    "tiro": 49,
+    "pagina": 60,
+    "testoOriginale": "Thick vines grow from your location to a point of your choice within Far range, allowing you to climb up or across them. The vines dissipate on your next short rest."
+  },
+  {
+    "id": "sleeping-sap",
+    "nome": "Linfa del sonno",
+    "nomeOriginale": "Sleeping Sap",
+    "tiro": 50,
+    "pagina": 61,
+    "testoOriginale": "You can drink this potion to fall asleep for a full night's rest. You clear all Stress upon waking."
+  },
+  {
+    "id": "feast-of-xuria",
+    "nome": "Banchetto di Xuria",
+    "nomeOriginale": "Feast of Xuria",
+    "tiro": 51,
+    "pagina": 61,
+    "testoOriginale": "You can eat this meal to clear all HP and Stress and gain 1d4 Hope."
+  },
+  {
+    "id": "bonding-honey",
+    "nome": "Miele collante",
+    "nomeOriginale": "Bonding Honey",
+    "tiro": 52,
+    "pagina": 61,
+    "testoOriginale": "This honey can be used to glue two objects together permanently."
+  },
+  {
+    "id": "shrinking-potion",
+    "nome": "Pozione rimpicciolente",
+    "nomeOriginale": "Shrinking Potion",
+    "tiro": 53,
+    "pagina": 61,
+    "testoOriginale": "You can drink this potion to halve your size until you choose to drop this form or your next rest. While in this form, you have a +2 bonus to Agility and a -1 penalty to your Proficiency."
+  },
+  {
+    "id": "growing-potion",
+    "nome": "Pozione ingrandente",
+    "nomeOriginale": "Growing Potion",
+    "tiro": 54,
+    "pagina": 61,
+    "testoOriginale": "You can drink this potion to double your size until you choose to drop this form or your next rest. While in this form, you have a +2 bonus to Strength and a +1 bonus to your Proficiency."
+  },
+  {
+    "id": "knowledge-stone",
+    "nome": "Pietra della conoscenza",
+    "nomeOriginale": "Knowledge Stone",
+    "tiro": 55,
+    "pagina": 61,
+    "testoOriginale": "If you die while holding this stone, an ally can take a card from your loadout to place in their loadout or vault. After they take this knowledge, the stone crumbles."
+  },
+  {
+    "id": "sweet-moss",
+    "nome": "Muschio dolce",
+    "nomeOriginale": "Sweet Moss",
+    "tiro": 56,
+    "pagina": 61,
+    "testoOriginale": "You can consume this moss during a rest to clear 1d4 HP or 1d4 Stress."
+  },
+  {
+    "id": "blinding-orb",
+    "nome": "Sfera accecante",
+    "nomeOriginale": "Blinding Orb",
+    "tiro": 57,
+    "pagina": 61,
+    "testoOriginale": "You can activate this orb to create a flash of bright light. All targets within Close range become Vulnerable until they mark HP."
+  },
+  {
+    "id": "death-tea",
+    "nome": "Tè della morte",
+    "nomeOriginale": "Death Tea",
+    "tiro": 58,
+    "pagina": 61,
+    "testoOriginale": "After you drink this tea, you instantly kill your target when you critically succeed on an attack. If you don't critically succeed on an attack before your next long rest, you die."
+  },
+  {
+    "id": "mirror-of-marigold",
+    "nome": "Specchio di Marigold",
+    "nomeOriginale": "Mirror of Marigold",
+    "tiro": 59,
+    "pagina": 61,
+    "testoOriginale": "When you take damage, you can spend a Hope to negate that damage, after which the mirror shatters."
+  },
+  {
+    "id": "stardrop",
+    "nome": "Goccia di stella",
+    "nomeOriginale": "Stardrop",
+    "tiro": 60,
+    "pagina": 61,
+    "testoOriginale": "You can use this stardrop to summon a hailstorm of comets that deals 8d20 physical damage to all targets within Very Far range."
+  }
+]

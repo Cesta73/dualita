@@ -35,7 +35,7 @@ Indice delle regole del **Daggerheart System Reference Document 1.0** (maggio 20
 
 | Argomento | Pag. | Note |
 |---|---|---|
-| I 9 domini e quali classi li usano | 7 | Arcano, Lama, Mezzanotte, Saggezza, Splendore, Osso, Valore, Codice, Grazia (nomi IT da confermare col glossario) |
+| I 9 domini e quali classi li usano | 7 | Arcano, Lama, Mezzanotte, Natura, Splendore, Osso, Valore, Codice, Grazia |
 | Anatomia della carta dominio (livello, dominio, costo di richiamo, tipo, effetto) | 8 | Tipi: abilità, incantesimo, grimorio |
 | Limiti d'uso | 8 | Usi = tratto ≤ 0 → 0 usi |
 | Equipaggiamento attivo e Deposito (Loadout & Vault) | 8 | Max **5** carte attive; spostamenti gratis a inizio riposo; altrimenti costo di richiamo in Stress |
@@ -52,7 +52,7 @@ Indice delle regole del **Daggerheart System Reference Document 1.0** (maggio 20
 | Guardiano (Guardian) | 15-16 | 9 | 7 | Stalwart, Vengeance |
 | Ranger | 16-17 | 12 | 6 | Beastbound, Wayfinder |
 | — Compagno del Ranger | 18 | — | — | Creazione e livelli del compagno animale |
-| Ladro (Rogue) | 19-20 | 12 | 6 | Nightwalker, Syndicate |
+| Furfante (Rogue) | 19-20 | 12 | 6 | Nightwalker, Syndicate |
 | Serafino (Seraph) | 20-21 | 9 | 7 | Divine Wielder, Winged Sentinel |
 | Stregone (Sorcerer) | 22-23 | 10 | 6 | Elemental Origin, Primal Origin |
 | Guerriero (Warrior) | 23-24 | 11 | 6 | Call of the Brave, Call of the Slayer |
@@ -87,7 +87,7 @@ Highborne, Loreborne, Orderborne (32) · Ridgeborne, Seaborne, Slyborne, Underbo
 | **Paura** | 38, 64 | **Max 12**; il GM parte con 1 Paura per PG |
 | Evasione | 39 | Difficoltà degli attacchi contro un PG |
 | **Stress** | 39 | Ultimo Stress segnato → Vulnerabile; se deve segnare Stress e non può → segna 1 PF |
-| **PF e Soglie di Danno** | 39 | ≥ Critico (Severe) 3 PF; ≥ Grave (Major) 2 PF; sotto 1 PF; ≤ 0 nessuno |
+| **PF e Soglie di Danno** | 39 | ≥ Critico (Gravissimo) 3 PF; ≥ Grave (Major) 2 PF; sotto 1 PF; ≤ 0 nessuno |
 | Regola opzionale **Danno Massiccio** | 39 | ≥ 2 × soglia Severe → 4 PF |
 | Tiri d'attacco, attacchi disarmati (Forza o Destrezza, [Competenza]d4) | 39 | — |
 | **Tiri di danno** e Competenza | 39 | Competenza = numero di dadi; non moltiplica il modificatore fisso |
@@ -139,7 +139,7 @@ Highborne, Loreborne, Orderborne (32) · Ridgeborne, Seaborne, Slyborne, Underbo
 | Gestire i PNG; oro, equipaggiamento e costi medi | 68 | — |
 | Esempi di caratteristiche dei PNG | 69 | — |
 | Meccaniche opzionali: tiri del fato, cadute e collisioni, sott'acqua, conflitto tra PG | 69 | — |
-| **Blocchi statistiche degli avversari** (tipi, Difficoltà, Soglie, PF, Stress, attacco, Esperienze, caratteristiche) | 70-71 | 10 tipi: Bruto, Orda, Capo, Gregario, A distanza, Furtivo, Sociale, Solitario, Standard, Supporto (nomi IT da confermare) |
+| **Blocchi statistiche degli avversari** (tipi, Difficoltà, Soglie, PF, Stress, attacco, Esperienze, caratteristiche) | 70-71 | 10 tipi: Bruto, Orda, Capo, Gregario, A distanza, Furtivo, Sociale, Solitario, Standard, Supporto |
 | **Bilanciare gli scontri** (Punti Battaglia) | 71 | (3 × PG) + 2 |
 | Valori di riferimento per Tier; elenco avversari per Tier | 72-73 | — |
 | Avversari Tier 1 | 74-83 | — |
