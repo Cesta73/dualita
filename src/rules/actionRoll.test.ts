@@ -40,7 +40,7 @@ describe('Tiro d\'azione – esiti (SRD p.36)', () => {
     const r = rollAction({ traitModifier: 1, difficulty: 12 }, fixed(8, 4));
     expect(r.total).toBe(13);
     expect(r.outcome).toBe('success-hope');
-    expect(r.consequences).toMatchObject({ hopeGained: 1, fearGained: 0, stressCleared: 0, spotlightToGm: false });
+    expect(r.consequences).toMatchObject({ hopeGained: 1, fearGained: 0, stressCleared: 0, spotlightToGm: false, gmMayMove: false });
   });
 
   it('Successo con Paura: il GM guadagna 1 Paura', () => {
@@ -48,20 +48,20 @@ describe('Tiro d\'azione – esiti (SRD p.36)', () => {
     const r = rollAction({ traitModifier: 1, difficulty: 13 }, fixed(5, 7));
     expect(r.total).toBe(13);
     expect(r.outcome).toBe('success-fear');
-    expect(r.consequences).toMatchObject({ hopeGained: 0, fearGained: 1, spotlightToGm: true });
+    expect(r.consequences).toMatchObject({ hopeGained: 0, fearGained: 1, spotlightToGm: false, gmMayMove: true });
   });
 
   it('Fallimento con Speranza: +1 Speranza e riflettori al GM', () => {
     const r = rollAction({ traitModifier: 0, difficulty: 15 }, fixed(6, 2));
     expect(r.outcome).toBe('failure-hope');
-    expect(r.consequences).toMatchObject({ hopeGained: 1, fearGained: 0, spotlightToGm: true });
+    expect(r.consequences).toMatchObject({ hopeGained: 1, fearGained: 0, spotlightToGm: true, gmMayMove: true });
   });
 
   it('Fallimento con Paura: +1 Paura al GM', () => {
     const r = rollAction({ traitModifier: -1, difficulty: 15 }, fixed(3, 9));
     expect(r.total).toBe(11);
     expect(r.outcome).toBe('failure-fear');
-    expect(r.consequences).toMatchObject({ hopeGained: 0, fearGained: 1, spotlightToGm: true });
+    expect(r.consequences).toMatchObject({ hopeGained: 0, fearGained: 1, spotlightToGm: true, gmMayMove: true });
   });
 
   it('il totale uguale alla Difficoltà è un successo ("meets or beats")', () => {
@@ -147,7 +147,7 @@ describe('Tiro di reazione (SRD p.37)', () => {
   it('non genera Speranza né Paura e non passa i riflettori al GM', () => {
     const fail = rollAction({ kind: 'reaction', traitModifier: 0, difficulty: 15 }, fixed(3, 9));
     expect(fail.outcome).toBe('failure-fear');
-    expect(fail.consequences).toMatchObject({ hopeGained: 0, fearGained: 0, stressCleared: 0, spotlightToGm: false });
+    expect(fail.consequences).toMatchObject({ hopeGained: 0, fearGained: 0, stressCleared: 0, spotlightToGm: false, gmMayMove: false });
   });
 
   it('un critico riesce ma non libera Stress né dà Speranza', () => {

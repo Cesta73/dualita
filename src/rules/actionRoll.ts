@@ -51,8 +51,10 @@ export interface ActionRollConsequences {
   hopeSpentByEachHelper: number;
   /** SRD p.39 – un critico in attacco infligge danno critico */
   criticalDamage: boolean;
-  /** SRD p.35-37 – dopo un fallimento o un tiro con Paura i riflettori passano al GM */
+  /** SRD p.36 – dopo un fallimento i riflettori passano al GM */
   spotlightToGm: boolean;
+  /** SRD p.37, p.63 – il GM può fare una mossa (fallimento o tiro con Paura); vedi DUBBI_REGOLE.md D10 */
+  gmMayMove: boolean;
 }
 
 export interface ActionRollResult {
@@ -164,7 +166,7 @@ function consequencesOf(
   if (kind === 'reaction') {
     // SRD p.37 – i tiri di reazione non generano Speranza o Paura e non attivano mosse del GM;
     // con un critico non si libera Stress e non si guadagna Speranza (si ignorano solo gli effetti).
-    return { ...base, hopeGained: 0, fearGained: 0, stressCleared: 0, spotlightToGm: false };
+    return { ...base, hopeGained: 0, fearGained: 0, stressCleared: 0, spotlightToGm: false, gmMayMove: false };
   }
   return {
     ...base,
@@ -174,8 +176,10 @@ function consequencesOf(
     fearGained: withHope ? 0 : 1,
     // SRD p.36 – il critico libera 1 Stress
     stressCleared: critical ? 1 : 0,
-    // SRD p.36-37 – fallimento o tiro con Paura: i riflettori passano al GM
-    spotlightToGm: !critical && (success === false || !withHope),
+    // SRD p.36 – fallimento: i riflettori passano al GM
+    spotlightToGm: success === false,
+    // SRD p.37, p.63 – il GM fa una mossa quando il tiro fallisce o è con Paura
+    gmMayMove: !critical && (success === false || !withHope),
   };
 }
 
