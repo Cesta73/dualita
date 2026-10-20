@@ -110,7 +110,8 @@ src/i18n/glossario.ts termini di gioco IT ↔ EN
 - Ogni tiro mostra un **riquadro esito** chiaro: i due dadi colorati (Speranza dorato, Paura viola), il totale, la Difficoltà, l'esito in parole e **cosa cambia** (es. "+1 Speranza a Lyra", "Il GM guadagna 1 Paura"). Le conseguenze si applicano con un tocco, con possibilità di annullare.
 - Storico dei tiri della sessione.
 - Ogni regola o termine ha un'icona "?" che apre la spiegazione in italiano.
-- Pulsanti grandi, utilizzabili con una mano sul telefono. Tema scuro fantasy, ma leggibile.
+- Pulsanti grandi, utilizzabili con una mano sul telefono.
+- **Stile grafico: prima funzionale e leggibile, poi elegante** (non "bello" a scapito della chiarezza). Palette di **colori tenui**, piacevole ed elegante; buon contrasto per il testo; niente effetti vistosi. Anche i colori dei dadi (Speranza dorato, Paura viola) in versione tenue. Proporre la palette a Gianluca prima di applicarla.
 - Nessuna azione distruttiva senza conferma (es. eliminare un personaggio).
 
 ## Modo di lavorare
