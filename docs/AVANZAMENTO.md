@@ -6,6 +6,7 @@
 - Nessun dominio personalizzato: l'app sarà su `<utente>.github.io/<repository>/`.
 - Supabase: stesso account del progetto "cosa guardiamo stasera".
 - Paura del GM visibile a tutti di base; il GM può nasconderla.
+- L'app deve essere ottimizzata anche per computer (PC e Mac), non solo per telefono: layout a più colonne su schermo grande.
 
 ## Fase 0 — Preparazione
 - [x] 1. Lettura SRD e mappa delle regole → `docs/MAPPA_SRD.md`

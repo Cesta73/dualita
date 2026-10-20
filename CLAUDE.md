@@ -36,7 +36,10 @@ Webapp per giocare a Daggerheart (gioco di ruolo, 1 GM + 2-5 giocatori), interam
   - GitHub Pages non gestisce i percorsi delle app a pagina singola: usare **HashRouter** (link tipo `.../#/tavolo/ABC123`), così i link d'invito funzionano sempre.
   - Il repository sarà probabilmente **pubblico** (GitHub Pages gratis lo richiede). Quindi: nessun segreto nel codice. La chiave *publishable/anon* di Supabase può stare nel frontend solo perché la sicurezza è garantita dalla Row Level Security; la chiave *service_role* non deve MAI finire nel repository.
   - Le variabili Supabase per la build vanno nei **Secrets di GitHub Actions**: spiegami passo passo dove inserirle.
-- Deve funzionare bene su **telefono Android e iPhone** e su Mac (layout mobile-first) e diventare **PWA** installabile.
+- Deve funzionare bene su **telefono Android e iPhone** e anche su **computer (PC Windows e Mac)**, e diventare **PWA** installabile.
+  - Si parte dal telefono (mobile-first), ma su schermo grande il layout **sfrutta lo spazio**: più colonne affiancate (es. scheda + registro tiri; nel pannello GM tutti i PG visibili insieme + avversari + Paura), non una colonna stretta al centro.
+  - Su computer funzionano mouse e tastiera: tooltip al passaggio del mouse, scorciatoie da tastiera dove utili (es. tirare i dadi), campi navigabili con Tab.
+  - Va provato a tre larghezze: telefono, tablet, schermo da computer.
 - Test con **Vitest**. Le regole del gioco devono avere test automatici.
 
 ## Modello multigiocatore (requisito fondamentale)
