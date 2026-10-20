@@ -16,14 +16,16 @@
       "id": "make-a-scene",
       "nome": "Fare una scenata",
       "nomeOriginale": "Make a Scene",
-      "testoOriginale": "Spend 3 Hope to temporarily Distract a target within Close range, giving them a -2 penalty to their Difficulty."
+      "testoOriginale": "Spend 3 Hope to temporarily Distract a target within Close range, giving them a -2 penalty to their Difficulty.",
+      "testo": "Spendi 3 Speranza per rendere temporaneamente Distratto un bersaglio a gittata Vicina: la sua Difficoltà subisce una penalità di −2."
     },
     "capacitaDiClasse": [
       {
         "id": "rally",
         "nome": "Incoraggiamento",
         "nomeOriginale": "Rally",
-        "testoOriginale": "Once per session, describe how you rally the party and give yourself and each of your allies a Rally Die. At level 1, your Rally Die is a d6. A PC can spend their Rally Die to roll it, adding the result to their action roll, reaction roll, damage roll, or to clear a number of Stress equal to the result. At the end of each session, clear all unspent Rally Dice. At level 5, your Rally Die increases to a d8."
+        "testoOriginale": "Once per session, describe how you rally the party and give yourself and each of your allies a Rally Die. At level 1, your Rally Die is a d6. A PC can spend their Rally Die to roll it, adding the result to their action roll, reaction roll, damage roll, or to clear a number of Stress equal to the result. At the end of each session, clear all unspent Rally Dice. At level 5, your Rally Die increases to a d8.",
+        "testo": "Una volta per sessione, descrivi come incoraggi il gruppo e dai a te stesso e a ciascuno dei tuoi alleati un Dado di Incoraggiamento. A livello 1 il tuo Dado di Incoraggiamento è un d6. Un PG può spendere il proprio Dado di Incoraggiamento tirandolo e aggiungendo il risultato a un tiro d'azione, a un tiro di reazione o a un tiro di danno, oppure per liberare tanto Stress quanto il risultato. Alla fine di ogni sessione, i Dadi di Incoraggiamento non spesi vanno persi. A livello 5 il tuo Dado di Incoraggiamento diventa un d8."
       }
     ],
     "sottoclassi": [
@@ -39,6 +41,18 @@
       "What made you realize we were going to be such good friends?",
       "What do I do that annoys you?",
       "Why do you grab my hand at night?"
+    ],
+    "descrizione": "I bardi sono le persone più carismatiche di tutti i reami. I membri di questa classe sono maestri dell'incanto e si specializzano in molte forme di spettacolo: il canto, la musica, il racconto di storie o le battute. Che si esibiscano davanti a un pubblico o parlino con una sola persona, i bardi danno il meglio nelle situazioni sociali. Si formano e stringono legami in scuole o gilde, ma tra chi segue la via del bardo scorre una vena di egocentrismo. Anche se sono la classe più adatta a unire le persone, un bardo di cattivo umore può spaccare un gruppo con la stessa facilità.",
+    "oggettiDiClasse": "Un romanzo d'amore oppure una lettera mai aperta",
+    "domandeStoria": [
+      "Chi della tua comunità ti ha insegnato ad avere tanta fiducia in te stesso?",
+      "Una volta eri innamorato. Chi adoravi, e come ti ha ferito?",
+      "Hai sempre ammirato un altro bardo. Chi è, e perché lo idolatri?"
+    ],
+    "domandeLegami": [
+      "Che cosa ti ha fatto capire che saremmo diventati così amici?",
+      "Che cosa faccio che ti dà fastidio?",
+      "Perché di notte mi stringi la mano?"
     ]
   },
   {
@@ -58,20 +72,23 @@
       "id": "evolution",
       "nome": "Evoluzione",
       "nomeOriginale": "Evolution",
-      "testoOriginale": "Spend 3 Hope to transform into a Beastform without marking a Stress. When you do, choose one trait to raise by +1 until you drop out of that Beastform."
+      "testoOriginale": "Spend 3 Hope to transform into a Beastform without marking a Stress. When you do, choose one trait to raise by +1 until you drop out of that Beastform.",
+      "testo": "Spendi 3 Speranza per trasformarti in una Forma bestiale senza segnare Stress. Quando lo fai, scegli un tratto che aumenta di +1 finché non esci da quella Forma bestiale."
     },
     "capacitaDiClasse": [
       {
         "id": "beastform",
         "nome": "Forma bestiale",
         "nomeOriginale": "Beastform",
-        "testoOriginale": "Mark a Stress to magically transform into a creature of your tier or lower from the Beastform list. You can drop out of this form at any time. While transformed, you can't use weapons or cast spells from domain cards, but you can still use other features or abilities you have access to. Spells you cast before you transform stay active and last for their normal duration, and you can talk and communicate as normal. Additionally, you gain the Beastform's features, add their Evasion bonus to your Evasion, and use the trait specified in their statistics for your attack. While you're in a Beastform, your armor becomes part of your body and you mark Armor Slots as usual; when you drop out of a Beastform, those marked Armor Slots remain marked. If you mark your last Hit Point, you automatically drop out of this form."
+        "testoOriginale": "Mark a Stress to magically transform into a creature of your tier or lower from the Beastform list. You can drop out of this form at any time. While transformed, you can't use weapons or cast spells from domain cards, but you can still use other features or abilities you have access to. Spells you cast before you transform stay active and last for their normal duration, and you can talk and communicate as normal. Additionally, you gain the Beastform's features, add their Evasion bonus to your Evasion, and use the trait specified in their statistics for your attack. While you're in a Beastform, your armor becomes part of your body and you mark Armor Slots as usual; when you drop out of a Beastform, those marked Armor Slots remain marked. If you mark your last Hit Point, you automatically drop out of this form.",
+        "testo": "Segna 1 Stress per trasformarti magicamente in una creatura del tuo Tier o inferiore dall'elenco delle Forme bestiali. Puoi uscire da questa forma in qualsiasi momento. Mentre sei trasformato non puoi usare armi né lanciare incantesimi delle carte dominio, ma puoi usare le altre capacità a cui hai accesso. Gli incantesimi lanciati prima della trasformazione restano attivi per la loro durata normale, e puoi parlare e comunicare normalmente. Inoltre ottieni le capacità della Forma bestiale, aggiungi il suo bonus all'Evasione e usi per i tuoi attacchi il tratto indicato nelle sue statistiche. Mentre sei in una Forma bestiale la tua armatura diventa parte del tuo corpo e segni gli Slot Armatura come al solito; quando esci dalla forma, gli Slot Armatura segnati restano segnati. Se segni il tuo ultimo Punto Ferita, esci automaticamente dalla forma."
       },
       {
         "id": "wildtouch",
         "nome": "Tocco selvaggio",
         "nomeOriginale": "Wildtouch",
-        "testoOriginale": "You can perform harmless, subtle effects that involve nature—such as causing a flower to rapidly grow, summoning a slight gust of wind, or starting a campfire— at will."
+        "testoOriginale": "You can perform harmless, subtle effects that involve nature—such as causing a flower to rapidly grow, summoning a slight gust of wind, or starting a campfire— at will.",
+        "testo": "Puoi creare a volontà piccoli effetti innocui legati alla natura, come far crescere rapidamente un fiore, evocare un leggero soffio di vento o accendere un fuoco da campo."
       }
     ],
     "sottoclassi": [
@@ -87,6 +104,18 @@
       "What did you confide in me that makes me leap into danger for you every time?",
       "What animal do I say you remind me of?",
       "What affectionate nickname have you given me?"
+    ],
+    "descrizione": "Diventare druido è più di un mestiere: è una vocazione per chi vuole imparare dalla magia della natura selvaggia e proteggerla. Si potrebbe sottovalutare un druido gentile che si dedica al lavoro spesso silenzioso di coltivare le piante, ma i druidi che incanalano le forze indomite della natura sono terrificanti. I druidi coltivano le proprie capacità in piccoli gruppi, spesso legati a un'etica o a un luogo, anche se alcuni scelgono di lavorare da soli. Con anni di studio e dedizione, i druidi possono imparare a trasformarsi in bestie e a plasmare la natura stessa.",
+    "oggettiDiClasse": "Un sacchetto di sassi e ossa oppure uno strano ciondolo trovato nella terra",
+    "domandeStoria": [
+      "Perché la comunità in cui sei cresciuto dipendeva così tanto dalla natura e dalle sue creature?",
+      "Qual è stato il primo animale selvatico con cui hai stretto un legame? Perché il legame si è spezzato?",
+      "Chi sta cercando di darti la caccia? Che cosa vuole da te?"
+    ],
+    "domandeLegami": [
+      "Che cosa mi hai confidato che mi fa gettare nel pericolo per te ogni volta?",
+      "A quale animale dico che mi ricordi?",
+      "Che soprannome affettuoso mi hai dato?"
     ]
   },
   {
@@ -106,14 +135,16 @@
       "id": "frontline-tank",
       "nome": "Baluardo in prima linea",
       "nomeOriginale": "Frontline Tank",
-      "testoOriginale": "Spend 3 Hope to clear 2 Armor Slots."
+      "testoOriginale": "Spend 3 Hope to clear 2 Armor Slots.",
+      "testo": "Spendi 3 Speranza per liberare 2 Slot Armatura."
     },
     "capacitaDiClasse": [
       {
         "id": "unstoppable",
         "nome": "Inarrestabile",
         "nomeOriginale": "Unstoppable",
-        "testoOriginale": "Once per long rest, you can become Unstoppable. You gain an Unstoppable Die. At level 1, your Unstoppable Die is a d4. Place it on your character sheet in the space provided, starting with the 1 value facing up. After you make a damage roll that deals 1 or more Hit Points to a target, increase the Unstoppable Die value by one. When the die's value would exceed its maximum value or when the scene ends, remove the die and drop out of Unstoppable. At level 5, your Unstoppable Die increases to a d6.\nWhile Unstoppable, you gain the following benefits:\n• You reduce the severity of physical damage by one threshold (Severe to Major, Major to Minor, Minor to None).\n• You add the current value of the Unstoppable Die to your damage roll.\n• You can't be Restrained or Vulnerable.\nTip: If your Unstoppable Die is a d4 and the 4 is currently facing up, you remove the die the next time you would increase it. However, if your Unstoppable Die has increased to a d6 and the 4 is currently facing up, you'll turn it to 5 the next time you would increase it. In this case, you'll remove the die after you would need to increase it higher than 6."
+        "testoOriginale": "Once per long rest, you can become Unstoppable. You gain an Unstoppable Die. At level 1, your Unstoppable Die is a d4. Place it on your character sheet in the space provided, starting with the 1 value facing up. After you make a damage roll that deals 1 or more Hit Points to a target, increase the Unstoppable Die value by one. When the die's value would exceed its maximum value or when the scene ends, remove the die and drop out of Unstoppable. At level 5, your Unstoppable Die increases to a d6.\nWhile Unstoppable, you gain the following benefits:\n• You reduce the severity of physical damage by one threshold (Severe to Major, Major to Minor, Minor to None).\n• You add the current value of the Unstoppable Die to your damage roll.\n• You can't be Restrained or Vulnerable.\nTip: If your Unstoppable Die is a d4 and the 4 is currently facing up, you remove the die the next time you would increase it. However, if your Unstoppable Die has increased to a d6 and the 4 is currently facing up, you'll turn it to 5 the next time you would increase it. In this case, you'll remove the die after you would need to increase it higher than 6.",
+        "testo": "Una volta per riposo lungo puoi diventare Inarrestabile. Ottieni un Dado Inarrestabile: a livello 1 è un d4. Mettilo sulla scheda con la faccia 1 in alto. Dopo ogni tiro di danno che fa segnare 1 o più Punti Ferita a un bersaglio, aumenta di uno il valore del Dado Inarrestabile. Quando il valore supererebbe il massimo del dado, o quando la scena finisce, togli il dado e smetti di essere Inarrestabile. A livello 5 il Dado Inarrestabile diventa un d6.\nFinché sei Inarrestabile ottieni questi benefici:\n• Riduci di una soglia la gravità dei danni fisici (da Gravissimo a Grave, da Grave a Lieve, da Lieve a nessun danno).\n• Aggiungi al tuo tiro di danno il valore attuale del Dado Inarrestabile.\n• Non puoi essere Trattenuto né Vulnerabile.\nConsiglio: se il tuo Dado Inarrestabile è un d4 e mostra il 4, lo togli la prossima volta che dovresti aumentarlo. Se invece è già diventato un d6 e mostra il 4, la prossima volta lo giri sul 5; in quel caso lo togli quando dovresti portarlo oltre il 6."
       }
     ],
     "sottoclassi": [
@@ -129,6 +160,18 @@
       "How did I save your life the first time we met?",
       "What small gift did you give me that you notice I always carry with me?",
       "What lie have you told me about yourself that I absolutely believe?"
+    ],
+    "descrizione": "Il titolo di guardiano comprende molti mestieri marziali e parla più della bussola morale e della tempra incrollabile di chi lo porta che del suo modo di combattere. Molti guardiani si uniscono a gruppi armati per un paese o una causa, ma è più facile che seguano le poche persone a cui tengono davvero, a costo di andare contro tutti. I guardiani sono noti per combattere con una ferocia straordinaria anche contro forze soverchianti, difendendo i compagni prima di ogni altra cosa. Guai a chi ferisce un alleato di un guardiano: il guardiano gli restituirà il colpo.",
+    "oggettiDiClasse": "Un totem del tuo mentore oppure una chiave segreta",
+    "domandeStoria": [
+      "Chi della tua comunità non sei riuscito a proteggere, e perché ci pensi ancora?",
+      "Ti hanno affidato il compito di proteggere qualcosa di importante e portarlo in un luogo pericoloso. Che cos'è, e dove deve arrivare?",
+      "Consideri un aspetto di te una debolezza. Qual è, e come ti ha condizionato?"
+    ],
+    "domandeLegami": [
+      "Come ti ho salvato la vita la prima volta che ci siamo incontrati?",
+      "Quale piccolo regalo mi hai fatto che noti che porto sempre con me?",
+      "Quale bugia su di te mi hai raccontato, a cui credo ciecamente?"
     ]
   },
   {
@@ -148,14 +191,16 @@
       "id": "hold-them-off",
       "nome": "Tenerli a bada",
       "nomeOriginale": "Hold Them Off",
-      "testoOriginale": "Spend 3 Hope when you succeed on an attack with a weapon to use that same roll against two additional adversaries within range of the attack."
+      "testoOriginale": "Spend 3 Hope when you succeed on an attack with a weapon to use that same roll against two additional adversaries within range of the attack.",
+      "testo": "Quando riesci in un attacco con un'arma, spendi 3 Speranza per usare lo stesso tiro contro altri due avversari entro la gittata dell'attacco."
     },
     "capacitaDiClasse": [
       {
         "id": "ranger-s-focus",
         "nome": "Concentrazione del Ranger",
         "nomeOriginale": "Ranger's Focus",
-        "testoOriginale": "Spend a Hope and make an attack against a target. On a success, deal your attack's normal damage and temporarily make the attack's target your Focus. Until this feature ends or you make a different creature your Focus, you gain the following benefits against your Focus:\n• You know precisely what direction they are in.\n• When you deal damage to them, they must mark a Stress.\n• When you fail an attack against them, you can end your Ranger's Focus feature to reroll your Duality Dice."
+        "testoOriginale": "Spend a Hope and make an attack against a target. On a success, deal your attack's normal damage and temporarily make the attack's target your Focus. Until this feature ends or you make a different creature your Focus, you gain the following benefits against your Focus:\n• You know precisely what direction they are in.\n• When you deal damage to them, they must mark a Stress.\n• When you fail an attack against them, you can end your Ranger's Focus feature to reroll your Duality Dice.",
+        "testo": "Spendi 1 Speranza e fai un attacco contro un bersaglio. Se riesci, infliggi il normale danno dell'attacco e rendi temporaneamente il bersaglio il tuo Obiettivo. Finché questa capacità non termina o non scegli un'altra creatura come Obiettivo, contro il tuo Obiettivo ottieni questi benefici:\n• Sai esattamente in che direzione si trova.\n• Quando gli infliggi danni, deve segnare 1 Stress.\n• Quando fallisci un attacco contro di lui, puoi porre fine alla Concentrazione del Ranger per ripetere il tiro dei Dadi della Dualità."
       }
     ],
     "sottoclassi": [
@@ -171,6 +216,18 @@
       "What friendly competition do we have?",
       "Why do you act differently when we're alone than when others are around?",
       "What threat have you asked me to watch for, and why are you worried about it?"
+    ],
+    "descrizione": "I ranger sono cacciatori abilissimi che, nonostante le loro doti marziali, raramente mettono le proprie capacità al servizio di un esercito. Grazie alla padronanza del corpo e a una profonda conoscenza della natura selvaggia, i ranger diventano tattici astuti, che inseguono la preda con furbizia e pazienza. Molti ranger seguono le tracce e combattono insieme a un compagno animale con cui hanno stretto un forte legame spirituale. Affinando le proprie capacità nelle terre selvagge, i ranger diventano esperti inseguitori, capaci di far cadere i nemici in trappola come di attaccarli frontalmente.",
+    "oggettiDiClasse": "Un trofeo della tua prima uccisione oppure una bussola che sembra rotta",
+    "domandeStoria": [
+      "Una creatura terribile ha fatto del male alla tua comunità e hai giurato di darle la caccia. Che cos'è, e quale traccia o segno particolare lascia dietro di sé?",
+      "La tua prima preda ha quasi ucciso anche te. Che cos'era, e quale parte di te non è più stata la stessa dopo quell'evento?",
+      "Hai viaggiato in molte terre pericolose, ma qual è l'unico posto dove ti rifiuti di andare?"
+    ],
+    "domandeLegami": [
+      "Quale sfida amichevole c'è tra noi?",
+      "Perché ti comporti diversamente quando siamo soli rispetto a quando ci sono altri?",
+      "Quale minaccia mi hai chiesto di tenere d'occhio, e perché ti preoccupa?"
     ]
   },
   {
@@ -190,20 +247,23 @@
       "id": "rogue-s-dodge",
       "nome": "Schivata del Furfante",
       "nomeOriginale": "Rogue's Dodge",
-      "testoOriginale": "Spend 3 Hope to gain a +2 bonus to your Evasion until the next time an attack succeeds against you. Otherwise, this bonus lasts until your next rest."
+      "testoOriginale": "Spend 3 Hope to gain a +2 bonus to your Evasion until the next time an attack succeeds against you. Otherwise, this bonus lasts until your next rest.",
+      "testo": "Spendi 3 Speranza per ottenere +2 all'Evasione fino alla prossima volta che un attacco contro di te riesce. Altrimenti il bonus dura fino al tuo prossimo riposo."
     },
     "capacitaDiClasse": [
       {
         "id": "cloaked",
         "nome": "Celato",
         "nomeOriginale": "Cloaked",
-        "testoOriginale": "Any time you would be Hidden, you are instead Cloaked. In addition to the benefits of the Hidden condition, while Cloaked you remain unseen if you are stationary when an adversary moves to where they would normally see you. After you make an attack or end a move within line of sight of an adversary, you are no longer Cloaked."
+        "testoOriginale": "Any time you would be Hidden, you are instead Cloaked. In addition to the benefits of the Hidden condition, while Cloaked you remain unseen if you are stationary when an adversary moves to where they would normally see you. After you make an attack or end a move within line of sight of an adversary, you are no longer Cloaked.",
+        "testo": "Ogni volta che saresti Nascosto, sei invece Celato. Oltre ai benefici della condizione Nascosto, mentre sei Celato resti invisibile se stai fermo quando un avversario si sposta dove normalmente ti vedrebbe. Dopo che fai un attacco o termini un movimento in linea di vista di un avversario, non sei più Celato."
       },
       {
         "id": "sneak-attack",
         "nome": "Attacco furtivo",
         "nomeOriginale": "Sneak Attack",
-        "testoOriginale": "When you succeed on an attack while Cloaked or while an ally is within Melee range of your target, add a number of d6s equal to your tier to your damage roll.\n• Level 1 Tier 1\n• Levels 2-4 Tier 2\n• Levels 5-7 Tier 3\n• Levels 8-10 Tier 4"
+        "testoOriginale": "When you succeed on an attack while Cloaked or while an ally is within Melee range of your target, add a number of d6s equal to your tier to your damage roll.\n• Level 1 Tier 1\n• Levels 2-4 Tier 2\n• Levels 5-7 Tier 3\n• Levels 8-10 Tier 4",
+        "testo": "Quando riesci in un attacco mentre sei Celato, oppure mentre un alleato si trova in Mischia con il tuo bersaglio, aggiungi al tiro di danno tanti d6 quanto il tuo Tier.\n• Livello 1: Tier 1\n• Livelli 2-4: Tier 2\n• Livelli 5-7: Tier 3\n• Livelli 8-10: Tier 4"
       }
     ],
     "sottoclassi": [
@@ -219,6 +279,18 @@
       "What did I recently convince you to do that got us both in trouble?",
       "What have I discovered about your past that I hold secret from the others?",
       "Who do you know from my past, and how have they influenced your feelings about me?"
+    ],
+    "descrizione": "I furfanti sono canaglie, spesso sia nell'atteggiamento sia nei fatti. Conosciuti come bugiardi e ladri, i migliori tra loro si muovono nel mondo senza farsi notare. Con il loro ingegno affilato e le loro lame, i furfanti ingannano i nemici con la manipolazione sociale con la stessa facilità con cui scassinano serrature, si arrampicano dalle finestre o colpiscono a tradimento. Maestri di arti magiche, manipolano l'ombra e il movimento, aggiungendo al loro repertorio strumenti utili e letali. I furfanti fondano spesso delle gilde dove incontrare futuri complici, affidare lavori e affinare abilità segrete, a dimostrazione che anche tra i ladri esiste un onore, per chi sa dove cercarlo.",
+    "oggettiDiClasse": "Un set di strumenti da falsario oppure un rampino",
+    "domandeStoria": [
+      "Che cosa stavi facendo quando ti hanno colto sul fatto, tanto da farti esiliare dalla tua comunità?",
+      "Un tempo avevi un'altra vita, ma hai cercato di lasciartela alle spalle. Chi del tuo passato ti sta ancora inseguendo?",
+      "Chi del tuo passato ti è dispiaciuto di più salutare?"
+    ],
+    "domandeLegami": [
+      "Che cosa ti ho convinto a fare di recente che ci ha messi nei guai entrambi?",
+      "Che cosa ho scoperto del tuo passato che tengo segreto agli altri?",
+      "Chi conosci del mio passato, e come ha influenzato quello che provi per me?"
     ]
   },
   {
@@ -238,14 +310,16 @@
       "id": "life-support",
       "nome": "Sostegno vitale",
       "nomeOriginale": "Life Support",
-      "testoOriginale": "Spend 3 Hope to clear a Hit Point on an ally within Close range."
+      "testoOriginale": "Spend 3 Hope to clear a Hit Point on an ally within Close range.",
+      "testo": "Spendi 3 Speranza per liberare 1 Punto Ferita a un alleato a gittata Vicina."
     },
     "capacitaDiClasse": [
       {
         "id": "prayer-dice",
         "nome": "Dadi della Preghiera",
         "nomeOriginale": "Prayer Dice",
-        "testoOriginale": "At the beginning of each session, roll a number of d4s equal to your subclass's Spellcast trait and place them on your character sheet in the space provided. These are your Prayer Dice. You can spend any number of Prayer Dice to aid yourself or an ally within Far range. You can use a spent die's value to reduce incoming damage, add to a roll's result after the roll is made, or gain Hope equal to the result. At the end of each session, clear all unspent Prayer Dice."
+        "testoOriginale": "At the beginning of each session, roll a number of d4s equal to your subclass's Spellcast trait and place them on your character sheet in the space provided. These are your Prayer Dice. You can spend any number of Prayer Dice to aid yourself or an ally within Far range. You can use a spent die's value to reduce incoming damage, add to a roll's result after the roll is made, or gain Hope equal to the result. At the end of each session, clear all unspent Prayer Dice.",
+        "testo": "All'inizio di ogni sessione tira tanti d4 quanto il tratto da incantatore della tua sottoclasse e mettili sulla scheda nello spazio apposito: sono i tuoi Dadi della Preghiera. Puoi spendere quanti Dadi della Preghiera vuoi per aiutare te stesso o un alleato a gittata Lontana. Puoi usare il valore di un dado speso per ridurre il danno in arrivo, per aggiungerlo al risultato di un tiro dopo averlo fatto, oppure per guadagnare tanta Speranza quanto il risultato. Alla fine di ogni sessione i Dadi della Preghiera non spesi vanno persi."
       }
     ],
     "sottoclassi": [
@@ -261,6 +335,18 @@
       "What promise did you make me agree to, should you die on the battlefield?",
       "Why do you ask me so many questions about my god?",
       "You've told me to protect one member of our party above all others, even yourself. Who are they and why?"
+    ],
+    "descrizione": "I serafini sono combattenti e guaritori divini, investiti di uno scopo sacro. Nei reami esistono moltissime divinità, e così questi dei nominano molti tipi diversi di serafini. La loro etica segue di solito il dominio o gli obiettivi del loro dio: difendere i deboli, compiere una vendetta, proteggere una terra o un artefatto, o sostenere una certa fede. Alcuni serafini si alleano con un esercito o un luogo, con grande soddisfazione dei suoi governanti, ma altri crociati combattono contro le follie del Reame Mortale. Meglio essere alleati di un serafino che suoi nemici: per chi sfida il loro scopo sono avversari terrificanti.",
+    "oggettiDiClasse": "Un fagotto di offerte oppure un sigillo del tuo dio",
+    "domandeStoria": [
+      "A quale dio ti sei votato? Quale impresa incredibile ha compiuto per te in un momento di disperazione?",
+      "Come è cambiato il tuo aspetto dopo aver pronunciato il giuramento?",
+      "In che modo strano o particolare comunichi con il tuo dio?"
+    ],
+    "domandeLegami": [
+      "Che promessa mi hai fatto accettare, nel caso tu morissi in battaglia?",
+      "Perché mi fai così tante domande sul mio dio?",
+      "Mi hai detto di proteggere un membro del gruppo più di chiunque altro, perfino più di te. Chi è e perché?"
     ]
   },
   {
@@ -280,26 +366,30 @@
       "id": "volatile-magic",
       "nome": "Magia instabile",
       "nomeOriginale": "Volatile Magic",
-      "testoOriginale": "Spend 3 Hope to reroll any number of your damage dice on an attack that deals magic damage."
+      "testoOriginale": "Spend 3 Hope to reroll any number of your damage dice on an attack that deals magic damage.",
+      "testo": "Spendi 3 Speranza per ripetere il tiro di quanti dadi di danno vuoi in un attacco che infligge danno magico."
     },
     "capacitaDiClasse": [
       {
         "id": "arcane-sense",
         "nome": "Senso arcano",
         "nomeOriginale": "Arcane Sense",
-        "testoOriginale": "You can sense the presence of magical people and objects within Close range."
+        "testoOriginale": "You can sense the presence of magical people and objects within Close range.",
+        "testo": "Percepisci la presenza di persone e oggetti magici a gittata Vicina."
       },
       {
         "id": "minor-illusion",
         "nome": "Illusione minore",
         "nomeOriginale": "Minor Illusion",
-        "testoOriginale": "Make a Spellcast Roll (10). On a success, you create a minor visual illusion no larger than yourself within Close range. This illusion is convincing to anyone at Close range or farther."
+        "testoOriginale": "Make a Spellcast Roll (10). On a success, you create a minor visual illusion no larger than yourself within Close range. This illusion is convincing to anyone at Close range or farther.",
+        "testo": "Fai un Tiro da incantatore (10). Se riesci, crei una piccola illusione visiva, non più grande di te, a gittata Vicina. L'illusione è convincente per chiunque si trovi a gittata Vicina o più lontano."
       },
       {
         "id": "channel-raw-power",
         "nome": "Incanalare il potere grezzo",
         "nomeOriginale": "Channel Raw Power",
-        "testoOriginale": "Once per long rest, you can place a domain card from your loadout into your vault and choose to either:\n• Gain Hope equal to the level of the card.\n• Enhance a spell that deals damage, gaining a bonus to your damage roll equal to twice the level of the card."
+        "testoOriginale": "Once per long rest, you can place a domain card from your loadout into your vault and choose to either:\n• Gain Hope equal to the level of the card.\n• Enhance a spell that deals damage, gaining a bonus to your damage roll equal to twice the level of the card.",
+        "testo": "Una volta per riposo lungo puoi spostare una carta dominio dalle tue Carte attive al Deposito e scegliere una di queste opzioni:\n• Guadagnare tanta Speranza quanto il livello della carta.\n• Potenziare un incantesimo che infligge danni, ottenendo un bonus al tiro di danno pari al doppio del livello della carta."
       }
     ],
     "sottoclassi": [
@@ -315,6 +405,18 @@
       "Why do you trust me so deeply?",
       "What did I do that makes you cautious around me?",
       "Why do we keep our shared past a secret?"
+    ],
+    "descrizione": "Non tutti quelli che hanno una magia innata scelgono di affinarla, ma chi lo fa può diventare uno stregone potente. I doni di questi incantatori si tramandano nelle famiglie, anche quando la famiglia non ne è consapevole o è restia a praticarli. Le capacità di uno stregone possono andare dall'elementale all'illusorio e oltre, e molti si riuniscono in gruppi in base ai loro talenti. Diventare uno stregone formidabile non significa acquisire potere, ma imparare a coltivare e controllare quello che si possiede già. La magia di uno stregone sconsiderato o indisciplinato è davvero una forza pericolosa.",
+    "oggettiDiClasse": "Una sfera che sussurra oppure un cimelio di famiglia",
+    "domandeStoria": [
+      "Che cosa hai fatto per rendere la gente della tua comunità diffidente nei tuoi confronti?",
+      "Quale mentore ti ha insegnato a controllare la tua magia indomita, e perché non può più guidarti?",
+      "Hai una paura profonda che nascondi a tutti. Qual è, e perché ti spaventa?"
+    ],
+    "domandeLegami": [
+      "Perché ti fidi così profondamente di me?",
+      "Che cosa ho fatto che ti rende cauto con me?",
+      "Perché teniamo segreto il nostro passato comune?"
     ]
   },
   {
@@ -334,20 +436,23 @@
       "id": "no-mercy",
       "nome": "Nessuna pietà",
       "nomeOriginale": "No Mercy",
-      "testoOriginale": "Spend 3 Hope to gain a +1 bonus to your attack rolls until your next rest."
+      "testoOriginale": "Spend 3 Hope to gain a +1 bonus to your attack rolls until your next rest.",
+      "testo": "Spendi 3 Speranza per ottenere +1 ai tiri d'attacco fino al tuo prossimo riposo."
     },
     "capacitaDiClasse": [
       {
         "id": "attack-of-opportunity",
         "nome": "Attacco di opportunità",
         "nomeOriginale": "Attack of Opportunity",
-        "testoOriginale": "If an adversary within Melee range attempts to leave that range, make a reaction roll using a trait of your choice against their Difficulty. Choose one effect on a success, or two if you critically succeed:\n• They can't move from where they are.\n• You deal damage to them equal to your primary\n• weapon's damage.\n• You move with them."
+        "testoOriginale": "If an adversary within Melee range attempts to leave that range, make a reaction roll using a trait of your choice against their Difficulty. Choose one effect on a success, or two if you critically succeed:\n• They can't move from where they are.\n• You deal damage to them equal to your primary weapon's damage.\n• You move with them.",
+        "testo": "Se un avversario in Mischia cerca di uscire da quella gittata, fai un tiro di reazione con un tratto a tua scelta contro la sua Difficoltà. Se riesci scegli un effetto, se ottieni un successo critico scegline due:\n• Non può muoversi da dove si trova.\n• Gli infliggi danni pari al danno della tua arma primaria.\n• Ti muovi insieme a lui."
       },
       {
         "id": "combat-training",
         "nome": "Addestramento al combattimento",
         "nomeOriginale": "Combat Training",
-        "testoOriginale": "You ignore burden when equipping weapons. When you deal physical damage, you gain a bonus to your damage roll equal to your level."
+        "testoOriginale": "You ignore burden when equipping weapons. When you deal physical damage, you gain a bonus to your damage roll equal to your level.",
+        "testo": "Ignori l'impugnatura quando equipaggi le armi. Quando infliggi danno fisico, ottieni un bonus al tiro di danno pari al tuo livello."
       }
     ],
     "sottoclassi": [
@@ -363,6 +468,18 @@
       "We knew each other long before this party came together. How?",
       "What mundane task do you usually help me with off the battlefield?",
       "What fear am I helping you overcome?"
+    ],
+    "descrizione": "Diventare guerriero richiede anni, spesso una vita intera, di addestramento e dedizione alla padronanza delle armi e della violenza. Molti di quelli che cercano lo scontro allenano soltanto la forza, ma i guerrieri capiscono l'importanza di un corpo e di una mente agili, e per questo sono tra i combattenti più ricercati dei reami. Spesso i guerrieri trovano impiego in un esercito, in una compagnia di mercenari o perfino nella guardia reale, ma il loro potenziale è sprecato in qualsiasi posto dove non possano continuare a migliorare. I guerrieri hanno di solito un'arma preferita: mettersi tra loro e la loro lama sarebbe un grave errore.",
+    "oggettiDiClasse": "Il ritratto di una persona amata oppure una cote per affilare",
+    "domandeStoria": [
+      "Chi ti ha insegnato a combattere, e perché è rimasto indietro quando sei partito da casa?",
+      "Anni fa qualcuno ti ha sconfitto in battaglia e ti ha lasciato a morire. Chi era, e come ti ha tradito?",
+      "Quale luogo leggendario hai sempre desiderato visitare, e perché è così speciale?"
+    ],
+    "domandeLegami": [
+      "Ci conoscevamo molto prima che questo gruppo si formasse. Come?",
+      "In quale faccenda di tutti i giorni mi aiuti di solito, lontano dal campo di battaglia?",
+      "Quale paura ti sto aiutando a superare?"
     ]
   },
   {
@@ -382,20 +499,23 @@
       "id": "not-this-time",
       "nome": "Non questa volta",
       "nomeOriginale": "Not This Time",
-      "testoOriginale": "Spend 3 Hope to force an adversary within Far range to reroll an attack or damage roll."
+      "testoOriginale": "Spend 3 Hope to force an adversary within Far range to reroll an attack or damage roll.",
+      "testo": "Spendi 3 Speranza per costringere un avversario a gittata Lontana a ripetere un tiro d'attacco o un tiro di danno."
     },
     "capacitaDiClasse": [
       {
         "id": "prestidigitation",
         "nome": "Prestidigitazione",
         "nomeOriginale": "Prestidigitation",
-        "testoOriginale": "You can perform harmless, subtle magical effects at will. For example, you can change an object's color, create a smell, light a candle, cause a tiny object to float, illuminate a room, or repair a small object."
+        "testoOriginale": "You can perform harmless, subtle magical effects at will. For example, you can change an object's color, create a smell, light a candle, cause a tiny object to float, illuminate a room, or repair a small object.",
+        "testo": "Puoi creare a volontà piccoli effetti magici innocui. Per esempio puoi cambiare il colore di un oggetto, creare un odore, accendere una candela, far fluttuare un oggettino, illuminare una stanza o riparare un piccolo oggetto."
       },
       {
         "id": "strange-patterns",
         "nome": "Schemi strani",
         "nomeOriginale": "Strange Patterns",
-        "testoOriginale": "Choose a number between 1 and 12. When you roll that number on a Duality Die, gain a Hope or clear a Stress.\nYou can change this number when you take a long rest."
+        "testoOriginale": "Choose a number between 1 and 12. When you roll that number on a Duality Die, gain a Hope or clear a Stress.\nYou can change this number when you take a long rest.",
+        "testo": "Scegli un numero tra 1 e 12. Quando quel numero esce su uno dei Dadi della Dualità, guadagni 1 Speranza oppure liberi 1 Stress.\nPuoi cambiare il numero quando fai un riposo lungo."
       }
     ],
     "sottoclassi": [
@@ -411,6 +531,18 @@
       "What favor have I asked of you that you're not sure you can fulfill?",
       "What weird hobby or strange fascination do we both share?",
       "What secret about yourself have you entrusted only to me?"
+    ],
+    "descrizione": "Che sia in un'istituzione o con lo studio personale, quelli che chiamiamo maghi acquisiscono e affinano un immenso potere magico in anni di apprendimento, usando strumenti di ogni tipo: libri, pietre, pozioni ed erbe. Alcuni maghi dedicano la vita a padroneggiare una particolare scuola di magia, altri imparano da molte discipline diverse. Molti maghi diventano figure sagge e potenti nelle loro comunità: consigliano i sovrani, preparano medicine, curano, e guidano perfino i consigli di guerra. Anche se tutti questi incantatori lavorano per lo stesso scopo, raccogliere sapere magico, i maghi hanno spesso i conflitti più aspri proprio tra loro: acquisire, custodire e condividere segreti potenti è un tema di dibattito accesissimo, che ha causato innumerevoli morti.",
+    "oggettiDiClasse": "Un libro che stai cercando di tradurre oppure un minuscolo animaletto elementale innocuo",
+    "domandeStoria": [
+      "Per quali responsabilità la tua comunità un tempo contava su di te? Come l'hai delusa?",
+      "Hai passato la vita a cercare un libro o un oggetto di grande importanza. Che cos'è, e perché è così importante per te?",
+      "Hai un rivale potente. Chi è, e perché sei così deciso a sconfiggerlo?"
+    ],
+    "domandeLegami": [
+      "Quale favore ti ho chiesto che non sei sicuro di poter fare?",
+      "Quale hobby strano o curiosa passione abbiamo in comune?",
+      "Quale segreto su di te hai confidato solo a me?"
     ]
   }
 ]

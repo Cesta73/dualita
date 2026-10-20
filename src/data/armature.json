@@ -13,9 +13,13 @@
       "id": "flexible",
       "nome": "Flessibile",
       "nomeOriginale": "Flexible",
-      "testoOriginale": "+1 to Evasion"
+      "testoOriginale": "+1 to Evasion",
+      "testo": "+1 all'Evasione"
     },
-    "pagina": 55
+    "pagina": 55,
+    "modificatori": {
+      "evasione": 1
+    }
   },
   {
     "id": "leather-armor",
@@ -44,9 +48,13 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
-    "pagina": 55
+    "pagina": 55,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "full-plate-armor",
@@ -62,9 +70,16 @@
       "id": "very-heavy",
       "nome": "Molto pesante",
       "nomeOriginale": "Very Heavy",
-      "testoOriginale": "-2 to Evasion; -1 to Agility"
+      "testoOriginale": "-2 to Evasion; -1 to Agility",
+      "testo": "−2 all'Evasione; −1 all'Agilità"
     },
-    "pagina": 55
+    "pagina": 55,
+    "modificatori": {
+      "evasione": -2,
+      "tratti": {
+        "agility": -1
+      }
+    }
   },
   {
     "id": "improved-gambeson-armor",
@@ -80,9 +95,13 @@
       "id": "flexible",
       "nome": "Flessibile",
       "nomeOriginale": "Flexible",
-      "testoOriginale": "+1 to Evasion"
+      "testoOriginale": "+1 to Evasion",
+      "testo": "+1 all'Evasione"
     },
-    "pagina": 55
+    "pagina": 55,
+    "modificatori": {
+      "evasione": 1
+    }
   },
   {
     "id": "improved-leather-armor",
@@ -111,9 +130,13 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
-    "pagina": 55
+    "pagina": 55,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "improved-full-plate-armor",
@@ -129,9 +152,16 @@
       "id": "very-heavy",
       "nome": "Molto pesante",
       "nomeOriginale": "Very Heavy",
-      "testoOriginale": "-2 to Evasion; -1 to Agility"
+      "testoOriginale": "-2 to Evasion; -1 to Agility",
+      "testo": "−2 all'Evasione; −1 all'Agilità"
     },
-    "pagina": 55
+    "pagina": 55,
+    "modificatori": {
+      "evasione": -2,
+      "tratti": {
+        "agility": -1
+      }
+    }
   },
   {
     "id": "elundrian-chain-armor",
@@ -255,9 +285,13 @@
       "id": "flexible",
       "nome": "Flessibile",
       "nomeOriginale": "Flexible",
-      "testoOriginale": "+1 to Evasion"
+      "testoOriginale": "+1 to Evasion",
+      "testo": "+1 all'Evasione"
     },
-    "pagina": 56
+    "pagina": 56,
+    "modificatori": {
+      "evasione": 1
+    }
   },
   {
     "id": "advanced-leather-armor",
@@ -286,9 +320,13 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
-    "pagina": 56
+    "pagina": 56,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "advanced-full-plate-armor",
@@ -304,9 +342,16 @@
       "id": "very-heavy",
       "nome": "Molto pesante",
       "nomeOriginale": "Very Heavy",
-      "testoOriginale": "-2 to Evasion; -1 to Agility"
+      "testoOriginale": "-2 to Evasion; -1 to Agility",
+      "testo": "−2 all'Evasione; −1 all'Agilità"
     },
-    "pagina": 56
+    "pagina": 56,
+    "modificatori": {
+      "evasione": -2,
+      "tratti": {
+        "agility": -1
+      }
+    }
   },
   {
     "id": "bellamoi-fine-armor",
@@ -324,7 +369,12 @@
       "nomeOriginale": "Gilded",
       "testoOriginale": "+1 to Presence"
     },
-    "pagina": 56
+    "pagina": 56,
+    "modificatori": {
+      "tratti": {
+        "presence": 1
+      }
+    }
   },
   {
     "id": "dragonscale-armor",
@@ -430,9 +480,13 @@
       "id": "flexible",
       "nome": "Flessibile",
       "nomeOriginale": "Flexible",
-      "testoOriginale": "+1 to Evasion"
+      "testoOriginale": "+1 to Evasion",
+      "testo": "+1 all'Evasione"
     },
-    "pagina": 56
+    "pagina": 56,
+    "modificatori": {
+      "evasione": 1
+    }
   },
   {
     "id": "legendary-leather-armor",
@@ -461,9 +515,13 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
-    "pagina": 56
+    "pagina": 56,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "legendary-full-plate-armor",
@@ -479,9 +537,16 @@
       "id": "very-heavy",
       "nome": "Molto pesante",
       "nomeOriginale": "Very Heavy",
-      "testoOriginale": "-2 to Evasion; -1 to Agility"
+      "testoOriginale": "-2 to Evasion; -1 to Agility",
+      "testo": "−2 all'Evasione; −1 all'Agilità"
     },
-    "pagina": 56
+    "pagina": 56,
+    "modificatori": {
+      "evasione": -2,
+      "tratti": {
+        "agility": -1
+      }
+    }
   },
   {
     "id": "dunamis-silkchain",
@@ -517,7 +582,10 @@
       "nomeOriginale": "Channeling",
       "testoOriginale": "+1 to Spellcast Rolls"
     },
-    "pagina": 56
+    "pagina": 56,
+    "modificatori": {
+      "tiriIncantatore": 1
+    }
   },
   {
     "id": "emberwoven-armor",
@@ -589,6 +657,17 @@
       "nomeOriginale": "Difficult",
       "testoOriginale": "-1 to all character traits and Evasion"
     },
-    "pagina": 56
+    "pagina": 56,
+    "modificatori": {
+      "evasione": -1,
+      "tratti": {
+        "agility": -1,
+        "strength": -1,
+        "finesse": -1,
+        "instinct": -1,
+        "presence": -1,
+        "knowledge": -1
+      }
+    }
   }
 ]

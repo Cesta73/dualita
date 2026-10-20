@@ -287,6 +287,34 @@ describe('Ambienti (SRD p.100-111)', () => {
   });
 });
 
+describe('Traduzioni necessarie alla creazione del personaggio (Fase 2)', () => {
+  it('classi, fondamenti, stirpi, comunità, carte di livello 1 ed equipaggiamento Tier 1 sono tradotti', () => {
+    for (const c of classi) {
+      expect(c.descrizione, c.id).toBeTruthy();
+      expect(c.oggettiDiClasse, c.id).toBeTruthy();
+      expect(c.domandeStoria).toHaveLength(3);
+      expect(c.domandeLegami).toHaveLength(3);
+      for (const f of [c.capacitaSperanza, ...c.capacitaDiClasse]) expect(f.testo, `${c.id}/${f.id}`).toBeTruthy();
+    }
+    for (const s of sottoclassi) {
+      expect(s.descrizione, s.id).toBeTruthy();
+      for (const f of s.fondamento) expect(f.testo, `${s.id}/${f.id}`).toBeTruthy();
+    }
+    for (const s of [...stirpi, ...comunita]) {
+      expect(s.descrizione, s.id).toBeTruthy();
+      for (const f of s.capacita) expect(f.testo, `${s.id}/${f.id}`).toBeTruthy();
+    }
+    for (const c of carteDominio.filter((x) => x.livello === 1)) expect(c.testo, c.id).toBeTruthy();
+    for (const a of [...armi, ...armature].filter((x) => x.tier === 1 && x.capacita)) expect(a.capacita!.testo, a.id).toBeTruthy();
+  });
+
+  it('i modificatori numerici delle armature corrispondono al testo (SRD p.55)', () => {
+    expect(armature.find((a) => a.id === 'full-plate-armor')!.modificatori).toEqual({ evasione: -2, tratti: { agility: -1 } });
+    expect(armature.find((a) => a.id === 'leather-armor')!.modificatori).toBeUndefined();
+    expect(armi.find((a) => a.id === 'tower-shield')!.modificatori).toEqual({ punteggioArmatura: 2, evasione: -1 });
+  });
+});
+
 describe('Testi estratti puliti', () => {
   it('nessun residuo di impaginazione nei testi', () => {
     const tutto = JSON.stringify([domini, classi, sottoclassi, stirpi, comunita, formeBestiali, carteDominio,

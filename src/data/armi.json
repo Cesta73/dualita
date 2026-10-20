@@ -17,9 +17,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
-    "pagina": 45
+    "pagina": 45,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "longsword",
@@ -73,9 +77,13 @@
       "id": "massive",
       "nome": "Massiccia",
       "nomeOriginale": "Massive",
-      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "−1 all'Evasione; con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
-    "pagina": 45
+    "pagina": 45,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "mace",
@@ -112,9 +120,13 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
-    "pagina": 45
+    "pagina": 45,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "dagger",
@@ -185,7 +197,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "pagina": 45
   },
@@ -207,9 +220,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 45
+    "pagina": 45,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "spear",
@@ -229,9 +248,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 45
+    "pagina": 45,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "shortbow",
@@ -285,9 +310,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 45
+    "pagina": 45,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "arcane-gauntlets",
@@ -375,7 +406,8 @@
       "id": "returning",
       "nome": "Che ritorna",
       "nomeOriginale": "Returning",
-      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack.",
+      "testo": "Quando quest'arma viene lanciata entro la sua gittata, torna nella tua mano subito dopo l'attacco."
     },
     "pagina": 45
   },
@@ -431,7 +463,8 @@
       "id": "versatile",
       "nome": "Versatile",
       "nomeOriginale": "Versatile",
-      "testoOriginale": "This weapon can also be used with these statistics—Presence, Melee, d8."
+      "testoOriginale": "This weapon can also be used with these statistics—Presence, Melee, d8.",
+      "testo": "Quest'arma si può usare anche con queste statistiche: Presenza, Mischia, d8."
     },
     "pagina": 45
   },
@@ -470,7 +503,8 @@
       "id": "powerful",
       "nome": "Potente",
       "nomeOriginale": "Powerful",
-      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "Con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
     "pagina": 45
   },
@@ -492,9 +526,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
-    "pagina": 46
+    "pagina": 46,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "improved-longsword",
@@ -548,9 +586,13 @@
       "id": "massive",
       "nome": "Massiccia",
       "nomeOriginale": "Massive",
-      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "−1 all'Evasione; con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
-    "pagina": 46
+    "pagina": 46,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "improved-mace",
@@ -587,9 +629,13 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
-    "pagina": 46
+    "pagina": 46,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "improved-dagger",
@@ -660,7 +706,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "pagina": 46
   },
@@ -682,9 +729,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 46
+    "pagina": 46,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "improved-spear",
@@ -704,9 +757,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 46
+    "pagina": 46,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "improved-shortbow",
@@ -760,9 +819,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 46
+    "pagina": 46,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "gilded-falchion",
@@ -782,7 +847,8 @@
       "id": "powerful",
       "nome": "Potente",
       "nomeOriginale": "Powerful",
-      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "Con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
     "pagina": 46
   },
@@ -848,7 +914,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "pagina": 46
   },
@@ -892,9 +959,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
-    "pagina": 46
+    "pagina": 46,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "blunderbuss",
@@ -936,7 +1007,8 @@
       "id": "powerful",
       "nome": "Potente",
       "nomeOriginale": "Powerful",
-      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "Con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
     "pagina": 46
   },
@@ -958,9 +1030,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
-    "pagina": 46
+    "pagina": 46,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "improved-arcane-gauntlets",
@@ -1048,7 +1124,8 @@
       "id": "returning",
       "nome": "Che ritorna",
       "nomeOriginale": "Returning",
-      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack.",
+      "testo": "Quando quest'arma viene lanciata entro la sua gittata, torna nella tua mano subito dopo l'attacco."
     },
     "pagina": 47
   },
@@ -1143,7 +1220,8 @@
       "id": "powerful",
       "nome": "Potente",
       "nomeOriginale": "Powerful",
-      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "Con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
     "pagina": 47
   },
@@ -1275,7 +1353,8 @@
       "id": "powerful",
       "nome": "Potente",
       "nomeOriginale": "Powerful",
-      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "Con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
     "pagina": 47
   },
@@ -1341,9 +1420,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
-    "pagina": 47
+    "pagina": 47,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "advanced-broadsword",
@@ -1363,9 +1446,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
-    "pagina": 48
+    "pagina": 48,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "advanced-longsword",
@@ -1419,9 +1506,13 @@
       "id": "massive",
       "nome": "Massiccia",
       "nomeOriginale": "Massive",
-      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "−1 all'Evasione; con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
-    "pagina": 48
+    "pagina": 48,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "advanced-mace",
@@ -1458,9 +1549,13 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
-    "pagina": 48
+    "pagina": 48,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "advanced-dagger",
@@ -1531,7 +1626,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "pagina": 48
   },
@@ -1553,9 +1649,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 48
+    "pagina": 48,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "advanced-spear",
@@ -1575,9 +1677,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 48
+    "pagina": 48,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "advanced-shortbow",
@@ -1631,9 +1739,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 48
+    "pagina": 48,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "flickerfly-blade",
@@ -1677,7 +1791,11 @@
       "nomeOriginale": "Brave",
       "testoOriginale": "-1 to Evasion; +3 to Severe damage threshold"
     },
-    "pagina": 48
+    "pagina": 48,
+    "modificatori": {
+      "evasione": -1,
+      "sogliaGravissimo": 3
+    }
   },
   {
     "id": "hammer-of-wrath",
@@ -1719,9 +1837,13 @@
       "id": "protective",
       "nome": "Protettiva",
       "nomeOriginale": "Protective",
-      "testoOriginale": "+1 to Armor Score"
+      "testoOriginale": "+1 to Armor Score",
+      "testo": "+1 al Punteggio Armatura"
     },
-    "pagina": 48
+    "pagina": 48,
+    "modificatori": {
+      "punteggioArmatura": 1
+    }
   },
   {
     "id": "meridian-cutlass",
@@ -1785,7 +1907,8 @@
       "id": "powerful",
       "nome": "Potente",
       "nomeOriginale": "Powerful",
-      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "Con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
     "pagina": 48
   },
@@ -1873,9 +1996,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
-    "pagina": 49
+    "pagina": 49,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "legendary-longsword",
@@ -1929,9 +2056,13 @@
       "id": "massive",
       "nome": "Massiccia",
       "nomeOriginale": "Massive",
-      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "-1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "−1 all'Evasione; con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
-    "pagina": 49
+    "pagina": 49,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "legendary-mace",
@@ -1968,9 +2099,13 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
-    "pagina": 49
+    "pagina": 49,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "legendary-dagger",
@@ -2041,7 +2176,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "pagina": 49
   },
@@ -2063,9 +2199,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 49
+    "pagina": 49,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "legendary-spear",
@@ -2085,9 +2227,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 49
+    "pagina": 49,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "legendary-shortbow",
@@ -2141,9 +2289,15 @@
       "id": "cumbersome",
       "nome": "Ingombrante",
       "nomeOriginale": "Cumbersome",
-      "testoOriginale": "-1 to Finesse"
+      "testoOriginale": "-1 to Finesse",
+      "testo": "−1 alla Destrezza"
     },
-    "pagina": 49
+    "pagina": 49,
+    "modificatori": {
+      "tratti": {
+        "finesse": -1
+      }
+    }
   },
   {
     "id": "dual-ended-sword",
@@ -2163,7 +2317,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "pagina": 49
   },
@@ -2209,7 +2364,12 @@
       "nomeOriginale": "Destructive",
       "testoOriginale": "-1 to Agility; on a successful attack, all adversaries within Very Close range must mark a Stress."
     },
-    "pagina": 49
+    "pagina": 49,
+    "modificatori": {
+      "tratti": {
+        "agility": -1
+      }
+    }
   },
   {
     "id": "curved-dagger",
@@ -2317,9 +2477,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
-    "pagina": 49
+    "pagina": 49,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "hand-cannon",
@@ -2429,7 +2593,8 @@
       "id": "returning",
       "nome": "Che ritorna",
       "nomeOriginale": "Returning",
-      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack.",
+      "testo": "Quando quest'arma viene lanciata entro la sua gittata, torna nella tua mano subito dopo l'attacco."
     },
     "pagina": 50
   },
@@ -2524,7 +2689,8 @@
       "id": "powerful",
       "nome": "Potente",
       "nomeOriginale": "Powerful",
-      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "Con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
     "pagina": 50
   },
@@ -2612,7 +2778,8 @@
       "id": "powerful",
       "nome": "Potente",
       "nomeOriginale": "Powerful",
-      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result."
+      "testoOriginale": "On a successful attack, roll an additional damage die and discard the lowest result.",
+      "testo": "Con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
     },
     "pagina": 50
   },
@@ -2656,9 +2823,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
-    "pagina": 50
+    "pagina": 50,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "wand-of-essek",
@@ -2744,7 +2915,8 @@
       "id": "paired",
       "nome": "In coppia",
       "nomeOriginale": "Paired",
-      "testoOriginale": "+2 to primary weapon damage to targets within Melee range"
+      "testoOriginale": "+2 to primary weapon damage to targets within Melee range",
+      "testo": "+2 al danno dell'arma primaria contro bersagli in Mischia"
     },
     "pagina": 51
   },
@@ -2766,9 +2938,13 @@
       "id": "protective",
       "nome": "Protettiva",
       "nomeOriginale": "Protective",
-      "testoOriginale": "+1 to Armor Score"
+      "testoOriginale": "+1 to Armor Score",
+      "testo": "+1 al Punteggio Armatura"
     },
-    "pagina": 51
+    "pagina": 51,
+    "modificatori": {
+      "punteggioArmatura": 1
+    }
   },
   {
     "id": "tower-shield",
@@ -2788,9 +2964,14 @@
       "id": "barrier",
       "nome": "Barriera",
       "nomeOriginale": "Barrier",
-      "testoOriginale": "+2 to Armor Score; -1 to Evasion"
+      "testoOriginale": "+2 to Armor Score; -1 to Evasion",
+      "testo": "+2 al Punteggio Armatura; −1 all'Evasione"
     },
-    "pagina": 51
+    "pagina": 51,
+    "modificatori": {
+      "punteggioArmatura": 2,
+      "evasione": -1
+    }
   },
   {
     "id": "small-dagger",
@@ -2810,7 +2991,8 @@
       "id": "paired",
       "nome": "In coppia",
       "nomeOriginale": "Paired",
-      "testoOriginale": "+2 to primary weapon damage to targets within Melee range"
+      "testoOriginale": "+2 to primary weapon damage to targets within Melee range",
+      "testo": "+2 al danno dell'arma primaria contro bersagli in Mischia"
     },
     "pagina": 51
   },
@@ -2832,7 +3014,8 @@
       "id": "startling",
       "nome": "Sorprendente",
       "nomeOriginale": "Startling",
-      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range.",
+      "testo": "Segna 1 Stress per far schioccare la frusta e respingere tutti gli avversari in Mischia fino a gittata Vicina."
     },
     "pagina": 51
   },
@@ -2854,7 +3037,8 @@
       "id": "hooked",
       "nome": "Uncinata",
       "nomeOriginale": "Hooked",
-      "testoOriginale": "On a successful attack, you can pull the target into Melee range."
+      "testoOriginale": "On a successful attack, you can pull the target into Melee range.",
+      "testo": "Con un attacco riuscito, puoi tirare il bersaglio fino alla Mischia."
     },
     "pagina": 51
   },
@@ -2917,7 +3101,10 @@
       "nomeOriginale": "Protective",
       "testoOriginale": "+2 to Armor Score"
     },
-    "pagina": 51
+    "pagina": 51,
+    "modificatori": {
+      "punteggioArmatura": 2
+    }
   },
   {
     "id": "improved-tower-shield",
@@ -2939,7 +3126,11 @@
       "nomeOriginale": "Barrier",
       "testoOriginale": "+3 to Armor Score; -1 to Evasion"
     },
-    "pagina": 51
+    "pagina": 51,
+    "modificatori": {
+      "punteggioArmatura": 3,
+      "evasione": -1
+    }
   },
   {
     "id": "improved-small-dagger",
@@ -2981,7 +3172,8 @@
       "id": "startling",
       "nome": "Sorprendente",
       "nomeOriginale": "Startling",
-      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range.",
+      "testo": "Segna 1 Stress per far schioccare la frusta e respingere tutti gli avversari in Mischia fino a gittata Vicina."
     },
     "pagina": 51
   },
@@ -3003,7 +3195,8 @@
       "id": "hooked",
       "nome": "Uncinata",
       "nomeOriginale": "Hooked",
-      "testoOriginale": "On a successful attack, you can pull the target into Melee range."
+      "testoOriginale": "On a successful attack, you can pull the target into Melee range.",
+      "testo": "Con un attacco riuscito, puoi tirare il bersaglio fino alla Mischia."
     },
     "pagina": 51
   },
@@ -3044,7 +3237,10 @@
       "nomeOriginale": "Double Duty",
       "testoOriginale": "+1 to Armor Score; +1 to primary weapon damage within Melee range"
     },
-    "pagina": 51
+    "pagina": 51,
+    "modificatori": {
+      "punteggioArmatura": 1
+    }
   },
   {
     "id": "parrying-dagger",
@@ -3086,7 +3282,8 @@
       "id": "returning",
       "nome": "Che ritorna",
       "nomeOriginale": "Returning",
-      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+      "testoOriginale": "When this weapon is thrown within its range, it appears in your hand immediately after the attack.",
+      "testo": "Quando quest'arma viene lanciata entro la sua gittata, torna nella tua mano subito dopo l'attacco."
     },
     "pagina": 51
   },
@@ -3132,7 +3329,10 @@
       "nomeOriginale": "Protective",
       "testoOriginale": "+3 to Armor Score"
     },
-    "pagina": 52
+    "pagina": 52,
+    "modificatori": {
+      "punteggioArmatura": 3
+    }
   },
   {
     "id": "advanced-tower-shield",
@@ -3154,7 +3354,11 @@
       "nomeOriginale": "Barrier",
       "testoOriginale": "+4 to Armor Score; -1 to Evasion"
     },
-    "pagina": 52
+    "pagina": 52,
+    "modificatori": {
+      "punteggioArmatura": 4,
+      "evasione": -1
+    }
   },
   {
     "id": "advanced-small-dagger",
@@ -3196,7 +3400,8 @@
       "id": "startling",
       "nome": "Sorprendente",
       "nomeOriginale": "Startling",
-      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range.",
+      "testo": "Segna 1 Stress per far schioccare la frusta e respingere tutti gli avversari in Mischia fino a gittata Vicina."
     },
     "pagina": 52
   },
@@ -3218,7 +3423,8 @@
       "id": "hooked",
       "nome": "Uncinata",
       "nomeOriginale": "Hooked",
-      "testoOriginale": "On a successful attack, you can pull the target into Melee range."
+      "testoOriginale": "On a successful attack, you can pull the target into Melee range.",
+      "testo": "Con un attacco riuscito, puoi tirare il bersaglio fino alla Mischia."
     },
     "pagina": 52
   },
@@ -3347,7 +3553,10 @@
       "nomeOriginale": "Protective",
       "testoOriginale": "+4 to Armor Score"
     },
-    "pagina": 52
+    "pagina": 52,
+    "modificatori": {
+      "punteggioArmatura": 4
+    }
   },
   {
     "id": "legendary-tower-shield",
@@ -3369,7 +3578,11 @@
       "nomeOriginale": "Barrier",
       "testoOriginale": "+5 to Armor Score; -1 to Evasion."
     },
-    "pagina": 52
+    "pagina": 52,
+    "modificatori": {
+      "punteggioArmatura": 5,
+      "evasione": -1
+    }
   },
   {
     "id": "legendary-small-dagger",
@@ -3411,7 +3624,8 @@
       "id": "startling",
       "nome": "Sorprendente",
       "nomeOriginale": "Startling",
-      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+      "testoOriginale": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range.",
+      "testo": "Segna 1 Stress per far schioccare la frusta e respingere tutti gli avversari in Mischia fino a gittata Vicina."
     },
     "pagina": 52
   },
@@ -3433,7 +3647,8 @@
       "id": "hooked",
       "nome": "Uncinata",
       "nomeOriginale": "Hooked",
-      "testoOriginale": "On a successful attack, you can pull the target into Melee range."
+      "testoOriginale": "On a successful attack, you can pull the target into Melee range.",
+      "testo": "Con un attacco riuscito, puoi tirare il bersaglio fino alla Mischia."
     },
     "pagina": 52
   },
@@ -3538,7 +3753,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "sediaARotelle": true,
     "pagina": 53
@@ -3561,7 +3777,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "sediaARotelle": true,
     "pagina": 53
@@ -3584,7 +3801,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "sediaARotelle": true,
     "pagina": 53
@@ -3607,7 +3825,8 @@
       "id": "quick",
       "nome": "Rapida",
       "nomeOriginale": "Quick",
-      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range."
+      "testoOriginale": "When you make an attack, you can mark a Stress to target another creature within range.",
+      "testo": "Quando fai un attacco, puoi segnare 1 Stress per colpire un'altra creatura entro la gittata."
     },
     "sediaARotelle": true,
     "pagina": 53
@@ -3630,10 +3849,14 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
     "sediaARotelle": true,
-    "pagina": 54
+    "pagina": 54,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "improved-heavy-frame-wheelchair",
@@ -3653,10 +3876,14 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
     "sediaARotelle": true,
-    "pagina": 54
+    "pagina": 54,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "advanced-heavy-frame-wheelchair",
@@ -3676,10 +3903,14 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
     "sediaARotelle": true,
-    "pagina": 54
+    "pagina": 54,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "legendary-heavy-frame-wheelchair",
@@ -3699,10 +3930,14 @@
       "id": "heavy",
       "nome": "Pesante",
       "nomeOriginale": "Heavy",
-      "testoOriginale": "-1 to Evasion"
+      "testoOriginale": "-1 to Evasion",
+      "testo": "−1 all'Evasione"
     },
     "sediaARotelle": true,
-    "pagina": 54
+    "pagina": 54,
+    "modificatori": {
+      "evasione": -1
+    }
   },
   {
     "id": "arcane-frame-wheelchair",
@@ -3722,10 +3957,14 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
     "sediaARotelle": true,
-    "pagina": 54
+    "pagina": 54,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "improved-arcane-frame-wheelchair",
@@ -3745,10 +3984,14 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
     "sediaARotelle": true,
-    "pagina": 54
+    "pagina": 54,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "advanced-arcane-frame-wheelchair",
@@ -3768,10 +4011,14 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
     "sediaARotelle": true,
-    "pagina": 54
+    "pagina": 54,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   },
   {
     "id": "legendary-arcane-frame-wheelchair",
@@ -3791,9 +4038,13 @@
       "id": "reliable",
       "nome": "Affidabile",
       "nomeOriginale": "Reliable",
-      "testoOriginale": "+1 to attack rolls"
+      "testoOriginale": "+1 to attack rolls",
+      "testo": "+1 ai tiri d'attacco"
     },
     "sediaARotelle": true,
-    "pagina": 54
+    "pagina": 54,
+    "modificatori": {
+      "tiriAttacco": 1
+    }
   }
 ]

@@ -45,3 +45,12 @@
 - [x] Prova sul telefono di Gianluca (Android): corretto il layout con caratteri grandi
 
 **Fase 1 completata il 20/10/2026.**
+
+## Fase 2 — Creazione del personaggio (in corso)
+Decisioni (20/10/2026): niente email per ora (personaggio legato al dispositivo, "Collega email" facoltativo più avanti);
+traduzioni scritte da Claude e riviste da Gianluca dopo, con calma.
+- [ ] Traduzione testi per la creazione (classi, fondamenti, stirpi, comunità, carte liv. 1, domande, equip. Tier 1)
+- [ ] Regole della creazione + calcoli derivati, con test
+- [ ] Tabella personaggi + RLS; Speranza sulla scheda
+- [ ] Procedura guidata in 9 passi
+- [ ] Il GM vede i personaggi; il tiro usa i tratti della scheda

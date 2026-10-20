@@ -308,6 +308,11 @@ export const glossario = {
   vulnerable: { it: 'Vulnerabile', en: 'Vulnerable', category: 'condizioni', page: 41 },
   temporary: { it: 'Temporaneo', en: 'Temporary', category: 'condizioni', page: 41 },
   specialCondition: { it: 'Condizione speciale', en: 'Special Condition', category: 'condizioni', page: 41 },
+  distracted: { it: 'Distratto', en: 'Distracted', category: 'condizioni', page: 9, note: 'Condizione speciale (Bardo, Fare una scenata)' },
+  enraptured: { it: 'Rapito', en: 'Enraptured', category: 'condizioni', page: 126, note: 'Condizione speciale (carta Incantare)' },
+  asleep: { it: 'Addormentato', en: 'Asleep', category: 'condizioni', page: 124, note: 'Condizione speciale (Libro di Illiat)' },
+  poisoned: { it: 'Avvelenato', en: 'Poisoned', category: 'condizioni', page: 13, note: 'Condizione speciale (forme bestiali)' },
+  onFire: { it: 'In fiamme', en: 'On Fire', category: 'condizioni', page: 119, note: 'Condizione speciale (Stretta di brace)' },
 
   // ── PAUSA E RIPOSI (SRD p.41) ──────────────────────────────────
   downtime: { it: 'Pausa', en: 'Downtime', category: 'pausa', page: 41 },

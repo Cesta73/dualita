@@ -11,9 +11,12 @@
         "id": "privilege",
         "nome": "Privilegio",
         "nomeOriginale": "Privilege",
-        "testoOriginale": "You have advantage on rolls to consort with nobles, negotiate prices, or leverage your reputation to get what you want."
+        "testoOriginale": "You have advantage on rolls to consort with nobles, negotiate prices, or leverage your reputation to get what you want.",
+        "testo": "Hai vantaggio ai tiri per frequentare i nobili, contrattare i prezzi o sfruttare la tua reputazione per ottenere ciò che vuoi."
       }
-    ]
+    ],
+    "descrizione": "Far parte di una comunità di Altolocati significa essere abituati a una vita di eleganza, lusso e prestigio ai vertici della società. Tradizionalmente gli Altolocati possiedono ricchezze materiali enormi. Possono avere forme diverse a seconda della comunità, come oro e altri minerali, terre o il controllo dei mezzi di produzione, ma questa condizione porta sempre con sé potere e influenza. Gli Altolocati danno grande valore ai titoli e ai beni, e tra loro c'è poca mobilità sociale. Spesso controllano la situazione politica ed economica dei luoghi in cui vivono, grazie alla capacità di influenzare le persone e l'economia con le loro grandi ricchezze. La salute e la sicurezza di chi è meno abbiente dipendono spesso dalla capacità di questa classe dirigente di mettere il benessere dei sudditi davanti al profitto.",
+    "aggettivi": "Gli Altolocati sono spesso affabili, schietti, intriganti, intraprendenti, ostentati e imperturbabili."
   },
   {
     "id": "loreborne",
@@ -27,9 +30,12 @@
         "id": "well-read",
         "nome": "Colto",
         "nomeOriginale": "Well-Read",
-        "testoOriginale": "You have advantage on rolls that involve the history, culture, or politics of a prominent person or place."
+        "testoOriginale": "You have advantage on rolls that involve the history, culture, or politics of a prominent person or place.",
+        "testo": "Hai vantaggio ai tiri che riguardano la storia, la cultura o la politica di una persona o di un luogo importante."
       }
-    ]
+    ],
+    "descrizione": "Far parte di una comunità di Eruditi significa provenire da una società che apprezza le grandi capacità accademiche o politiche. Queste comunità danno molto valore al sapere, spesso sotto forma di conservazione della storia, carriera politica, studio scientifico, sviluppo di abilità o raccolta di leggende e miti. Molti fanno ricerca in istituzioni costruite nei centri della civiltà, mentre alcuni, più eclettici, preferiscono raccogliere informazioni dal mondo naturale. Alcuni vivono isolati in piccole enclavi, scuole o gilde, seguendo una propria etica. Altri usano il loro sapere su larga scala, muovendosi con abilità tra i giochi politici dei governi.",
+    "aggettivi": "Gli Eruditi sono spesso diretti, eloquenti, curiosi, pazienti, appassionati e arguti."
   },
   {
     "id": "orderborne",
@@ -43,9 +49,12 @@
         "id": "dedicated",
         "nome": "Votato",
         "nomeOriginale": "Dedicated",
-        "testoOriginale": "Record three sayings or values your upbringing instilled in you. Once per rest, when you describe how you're embodying one of these principles through your current action, you can roll a d20 as your Hope Die."
+        "testoOriginale": "Record three sayings or values your upbringing instilled in you. Once per rest, when you describe how you're embodying one of these principles through your current action, you can roll a d20 as your Hope Die.",
+        "testo": "Annota tre motti o valori che la tua educazione ti ha trasmesso. Una volta per riposo, quando descrivi come stai incarnando uno di questi principi con la tua azione, puoi tirare un d20 come Dado della Speranza."
       }
-    ]
+    ],
+    "descrizione": "Far parte di una comunità di Disciplinati significa provenire da una collettività fondata sulla disciplina o sulla fede, e seguire principi che rispecchiano quell'esperienza. I Disciplinati sono spesso tra le comunità più potenti della zona. Unendo i membri della società attorno a un valore o a uno scopo comune, come un dio, una dottrina, un'etica o perfino un'attività o un mestiere condiviso, chi governa queste enclavi riesce a mobilitare molte persone con poco sforzo. Le comunità di Disciplinati hanno forme molto diverse, alcune perfino profondamente pacifiste, ma le più temute sono forse quelle organizzate attorno alla forza militare. In quel caso non è raro che forniscano soldati a pagamento ad altre città o paesi.",
+    "aggettivi": "I Disciplinati sono spesso ambiziosi, benevoli, riflessivi, prudenti, sarcastici e stoici."
   },
   {
     "id": "ridgeborne",
@@ -59,9 +68,12 @@
         "id": "steady",
         "nome": "Saldo",
         "nomeOriginale": "Steady",
-        "testoOriginale": "You have advantage on rolls to traverse dangerous cliffs and ledges, navigate harsh environments, and use your survival knowledge."
+        "testoOriginale": "You have advantage on rolls to traverse dangerous cliffs and ledges, navigate harsh environments, and use your survival knowledge.",
+        "testo": "Hai vantaggio ai tiri per attraversare pareti e cenge pericolose, orientarti in ambienti ostili e usare le tue conoscenze di sopravvivenza."
       }
-    ]
+    ],
+    "descrizione": "Far parte di una comunità di Montanari significa aver chiamato casa le cime rocciose e le pareti scoscese della montagna. Chi ha vissuto in montagna si considera spesso più tenace di altri, perché ha prosperato su alcuni dei terreni più pericolosi del continente. Queste comunità sono maestre nell'adattarsi e sviluppano tecnologie e attrezzature uniche per spostare persone e merci su terreni difficili. Per questo i Montanari crescono arrampicandosi e scalando, e diventano robusti e caparbi. I loro insediamenti hanno forme diverse: alcune città sono scavate in intere pareti rocciose, altre costruiscono castelli di pietra, altre ancora vivono in piccole case su cime battute dal vento. Le forze esterne fanno spesso fatica ad attaccarli, perché le piccole milizie e i grandi eserciti di montagna sanno sfruttare bene il vantaggio dell'altura.",
+    "aggettivi": "I Montanari sono spesso audaci, tenaci, indomiti, leali, riservati e testardi."
   },
   {
     "id": "seaborne",
@@ -75,9 +87,12 @@
         "id": "know-the-tide",
         "nome": "Conoscere la marea",
         "nomeOriginale": "Know the Tide",
-        "testoOriginale": "You can sense the ebb and flow of life. When you roll with Fear, place a token on your community card. You can hold a number of tokens equal to your level. Before you make an action roll, you can spend any number of these tokens to gain a +1 bonus to the roll for each token spent. At the end of each session, clear all unspent tokens."
+        "testoOriginale": "You can sense the ebb and flow of life. When you roll with Fear, place a token on your community card. You can hold a number of tokens equal to your level. Before you make an action roll, you can spend any number of these tokens to gain a +1 bonus to the roll for each token spent. At the end of each session, clear all unspent tokens.",
+        "testo": "Senti il flusso e riflusso della vita. Quando tiri con Paura, metti un gettone sulla tua carta comunità. Puoi tenere tanti gettoni quanto il tuo livello. Prima di fare un tiro d'azione puoi spendere quanti gettoni vuoi, ottenendo +1 al tiro per ogni gettone speso. Alla fine di ogni sessione i gettoni non spesi vanno persi."
       }
-    ]
+    ],
+    "descrizione": "Far parte di una comunità di Marittimi significa aver vissuto su una grande distesa d'acqua o vicino a essa. Queste comunità sono costruite, fisicamente e culturalmente, attorno alle acque che chiamano casa. Alcune vivono lungo la costa e costruiscono porti per gente del posto e viaggiatori. Questi porti sono centri di commercio, attrazioni per i forestieri o semplicemente un luogo sicuro dove riposare dopo settimane di viaggio. Altri Marittimi vivono sull'acqua, in piccole barche o grandi navi, e per loro \"casa\" significa una nave e il suo equipaggio, non una terra. Ovunque vivano, sono legati alle maree dell'oceano e alle creature che le abitano. Imparano a pescare da piccoli e si allenano fin dalla nascita a trattenere il fiato e a nuotare anche nelle acque più agitate. Sono molto ricercati per le loro doti di marinai, e molti diventano capitani, nella propria comunità, al servizio di altri o perfino al comando di potenti flotte.",
+    "aggettivi": "I Marittimi sono spesso schietti, collaborativi, esuberanti, fieri, risoluti e temprati dalle intemperie."
   },
   {
     "id": "slyborne",
@@ -91,9 +106,12 @@
         "id": "scoundrel",
         "nome": "Canaglia",
         "nomeOriginale": "Scoundrel",
-        "testoOriginale": "You have advantage on rolls to negotiate with criminals, detect lies, or find a safe place to hide."
+        "testoOriginale": "You have advantage on rolls to negotiate with criminals, detect lies, or find a safe place to hide.",
+        "testo": "Hai vantaggio ai tiri per trattare con i criminali, scoprire le bugie o trovare un posto sicuro dove nasconderti."
       }
-    ]
+    ],
+    "descrizione": "Far parte di una comunità di Malavitosi significa provenire da un gruppo che agisce fuori dalla legge: criminali di ogni tipo, imbroglioni e truffatori. A unire queste comunità sono i loro scopi poco onorevoli e i modi astuti con cui li raggiungono. Molti di loro hanno abilità poco raccomandabili: falsificazione, furto, contrabbando e violenza. I Malavitosi possono appartenere a qualsiasi classe sociale, da chi ha accumulato enormi ricchezze e influenza a chi non ha un soldo. Visti da fuori possono sembrare teppisti senza lealtà, ma queste comunità hanno alcuni dei codici d'onore più rigidi che esistano, e chi li infrange può fare una fine terribile.",
+    "aggettivi": "I Malavitosi sono spesso calcolatori, astuti, temibili, perspicaci, scaltri e tenaci."
   },
   {
     "id": "underborne",
@@ -107,9 +125,12 @@
         "id": "low-light-living",
         "nome": "Vita nella penombra",
         "nomeOriginale": "Low-Light Living",
-        "testoOriginale": "When you're in an area with low light or heavy shadow, you have advantage on rolls to hide, investigate, or perceive details within that area."
+        "testoOriginale": "When you're in an area with low light or heavy shadow, you have advantage on rolls to hide, investigate, or perceive details within that area.",
+        "testo": "Quando sei in una zona poco illuminata o in ombra fitta, hai vantaggio ai tiri per nasconderti, indagare o notare dettagli in quella zona."
       }
-    ]
+    ],
+    "descrizione": "Far parte di una comunità di Sotterranei significa provenire da una società che vive sotto terra. Molti vivono proprio sotto le città e i villaggi di altre comunità, altri molto più in profondità. Queste comunità vanno da piccoli gruppi familiari in cunicoli a enormi metropoli in caverne di pietra. In molti luoghi i Sotterranei sono famosi per l'audacia e l'abilità che permettono loro grandi imprese di architettura e ingegneria. Vengono spesso ingaggiati per il loro coraggio, perché anche il meno ardito tra loro ha probabilmente incontrato temibili bestie del sottosuolo, e imparare a sbarazzarsene è normale in queste società. A causa dei pericoli del loro ambiente, molte comunità di Sotterranei sviluppano linguaggi senza parole unici, che si rivelano utili anche in superficie.",
+    "aggettivi": "I Sotterranei sono spesso composti, sfuggenti, indomiti, innovativi, intraprendenti e semplici."
   },
   {
     "id": "wanderborne",
@@ -123,9 +144,12 @@
         "id": "nomadic-pack",
         "nome": "Bagaglio nomade",
         "nomeOriginale": "Nomadic Pack",
-        "testoOriginale": "Add a Nomadic Pack to your inventory. Once per session, you can spend a Hope to reach into this pack and pull out a mundane item that's useful to your situation. Work with the GM to figure out what item you take out."
+        "testoOriginale": "Add a Nomadic Pack to your inventory. Once per session, you can spend a Hope to reach into this pack and pull out a mundane item that's useful to your situation. Work with the GM to figure out what item you take out.",
+        "testo": "Aggiungi un Bagaglio nomade al tuo inventario. Una volta per sessione puoi spendere 1 Speranza per frugare nel bagaglio e tirarne fuori un oggetto comune utile nella situazione. Decidi con il GM quale oggetto tiri fuori."
       }
-    ]
+    ],
+    "descrizione": "Far parte di una comunità di Nomadi significa aver vissuto in viaggio, senza una casa fissa, conoscendo molte culture diverse. A differenza di tante comunità definite dal luogo in cui vivono, i Nomadi sono definiti dal loro stile di vita itinerante. Poiché si spostano spesso, danno meno valore all'accumulo di beni materiali e più all'acquisizione di informazioni, abilità e conoscenze. Alcuni Nomadi sono uniti da un'etica comune, come una religione o certi valori politici o economici; altri si ritrovano insieme dopo una tragedia condivisa, come la perdita della casa o della terra. Qualunque sia il motivo, i pericoli della vita di strada e la scelta di continuare a percorrerla insieme fanno sì che i Nomadi siano noti per la loro lealtà incrollabile.",
+    "aggettivi": "I Nomadi sono spesso imperscrutabili, magnanimi, allegri, affidabili, scaltri e anticonformisti."
   },
   {
     "id": "wildborne",
@@ -139,8 +163,11 @@
         "id": "lightfoot",
         "nome": "Passo leggero",
         "nomeOriginale": "Lightfoot",
-        "testoOriginale": "Your movement is naturally silent. You have advantage on rolls to move without being heard."
+        "testoOriginale": "Your movement is naturally silent. You have advantage on rolls to move without being heard.",
+        "testo": "Ti muovi naturalmente in silenzio. Hai vantaggio ai tiri per muoverti senza farti sentire."
       }
-    ]
+    ],
+    "descrizione": "Far parte di una comunità di Silvani significa aver vissuto nel cuore della foresta. Queste comunità si distinguono per la dedizione alla tutela della loro terra, e molte hanno forti legami religiosi o culturali con gli animali tra cui vivono. Da qui nascono soluzioni architettoniche e tecnologiche uniche, che privilegiano la sostenibilità rispetto ai risultati rapidi e abbondanti. È tipico dei Silvani integrare villaggi e città nell'ambiente naturale ed evitare di disturbare la vita di piante e animali. Alcuni costruiscono le loro dimore in alto tra i rami, altri sul terreno sotto la volta della foresta. Non è raro che i Silvani restino appartati e nascosti nelle loro case nel bosco.",
+    "aggettivi": "I Silvani sono spesso tenaci, leali, premurosi, solitari, saggi e vivaci."
   }
 ]

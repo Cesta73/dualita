@@ -45,11 +45,14 @@ export interface Classe extends Named {
   descrizioneOriginale: string;
   descrizione?: string;
   oggettiDiClasseOriginale: string;
+  oggettiDiClasse?: string;
   capacitaSperanza: Capacita;
   capacitaDiClasse: Capacita[];
   sottoclassi: string[];
   domandeStoriaOriginale: string[];
   domandeLegamiOriginale: string[];
+  domandeStoria?: string[];
+  domandeLegami?: string[];
 }
 
 /** SRD p.8-26 */
@@ -80,6 +83,7 @@ export interface Comunita extends Named {
   descrizioneOriginale: string;
   descrizione?: string;
   aggettiviOriginale: string;
+  aggettivi?: string;
   capacita: Capacita[];
 }
 
@@ -108,6 +112,16 @@ export interface CartaDominio extends Named {
   testo?: string;
 }
 
+/** Modificatori numerici ricavati dalle capacità di armi e armature (es. "Pesante: −1 all'Evasione") */
+export interface ModificatoriEquip {
+  evasione?: number;
+  punteggioArmatura?: number;
+  tiriAttacco?: number;
+  tiriIncantatore?: number;
+  sogliaGravissimo?: number;
+  tratti?: Partial<Record<TraitId, number>>;
+}
+
 /** SRD p.44-54 */
 export interface Arma extends Named {
   categoria: 'primaria' | 'secondaria';
@@ -121,6 +135,7 @@ export interface Arma extends Named {
   /** Mani occupate (Burden) */
   impugnatura: 1 | 2;
   capacita: Capacita | null;
+  modificatori?: ModificatoriEquip;
   sediaARotelle?: true;
   pagina: number;
 }
@@ -131,6 +146,7 @@ export interface Armatura extends Named {
   soglieBase: { grave: number; gravissimo: number };
   punteggioBase: number;
   capacita: Capacita | null;
+  modificatori?: ModificatoriEquip;
   pagina: number;
 }
 

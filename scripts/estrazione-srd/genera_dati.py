@@ -59,15 +59,75 @@ def tr(table, en, where):
     return table[en]
 
 
+FEATURE_TEXTS = {}
+
+
 def feature(f, table, where):
-    return named({'id': re.sub(r'[^a-z0-9]+', '-', f['nomeOriginale'].lower()).strip('-'), **f},
-                 tr(table, f['nomeOriginale'], where))
+    fid = re.sub(r'[^a-z0-9]+', '-', f['nomeOriginale'].lower()).strip('-')
+    y = named({'id': fid, **f, 'testoOriginale': fix_en(f['testoOriginale'])}, tr(table, f['nomeOriginale'], where))
+    it = FEATURE_TEXTS.get(f'{where}/{fid}')
+    if it:
+        y['testo'] = it
+    return y
+
+
+# Correzioni di refusi dell'impaginazione nei testi inglesi (il PDF spezza parole o righe)
+EN_FIXES = {
+    'can m ark an additional': 'can mark an additional',
+    'equal to your primary\n• weapon\'s damage.': 'equal to your primary weapon\'s damage.',
+    '• Tier 3: 13/3 1': '• Tier 3: 13/31',
+}
+
+TRAIT_EN = {'Agility': 'agility', 'Strength': 'strength', 'Finesse': 'finesse',
+            'Instinct': 'instinct', 'Presence': 'presence', 'Knowledge': 'knowledge'}
+
+
+def fix_en(t):
+    for a, b in EN_FIXES.items():
+        t = t.replace(a, b)
+    return t
+
+
+def modifiers(text):
+    """Modificatori numerici delle capacità di armi/armature (SRD p.44-56), usati dai calcoli della scheda."""
+    m = {}
+    for sign, n, what in re.findall(r'([+-])(\d+) to (Evasion|Armor Score|attack rolls|Spellcast Rolls|Severe damage threshold|all character traits and Evasion|Agility|Strength|Finesse|Instinct|Presence|Knowledge)', text):
+        v = int(n) * (1 if sign == '+' else -1)
+        if what == 'Evasion':
+            m['evasione'] = m.get('evasione', 0) + v
+        elif what == 'Armor Score':
+            m['punteggioArmatura'] = m.get('punteggioArmatura', 0) + v
+        elif what == 'attack rolls':
+            m['tiriAttacco'] = v
+        elif what == 'Spellcast Rolls':
+            m['tiriIncantatore'] = v
+        elif what == 'Severe damage threshold':
+            m['sogliaGravissimo'] = v
+        elif what == 'all character traits and Evasion':
+            m['evasione'] = m.get('evasione', 0) + v
+            m['tratti'] = {t: v for t in TRAIT_EN.values()}
+        else:
+            m.setdefault('tratti', {})[TRAIT_EN[what]] = v
+    return m or None
+
+
+def apply_texts(item, texts, fields):
+    """Copia le traduzioni (campo IT) accanto ai campi inglesi."""
+    t = texts.get(item['id'], {})
+    for it_field in fields:
+        if it_field in t:
+            item[it_field] = t[it_field]
 
 
 def main():
     g = glossary()
     gname = lambda id_: g[camel(id_)]['it']
     caps = load('capacita')
+    tcl = load('testi_classi')
+    tsc = load('testi_stirpi_comunita')
+    tce = load('testi_carte_equip')
+    FEATURE_TEXTS.update(tcl['capacita'])
+    FEATURE_TEXTS.update(tsc['capacita'])
 
     # Domini
     domini = [named(d, gname(d['id'])) for d in estrai_domini.extract()]
@@ -78,12 +138,14 @@ def main():
     pers['classi'] = []
     for x in c:
         y = named(x, gname(x['id']))
+        apply_texts(y, tcl['classi'], ['descrizione', 'oggettiDiClasse', 'domandeStoria', 'domandeLegami'])
         y['capacitaSperanza'] = feature(x['capacitaSperanza'], caps, x['id'])
         y['capacitaDiClasse'] = [feature(f, caps, x['id']) for f in x['capacitaDiClasse']]
         pers['classi'].append(y)
     pers['sottoclassi'] = []
     for x in s:
         y = named(x, gname(x['id']))
+        apply_texts(y, tcl['sottoclassi'], ['descrizione'])
         for k in ('fondamento', 'specializzazione', 'maestria'):
             y[k] = [feature(f, caps, x['id']) for f in x[k]]
         pers['sottoclassi'].append(y)
@@ -91,6 +153,7 @@ def main():
         pers[key] = []
         for x in estrai_personaggi.heritage(a, b, h, kind):
             y = named(x, gname(x['id']))
+            apply_texts(y, tsc[key], ['descrizione', 'aggettivi'])
             y['capacita'] = [feature(f, caps, x['id']) for f in x['capacita']]
             pers[key].append(y)
 
@@ -104,7 +167,12 @@ def main():
 
     # Carte dominio
     tc = load('carte')
-    carte = [named(x, tr(tc, x['nomeOriginale'], 'carte')) for x in estrai_carte.extract()]
+    carte = []
+    for x in estrai_carte.extract():
+        y = named({**x, 'testoOriginale': fix_en(x['testoOriginale'])}, tr(tc, x['nomeOriginale'], 'carte'))
+        if x['id'] in tce['carte']:
+            y['testo'] = tce['carte'][x['id']]
+        carte.append(y)
 
     # Armi e armature
     te = load('equipaggiamento')
@@ -121,12 +189,24 @@ def main():
         y = named(x, eq_name(x['nomeOriginale'], 'armi'))
         if x['capacita']:
             y['capacita'] = feature(x['capacita'], caps, x['id'])
+            it = tce['capacitaEquipaggiamento'].get(x['capacita']['testoOriginale'])
+            if it:
+                y['capacita']['testo'] = it
+            mods = modifiers(x['capacita']['testoOriginale'])
+            if mods:
+                y['modificatori'] = mods
         armi.append(y)
     armature = []
     for x in estrai_equipaggiamento.armors():
         y = named(x, eq_name(x['nomeOriginale'], 'armature'))
         if x['capacita']:
             y['capacita'] = feature(x['capacita'], caps, x['id'])
+            it = tce['capacitaEquipaggiamento'].get(x['capacita']['testoOriginale'])
+            if it:
+                y['capacita']['testo'] = it
+            mods = modifiers(x['capacita']['testoOriginale'])
+            if mods:
+                y['modificatori'] = mods
         armature.append(y)
 
     # Bottino e consumabili

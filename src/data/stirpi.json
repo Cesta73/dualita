@@ -10,15 +10,18 @@
         "id": "purposeful-design",
         "nome": "Progetto con uno scopo",
         "nomeOriginale": "Purposeful Design",
-        "testoOriginale": "Decide who made you and for what purpose. At character creation, choose one of your Experiences that best aligns with this purpose and gain a permanent +1 bonus to it."
+        "testoOriginale": "Decide who made you and for what purpose. At character creation, choose one of your Experiences that best aligns with this purpose and gain a permanent +1 bonus to it.",
+        "testo": "Decidi chi ti ha costruito e per quale scopo. Alla creazione del personaggio scegli l'Esperienza più in linea con questo scopo e ottieni un bonus permanente di +1 a quell'Esperienza."
       },
       {
         "id": "efficient",
         "nome": "Efficiente",
         "nomeOriginale": "Efficient",
-        "testoOriginale": "When you take a short rest, you can choose a long rest move instead of a short rest move."
+        "testoOriginale": "When you take a short rest, you can choose a long rest move instead of a short rest move.",
+        "testo": "Quando fai un riposo breve, puoi scegliere una mossa del riposo lungo invece di una mossa del riposo breve."
       }
-    ]
+    ],
+    "descrizione": "I clank sono esseri meccanici senzienti, costruiti con materiali diversi come metallo, legno e pietra. Possono somigliare a umanoidi, ad animali o perfino a oggetti inanimati. Come gli esseri organici, hanno corpi di ogni dimensione. Poiché sono costruiti su misura, molti clank hanno configurazioni fisiche molto specializzate: per esempio mani ad artiglio per afferrare, ruote per muoversi o armi incorporate.\nMolti clank amano le modifiche al corpo, per stile oltre che per utilità, e chi appartiene ad altre stirpi si rivolge spesso agli artigiani clank per farsi costruire ausili per il movimento e ornamenti su misura. Anche altre stirpi possono creare clank, a volte ispirandosi al proprio aspetto, ma è comune che siano i clank stessi a costruirsi a vicenda. Un clank vive finché riesce a procurarsi o fabbricarsi nuovi pezzi, quindi il suo corpo è di fatto immortale. La sua mente però subisce il passare del tempo, e si deteriora man mano che la magia che lo alimenta perde forza."
   },
   {
     "id": "drakona",
@@ -31,15 +34,18 @@
         "id": "scales",
         "nome": "Scaglie",
         "nomeOriginale": "Scales",
-        "testoOriginale": "Your scales act as natural protection. When you would take Severe damage, you can mark a Stress to mark 1 fewer Hit Points."
+        "testoOriginale": "Your scales act as natural protection. When you would take Severe damage, you can mark a Stress to mark 1 fewer Hit Points.",
+        "testo": "Le tue scaglie ti proteggono naturalmente. Quando subiresti un danno Gravissimo, puoi segnare 1 Stress per segnare 1 Punto Ferita in meno."
       },
       {
         "id": "elemental-breath",
         "nome": "Soffio elementale",
         "nomeOriginale": "Elemental Breath",
-        "testoOriginale": "Choose an element for your breath (such as electricity, fire, or ice). You can use this breath against a target or group of targets within Very Close range, treating it as an Instinct weapon that deals d8 magic damage using your Proficiency."
+        "testoOriginale": "Choose an element for your breath (such as electricity, fire, or ice). You can use this breath against a target or group of targets within Very Close range, treating it as an Instinct weapon that deals d8 magic damage using your Proficiency.",
+        "testo": "Scegli un elemento per il tuo soffio (per esempio elettricità, fuoco o ghiaccio). Puoi usare il soffio contro un bersaglio o un gruppo di bersagli a gittata Molto vicina, trattandolo come un'arma di Istinto che infligge d8 danni magici usando la tua Competenza."
       }
-    ]
+    ],
+    "descrizione": "I drakona somigliano a draghi senza ali dalla forma umanoide e possiedono un potente soffio elementale. Tutti i drakona hanno scaglie spesse che offrono un'ottima armatura naturale contro gli attacchi e contro le forze della natura. Sono di grossa taglia, in media tra 1,5 e 2,1 metri, con denti lunghi e aguzzi. Nei circa 350 anni di vita di un drakona i denti ricrescono di continuo, così non rischia mai di perdere un incisivo per sempre. A differenza dei loro antenati draghi, i drakona non hanno ali e non possono volare senza aiuto magico. L'elemento del soffio si tramanda di generazione in generazione, anche se in rari casi il potere elementale di un drakona è diverso da quello della sua famiglia."
   },
   {
     "id": "dwarf",
@@ -52,15 +58,18 @@
         "id": "thick-skin",
         "nome": "Pelle spessa",
         "nomeOriginale": "Thick Skin",
-        "testoOriginale": "When you take Minor damage, you can mark 2 Stress instead of marking a Hit Point."
+        "testoOriginale": "When you take Minor damage, you can mark 2 Stress instead of marking a Hit Point.",
+        "testo": "Quando subisci un danno Lieve, puoi segnare 2 Stress invece di segnare 1 Punto Ferita."
       },
       {
         "id": "increased-fortitude",
         "nome": "Tempra accresciuta",
         "nomeOriginale": "Increased Fortitude",
-        "testoOriginale": "Spend 3 Hope to halve incoming physical damage."
+        "testoOriginale": "Spend 3 Hope to halve incoming physical damage.",
+        "testo": "Spendi 3 Speranza per dimezzare il danno fisico in arrivo."
       }
-    ]
+    ],
+    "descrizione": "I nani si riconoscono facilmente: sono umanoidi bassi, dalla corporatura squadrata, muscoli densi e capelli folti. In media sono alti tra 1,2 e 1,7 metri e spesso sono larghi in proporzione alla statura. Pelle e unghie contengono molta cheratina, che li rende naturalmente resistenti; per questo i nani possono incastonarsi gemme nel corpo e decorarsi con tatuaggi o piercing. I peli crescono folti, di solito sulla testa, ma alcuni nani ne hanno su tutto il corpo. I nani di ogni genere possono farsi crescere la barba, che spesso acconciano in modi elaborati. In genere vivono fino a 250 anni e mantengono la massa muscolare fino a tarda età."
   },
   {
     "id": "elf",
@@ -73,15 +82,18 @@
         "id": "quick-reactions",
         "nome": "Riflessi pronti",
         "nomeOriginale": "Quick Reactions",
-        "testoOriginale": "Mark a Stress to gain advantage on a reaction roll."
+        "testoOriginale": "Mark a Stress to gain advantage on a reaction roll.",
+        "testo": "Segna 1 Stress per ottenere vantaggio a un tiro di reazione."
       },
       {
         "id": "celestial-trance",
         "nome": "Trance celeste",
         "nomeOriginale": "Celestial Trance",
-        "testoOriginale": "During a rest, you can drop into a trance to choose an additional downtime move."
+        "testoOriginale": "During a rest, you can drop into a trance to choose an additional downtime move.",
+        "testo": "Durante un riposo puoi entrare in trance per scegliere una mossa di pausa in più."
       }
-    ]
+    ],
+    "descrizione": "Gli elfi sono di solito umanoidi alti, con orecchie a punta e sensi acutissimi. Le orecchie variano per dimensione e forma, e con l'età le punte cominciano a piegarsi verso il basso. Gli elfi hanno corporature molto diverse ma sono tutti piuttosto alti, tra circa 1,8 e 2 metri. Invece di dormire, tutti gli elfi possono entrare in una trance celeste, che permette loro di riposare bene in poco tempo.\nAlcuni elfi hanno una cosiddetta \"forma mistica\": succede quando un elfo si dedica così profondamente allo studio o alla protezione del mondo naturale che il suo corpo cambia. Può comparire con lentiggini celesti, foglie, rampicanti o fiori tra i capelli, occhi che tremolano come fiamme e altro ancora. A volte questi tratti si ereditano dai genitori, ma se un elfo cambia ambiente o interesse magico, il suo aspetto cambia col tempo. Poiché gli elfi vivono circa 350 anni, questi tratti possono cambiare più di una volta nel corso della vita."
   },
   {
     "id": "faerie",
@@ -94,15 +106,18 @@
         "id": "luckbender",
         "nome": "Piegafortuna",
         "nomeOriginale": "Luckbender",
-        "testoOriginale": "Once per session, after you or a willing ally within Close range makes an action roll, you can spend 3 Hope to reroll the Duality Dice."
+        "testoOriginale": "Once per session, after you or a willing ally within Close range makes an action roll, you can spend 3 Hope to reroll the Duality Dice.",
+        "testo": "Una volta per sessione, dopo che tu o un alleato consenziente a gittata Vicina avete fatto un tiro d'azione, puoi spendere 3 Speranza per ripetere il tiro dei Dadi della Dualità."
       },
       {
         "id": "wings",
         "nome": "Ali",
         "nomeOriginale": "Wings",
-        "testoOriginale": "You can fly. While flying, you can mark a Stress after an adversary makes an attack against you to gain a +2 bonus to your Evasion against that attack."
+        "testoOriginale": "You can fly. While flying, you can mark a Stress after an adversary makes an attack against you to gain a +2 bonus to your Evasion against that attack.",
+        "testo": "Puoi volare. Mentre voli, dopo che un avversario ha fatto un attacco contro di te, puoi segnare 1 Stress per ottenere +2 all'Evasione contro quell'attacco."
       }
-    ]
+    ],
+    "descrizione": "Le fate sono creature umanoidi alate con tratti da insetto. Questi tratti vanno dall'umanoide all'insettoide: alcune hanno braccia in più, occhi composti, organi luminosi, esoscheletri chitinosi o pungiglioni. Per il loro stretto legame con il mondo naturale, hanno spesso caratteristiche che permettono loro di mimetizzarsi tra le piante. In media una fata è alta tra 60 centimetri e 1,5 metri, ma alcune arrivano a 2,1 metri. Tutte le fate hanno ali membranose e attraversano una metamorfosi. Il processo e i cambiamenti variano da fata a fata, ma durante la trasformazione ognuna assume l'aspetto unico che avrà per il resto dei suoi circa 50 anni di vita."
   },
   {
     "id": "faun",
@@ -115,15 +130,18 @@
         "id": "caprine-leap",
         "nome": "Balzo caprino",
         "nomeOriginale": "Caprine Leap",
-        "testoOriginale": "You can leap anywhere within Close range as though you were using normal movement, allowing you to vault obstacles, jump across gaps, or scale barriers with ease."
+        "testoOriginale": "You can leap anywhere within Close range as though you were using normal movement, allowing you to vault obstacles, jump across gaps, or scale barriers with ease.",
+        "testo": "Puoi saltare in qualsiasi punto a gittata Vicina come se ti muovessi normalmente: superi ostacoli, salti fossati o scavalchi barriere con facilità."
       },
       {
         "id": "kick",
         "nome": "Calcio",
         "nomeOriginale": "Kick",
-        "testoOriginale": "When you succeed on an attack against a target within Melee range, you can mark a Stress to kick yourself off them, dealing an extra 2d6 damage and knocking back either yourself or the target to Very Close range."
+        "testoOriginale": "When you succeed on an attack against a target within Melee range, you can mark a Stress to kick yourself off them, dealing an extra 2d6 damage and knocking back either yourself or the target to Very Close range.",
+        "testo": "Quando riesci in un attacco contro un bersaglio in Mischia, puoi segnare 1 Stress per darti la spinta con un calcio contro di lui: infliggi 2d6 danni extra e respingi te stesso o il bersaglio a gittata Molto vicina."
       }
-    ]
+    ],
+    "descrizione": "I fauni somigliano a capre umanoidi, con corna ricurve, pupille squadrate e zoccoli fessi. L'aspetto varia, ma la maggior parte ha un busto umanoide e la parte inferiore del corpo da capra, coperta di pelo folto. Il volto può essere più caprino o più umano, e le forme di orecchie e corna sono molto varie: le corna vanno da corte e poco ricurve a grandi e decisamente arricciate. In media un fauno è alto tra 1,2 e 2 metri, ma la sua altezza può cambiare molto da un momento all'altro a seconda della postura. Quasi tutti i fauni hanno arti lunghi in proporzione, qualunque sia la loro taglia, e sono noti per i colpi potenti che sanno sferrare con gli zoccoli fessi. Vivono circa 225 anni, e invecchiando il loro aspetto può diventare sempre più caprino."
   },
   {
     "id": "firbolg",
@@ -136,15 +154,18 @@
         "id": "charge",
         "nome": "Carica",
         "nomeOriginale": "Charge",
-        "testoOriginale": "When you succeed on an Agility Roll to move from Far or Very Far range into Melee range with one or more targets, you can mark a Stress to deal 1d12 physical damage to all targets within Melee range."
+        "testoOriginale": "When you succeed on an Agility Roll to move from Far or Very Far range into Melee range with one or more targets, you can mark a Stress to deal 1d12 physical damage to all targets within Melee range.",
+        "testo": "Quando riesci in un Tiro di Agilità per spostarti da gittata Lontana o Molto lontana fino alla Mischia con uno o più bersagli, puoi segnare 1 Stress per infliggere 1d12 danni fisici a tutti i bersagli in Mischia."
       },
       {
         "id": "unshakable",
         "nome": "Incrollabile",
         "nomeOriginale": "Unshakable",
-        "testoOriginale": "When you would mark a Stress, roll a d6. On a result of 6, don't mark it."
+        "testoOriginale": "When you would mark a Stress, roll a d6. On a result of 6, don't mark it.",
+        "testo": "Quando dovresti segnare 1 Stress, tira un d6. Con un 6 non lo segni."
       }
-    ]
+    ],
+    "descrizione": "I firbolg sono umanoidi bovini, riconoscibili di solito dal naso largo e dalle lunghe orecchie pendenti. Alcuni hanno un volto che è un misto di umanoide e bisonte, bue, mucca o altro bovino; altri, spesso chiamati minotauri, hanno una testa del tutto simile a quella di un bovino. Sono creature alte e muscolose, tra circa 1,5 e 2,1 metri, e hanno una forza notevole a qualsiasi età. Alcuni firbolg usano questa forza per caricare gli avversari, cosa particolarmente efficace per chi ha uno dei tanti tipi di corna comuni in questa stirpe. Le loro caratteristiche variano, ma tutti i firbolg sono coperti di pelo, che può essere di toni tenui e terrosi oppure di colori pastello, come rosa e azzurri delicati. In media vivono circa 150 anni."
   },
   {
     "id": "fungril",
@@ -157,15 +178,18 @@
         "id": "fungril-network",
         "nome": "Rete dei Fungril",
         "nomeOriginale": "Fungril Network",
-        "testoOriginale": "Make an Instinct Roll (12) to use your mycelial array to speak with others of your ancestry. On a success, you can communicate across any distance."
+        "testoOriginale": "Make an Instinct Roll (12) to use your mycelial array to speak with others of your ancestry. On a success, you can communicate across any distance.",
+        "testo": "Fai un Tiro di Istinto (12) per usare la tua rete miceliale e parlare con altri della tua stirpe. Se riesci, puoi comunicare a qualsiasi distanza."
       },
       {
         "id": "death-connection",
         "nome": "Legame con la morte",
         "nomeOriginale": "Death Connection",
-        "testoOriginale": "While touching a corpse that died recently, you can mark a Stress to extract one memory from the corpse related to a specific emotion or sensation of your choice."
+        "testoOriginale": "While touching a corpse that died recently, you can mark a Stress to extract one memory from the corpse related to a specific emotion or sensation of your choice.",
+        "testo": "Mentre tocchi un cadavere morto di recente, puoi segnare 1 Stress per estrarne un ricordo legato a un'emozione o a una sensazione a tua scelta."
       }
-    ]
+    ],
+    "descrizione": "I fungril somigliano a funghi umanoidi. Possono avere un aspetto più umanoide o più fungino, e hanno colori di ogni tipo, dai toni della terra al rosso acceso, al giallo, al viola e al blu. Hanno una varietà incredibile di corpi, volti e arti, perché non esiste una forma comune a tutti. Anche l'altezza va da appena 60 centimetri a ben 2,1 metri. La vita media di un fungril è di circa 300 anni, ma si dice che alcuni vivano molto più a lungo. Possono comunicare senza parole, e molti usano una rete miceliale per scambiarsi informazioni chimicamente con altri fungril anche a grandi distanze."
   },
   {
     "id": "galapa",
@@ -178,15 +202,18 @@
         "id": "shell",
         "nome": "Guscio",
         "nomeOriginale": "Shell",
-        "testoOriginale": "Gain a bonus to your damage thresholds equal to your Proficiency."
+        "testoOriginale": "Gain a bonus to your damage thresholds equal to your Proficiency.",
+        "testo": "Ottieni un bonus alle Soglie di Danno pari alla tua Competenza."
       },
       {
         "id": "retract",
         "nome": "Ritrarsi",
         "nomeOriginale": "Retract",
-        "testoOriginale": "Mark a Stress to retract into your shell. While in your shell, you have resistance to physical damage, you have disadvantage on action rolls, and you can't move."
+        "testoOriginale": "Mark a Stress to retract into your shell. While in your shell, you have resistance to physical damage, you have disadvantage on action rolls, and you can't move.",
+        "testo": "Segna 1 Stress per ritirarti nel guscio. Mentre sei nel guscio hai resistenza ai danni fisici, hai svantaggio ai tiri d'azione e non puoi muoverti."
       }
-    ]
+    ],
+    "descrizione": "I galapa somigliano a tartarughe antropomorfe con un grande guscio a cupola in cui possono ritirarsi. In media sono alti tra 1,2 e 1,8 metri, e la forma della testa e del corpo può ricordare qualsiasi tipo di tartaruga. Hanno colori della terra, soprattutto sfumature di verde e marrone, e disegni unici sul guscio. Quando serve difendersi possono ritirare testa, braccia e gambe nel guscio, usandolo come uno scudo naturale. Alcuni rinforzano o decorano il guscio applicandovi armature o incidendovi disegni, ma è un procedimento estremamente doloroso. La maggior parte dei galapa si muove lentamente a qualsiasi età, e può vivere circa 150 anni."
   },
   {
     "id": "giant",
@@ -199,15 +226,18 @@
         "id": "endurance",
         "nome": "Resistenza fisica",
         "nomeOriginale": "Endurance",
-        "testoOriginale": "Gain an additional Hit Point slot at character creation."
+        "testoOriginale": "Gain an additional Hit Point slot at character creation.",
+        "testo": "Alla creazione del personaggio ottieni uno slot Punti Ferita in più."
       },
       {
         "id": "reach",
         "nome": "Lunga portata",
         "nomeOriginale": "Reach",
-        "testoOriginale": "Treat any weapon, ability, spell, or other feature that has a Melee range as though it has a Very Close range instead."
+        "testoOriginale": "Treat any weapon, ability, spell, or other feature that has a Melee range as though it has a Very Close range instead.",
+        "testo": "Tratta ogni arma, abilità, incantesimo o altra capacità con gittata Mischia come se avesse gittata Molto vicina."
       }
-    ]
+    ],
+    "descrizione": "I giganti sono umanoidi imponenti, con spalle larghe, braccia lunghe e da uno a tre occhi. Da adulti sono alti tra 2 e 2,6 metri e sono naturalmente muscolosi, qualunque sia la loro corporatura. Si riconoscono facilmente dalla struttura massiccia e dalle braccia e dal collo allungati. Possono avere fino a tre occhi, ma tutti i giganti nascono senza e restano ciechi per il primo anno di vita. Finché un gigante non compie 10 anni e i suoi tratti non sono del tutto sviluppati, la formazione degli occhi può cambiare. Quelli con un solo occhio sono chiamati comunemente ciclopi. Un gigante vive in media circa 75 anni."
   },
   {
     "id": "goblin",
@@ -220,15 +250,18 @@
         "id": "surefooted",
         "nome": "Piede sicuro",
         "nomeOriginale": "Surefooted",
-        "testoOriginale": "You ignore disadvantage on Agility Rolls."
+        "testoOriginale": "You ignore disadvantage on Agility Rolls.",
+        "testo": "Ignori lo svantaggio ai Tiri di Agilità."
       },
       {
         "id": "danger-sense",
         "nome": "Senso del pericolo",
         "nomeOriginale": "Danger Sense",
-        "testoOriginale": "Once per rest, mark a Stress to force an adversary to reroll an attack against you or an ally within Very Close range."
+        "testoOriginale": "Once per rest, mark a Stress to force an adversary to reroll an attack against you or an ally within Very Close range.",
+        "testo": "Una volta per riposo, segna 1 Stress per costringere un avversario a ripetere un attacco contro di te o contro un alleato a gittata Molto vicina."
       }
-    ]
+    ],
+    "descrizione": "I goblin sono piccoli umanoidi facili da riconoscere per i grandi occhi e le enormi orecchie membranose. Con un udito finissimo e una vista acuta colgono i dettagli sia a grande distanza sia al buio, e questo permette loro di muoversi con facilità anche negli ambienti più difficili. I colori della pelle e degli occhi sono incredibilmente vari, senza una tinta, vivace o tenue, più comune delle altre. Un goblin è alto di solito tra 90 centimetri e 1,2 metri, e ciascun orecchio è grande più o meno come la sua testa. I goblin sono noti per usare la posizione delle orecchie in modo molto preciso quando comunicano senza parole. Vivono circa 100 anni, e molti conservano udito e vista eccellenti fino a tarda età."
   },
   {
     "id": "halfling",
@@ -241,15 +274,18 @@
         "id": "luckbringer",
         "nome": "Portafortuna",
         "nomeOriginale": "Luckbringer",
-        "testoOriginale": "At the start of each session, everyone in your party gains a Hope."
+        "testoOriginale": "At the start of each session, everyone in your party gains a Hope.",
+        "testo": "All'inizio di ogni sessione, tutti i membri del tuo gruppo guadagnano 1 Speranza."
       },
       {
         "id": "internal-compass",
         "nome": "Bussola interiore",
         "nomeOriginale": "Internal Compass",
-        "testoOriginale": "When you roll a 1 on your Hope Die, you can reroll it."
+        "testoOriginale": "When you roll a 1 on your Hope Die, you can reroll it.",
+        "testo": "Quando ottieni 1 sul Dado della Speranza, puoi ripeterne il tiro."
       }
-    ]
+    ],
+    "descrizione": "Gli halfling sono piccoli umanoidi con grandi piedi pelosi e orecchie tonde e sporgenti. In media sono alti tra 90 centimetri e 1,2 metri, e orecchie, naso e piedi sono più grandi in proporzione al resto del corpo. Vivono circa 150 anni, e il loro aspetto tende a restare giovanile anche quando passano dall'età adulta alla vecchiaia. Gli halfling sono naturalmente in sintonia con i campi magnetici del Reame Mortale, che danno loro una forte bussola interiore. Hanno anche udito e olfatto acuti, e spesso riconoscono le persone familiari dal rumore dei loro passi."
   },
   {
     "id": "human",
@@ -262,15 +298,18 @@
         "id": "high-stamina",
         "nome": "Grande vigore",
         "nomeOriginale": "High Stamina",
-        "testoOriginale": "Gain an additional Stress slot at character creation."
+        "testoOriginale": "Gain an additional Stress slot at character creation.",
+        "testo": "Alla creazione del personaggio ottieni uno slot Stress in più."
       },
       {
         "id": "adaptability",
         "nome": "Adattabilità",
         "nomeOriginale": "Adaptability",
-        "testoOriginale": "When you fail a roll that utilized one of your Experiences, you can mark a Stress to reroll."
+        "testoOriginale": "When you fail a roll that utilized one of your Experiences, you can mark a Stress to reroll.",
+        "testo": "Quando fallisci un tiro in cui hai usato una delle tue Esperienze, puoi segnare 1 Stress per ripetere il tiro."
       }
-    ]
+    ],
+    "descrizione": "Gli umani si riconoscono facilmente per le mani abili, le orecchie tonde e i corpi fatti per la resistenza. In media sono alti da poco meno di 1,5 metri a circa 2 metri. Hanno corporature molto varie: alcuni sono massicci, altri slanciati, e molti stanno a metà strada. Gli umani si adattano fisicamente e affrontano i climi rigidi con relativa facilità. In genere vivono fino a circa 100 anni, e il loro corpo cambia molto tra la giovinezza e la vecchiaia."
   },
   {
     "id": "infernis",
@@ -283,15 +322,18 @@
         "id": "fearless",
         "nome": "Senza paura",
         "nomeOriginale": "Fearless",
-        "testoOriginale": "When you roll with Fear, you can mark 2 Stress to change it into a roll with Hope instead."
+        "testoOriginale": "When you roll with Fear, you can mark 2 Stress to change it into a roll with Hope instead.",
+        "testo": "Quando tiri con Paura, puoi segnare 2 Stress per trasformarlo in un tiro con Speranza."
       },
       {
         "id": "dread-visage",
         "nome": "Aspetto terrificante",
         "nomeOriginale": "Dread Visage",
-        "testoOriginale": "You have advantage on rolls to intimidate hostile creatures."
+        "testoOriginale": "You have advantage on rolls to intimidate hostile creatures.",
+        "testo": "Hai vantaggio ai tiri per intimidire le creature ostili."
       }
-    ]
+    ],
+    "descrizione": "Gli infernis sono umanoidi con canini aguzzi, orecchie a punta e corna. Discendono dai demoni dei Circoli Inferiori. In media sono alti tra 1,5 e 2,1 metri e hanno dita lunghe e unghie appuntite. Alcuni hanno code lunghe, sottili e lisce che terminano a punta, a forcella o a punta di freccia. È comune che abbiano due o quattro corna, anche se alcuni hanno corone di molte corna o una sola. Le corna possono anche crescere in modo asimmetrico, formando figure uniche e spesso ricurve, che gli infernis arricchiscono con incisioni e ornamenti. Pelle, capelli e corna hanno colori di ogni tipo: pastelli delicati, toni netti o tinte vivaci come il rosso rosato, il viola intenso e il nero pece.\nGli infernis hanno un \"aspetto terrificante\" che si manifesta sia involontariamente, per esempio quando provano paura o altre emozioni forti, sia di proposito, quando vogliono intimidire un avversario. Questo aspetto può cambiare per breve tempo il loro aspetto in molti modi: allungando denti e unghie, cambiando il colore degli occhi, torcendo le corna o aumentando la statura. In media gli infernis vivono fino a 350 anni, e alcuni attribuiscono questa longevità alla loro discendenza demoniaca."
   },
   {
     "id": "katari",
@@ -304,15 +346,18 @@
         "id": "feline-instincts",
         "nome": "Istinti felini",
         "nomeOriginale": "Feline Instincts",
-        "testoOriginale": "When you make an Agility Roll, you can spend 2 Hope to reroll your Hope Die."
+        "testoOriginale": "When you make an Agility Roll, you can spend 2 Hope to reroll your Hope Die.",
+        "testo": "Quando fai un Tiro di Agilità, puoi spendere 2 Speranza per ripetere il tiro del Dado della Speranza."
       },
       {
         "id": "retracting-claws",
         "nome": "Artigli retrattili",
         "nomeOriginale": "Retracting Claws",
-        "testoOriginale": "Make an Agility Roll to scratch a target within Melee range. On a success, they become temporarily Vulnerable."
+        "testoOriginale": "Make an Agility Roll to scratch a target within Melee range. On a success, they become temporarily Vulnerable.",
+        "testo": "Fai un Tiro di Agilità per graffiare un bersaglio in Mischia. Se riesci, diventa temporaneamente Vulnerabile."
       }
-    ]
+    ],
+    "descrizione": "I katari sono umanoidi felini con artigli retrattili, pupille a fessura verticale e orecchie alte e triangolari. Possono avere anche piccoli canini aguzzi, pelo morbido e lunghe vibrisse che li aiutano a percepire e orientarsi. Le orecchie possono ruotare di quasi 180 gradi per captare i suoni, aumentando i loro sensi già acuti. I katari possono sembrare più o meno felini o umanoidi, con tratti da gatto come pelo, vibrisse e muso. Circa metà dei katari ha la coda. Pelle e pelo hanno moltissime tinte e motivi: tinta unita, tricolori, striati tigrati, e una gran varietà di macchie, chiazze, marmorizzazioni o bande. Sono alti tra circa 90 centimetri e 2 metri e vivono intorno ai 150 anni."
   },
   {
     "id": "orc",
@@ -325,15 +370,18 @@
         "id": "sturdy",
         "nome": "Robusto",
         "nomeOriginale": "Sturdy",
-        "testoOriginale": "When you have 1 Hit Point remaining, attacks against you have disadvantage."
+        "testoOriginale": "When you have 1 Hit Point remaining, attacks against you have disadvantage.",
+        "testo": "Quando ti resta 1 Punto Ferita, gli attacchi contro di te hanno svantaggio."
       },
       {
         "id": "tusks",
         "nome": "Zanne",
         "nomeOriginale": "Tusks",
-        "testoOriginale": "When you succeed on an attack against a target within Melee range, you can spend a Hope to gore the target with your tusks, dealing an extra 1d6 damage."
+        "testoOriginale": "When you succeed on an attack against a target within Melee range, you can spend a Hope to gore the target with your tusks, dealing an extra 1d6 damage.",
+        "testo": "Quando riesci in un attacco contro un bersaglio in Mischia, puoi spendere 1 Speranza per incornarlo con le zanne, infliggendo 1d6 danni extra."
       }
-    ]
+    ],
+    "descrizione": "Gli orchi sono umanoidi che si riconoscono facilmente per i tratti squadrati e per le zanne da cinghiale che sporgono dalla mascella inferiore. Le zanne hanno dimensioni diverse e, anche se escono dalla bocca, non servono a mangiare: molti orchi preferiscono decorarle con ornamenti importanti. Gli orchi vivono di solito 125 anni e, se non vengono modificate, le zanne continuano a crescere per tutta la vita. Hanno orecchie a punta, e capelli e pelle hanno di solito sfumature verdi, blu, rosa o grigie. Tendono ad avere una corporatura muscolosa e un'altezza media tra 1,5 e 2 metri."
   },
   {
     "id": "ribbet",
@@ -346,15 +394,18 @@
         "id": "amphibious",
         "nome": "Anfibio",
         "nomeOriginale": "Amphibious",
-        "testoOriginale": "You can breathe and move naturally underwater."
+        "testoOriginale": "You can breathe and move naturally underwater.",
+        "testo": "Puoi respirare e muoverti normalmente sott'acqua."
       },
       {
         "id": "long-tongue",
         "nome": "Lingua lunga",
         "nomeOriginale": "Long Tongue",
-        "testoOriginale": "You can use your long tongue to grab onto things within Close range. Mark a Stress to use your tongue as a Finesse Close weapon that deals d12 physical damage using your Proficiency."
+        "testoOriginale": "You can use your long tongue to grab onto things within Close range. Mark a Stress to use your tongue as a Finesse Close weapon that deals d12 physical damage using your Proficiency.",
+        "testo": "Puoi usare la tua lunga lingua per afferrare cose a gittata Vicina. Segna 1 Stress per usare la lingua come un'arma di Destrezza a gittata Vicina che infligge d12 danni fisici usando la tua Competenza."
       }
-    ]
+    ],
+    "descrizione": "I ribbet somigliano a rane antropomorfe, con occhi sporgenti e mani e piedi palmati. Hanno pelle liscia (a volte bitorzoluta) e umida, e occhi ai lati della testa. Alcuni ribbet hanno zampe posteriori lunghe più del doppio del busto, altri hanno arti corti. Qualunque sia la loro taglia, tra circa 90 centimetri e 1,4 metri, i ribbet si muovono soprattutto saltando. Tutti hanno arti palmati che permettono loro di nuotare con facilità. Alcuni hanno una mimetizzazione naturale verde e marrone, altri colori vivaci con motivi decisi. Qualunque sia il loro aspetto, tutti i ribbet nascono da uova deposte in acqua, si schiudono come girini e dopo circa 6-7 anni diventano anfibi capaci di muoversi sulla terraferma. Vivono circa 100 anni."
   },
   {
     "id": "simiah",
@@ -367,15 +418,18 @@
         "id": "natural-climber",
         "nome": "Scalatore nato",
         "nomeOriginale": "Natural Climber",
-        "testoOriginale": "You have advantage on Agility Rolls that involve balancing and climbing."
+        "testoOriginale": "You have advantage on Agility Rolls that involve balancing and climbing.",
+        "testo": "Hai vantaggio ai Tiri di Agilità che riguardano equilibrio e arrampicata."
       },
       {
         "id": "nimble",
         "nome": "Lesto",
         "nomeOriginale": "Nimble",
-        "testoOriginale": "Gain a permanent +1 bonus to your Evasion at character creation."
+        "testoOriginale": "Gain a permanent +1 bonus to your Evasion at character creation.",
+        "testo": "Alla creazione del personaggio ottieni un bonus permanente di +1 all'Evasione."
       }
-    ]
+    ],
+    "descrizione": "I simiah somigliano a scimmie antropomorfe, con arti lunghi e piedi prensili. Il loro aspetto richiama tutte le creature scimmiesche, dal gorilla più grande alla più piccola uistitì, ma la loro taglia non corrisponde a quella dell'animale: possono essere alti da 60 centimetri a 1,8 metri. Tutti i simiah usano i piedi abili per comunicare senza parole, per lavorare e per combattere. Alcuni hanno anche una coda prensile che può afferrare oggetti o aiutarli a restare in equilibrio nelle manovre difficili. Questi tratti danno alla stirpe un'agilità unica, utile in molte attività fisiche. In particolare i simiah sono abili scalatori e passano con facilità dal camminare su due piedi al camminare sulle nocche e all'arrampicarsi, e viceversa. In media vivono circa 100 anni."
   },
   {
     "id": "mixed-ancestry",
@@ -383,6 +437,7 @@
     "nomeOriginale": "Mixed Ancestry",
     "pagina": 31,
     "descrizioneOriginale": "Families within the world of Daggerheart are as unique as the peoples and cultures that inhabit it. Anyone's appearance and abilities can be shaped by blood, magic, proximity, or a variety of other factors.\nIf you decide that your character is a descendant of multiple ancestries and you want to mechanically represent that in the game, use the steps below:\n1. Determine Ancestry Combination When you choose an ancestry at character creation, write down how your character identifies themself in the Heritage section of your character sheet. For example, if your character is descended from both goblins and orcs, you could use a hybridized term, such as \"goblin-orc,\" to describe your ancestry, list only the ancestry you more closely identify with (e.g., just \"goblin\" or just \"orc\"), or invent a new term, such as \"toothling.\"\n2. Choose Ancestry Features Work with your GM to choose two features from the ancestries in your character's lineage. You must choose the first feature from one ancestry and the second from another. Write both down on a notecard you can keep with your other cards or next to your character sheet.\nFor example, if you are making a goblin-orc, you might take the \"Surefooted\" and \"Tusks\" features or the \"Sturdy\" and \"Danger Sense\" features. You can't take both the \"Surefooted\" and \"Sturdy\" features, because these are both the first features listed on their respective ancestry cards.\nYour character's heritage might include more than two ancestries, but you still only choose features from two. You can represent additional ancestries through their appearance or backstory.",
-    "capacita": []
+    "capacita": [],
+    "descrizione": "Le famiglie nel mondo di Daggerheart sono uniche come i popoli e le culture che lo abitano. L'aspetto e le capacità di chiunque possono essere plasmati dal sangue, dalla magia, dalla vicinanza o da molti altri fattori.\nSe decidi che il tuo personaggio discende da più stirpi e vuoi rappresentarlo anche nelle regole, segui questi passi:\n1. Stabilisci la combinazione di stirpi. Quando scegli la stirpe alla creazione del personaggio, scrivi come si definisce il tuo personaggio nella sezione Retaggio della scheda. Per esempio, se discende sia da goblin sia da orchi, puoi usare un termine ibrido come \"goblin-orco\", indicare solo la stirpe in cui si riconosce di più (solo \"goblin\" o solo \"orco\") oppure inventare un termine nuovo.\n2. Scegli le capacità di stirpe. Con il GM, scegli due capacità tra le stirpi da cui discende il personaggio: la prima capacità di una stirpe e la seconda capacità di un'altra.\nPer esempio, un goblin-orco può prendere \"Piede sicuro\" e \"Zanne\", oppure \"Robusto\" e \"Senso del pericolo\". Non può prendere sia \"Piede sicuro\" sia \"Robusto\", perché sono entrambe le prime capacità delle rispettive stirpi.\nIl retaggio del tuo personaggio può includere più di due stirpi, ma scegli comunque le capacità di due sole. Le altre stirpi puoi rappresentarle con l'aspetto o la storia personale."
   }
 ]

@@ -1,0 +1,204 @@
+{
+  "_nota": "Traduzioni italiane dei testi di classi e sottoclassi (SRD p.9-26). Da rivedere con Gianluca. Chiavi capacità: <id proprietario>/<id capacità>.",
+  "classi": {
+    "bard": {
+      "descrizione": "I bardi sono le persone più carismatiche di tutti i reami. I membri di questa classe sono maestri dell'incanto e si specializzano in molte forme di spettacolo: il canto, la musica, il racconto di storie o le battute. Che si esibiscano davanti a un pubblico o parlino con una sola persona, i bardi danno il meglio nelle situazioni sociali. Si formano e stringono legami in scuole o gilde, ma tra chi segue la via del bardo scorre una vena di egocentrismo. Anche se sono la classe più adatta a unire le persone, un bardo di cattivo umore può spaccare un gruppo con la stessa facilità.",
+      "oggettiDiClasse": "Un romanzo d'amore oppure una lettera mai aperta",
+      "domandeStoria": [
+        "Chi della tua comunità ti ha insegnato ad avere tanta fiducia in te stesso?",
+        "Una volta eri innamorato. Chi adoravi, e come ti ha ferito?",
+        "Hai sempre ammirato un altro bardo. Chi è, e perché lo idolatri?"
+      ],
+      "domandeLegami": [
+        "Che cosa ti ha fatto capire che saremmo diventati così amici?",
+        "Che cosa faccio che ti dà fastidio?",
+        "Perché di notte mi stringi la mano?"
+      ]
+    },
+    "druid": {
+      "descrizione": "Diventare druido è più di un mestiere: è una vocazione per chi vuole imparare dalla magia della natura selvaggia e proteggerla. Si potrebbe sottovalutare un druido gentile che si dedica al lavoro spesso silenzioso di coltivare le piante, ma i druidi che incanalano le forze indomite della natura sono terrificanti. I druidi coltivano le proprie capacità in piccoli gruppi, spesso legati a un'etica o a un luogo, anche se alcuni scelgono di lavorare da soli. Con anni di studio e dedizione, i druidi possono imparare a trasformarsi in bestie e a plasmare la natura stessa.",
+      "oggettiDiClasse": "Un sacchetto di sassi e ossa oppure uno strano ciondolo trovato nella terra",
+      "domandeStoria": [
+        "Perché la comunità in cui sei cresciuto dipendeva così tanto dalla natura e dalle sue creature?",
+        "Qual è stato il primo animale selvatico con cui hai stretto un legame? Perché il legame si è spezzato?",
+        "Chi sta cercando di darti la caccia? Che cosa vuole da te?"
+      ],
+      "domandeLegami": [
+        "Che cosa mi hai confidato che mi fa gettare nel pericolo per te ogni volta?",
+        "A quale animale dico che mi ricordi?",
+        "Che soprannome affettuoso mi hai dato?"
+      ]
+    },
+    "guardian": {
+      "descrizione": "Il titolo di guardiano comprende molti mestieri marziali e parla più della bussola morale e della tempra incrollabile di chi lo porta che del suo modo di combattere. Molti guardiani si uniscono a gruppi armati per un paese o una causa, ma è più facile che seguano le poche persone a cui tengono davvero, a costo di andare contro tutti. I guardiani sono noti per combattere con una ferocia straordinaria anche contro forze soverchianti, difendendo i compagni prima di ogni altra cosa. Guai a chi ferisce un alleato di un guardiano: il guardiano gli restituirà il colpo.",
+      "oggettiDiClasse": "Un totem del tuo mentore oppure una chiave segreta",
+      "domandeStoria": [
+        "Chi della tua comunità non sei riuscito a proteggere, e perché ci pensi ancora?",
+        "Ti hanno affidato il compito di proteggere qualcosa di importante e portarlo in un luogo pericoloso. Che cos'è, e dove deve arrivare?",
+        "Consideri un aspetto di te una debolezza. Qual è, e come ti ha condizionato?"
+      ],
+      "domandeLegami": [
+        "Come ti ho salvato la vita la prima volta che ci siamo incontrati?",
+        "Quale piccolo regalo mi hai fatto che noti che porto sempre con me?",
+        "Quale bugia su di te mi hai raccontato, a cui credo ciecamente?"
+      ]
+    },
+    "ranger": {
+      "descrizione": "I ranger sono cacciatori abilissimi che, nonostante le loro doti marziali, raramente mettono le proprie capacità al servizio di un esercito. Grazie alla padronanza del corpo e a una profonda conoscenza della natura selvaggia, i ranger diventano tattici astuti, che inseguono la preda con furbizia e pazienza. Molti ranger seguono le tracce e combattono insieme a un compagno animale con cui hanno stretto un forte legame spirituale. Affinando le proprie capacità nelle terre selvagge, i ranger diventano esperti inseguitori, capaci di far cadere i nemici in trappola come di attaccarli frontalmente.",
+      "oggettiDiClasse": "Un trofeo della tua prima uccisione oppure una bussola che sembra rotta",
+      "domandeStoria": [
+        "Una creatura terribile ha fatto del male alla tua comunità e hai giurato di darle la caccia. Che cos'è, e quale traccia o segno particolare lascia dietro di sé?",
+        "La tua prima preda ha quasi ucciso anche te. Che cos'era, e quale parte di te non è più stata la stessa dopo quell'evento?",
+        "Hai viaggiato in molte terre pericolose, ma qual è l'unico posto dove ti rifiuti di andare?"
+      ],
+      "domandeLegami": [
+        "Quale sfida amichevole c'è tra noi?",
+        "Perché ti comporti diversamente quando siamo soli rispetto a quando ci sono altri?",
+        "Quale minaccia mi hai chiesto di tenere d'occhio, e perché ti preoccupa?"
+      ]
+    },
+    "rogue": {
+      "descrizione": "I furfanti sono canaglie, spesso sia nell'atteggiamento sia nei fatti. Conosciuti come bugiardi e ladri, i migliori tra loro si muovono nel mondo senza farsi notare. Con il loro ingegno affilato e le loro lame, i furfanti ingannano i nemici con la manipolazione sociale con la stessa facilità con cui scassinano serrature, si arrampicano dalle finestre o colpiscono a tradimento. Maestri di arti magiche, manipolano l'ombra e il movimento, aggiungendo al loro repertorio strumenti utili e letali. I furfanti fondano spesso delle gilde dove incontrare futuri complici, affidare lavori e affinare abilità segrete, a dimostrazione che anche tra i ladri esiste un onore, per chi sa dove cercarlo.",
+      "oggettiDiClasse": "Un set di strumenti da falsario oppure un rampino",
+      "domandeStoria": [
+        "Che cosa stavi facendo quando ti hanno colto sul fatto, tanto da farti esiliare dalla tua comunità?",
+        "Un tempo avevi un'altra vita, ma hai cercato di lasciartela alle spalle. Chi del tuo passato ti sta ancora inseguendo?",
+        "Chi del tuo passato ti è dispiaciuto di più salutare?"
+      ],
+      "domandeLegami": [
+        "Che cosa ti ho convinto a fare di recente che ci ha messi nei guai entrambi?",
+        "Che cosa ho scoperto del tuo passato che tengo segreto agli altri?",
+        "Chi conosci del mio passato, e come ha influenzato quello che provi per me?"
+      ]
+    },
+    "seraph": {
+      "descrizione": "I serafini sono combattenti e guaritori divini, investiti di uno scopo sacro. Nei reami esistono moltissime divinità, e così questi dei nominano molti tipi diversi di serafini. La loro etica segue di solito il dominio o gli obiettivi del loro dio: difendere i deboli, compiere una vendetta, proteggere una terra o un artefatto, o sostenere una certa fede. Alcuni serafini si alleano con un esercito o un luogo, con grande soddisfazione dei suoi governanti, ma altri crociati combattono contro le follie del Reame Mortale. Meglio essere alleati di un serafino che suoi nemici: per chi sfida il loro scopo sono avversari terrificanti.",
+      "oggettiDiClasse": "Un fagotto di offerte oppure un sigillo del tuo dio",
+      "domandeStoria": [
+        "A quale dio ti sei votato? Quale impresa incredibile ha compiuto per te in un momento di disperazione?",
+        "Come è cambiato il tuo aspetto dopo aver pronunciato il giuramento?",
+        "In che modo strano o particolare comunichi con il tuo dio?"
+      ],
+      "domandeLegami": [
+        "Che promessa mi hai fatto accettare, nel caso tu morissi in battaglia?",
+        "Perché mi fai così tante domande sul mio dio?",
+        "Mi hai detto di proteggere un membro del gruppo più di chiunque altro, perfino più di te. Chi è e perché?"
+      ]
+    },
+    "sorcerer": {
+      "descrizione": "Non tutti quelli che hanno una magia innata scelgono di affinarla, ma chi lo fa può diventare uno stregone potente. I doni di questi incantatori si tramandano nelle famiglie, anche quando la famiglia non ne è consapevole o è restia a praticarli. Le capacità di uno stregone possono andare dall'elementale all'illusorio e oltre, e molti si riuniscono in gruppi in base ai loro talenti. Diventare uno stregone formidabile non significa acquisire potere, ma imparare a coltivare e controllare quello che si possiede già. La magia di uno stregone sconsiderato o indisciplinato è davvero una forza pericolosa.",
+      "oggettiDiClasse": "Una sfera che sussurra oppure un cimelio di famiglia",
+      "domandeStoria": [
+        "Che cosa hai fatto per rendere la gente della tua comunità diffidente nei tuoi confronti?",
+        "Quale mentore ti ha insegnato a controllare la tua magia indomita, e perché non può più guidarti?",
+        "Hai una paura profonda che nascondi a tutti. Qual è, e perché ti spaventa?"
+      ],
+      "domandeLegami": [
+        "Perché ti fidi così profondamente di me?",
+        "Che cosa ho fatto che ti rende cauto con me?",
+        "Perché teniamo segreto il nostro passato comune?"
+      ]
+    },
+    "warrior": {
+      "descrizione": "Diventare guerriero richiede anni, spesso una vita intera, di addestramento e dedizione alla padronanza delle armi e della violenza. Molti di quelli che cercano lo scontro allenano soltanto la forza, ma i guerrieri capiscono l'importanza di un corpo e di una mente agili, e per questo sono tra i combattenti più ricercati dei reami. Spesso i guerrieri trovano impiego in un esercito, in una compagnia di mercenari o perfino nella guardia reale, ma il loro potenziale è sprecato in qualsiasi posto dove non possano continuare a migliorare. I guerrieri hanno di solito un'arma preferita: mettersi tra loro e la loro lama sarebbe un grave errore.",
+      "oggettiDiClasse": "Il ritratto di una persona amata oppure una cote per affilare",
+      "domandeStoria": [
+        "Chi ti ha insegnato a combattere, e perché è rimasto indietro quando sei partito da casa?",
+        "Anni fa qualcuno ti ha sconfitto in battaglia e ti ha lasciato a morire. Chi era, e come ti ha tradito?",
+        "Quale luogo leggendario hai sempre desiderato visitare, e perché è così speciale?"
+      ],
+      "domandeLegami": [
+        "Ci conoscevamo molto prima che questo gruppo si formasse. Come?",
+        "In quale faccenda di tutti i giorni mi aiuti di solito, lontano dal campo di battaglia?",
+        "Quale paura ti sto aiutando a superare?"
+      ]
+    },
+    "wizard": {
+      "descrizione": "Che sia in un'istituzione o con lo studio personale, quelli che chiamiamo maghi acquisiscono e affinano un immenso potere magico in anni di apprendimento, usando strumenti di ogni tipo: libri, pietre, pozioni ed erbe. Alcuni maghi dedicano la vita a padroneggiare una particolare scuola di magia, altri imparano da molte discipline diverse. Molti maghi diventano figure sagge e potenti nelle loro comunità: consigliano i sovrani, preparano medicine, curano, e guidano perfino i consigli di guerra. Anche se tutti questi incantatori lavorano per lo stesso scopo, raccogliere sapere magico, i maghi hanno spesso i conflitti più aspri proprio tra loro: acquisire, custodire e condividere segreti potenti è un tema di dibattito accesissimo, che ha causato innumerevoli morti.",
+      "oggettiDiClasse": "Un libro che stai cercando di tradurre oppure un minuscolo animaletto elementale innocuo",
+      "domandeStoria": [
+        "Per quali responsabilità la tua comunità un tempo contava su di te? Come l'hai delusa?",
+        "Hai passato la vita a cercare un libro o un oggetto di grande importanza. Che cos'è, e perché è così importante per te?",
+        "Hai un rivale potente. Chi è, e perché sei così deciso a sconfiggerlo?"
+      ],
+      "domandeLegami": [
+        "Quale favore ti ho chiesto che non sei sicuro di poter fare?",
+        "Quale hobby strano o curiosa passione abbiamo in comune?",
+        "Quale segreto su di te hai confidato solo a me?"
+      ]
+    }
+  },
+  "sottoclassi": {
+    "troubadour": { "descrizione": "Gioca il Trovatore se vuoi suonare musica per sostenere i tuoi alleati." },
+    "wordsmith": { "descrizione": "Gioca l'Affabulatore se vuoi usare giochi di parole brillanti e incantare le folle." },
+    "warden-of-the-elements": { "descrizione": "Gioca il Custode degli Elementi se vuoi incarnare gli elementi naturali delle terre selvagge." },
+    "warden-of-renewal": { "descrizione": "Gioca il Custode del Rinnovamento se vuoi usare una magia potente per curare il tuo gruppo." },
+    "stalwart": { "descrizione": "Gioca l'Incrollabile se vuoi incassare colpi pesanti e continuare a combattere." },
+    "vengeance": { "descrizione": "Gioca la Vendetta se vuoi abbattere i nemici che fanno del male a te o ai tuoi alleati." },
+    "beastbound": { "descrizione": "Gioca il Legato alle Bestie se vuoi stringere un legame profondo con un animale alleato." },
+    "wayfinder": { "descrizione": "Gioca l'Esploratore se vuoi braccare la tua preda e colpire con forza letale." },
+    "nightwalker": { "descrizione": "Gioca il Viandante Notturno se vuoi manipolare le ombre per muoverti nell'ambiente." },
+    "syndicate": { "descrizione": "Gioca il Mafioso se vuoi avere una rete di contatti ovunque tu vada." },
+    "divine-wielder": { "descrizione": "Gioca il Portatore Divino se vuoi dominare il campo di battaglia con un'arma leggendaria." },
+    "winged-sentinel": { "descrizione": "Gioca la Sentinella Alata se vuoi spiccare il volo e colpire con forza devastante dal cielo." },
+    "elemental-origin": { "descrizione": "Gioca l'Origine Elementale se vuoi incanalare la magia grezza per dare forma a un elemento." },
+    "primal-origin": { "descrizione": "Gioca l'Origine Primordiale se vuoi rendere i tuoi incantesimi più versatili e potenti." },
+    "call-of-the-brave": { "descrizione": "Gioca il Richiamo dell'Audace se vuoi usare la forza dei tuoi nemici per alimentare il tuo potere." },
+    "call-of-the-slayer": { "descrizione": "Gioca il Richiamo dello Sterminatore se vuoi abbattere gli avversari con una forza immensa." },
+    "school-of-knowledge": { "descrizione": "Gioca la Scuola della Conoscenza se vuoi una comprensione profonda del mondo che ti circonda." },
+    "school-of-war": { "descrizione": "Gioca la Scuola della Guerra se vuoi usare una magia addestrata alla violenza." }
+  },
+  "capacita": {
+    "bard/make-a-scene": "Spendi 3 Speranza per rendere temporaneamente Distratto un bersaglio a gittata Vicina: la sua Difficoltà subisce una penalità di −2.",
+    "bard/rally": "Una volta per sessione, descrivi come incoraggi il gruppo e dai a te stesso e a ciascuno dei tuoi alleati un Dado di Incoraggiamento. A livello 1 il tuo Dado di Incoraggiamento è un d6. Un PG può spendere il proprio Dado di Incoraggiamento tirandolo e aggiungendo il risultato a un tiro d'azione, a un tiro di reazione o a un tiro di danno, oppure per liberare tanto Stress quanto il risultato. Alla fine di ogni sessione, i Dadi di Incoraggiamento non spesi vanno persi. A livello 5 il tuo Dado di Incoraggiamento diventa un d8.",
+    "druid/evolution": "Spendi 3 Speranza per trasformarti in una Forma bestiale senza segnare Stress. Quando lo fai, scegli un tratto che aumenta di +1 finché non esci da quella Forma bestiale.",
+    "druid/beastform": "Segna 1 Stress per trasformarti magicamente in una creatura del tuo Tier o inferiore dall'elenco delle Forme bestiali. Puoi uscire da questa forma in qualsiasi momento. Mentre sei trasformato non puoi usare armi né lanciare incantesimi delle carte dominio, ma puoi usare le altre capacità a cui hai accesso. Gli incantesimi lanciati prima della trasformazione restano attivi per la loro durata normale, e puoi parlare e comunicare normalmente. Inoltre ottieni le capacità della Forma bestiale, aggiungi il suo bonus all'Evasione e usi per i tuoi attacchi il tratto indicato nelle sue statistiche. Mentre sei in una Forma bestiale la tua armatura diventa parte del tuo corpo e segni gli Slot Armatura come al solito; quando esci dalla forma, gli Slot Armatura segnati restano segnati. Se segni il tuo ultimo Punto Ferita, esci automaticamente dalla forma.",
+    "druid/wildtouch": "Puoi creare a volontà piccoli effetti innocui legati alla natura, come far crescere rapidamente un fiore, evocare un leggero soffio di vento o accendere un fuoco da campo.",
+    "guardian/frontline-tank": "Spendi 3 Speranza per liberare 2 Slot Armatura.",
+    "guardian/unstoppable": "Una volta per riposo lungo puoi diventare Inarrestabile. Ottieni un Dado Inarrestabile: a livello 1 è un d4. Mettilo sulla scheda con la faccia 1 in alto. Dopo ogni tiro di danno che fa segnare 1 o più Punti Ferita a un bersaglio, aumenta di uno il valore del Dado Inarrestabile. Quando il valore supererebbe il massimo del dado, o quando la scena finisce, togli il dado e smetti di essere Inarrestabile. A livello 5 il Dado Inarrestabile diventa un d6.\nFinché sei Inarrestabile ottieni questi benefici:\n• Riduci di una soglia la gravità dei danni fisici (da Gravissimo a Grave, da Grave a Lieve, da Lieve a nessun danno).\n• Aggiungi al tuo tiro di danno il valore attuale del Dado Inarrestabile.\n• Non puoi essere Trattenuto né Vulnerabile.\nConsiglio: se il tuo Dado Inarrestabile è un d4 e mostra il 4, lo togli la prossima volta che dovresti aumentarlo. Se invece è già diventato un d6 e mostra il 4, la prossima volta lo giri sul 5; in quel caso lo togli quando dovresti portarlo oltre il 6.",
+    "ranger/hold-them-off": "Quando riesci in un attacco con un'arma, spendi 3 Speranza per usare lo stesso tiro contro altri due avversari entro la gittata dell'attacco.",
+    "ranger/ranger-s-focus": "Spendi 1 Speranza e fai un attacco contro un bersaglio. Se riesci, infliggi il normale danno dell'attacco e rendi temporaneamente il bersaglio il tuo Obiettivo. Finché questa capacità non termina o non scegli un'altra creatura come Obiettivo, contro il tuo Obiettivo ottieni questi benefici:\n• Sai esattamente in che direzione si trova.\n• Quando gli infliggi danni, deve segnare 1 Stress.\n• Quando fallisci un attacco contro di lui, puoi porre fine alla Concentrazione del Ranger per ripetere il tiro dei Dadi della Dualità.",
+    "rogue/rogue-s-dodge": "Spendi 3 Speranza per ottenere +2 all'Evasione fino alla prossima volta che un attacco contro di te riesce. Altrimenti il bonus dura fino al tuo prossimo riposo.",
+    "rogue/cloaked": "Ogni volta che saresti Nascosto, sei invece Celato. Oltre ai benefici della condizione Nascosto, mentre sei Celato resti invisibile se stai fermo quando un avversario si sposta dove normalmente ti vedrebbe. Dopo che fai un attacco o termini un movimento in linea di vista di un avversario, non sei più Celato.",
+    "rogue/sneak-attack": "Quando riesci in un attacco mentre sei Celato, oppure mentre un alleato si trova in Mischia con il tuo bersaglio, aggiungi al tiro di danno tanti d6 quanto il tuo Tier.\n• Livello 1: Tier 1\n• Livelli 2-4: Tier 2\n• Livelli 5-7: Tier 3\n• Livelli 8-10: Tier 4",
+    "seraph/life-support": "Spendi 3 Speranza per liberare 1 Punto Ferita a un alleato a gittata Vicina.",
+    "seraph/prayer-dice": "All'inizio di ogni sessione tira tanti d4 quanto il tratto da incantatore della tua sottoclasse e mettili sulla scheda nello spazio apposito: sono i tuoi Dadi della Preghiera. Puoi spendere quanti Dadi della Preghiera vuoi per aiutare te stesso o un alleato a gittata Lontana. Puoi usare il valore di un dado speso per ridurre il danno in arrivo, per aggiungerlo al risultato di un tiro dopo averlo fatto, oppure per guadagnare tanta Speranza quanto il risultato. Alla fine di ogni sessione i Dadi della Preghiera non spesi vanno persi.",
+    "sorcerer/volatile-magic": "Spendi 3 Speranza per ripetere il tiro di quanti dadi di danno vuoi in un attacco che infligge danno magico.",
+    "sorcerer/arcane-sense": "Percepisci la presenza di persone e oggetti magici a gittata Vicina.",
+    "sorcerer/minor-illusion": "Fai un Tiro da incantatore (10). Se riesci, crei una piccola illusione visiva, non più grande di te, a gittata Vicina. L'illusione è convincente per chiunque si trovi a gittata Vicina o più lontano.",
+    "sorcerer/channel-raw-power": "Una volta per riposo lungo puoi spostare una carta dominio dalle tue Carte attive al Deposito e scegliere una di queste opzioni:\n• Guadagnare tanta Speranza quanto il livello della carta.\n• Potenziare un incantesimo che infligge danni, ottenendo un bonus al tiro di danno pari al doppio del livello della carta.",
+    "warrior/no-mercy": "Spendi 3 Speranza per ottenere +1 ai tiri d'attacco fino al tuo prossimo riposo.",
+    "warrior/attack-of-opportunity": "Se un avversario in Mischia cerca di uscire da quella gittata, fai un tiro di reazione con un tratto a tua scelta contro la sua Difficoltà. Se riesci scegli un effetto, se ottieni un successo critico scegline due:\n• Non può muoversi da dove si trova.\n• Gli infliggi danni pari al danno della tua arma primaria.\n• Ti muovi insieme a lui.",
+    "warrior/combat-training": "Ignori l'impugnatura quando equipaggi le armi. Quando infliggi danno fisico, ottieni un bonus al tiro di danno pari al tuo livello.",
+    "wizard/not-this-time": "Spendi 3 Speranza per costringere un avversario a gittata Lontana a ripetere un tiro d'attacco o un tiro di danno.",
+    "wizard/prestidigitation": "Puoi creare a volontà piccoli effetti magici innocui. Per esempio puoi cambiare il colore di un oggetto, creare un odore, accendere una candela, far fluttuare un oggettino, illuminare una stanza o riparare un piccolo oggetto.",
+    "wizard/strange-patterns": "Scegli un numero tra 1 e 12. Quando quel numero esce su uno dei Dadi della Dualità, guadagni 1 Speranza oppure liberi 1 Stress.\nPuoi cambiare il numero quando fai un riposo lungo.",
+    "troubadour/gifted-performer": "Puoi suonare tre tipi diversi di canzoni, ognuna una volta per riposo lungo; descrivi come ti esibisci per gli altri per ottenere il beneficio indicato:\n• Canzone rilassante: tu e tutti gli alleati a gittata Vicina liberate 1 Punto Ferita.\n• Canzone epica: rendi temporaneamente Vulnerabile un bersaglio a gittata Vicina.\n• Canzone struggente: tu e tutti gli alleati a gittata Vicina guadagnate 1 Speranza.",
+    "wordsmith/rousing-speech": "Una volta per riposo lungo puoi fare un discorso sentito e ispirato. Tutti gli alleati a gittata Lontana liberano 2 Stress.",
+    "wordsmith/heart-of-a-poet": "Dopo aver fatto un tiro d'azione per impressionare, persuadere o offendere qualcuno, puoi spendere 1 Speranza per aggiungere un d4 al tiro.",
+    "warden-of-the-elements/elemental-incarnation": "Segna 1 Stress per Incanalare uno di questi elementi finché non subisci un danno Gravissimo o fino al tuo prossimo riposo:\n• Fuoco: quando un avversario in Mischia ti infligge danni, subisce 1d10 danni magici.\n• Terra: ottieni un bonus alle Soglie di Danno pari alla tua Competenza.\n• Acqua: quando infliggi danni a un avversario in Mischia, tutti gli altri avversari a gittata Molto vicina devono segnare 1 Stress.\n• Aria: puoi librarti in volo, ottenendo vantaggio ai Tiri di Agilità.",
+    "warden-of-renewal/clarity-of-nature": "Una volta per riposo lungo puoi creare uno spazio di serenità naturale a gittata Vicina. Quando trascorri qualche minuto a riposare in quello spazio, liberi tanto Stress quanto il tuo Istinto, distribuito come preferisci tra te e i tuoi alleati.",
+    "warden-of-renewal/regeneration": "Tocca una creatura e spendi 3 Speranza: quella creatura libera 1d4 Punti Ferita.",
+    "stalwart/unwavering": "Ottieni un bonus permanente di +1 alle tue Soglie di Danno.",
+    "stalwart/iron-will": "Quando subisci danni fisici, puoi segnare uno Slot Armatura in più per ridurne la gravità.",
+    "vengeance/at-ease": "Ottieni uno slot Stress in più.",
+    "vengeance/revenge": "Quando un avversario in Mischia riesce in un attacco contro di te, puoi segnare 2 Stress per costringere l'attaccante a segnare 1 Punto Ferita.",
+    "beastbound/companion": "Hai un compagno animale a tua scelta (a discrezione del GM). Resta al tuo fianco, a meno che tu non gli dica altrimenti.\nPrendi la scheda del Compagno del Ranger. Quando il tuo personaggio sale di livello, scegli anche un'opzione di avanzamento per il tuo compagno da quella scheda.",
+    "wayfinder/ruthless-predator": "Quando fai un tiro di danno, puoi segnare 1 Stress per ottenere +1 alla Competenza. Inoltre, quando infliggi un danno Gravissimo a un avversario, quello deve segnare 1 Stress.",
+    "wayfinder/path-forward": "Quando viaggi verso un luogo che hai già visitato, o porti con te un oggetto che è già stato in quel luogo, sai individuare il percorso più breve e diretto verso la tua destinazione.",
+    "nightwalker/shadow-stepper": "Puoi muoverti da un'ombra all'altra. Quando entri in una zona buia o nell'ombra proiettata da un'altra creatura o da un oggetto, puoi segnare 1 Stress per sparire da dove sei e ricomparire dentro un'altra ombra a gittata Lontana. Quando ricompari sei Celato.",
+    "syndicate/well-connected": "Quando arrivi in una città importante o in un luogo di rilievo, conosci qualcuno che vive lì. Dagli un nome, annota in che modo pensi possa esserti utile e scegli un fatto da questo elenco:\n• Mi deve un favore, ma sarà difficile trovarlo.\n• Mi chiederà qualcosa in cambio.\n• È sempre nei guai fino al collo.\n• Stavamo insieme. È una lunga storia.\n• Non ci siamo lasciati in buoni rapporti.",
+    "divine-wielder/spirit-weapon": "Quando hai equipaggiata un'arma con gittata Mischia o Molto vicina, può volare dalla tua mano per attaccare un avversario a gittata Vicina e poi tornare da te. Puoi segnare 1 Stress per colpire con lo stesso tiro d'attacco un altro avversario entro la gittata.",
+    "divine-wielder/sparing-touch": "Una volta per riposo lungo, tocca una creatura e liberale 2 Punti Ferita oppure 2 Stress.",
+    "winged-sentinel/wings-of-light": "Puoi volare. Mentre voli puoi fare quanto segue:\n• Segnare 1 Stress per sollevare e trasportare un'altra creatura consenziente all'incirca della tua taglia o più piccola.\n• Spendere 1 Speranza per infliggere 1d8 danni extra con un attacco riuscito.",
+    "elemental-origin/elementalist": "Alla creazione del personaggio scegli uno di questi elementi: aria, terra, fuoco, fulmine, acqua.\nPuoi plasmare questo elemento in effetti innocui. Inoltre, spendi 1 Speranza e descrivi come il tuo controllo dell'elemento ti aiuta in un tiro d'azione che stai per fare: ottieni +2 al tiro oppure +3 al danno del tiro.",
+    "primal-origin/manipulate-magic": "La tua origine primordiale ti permette di modificare l'essenza stessa della magia. Dopo aver lanciato un incantesimo o fatto un attacco con un'arma che infligge danno magico, puoi segnare 1 Stress per fare una di queste cose:\n• Estendere di una gittata la portata dell'incantesimo o dell'attacco\n• Ottenere +2 al risultato del tiro d'azione\n• Raddoppiare un dado di danno a tua scelta\n• Colpire un bersaglio in più entro la gittata",
+    "call-of-the-brave/courage": "Quando fallisci un tiro con Paura, guadagni 1 Speranza.",
+    "call-of-the-brave/battle-ritual": "Una volta per riposo lungo, prima di tentare qualcosa di incredibilmente pericoloso o di affrontare un nemico chiaramente più forte di te, descrivi il rituale che compi o i preparativi che fai. Quando lo fai, liberi 2 Stress e guadagni 2 Speranza.",
+    "call-of-the-slayer/slayer": "Ottieni una riserva di dadi chiamati Dadi dello Sterminatore. Con un tiro con Speranza puoi mettere un d6 su questa carta invece di guadagnare la Speranza, aggiungendolo alla riserva. Puoi conservare tanti Dadi dello Sterminatore quanto la tua Competenza. Quando fai un tiro d'attacco o un tiro di danno puoi spendere quanti Dadi dello Sterminatore vuoi, tirandoli e aggiungendo il risultato al tiro. Alla fine di ogni sessione togli i Dadi dello Sterminatore non spesi e guadagni 1 Speranza per ogni dado tolto.",
+    "school-of-knowledge/prepared": "Prendi una carta dominio in più, del tuo livello o inferiore, da un dominio a cui hai accesso.",
+    "school-of-knowledge/adept": "Quando usi un'Esperienza, puoi segnare 1 Stress invece di spendere 1 Speranza. Se lo fai, il modificatore dell'Esperienza raddoppia per quel tiro.",
+    "school-of-war/battlemage": "Hai dedicato i tuoi studi a diventare una forza invincibile sul campo di battaglia. Ottieni uno slot Punti Ferita in più.",
+    "school-of-war/face-your-fear": "Quando riesci con Paura in un tiro d'attacco, infliggi 1d10 danni magici extra."
+  }
+}
