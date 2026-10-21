@@ -67,6 +67,11 @@ export default function Tavolo() {
   const io = stato.members.find((m) => m.user_id === userId);
   const isGm = io?.role === 'gm';
   const mioPersonaggio = io?.character_id ? stato.characters[io.character_id] ?? null : null;
+  /** Nome con cui mostrare chi ha tirato: il personaggio scelto, altrimenti il nome del giocatore */
+  const nomeDi = (userId: string, fallback: string) => {
+    const m = stato.members.find((x) => x.user_id === userId);
+    return (m?.character_id && stato.characters[m.character_id]?.name) || fallback;
+  };
 
   // Animazione solo per i tiri arrivati mentre si è al tavolo (non per quelli già presenti all'apertura)
   const ultimo = stato.rolls[0];
@@ -152,18 +157,18 @@ export default function Tavolo() {
               </p>
             </Riquadro>
           )}
-          <div className="lg:hidden">{ultimo && <EsitoTiro roll={ultimo} anima={anima} />}</div>
+          <div className="lg:hidden">{ultimo && <EsitoTiro roll={ultimo} nome={nomeDi(ultimo.user_id, ultimo.display_name)} anima={anima} />}</div>
           <Partecipanti tableId={tableId} members={stato.members} characters={stato.characters} online={stato.online} me={userId} isGm={isGm} onErrore={onErrore} />
         </div>
 
         <div className="space-y-4">
           <Paura tableId={tableId} fear={stato.fear} isGm={isGm} visibile={stato.table.fear_visible} onErrore={onErrore} />
-          <div className="hidden lg:block">{ultimo && <EsitoTiro roll={ultimo} anima={anima} />}</div>
+          <div className="hidden lg:block">{ultimo && <EsitoTiro roll={ultimo} nome={nomeDi(ultimo.user_id, ultimo.display_name)} anima={anima} />}</div>
           <Riquadro titolo="Registro tiri">
             {stato.rolls.length === 0 ? (
               <p className="text-sm text-tenue">Ancora nessun tiro.</p>
             ) : (
-              <ul>{stato.rolls.slice(1).map((r) => <EsitoTiro key={r.id} roll={r} compatto />)}</ul>
+              <ul>{stato.rolls.slice(1).map((r) => <EsitoTiro key={r.id} roll={r} nome={nomeDi(r.user_id, r.display_name)} compatto />)}</ul>
             )}
           </Riquadro>
         </div>

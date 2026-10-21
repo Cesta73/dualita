@@ -10,7 +10,14 @@ const toni = {
   fallimento: 'text-fallimento',
 };
 
-export function EsitoTiro({ roll, anima = false, compatto = false }: { roll: RollRecord; anima?: boolean; compatto?: boolean }) {
+export function EsitoTiro({ roll, nome, anima = false, compatto = false }: {
+  roll: RollRecord;
+  /** Nome da mostrare (il personaggio, se il giocatore ne ha scelto uno) */
+  nome?: string;
+  anima?: boolean;
+  compatto?: boolean;
+}) {
+  const chi = nome ?? roll.display_name;
   const r = roll.result;
   const ora = new Date(roll.created_at).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
   const titolo = outcomeTitle[r.outcome];
@@ -23,7 +30,7 @@ export function EsitoTiro({ roll, anima = false, compatto = false }: { roll: Rol
         <Dado valore={r.fearDie} tipo="paura" piccolo />
         <div className="min-w-0 flex-1">
           <p className="truncate text-sm">
-            <strong>{roll.display_name}</strong>
+            <strong>{chi}</strong>
             {roll.label && <span className="text-tenue"> · {roll.label}</span>}
           </p>
           <p className={`text-sm ${tono}`}>
@@ -38,7 +45,7 @@ export function EsitoTiro({ roll, anima = false, compatto = false }: { roll: Rol
   return (
     <article className="rounded-2xl border border-bordo bg-superficie-2 p-4" aria-live="polite">
       <p className="text-sm text-tenue">
-        <strong className="text-testo">{roll.display_name}</strong>
+        <strong className="text-testo">{chi}</strong>
         {roll.label && <> · {roll.label}</>} · {ora}
       </p>
       <div className="mt-3 flex items-center gap-3">
@@ -59,7 +66,7 @@ export function EsitoTiro({ roll, anima = false, compatto = false }: { roll: Rol
       <h3 className={`mt-3 font-titolo text-2xl ${tono}`}>{titolo}</h3>
       <p className="text-sm text-tenue">{outcomeHint[r.outcome]}</p>
       <ul className="mt-3 space-y-1 text-sm">
-        {consequenceLines(r, roll.display_name).map((l) => (
+        {consequenceLines(r, chi).map((l) => (
           <li key={l} className="flex gap-2">
             <span aria-hidden className="text-accento">›</span>
             {l}
