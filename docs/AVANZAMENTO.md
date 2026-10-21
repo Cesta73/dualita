@@ -78,3 +78,6 @@ Decisioni (21/10/2026): tradurre subito tutti gli avversari e gli ambienti; noti
 - [x] Traduzione di tutti i 127 avversari e 19 ambienti (testi, motivazioni, attacchi, Esperienze, capacità, domande), con test che controllano completezza e dadi uguali all'SRD
 - [x] Prova nel browser con un giocatore simulato: richiesta con Difficoltà nascosta, riflettori, attacco dell'Orso
 - [ ] Prova di Gianluca con il telefono (GM sul Mac, giocatore sul telefono)
+
+### Richiesta di Gianluca (21/10/2026)
+- [ ] Alla fine della Fase 5: **tutorial d'uso** dell'app, uno per il GM e uno per i giocatori.

@@ -40,6 +40,18 @@ export interface WeaponInfo {
 export interface ArmorInfo { id: string; tier: number; soglieBase: { grave: number; gravissimo: number }; punteggioBase: number; modificatori?: Modifiers }
 export interface CardInfo { id: string; dominio: string; livello: number }
 
+/** Bonus permanenti delle salite di livello usati dal calcolo della scheda (vedi levelUp.ts) */
+export interface ProgressionBonuses {
+  proficiencyBonus: number;
+  traitBonus: Record<Trait, number>;
+  hitPointBonus: number;
+  stressBonus: number;
+  evasionBonus: number;
+  thresholdBonus: number;
+  newExperiences: string[];
+  experienceBonus: Record<number, number>;
+}
+
 export interface CharacterChoices {
   level: number;
   classe: ClassInfo;
@@ -54,6 +66,12 @@ export interface CharacterChoices {
   /** Clank, "Progetto con uno scopo" (SRD p.27): indice dell'Esperienza che riceve +1 */
   clankExperienceIndex?: number | null;
   domainCards: CardInfo[];
+  /** SRD p.42-43 – bonus delle salite di livello (assente = livello 1) */
+  progression?: ProgressionBonuses;
+  /** Capacità di sottoclasse oltre al fondamento: specializzazione, maestria, fondamento della multiclasse */
+  extraSubclassFeatureIds?: string[];
+  /** SRD p.43 – classe della multiclasse (se ne si acquisisce la capacità di classe) */
+  multiclassId?: string | null;
 }
 
 // ─── Controlli ─────────────────────────────────────────────────────────────
@@ -86,8 +104,8 @@ export function validateDomainCards(c: Pick<CharacterChoices, 'classe' | 'sottoc
 }
 
 /** Il Guerriero con "Addestramento al combattimento" ignora l'impugnatura (SRD p.23) */
-export function ignoresBurden(classe: ClassInfo): boolean {
-  return classe.id === 'warrior';
+export function ignoresBurden(classe: ClassInfo, multiclassId?: string | null): boolean {
+  return classe.id === 'warrior' || multiclassId === 'warrior';
 }
 
 /**
@@ -181,31 +199,40 @@ const has = (ids: string[], id: string) => ids.includes(id);
  */
 export function deriveStats(c: CharacterChoices): DerivedStats {
   const level = c.level;
-  const proficiency = STARTING_PROFICIENCY;
+  const prog = c.progression;
+  // SRD p.42-43 – Competenza: 1 + traguardi di Tier + avanzamenti
+  const proficiency = STARTING_PROFICIENCY + (prog?.proficiencyBonus ?? 0);
   const ancestry = c.ancestryFeatureIds;
-  const foundation = c.sottoclasse.fondamento.map((f) => f.id);
+  const foundation = [...c.sottoclasse.fondamento.map((f) => f.id), ...(c.extraSubclassFeatureIds ?? [])];
+  const isWarrior = c.classe.id === 'warrior' || c.multiclassId === 'warrior';
   const equipMods = [c.primaryWeapon?.modificatori, c.secondaryWeapon?.modificatori, c.armor?.modificatori].filter(Boolean) as Modifiers[];
 
   // Tratti effettivi (es. Armatura a piastre completa: −1 Agilità, SRD p.55)
   const traits = { ...c.traits };
+  // SRD p.43 – avanzamento "aumenta due tratti": +1 permanente
+  if (prog) for (const t of TRAITS) traits[t] += prog.traitBonus[t];
   for (const m of equipMods) for (const [t, v] of Object.entries(m.tratti ?? {})) traits[t as Trait] += v as number;
 
   // Evasione: valore della classe (SRD p.4) + modificatori
   const evasionSources: StatSource[] = [{ label: 'Classe', value: c.classe.evasioneIniziale, page: 4 }];
   for (const m of equipMods) if (m.evasione) evasionSources.push({ label: 'Equipaggiamento', value: m.evasione, page: 44 });
   if (has(ancestry, 'nimble')) evasionSources.push({ label: 'Simiah: Lesto', value: 1, page: 31 });
+  if (prog?.evasionBonus) evasionSources.push({ label: 'Avanzamenti', value: prog.evasionBonus, page: 43 });
+  if (has(foundation, 'fleeting-shadow')) evasionSources.push({ label: 'Camminanotte: Ombra fugace', value: 1, page: 19 });
   const evasion = evasionSources.reduce((s, x) => s + x.value, 0);
 
   // Punti Ferita: valore della classe (SRD p.4) + capacità
   const hitPointSources: StatSource[] = [{ label: 'Classe', value: c.classe.puntiFeritaIniziali, page: 4 }];
   if (has(ancestry, 'endurance')) hitPointSources.push({ label: 'Gigante: Resistenza fisica', value: 1, page: 29 });
   if (has(foundation, 'battlemage')) hitPointSources.push({ label: 'Scuola della Guerra: Mago da battaglia', value: 1, page: 25 });
+  if (prog?.hitPointBonus) hitPointSources.push({ label: 'Avanzamenti e carte', value: prog.hitPointBonus, page: 43 });
   const hitPoints = hitPointSources.reduce((s, x) => s + x.value, 0);
 
   // Stress: 6 slot (SRD p.5) + capacità
   const stressSources: StatSource[] = [{ label: 'Valore iniziale', value: STARTING_STRESS_SLOTS, page: 5 }];
   if (has(ancestry, 'high-stamina')) stressSources.push({ label: 'Umano: Grande vigore', value: 1, page: 30 });
   if (has(foundation, 'at-ease')) stressSources.push({ label: 'Vendetta: A proprio agio', value: 1, page: 16 });
+  if (prog?.stressBonus) stressSources.push({ label: 'Avanzamenti e carte', value: prog.stressBonus, page: 43 });
   const stressSlots = stressSources.reduce((s, x) => s + x.value, 0);
 
   // Punteggio Armatura: base dell'armatura + bonus permanenti (SRD p.5, p.55), massimo 12
@@ -220,16 +247,24 @@ export function deriveStats(c: CharacterChoices): DerivedStats {
   let bonus = 0;
   if (has(foundation, 'unwavering')) { bonus += 1; thresholdSources.push({ label: 'Incrollabile: Irremovibile', value: 1, page: 16 }); }
   if (has(ancestry, 'shell')) { bonus += proficiency; thresholdSources.push({ label: 'Galapa: Guscio (= Competenza)', value: proficiency, page: 29 }); }
+  if (has(foundation, 'unrelenting')) { bonus += 2; thresholdSources.push({ label: 'Incrollabile: Inesorabile', value: 2, page: 16 }); }
+  if (has(foundation, 'undaunted')) { bonus += 3; thresholdSources.push({ label: 'Incrollabile: Impavido', value: 3, page: 16 }); }
+  if (prog?.thresholdBonus) { bonus += prog.thresholdBonus; thresholdSources.push({ label: 'Carte dominio', value: prog.thresholdBonus, page: 121 }); }
+  // Sentinella alata, "Ascendente" (SRD p.21): +4 alla sola soglia Gravissimo
+  const severeFeature = has(foundation, 'ascendant') ? 4 : 0;
+  if (severeFeature) thresholdSources.push({ label: 'Sentinella alata: Ascendente (solo Gravissimo)', value: 4, page: 21 });
   const severeExtra = equipMods.reduce((s, m) => s + (m.sogliaGravissimo ?? 0), 0);
   const thresholds: Thresholds = {
     major: base.major! + bonus,
-    severe: base.severe! + bonus + severeExtra,
+    severe: base.severe! + bonus + severeExtra + severeFeature,
   };
 
   // Esperienze: +2 ciascuna (SRD p.5); Clank +1 a una (p.27)
-  const experiences = c.experiences.map((e, i) => ({
+  // SRD p.42 – ai livelli 2/5/8 si aggiunge un'Esperienza a +2; gli avanzamenti danno +1
+  const allExperiences = [...c.experiences, ...(prog?.newExperiences ?? []).map((name) => ({ name, bonus: STARTING_EXPERIENCE_BONUS }))];
+  const experiences = allExperiences.map((e, i) => ({
     name: e.name,
-    bonus: e.bonus + (has(ancestry, 'purposeful-design') && c.clankExperienceIndex === i ? 1 : 0),
+    bonus: e.bonus + (has(ancestry, 'purposeful-design') && c.clankExperienceIndex === i ? 1 : 0) + (prog?.experienceBonus[i] ?? 0),
   }));
 
   // Armi: attacco con il tratto dell'arma; danno = [Competenza] dadi + bonus (SRD p.5, p.39, p.44)
@@ -240,7 +275,7 @@ export function deriveStats(c: CharacterChoices): DerivedStats {
     const trait: Trait = w.tratto === 'spellcast' ? (spellcastTrait ?? 'presence') : w.tratto;
     const damage = weaponDamage(proficiency, w.danno);
     // Guerriero, Addestramento al combattimento (SRD p.23): +livello al danno fisico
-    if (c.classe.id === 'warrior' && w.tipoDanno === 'fisico') damage.bonus += level;
+    if (isWarrior && w.tipoDanno === 'fisico') damage.bonus += level;
     // "Affidabile: +1 ai tiri d'attacco" vale per gli attacchi con quell'arma (SRD p.44)
     weapons.push({ id: w.id, trait, attackModifier: traits[trait] + (w.modificatori?.tiriAttacco ?? 0), damage, damageType: w.tipoDanno });
   }

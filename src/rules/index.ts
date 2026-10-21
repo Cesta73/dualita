@@ -7,3 +7,5 @@ export * from './damage.ts';
 export * from './character.ts';
 export * from './sheet.ts';
 export * from './adversary.ts';
+export * from './rest.ts';
+export * from './levelUp.ts';

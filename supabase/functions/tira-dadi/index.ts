@@ -4,11 +4,20 @@
 // - calcola l'esito con lo STESSO motore delle regole dell'app (_shared/rules, copiato da src/rules);
 // - registra il tiro e applica Speranza/Paura in un'unica transazione (record_roll_v2).
 // Tipi di tiro: "azione" (Dadi della Dualità), "danno" (SRD p.39), "morte" (Mosse della Morte, SRD p.42),
-// "richiesta" (tiro chiesto dal GM, con Difficoltà eventualmente nascosta), "avversario" (attacco del GM, SRD p.63).
+// "richiesta" (tiro chiesto dal GM, con Difficoltà eventualmente nascosta), "avversario" (attacco del GM, SRD p.63),
+// "inizio-riposo" / "fine-riposo" (il GM avvia e chiude un riposo, SRD p.41), "pausa" (mosse di pausa di un PG),
+// "bottino" (il GM tira sulle tabelle di oggetti e consumabili, SRD p.57, p.59).
 import { createClient } from 'npm:@supabase/supabase-js@2';
 import {
-  resolveDeathMove, rollAction, rollAdversaryAttack, rollDamage, type ActionRollInput, type DeathMove, type DiceRoller,
+  canTakeShortRest, clearMarked, LOOT_DICE, nextShortRestStreak, resolveDeathMove, resolveDowntimeMoves, restFear, rollAction,
+  rollAdversaryAttack, rollDamage, rollLoot, type ActionRollInput, type DeathMove, type DiceRoller, type DowntimeMove,
+  type DowntimeMoveId, type LootRarity, type RestKind,
 } from '../_shared/rules/index.ts';
+
+const NOMI_MOSSE: Record<DowntimeMoveId, string> = {
+  'tend-wounds': 'Curare le ferite', 'clear-stress': 'Liberare lo Stress', 'repair-armor': "Riparare l'armatura",
+  prepare: 'Prepararsi', project: 'Lavorare a un progetto',
+};
 
 const NOMI_TRATTI: Record<string, string> = {
   agility: 'Agilità', strength: 'Forza', finesse: 'Destrezza', instinct: 'Istinto', presence: 'Presenza', knowledge: 'Conoscenza',
@@ -138,6 +147,80 @@ Deno.serve(async (req) => {
       const damageType = ['fisico', 'magico', 'fisico+magico'].includes(String(body.damageType)) ? String(body.damageType) : 'fisico';
       const adversaryId = typeof body.adversaryId === 'string' ? body.adversaryId.slice(0, 60) : null;
       record = { kind: 'avversario', tableId, label: `${name} attacca ${targetName}`, input: { ...input, targetUserId, targetName, damageType, adversaryId }, result: rollAdversaryAttack(input, secureRoller), hopeSpent: 0, hopeGained: 0, fearGained: 0 };
+    } else if (tipo === 'inizio-riposo' || tipo === 'fine-riposo') {
+      // SRD p.41 – il GM avvia o chiude un riposo; all'avvio guadagna Paura (breve 1d4, lungo 1d4 + PG)
+      const tableId = String(body.tableId ?? '');
+      const { data: tav } = await admin.from('game_tables').select('gm_id, rest_kind, short_rests_in_row').eq('id', tableId).maybeSingle();
+      if (!tav || tav.gm_id !== userData.user.id) throw new Error('Solo il GM può gestire i riposi');
+      if (tipo === 'fine-riposo') {
+        await admin.from('game_tables').update({ rest_kind: null, rest_id: null }).eq('id', tableId);
+        return json({ ok: true });
+      }
+      if (tav.rest_kind) throw new Error('C\'è già un riposo in corso');
+      const kind = body.kind === 'lungo' ? 'lungo' : 'breve' as RestKind;
+      if (kind === 'breve' && !canTakeShortRest(tav.short_rests_in_row)) throw new Error('Dopo tre riposi brevi di fila serve un riposo lungo (SRD p.41).');
+      const { count } = await admin.from('table_members').select('user_id', { count: 'exact', head: true }).eq('table_id', tableId).eq('role', 'player');
+      const fear = restFear(kind, count ?? 0, secureRoller);
+      await admin.from('game_tables').update({
+        rest_kind: kind, rest_id: crypto.randomUUID(), short_rests_in_row: nextShortRestStreak(kind, tav.short_rests_in_row),
+      }).eq('id', tableId);
+      record = {
+        kind: 'riposo', tableId, label: kind === 'breve' ? 'Inizia un riposo breve' : 'Inizia un riposo lungo',
+        input: { phase: 'inizio', kind, players: count ?? 0 }, result: fear, hopeSpent: 0, hopeGained: 0, fearGained: fear.fear,
+      };
+    } else if (tipo === 'pausa') {
+      // SRD p.41 – le due mosse di pausa di un PG, durante il riposo avviato dal GM
+      const tableId = String(body.tableId ?? '');
+      const { data: tav } = await admin.from('game_tables').select('rest_kind, rest_id').eq('id', tableId).maybeSingle();
+      if (!tav?.rest_kind) throw new Error('Non c\'è un riposo in corso');
+      const { data: me } = await admin.from('table_members').select('character_id, rest_done').eq('table_id', tableId).eq('user_id', userData.user.id).maybeSingle();
+      if (!me?.character_id) throw new Error('Scegli prima il tuo personaggio');
+      if (me.rest_done === tav.rest_id) throw new Error('Hai già fatto le tue mosse di pausa in questo riposo');
+      const { data: party } = await admin.from('table_members').select('character_id').eq('table_id', tableId).not('character_id', 'is', null);
+      const partyIds = new Set((party ?? []).map((m) => m.character_id as string));
+      const raw = Array.isArray(body.moves) ? body.moves.slice(0, 2) : [];
+      const moves: DowntimeMove[] = raw.map((m: Record<string, unknown>) => {
+        const move = String(m?.move) as DowntimeMoveId;
+        if (!(move in NOMI_MOSSE)) throw new Error('Mossa non valida');
+        const targetId = typeof m?.targetId === 'string' && m.targetId !== me.character_id ? m.targetId : null;
+        if (targetId && !partyIds.has(targetId)) throw new Error('L\'alleato non è a questo tavolo');
+        return { move, targetId, withParty: m?.withParty === true };
+      });
+      const { data: own } = await admin.from('characters').select('name, data').eq('id', me.character_id).maybeSingle();
+      const tier = int(own?.data?.derived?.tier, 1, 4, 1);
+      const effects = resolveDowntimeMoves(tav.rest_kind as RestKind, tier, moves, secureRoller);
+      const names: Record<string, string> = {};
+      let hopeGained = 0;
+      for (const e of effects) {
+        if (e.resource === 'hope') { hopeGained += e.amount as number; continue; }
+        if (!e.resource) continue;
+        const id = e.targetId ?? me.character_id;
+        const col = e.resource === 'hp' ? 'hp_marked' : e.resource === 'stress' ? 'stress_marked' : 'armor_marked';
+        const { data: ch } = await admin.from('characters').select(`name, ${col}`).eq('id', id).maybeSingle();
+        if (!ch) continue;
+        names[id] = ch.name;
+        const row = ch as unknown as Record<string, number>;
+        await admin.from('characters').update({ [col]: clearMarked(row[col], e.amount) }).eq('id', id);
+      }
+      await admin.from('table_members').update({ rest_done: tav.rest_id }).eq('table_id', tableId).eq('user_id', userData.user.id);
+      const label = `Riposo ${tav.rest_kind}: ${moves.map((m) => NOMI_MOSSE[m.move]).join(' + ')}`;
+      record = {
+        kind: 'riposo', tableId, label, input: { phase: 'mosse', kind: tav.rest_kind, moves, names, self: own?.name ?? null },
+        result: { effects }, hopeSpent: 0, hopeGained, fearGained: 0,
+      };
+    } else if (tipo === 'bottino') {
+      // SRD p.57, p.59 – il GM tira i d12 per la rarità scelta; l'app trova l'oggetto con quel totale
+      const tableId = String(body.tableId ?? '');
+      const { data: tav } = await admin.from('game_tables').select('gm_id').eq('id', tableId).maybeSingle();
+      if (!tav || tav.gm_id !== userData.user.id) throw new Error('Solo il GM tira il bottino');
+      const rarity = String(body.rarity) as LootRarity;
+      if (!(rarity in LOOT_DICE)) throw new Error('Rarità non valida');
+      const table = body.table === 'consumabili' ? 'consumabili' : 'oggetti';
+      const dice = int(body.dice, 1, 5, LOOT_DICE[rarity][0]);
+      record = {
+        kind: 'bottino', tableId, label: `Bottino (${table})`, input: { rarity, table, dice },
+        result: rollLoot(rarity, dice, secureRoller), hopeSpent: 0, hopeGained: 0, fearGained: 0,
+      };
     } else if (tipo === 'danno') {
       // SRD p.39 – tiro di danno: [count]d[sides] + bonus; critico = + massimo dei dadi
       const tableId = String(body.tableId ?? '');

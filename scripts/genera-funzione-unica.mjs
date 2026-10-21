@@ -3,7 +3,7 @@
 // Risultato: dist-funzione/tira-dadi.ts
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 
-const rules = ['dice.ts', 'resources.ts', 'actionRoll.ts', 'damage.ts', 'sheet.ts', 'adversary.ts'];
+const rules = ['dice.ts', 'resources.ts', 'actionRoll.ts', 'damage.ts', 'sheet.ts', 'adversary.ts', 'rest.ts'];
 const strip = (s) => s.replace(/^import [\s\S]*?;\n/gm, '');
 let body = '// File unico generato da scripts/genera-funzione-unica.mjs: NON modificarlo a mano.\n';
 for (const f of rules) body += `\n// ─── rules/${f} ───\n` + strip(readFileSync(new URL(`../src/rules/${f}`, import.meta.url), 'utf8'));
