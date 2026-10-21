@@ -33,7 +33,7 @@
 - Testi delle capacità di classi, sottoclassi, stirpi, comunità → prima della Fase 2
 - Testi delle carte dominio → prima della Fase 2 (almeno livello 1)
 - Armi, armature, oggetti → Fase 2 / Fase 5
-- Avversari e ambienti (nomi delle capacità e testi) → Fase 4
+- ~~Avversari e ambienti (nomi delle capacità e testi) → Fase 4~~ fatto (21/10/2026), da rileggere in `docs/TRADUZIONI_FASE4.md`
 
 ## Fase 1 — Dadi della Dualità + tavolo in rete (in corso)
 - [x] Motore delle regole in `src/rules/` con test (dadi, esiti, vantaggio, Esperienze, reazione, Tiro di Squadra, danni)
@@ -66,3 +66,15 @@ Decisione (21/10/2026): conseguenze "miste" — Speranza/Paura automatiche; Stre
 - [x] Scheda interattiva: PF/Stress/Armatura/Speranza a caselle, Subisci danno, Mosse della Morte, condizioni, carte attive/Deposito, oro, consumabili, oggetti
 - [x] Al tavolo: schede "Dadi" e "La mia scheda"; attacchi con le armi, "Tira il danno", "Libera Stress" dopo un critico; il GM apre e modifica le schede dal nome
 - [ ] Prova di Gianluca sul telefono
+
+## Fase 4 — Strumenti del GM
+Decisioni (21/10/2026): tradurre subito tutti gli avversari e gli ambienti; notifiche solo con l'app aperta (avviso + vibrazione), notifiche push rimandate alla Fase 6.
+- [x] Regole: attacco degli avversari (d20 + modificatore contro l'Evasione, 20 naturale = critico), Punti Battaglia (`src/rules/adversary.ts`, con test)
+- [x] Database: richieste di tiro con Difficoltà nascosta (solo GM e server), avversari in scena e note segrete (solo GM), riflettori con tracciatore a gettoni (`supabase/migrations/20261021120000_strumenti_gm.sql`)
+- [x] Funzione server: tiro su richiesta del GM (tratto letto dalla scheda) e attacco dell'avversario (Evasione letta dalla scheda); 12 controlli superati
+- [x] Pannello del GM: Chiedi un tiro (anche "a tutti"), Scontro (ricerca avversari, Punti Battaglia, PF/Stress, Attacca con vantaggio/Esperienza), Ambiente (consultazione), Riflettori, Note segrete con salvataggio automatico
+- [x] Lato giocatore: avviso della richiesta con vibrazione e tiro con un tocco; "Hai i riflettori!"; avviso "Sei stato colpito" con collegamento alla scheda
+- [x] "Al tavolo": stella dei riflettori (il GM la tocca per passarli), PF/Stress/Armatura/Evasione/condizioni di ogni personaggio
+- [x] Traduzione di tutti i 127 avversari e 19 ambienti (testi, motivazioni, attacchi, Esperienze, capacità, domande), con test che controllano completezza e dadi uguali all'SRD
+- [x] Prova nel browser con un giocatore simulato: richiesta con Difficoltà nascosta, riflettori, attacco dell'Orso
+- [ ] Prova di Gianluca con il telefono (GM sul Mac, giocatore sul telefono)

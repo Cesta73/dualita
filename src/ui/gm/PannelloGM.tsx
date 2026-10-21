@@ -1,6 +1,6 @@
 // Pannello del GM (Fase 4): richieste di tiro, scontro con gli avversari, riflettori, note segrete.
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { avversari } from '../../data';
+import { ambienti, avversari } from '../../data';
 import type { GlossaryKey } from '../../i18n/glossario';
 import { term } from '../../i18n/glossario';
 import type { CharacterRow } from '../../net/characters';
@@ -16,6 +16,7 @@ import { Bottone, Riquadro } from '../componenti/Riquadro';
 const TRATTI = ['agility', 'strength', 'finesse', 'instinct', 'presence', 'knowledge'] as const;
 const nomeTipo = (t: string) => term((t === 'ranged' ? 'rangedType' : t) as GlossaryKey);
 const gittate: Record<string, string> = { melee: 'Mischia', veryClose: 'Molto vicino', close: 'Vicino', far: 'Lontano', veryFar: 'Molto lontano' };
+const tipiCapacita = { azione: 'Azione', reazione: 'Reazione', passiva: 'Passiva' };
 const stileInput = 'min-h-11 min-w-0 rounded-xl border border-bordo bg-superficie-2 px-3';
 
 interface Props {
@@ -190,7 +191,7 @@ function CartaAvversario({ e, table, members, characters, onErrore }: { e: Encou
         <ul className="mt-1 space-y-1 text-sm">
           {a.capacita.map((c, i) => (
             <li key={i}>
-              <strong>{c.nome ?? c.nomeOriginale}</strong> <span className="text-xs text-tenue">({c.tipo}{c.costoPaura ? `, ${c.costoPaura} Paura` : ''})</span>: {c.testo ?? c.testoOriginale}
+              <strong>{c.nome ?? c.nomeOriginale}</strong> <span className="text-xs text-tenue">({tipiCapacita[c.tipo]}{c.costoPaura ? `, ${c.costoPaura} Paura` : ''})</span>: <span className="whitespace-pre-line">{c.testo ?? c.testoOriginale}</span>
             </li>
           ))}
         </ul>
@@ -250,6 +251,43 @@ function Scontro(p: Props) {
   );
 }
 
+// ─── Ambiente (consultazione) ──────────────────────────────────────────────
+const tipiAmbiente = { esplorazione: 'Esplorazione', sociale: 'Sociale', attraversamento: 'Attraversamento', evento: 'Evento' };
+
+function Ambiente() {
+  const [id, setId] = useState('');
+  const a = ambienti.find((x) => x.id === id);
+  return (
+    <Riquadro titolo={<>{term('environment')}<Aiuto termine="environment">Un ambiente è la scena stessa, con capacità che il GM usa come quelle di un avversario (SRD p.100). Qui puoi consultarlo durante la partita: i giocatori non lo vedono.</Aiuto></>}>
+      <select className={`${stileInput} w-full`} value={id} onChange={(e) => setId(e.target.value)} aria-label="Ambiente">
+        <option value="">— scegli un ambiente —</option>
+        {[1, 2, 3, 4].map((t) => (
+          <optgroup key={t} label={`Tier ${t}`}>
+            {ambienti.filter((x) => x.tier === t).map((x) => <option key={x.id} value={x.id}>{x.nome} ({tipiAmbiente[x.tipo]})</option>)}
+          </optgroup>
+        ))}
+      </select>
+      {a && (
+        <div className="mt-3 space-y-2 text-sm">
+          <p className="italic text-tenue">{a.descrizione ?? a.descrizioneOriginale}</p>
+          <p><strong>{term('difficulty')}:</strong> {a.difficolta ?? 'speciale (vedi "Forza relativa")'} · <strong>{term('impulses')}:</strong> {a.impulsi ?? a.impulsiOriginale}</p>
+          <p><strong>{term('potentialAdversaries')}:</strong> {a.avversariPossibili ?? a.avversariPossibiliOriginale}</p>
+          <ul className="space-y-2">
+            {a.capacita.map((c, i) => (
+              <li key={i}>
+                <strong>{c.nome ?? c.nomeOriginale}</strong> <span className="text-xs text-tenue">({tipiCapacita[c.tipo]})</span>:{' '}
+                <span className="whitespace-pre-line">{c.testo ?? c.testoOriginale}</span>
+                {(c.domande ?? c.domandeOriginale) && <span className="mt-0.5 block italic text-tenue">{c.domande ?? c.domandeOriginale}</span>}
+              </li>
+            ))}
+          </ul>
+          <p className="text-xs text-tenue">SRD p.{a.pagina}</p>
+        </div>
+      )}
+    </Riquadro>
+  );
+}
+
 // ─── Riflettori e note ─────────────────────────────────────────────────────
 function Riflettori({ table, onErrore }: Props) {
   return (
@@ -301,6 +339,7 @@ export function PannelloGM(p: Props) {
     <div className="space-y-4">
       <ChiediTiro {...p} />
       <Scontro {...p} />
+      <Ambiente />
       <Riflettori {...p} />
       <Note {...p} />
     </div>

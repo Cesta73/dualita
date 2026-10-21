@@ -205,6 +205,7 @@ export interface Avversario extends Named {
 
 export interface CapacitaAmbiente extends CapacitaAvversario {
   domandeOriginale: string;
+  domande?: string;
 }
 
 /** SRD p.100-111 */
@@ -215,9 +216,11 @@ export interface Ambiente extends Named {
   descrizioneOriginale: string;
   descrizione?: string;
   impulsiOriginale: string;
+  impulsi?: string;
   /** null quando la Difficoltà è speciale (vedi difficoltaOriginale) */
   difficolta: number | null;
   difficoltaOriginale?: string;
   avversariPossibiliOriginale: string;
+  avversariPossibili?: string;
   capacita: CapacitaAmbiente[];
 }

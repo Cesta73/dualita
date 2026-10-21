@@ -15,7 +15,7 @@ npm test
 - `srdlib.py` – legge il PDF riga per riga (posizione, font) e ripulisce il testo.
 - `tabelle.py` – lettore delle tabelle (armi, armature).
 - `estrai_*.py` – un estrattore per ogni tipo di dato (con le pagine SRD nel commento iniziale).
-- `traduzioni/*.json` – nomi italiani (inglese → italiano). Classi, sottoclassi, stirpi,
+- `traduzioni/*.json` – nomi italiani (inglese → italiano) e testi tradotti (`testi_*.json`, chiave = id). Classi, sottoclassi, stirpi,
   comunità e domini vengono invece dal glossario `src/i18n/glossario.ts`.
 - `genera_dati.py` – unisce tutto e scrive `src/data/*.json`.
 

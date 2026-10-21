@@ -54,3 +54,8 @@ Stato: 🟡 aperto · ✅ risolto
 ## D10 — Riflettori dopo un "Successo con Paura" 🟡 (minore)
 - **SRD p.36**: solo per i fallimenti dice esplicitamente che "i riflettori passano al GM". **SRD p.37 e p.63**: il GM fa una mossa anche quando un giocatore "tira con Paura".
 - **Proposta attuale**: dopo un Successo con Paura l'app segnala al GM che **può fare una mossa**, senza togliere automaticamente i riflettori al giocatore.
+
+## D11 — Refusi trovati traducendo gli avversari (gestiti, da conoscere) ✅
+- p.95 "High Seraph": la capacità si chiama "Relentless (2)" ma il testo dice "fino a **tre** volte per turno del GM". Tradotto fedelmente; al tavolo conviene seguire il numero tra parentesi (2), come per tutti gli altri avversari. Dimmi se preferisci 3.
+- p.99 "Zombie Legion": l'attacco standard si chiama "Tentacles" (Tentacoli), strano per degli zombi. Tradotto fedelmente.
+- Gli ambienti citano avversari che nell'SRD non hanno un blocco statistiche: "Weaponmaster" (Maestro d'armi, p.104 e p.107) e "Stag Knight" (Cavaliere cervo, p.106). Restano solo come suggerimento testuale: non si possono aggiungere allo scontro.

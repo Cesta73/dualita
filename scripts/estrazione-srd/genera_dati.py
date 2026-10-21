@@ -119,6 +119,49 @@ def apply_texts(item, texts, fields):
             item[it_field] = t[it_field]
 
 
+def put_after(d, after, key, value):
+    """Inserisce key subito dopo after (così il testo IT sta accanto a quello EN nel JSON)."""
+    items = list(d.items())
+    d.clear()
+    for k, v in items:
+        d[k] = v
+        if k == after:
+            d[key] = value
+
+
+def translate_adversary(a, texts):
+    t = texts.get(a['id'])
+    if not t:
+        raise Missing(f'mancano i testi dell\'avversario "{a["id"]}"')
+    if len(t['capacita']) != len(a['capacita']) or len(t['esperienze']) != len(a['esperienze']):
+        raise Missing(f'testi dell\'avversario "{a["id"]}" non allineati con l\'SRD')
+    put_after(a, 'descrizioneOriginale', 'descrizione', t['descrizione'])
+    put_after(a, 'motivazioniOriginale', 'motivazioni', t['motivazioni'])
+    put_after(a['attacco'], 'nomeOriginale', 'nome', t['attacco'])
+    for e, it in zip(a['esperienze'], t['esperienze']):
+        put_after(e, 'nomeOriginale', 'nome', it)
+    for c, it in zip(a['capacita'], t['capacita']):
+        put_after(c, 'nomeOriginale', 'nome', it['nome'])
+        put_after(c, 'testoOriginale', 'testo', it['testo'])
+    return a
+
+
+def translate_environment(e, texts):
+    t = texts.get(e['id'])
+    if not t:
+        raise Missing(f'mancano i testi dell\'ambiente "{e["id"]}"')
+    if len(t['capacita']) != len(e['capacita']):
+        raise Missing(f'testi dell\'ambiente "{e["id"]}" non allineati con l\'SRD')
+    put_after(e, 'descrizioneOriginale', 'descrizione', t['descrizione'])
+    put_after(e, 'impulsiOriginale', 'impulsi', t['impulsi'])
+    put_after(e, 'avversariPossibiliOriginale', 'avversariPossibili', t['avversariPossibili'])
+    for c, it in zip(e['capacita'], t['capacita']):
+        put_after(c, 'nomeOriginale', 'nome', it['nome'])
+        put_after(c, 'testoOriginale', 'testo', it['testo'])
+        put_after(c, 'domandeOriginale', 'domande', it['domande'])
+    return e
+
+
 def main():
     g = glossary()
     gname = lambda id_: g[camel(id_)]['it']
@@ -219,11 +262,13 @@ def main():
         for x in lst:
             del x['tipo']
 
-    # Avversari e ambienti (nomi delle capacità per ora in inglese: saranno tradotti con i testi)
+    # Avversari e ambienti: nomi da avversari.json/ambienti.json, testi da testi_avversari.json/testi_ambienti.json
     ta = load('avversari')
-    avversari = [named(x, tr(ta, x['nomeOriginale'], 'avversari')) for x in estrai_avversari.adversaries()]
+    tta = load('testi_avversari')
+    avversari = [translate_adversary(named(x, tr(ta, x['nomeOriginale'], 'avversari')), tta) for x in estrai_avversari.adversaries()]
     tam = load('ambienti')
-    ambienti = [named(x, tr(tam, x['nomeOriginale'], 'ambienti')) for x in estrai_ambienti.environments()]
+    ttam = load('testi_ambienti')
+    ambienti = [translate_environment(named(x, tr(tam, x['nomeOriginale'], 'ambienti')), ttam) for x in estrai_ambienti.environments()]
 
     files = {
         'domini': domini, 'classi': pers['classi'], 'sottoclassi': pers['sottoclassi'],

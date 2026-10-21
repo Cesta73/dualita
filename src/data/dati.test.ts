@@ -264,7 +264,7 @@ describe('Avversari (SRD p.70-99)', () => {
       tier: 1, tipo: 'bruiser', difficolta: 14, soglie: { grave: 9, gravissimo: 17 }, puntiFerita: 7, stress: 2,
       attacco: { modificatore: 1, gittata: 'melee', danno: { numero: 1, dado: 8, bonus: 3 }, tipoDanno: 'fisico' },
     });
-    expect(a.esperienze).toEqual([{ nomeOriginale: 'Ambusher', bonus: 3 }, { nomeOriginale: 'Keen Senses', bonus: 2 }]);
+    expect(a.esperienze).toEqual([{ nomeOriginale: 'Ambusher', nome: 'Agguato', bonus: 3 }, { nomeOriginale: 'Keen Senses', nome: 'Sensi acuti', bonus: 2 }]);
   });
 
   it('i Gregari (Minion) indicano il valore X della capacità (cifre decodificate)', () => {
@@ -312,6 +312,54 @@ describe('Traduzioni necessarie alla creazione del personaggio (Fase 2)', () => 
     expect(armature.find((a) => a.id === 'full-plate-armor')!.modificatori).toEqual({ evasione: -2, tratti: { agility: -1 } });
     expect(armature.find((a) => a.id === 'leather-armor')!.modificatori).toBeUndefined();
     expect(armi.find((a) => a.id === 'tower-shield')!.modificatori).toEqual({ punteggioArmatura: 2, evasione: -1 });
+  });
+});
+
+describe('Traduzioni di avversari e ambienti (Fase 4)', () => {
+  it('ogni avversario ha descrizione, motivazioni, attacco, Esperienze e capacità in italiano', () => {
+    for (const a of avversari) {
+      expect(a.descrizione, a.id).toBeTruthy();
+      expect(a.motivazioni, a.id).toBeTruthy();
+      expect(a.attacco.nome, a.id).toBeTruthy();
+      for (const e of a.esperienze) expect(e.nome, a.id).toBeTruthy();
+      for (const c of a.capacita) {
+        expect(c.nome, `${a.id}/${c.nomeOriginale}`).toBeTruthy();
+        expect(c.testo, `${a.id}/${c.nomeOriginale}`).toBeTruthy();
+      }
+    }
+  });
+
+  it('ogni ambiente ha descrizione, impulsi, avversari possibili e capacità con domande in italiano', () => {
+    for (const a of ambienti) {
+      expect(a.descrizione, a.id).toBeTruthy();
+      expect(a.impulsi, a.id).toBeTruthy();
+      expect(a.avversariPossibili, a.id).toBeTruthy();
+      for (const c of a.capacita) {
+        expect(c.nome, `${a.id}/${c.nomeOriginale}`).toBeTruthy();
+        expect(c.testo, `${a.id}/${c.nomeOriginale}`).toBeTruthy();
+        if (c.domandeOriginale) expect(c.domande, `${a.id}/${c.nomeOriginale}`).toBeTruthy();
+      }
+    }
+  });
+
+  it('i testi tradotti non contengono frasi inglesi rimaste e usano i termini del glossario', () => {
+    const testi = [...avversari.flatMap((a) => a.capacita.map((c) => c.testo!)), ...ambienti.flatMap((a) => a.capacita.map((c) => c.testo!))];
+    for (const t of testi) {
+      expect(t).not.toMatch(/\b(Spend|Mark a|Fear|Hope|range|target)\b/);
+      expect(t).not.toMatch(/\bCritico\b/); // SRD p.39: "Severe" = Gravissimo (glossario)
+    }
+    // stessi numeri dell'SRD nei testi (dadi e valori)
+    for (const a of [...avversari, ...ambienti]) {
+      for (const c of a.capacita) {
+        const dadi = (x: string) => (x.match(/\d+d\d+(\+\d+)?/g) ?? []).sort().join(',');
+        expect(dadi(c.testo!), `${a.id}/${c.nomeOriginale}`).toBe(dadi(c.testoOriginale));
+      }
+    }
+  });
+
+  it("l'estrazione degli ambienti non include il riquadro dell'elenco di Tier 4 (SRD p.103)", () => {
+    const defiler = ambienti.find((a) => a.id === 'abandoned-grove')!.capacita.find((c) => c.nomeOriginale === 'Defiler')!;
+    expect(defiler.testoOriginale).not.toMatch(/LEVELS|Imperial Court/);
   });
 });
 

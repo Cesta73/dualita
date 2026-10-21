@@ -1,0 +1,2848 @@
+{
+ "_nota": "Traduzioni dei testi degli avversari (SRD p.75-99), chiave = id. Capacità ed Esperienze nello stesso ordine dell'SRD. Da rivedere con Gianluca.",
+ "acid-burrower": {
+  "descrizione": "Un insetto grande come un cavallo, con artigli da scavo e sangue acido.",
+  "motivazioni": "Scavare, trascinare via, nutrirsi, riposizionarsi",
+  "attacco": "Artigli",
+  "esperienze": [
+   "Senso dei tremori"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (3)",
+    "testo": "Lo Scavatore può ricevere i riflettori fino a tre volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Eruzione dal terreno",
+    "testo": "Segna 1 Stress: lo Scavatore erompe dal terreno. Tutte le creature entro gittata Molto vicina devono superare un Tiro di reazione di Agilità o vengono atterrate, diventando Vulnerabili fino alla loro prossima azione."
+   },
+   {
+    "nome": "Sputo acido",
+    "testo": "Fai un attacco contro tutti i bersagli davanti allo Scavatore entro gittata Vicina. I bersagli colpiti subiscono 2d6 danni fisici e devono segnare uno Slot Armatura senza riceverne i benefici (possono comunque usare l'armatura per ridurre il danno). Se non possono segnare uno Slot Armatura, devono segnare 1 PF aggiuntivo e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Bagno d'acido",
+    "testo": "Quando lo Scavatore subisce un danno Gravissimo, tutte le creature entro gittata Vicina vengono investite dal suo sangue acido e subiscono 1d10 danni fisici. Gli schizzi ricoprono di sangue il terreno entro gittata Molto vicina: ogni creatura diversa dallo Scavatore che lo attraversa subisce 1d6 danni fisici."
+   }
+  ]
+ },
+ "bear": {
+  "descrizione": "Un grosso orso dalla pelliccia folta e dagli artigli possenti.",
+  "motivazioni": "Arrampicarsi, difendere il territorio, percuotere, seguire le tracce",
+  "attacco": "Artigli",
+  "esperienze": [
+   "Agguato",
+   "Sensi acuti"
+  ],
+  "capacita": [
+   {
+    "nome": "Forza travolgente",
+    "testo": "I bersagli che segnano PF a causa dell'attacco standard dell'Orso vengono scagliati indietro fino a gittata Molto vicina."
+   },
+   {
+    "nome": "Morso",
+    "testo": "Segna 1 Stress per fare un attacco contro un bersaglio in Mischia. Se riesce, infligge 3d4+10 danni fisici e il bersaglio è Trattenuto finché non si libera con un Tiro di Forza riuscito."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando l'Orso mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "cave-ogre": {
+  "descrizione": "Un umanoide enorme che considera cibo ogni forma di vita senziente.",
+  "motivazioni": "Staccare teste a morsi, banchettare, strappare arti, calpestare, lanciare i nemici",
+  "attacco": "Clava",
+  "esperienze": [
+   "Lanciare"
+  ],
+  "capacita": [
+   {
+    "nome": "Furia crescente",
+    "testo": "Devi spendere 1 Paura per dare i riflettori all'Orco. Mentre ha i riflettori, può fare il suo attacco standard contro tutti i bersagli a gittata."
+   },
+   {
+    "nome": "Spezzaossa",
+    "testo": "Gli attacchi dell'Orco infliggono danno diretto."
+   },
+   {
+    "nome": "Grandinata di massi",
+    "testo": "Segna 1 Stress per raccogliere oggetti pesanti e scagliarli contro tutti i bersagli davanti all'Orco entro gittata Lontana. Fai un attacco contro questi bersagli. I bersagli colpiti subiscono 1d10+2 danni fisici. Se l'Orco ne colpisce più di uno, guadagni 1 Paura."
+   },
+   {
+    "nome": "Furia devastatrice",
+    "testo": "Quando l'Orco segna 2 o più PF, può scatenarsi. Muovilo in un punto entro gittata Vicina e infliggi 2d6+3 danni fisici diretti a tutti i bersagli sul suo percorso."
+   }
+  ]
+ },
+ "construct": {
+  "descrizione": "Un essere vagamente umanoide di pietra e acciaio, assemblato e animato dalla magia.",
+  "motivazioni": "Distruggere l'ambiente, servire il creatore, schiacciare il bersaglio, travolgere i gruppi",
+  "attacco": "Pugno schiacciante",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Implacabile (2)",
+    "testo": "Il Costrutto può ricevere i riflettori fino a due volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Struttura fragile",
+    "testo": "Quando il Costrutto segna PF per un danno fisico, deve segnare 1 PF aggiuntivo."
+   },
+   {
+    "nome": "Travolgere",
+    "testo": "Segna 1 Stress per fare un attacco contro tutti i bersagli sul percorso del Costrutto mentre si muove. I bersagli colpiti subiscono 1d8 danni fisici."
+   },
+   {
+    "nome": "Sovraccarico",
+    "testo": "Prima di tirare il danno di un attacco del Costrutto, puoi segnare 1 Stress per ottenere un bonus di +10 al tiro di danno. Il Costrutto può poi ricevere di nuovo i riflettori."
+   },
+   {
+    "nome": "Terremoto di morte",
+    "testo": "Quando il Costrutto segna il suo ultimo PF, la magia che lo alimenta si spezza in un'esplosione di forza. Fai un attacco con vantaggio contro tutti i bersagli entro gittata Molto vicina. I bersagli colpiti subiscono 1d12+2 danni magici."
+   }
+  ]
+ },
+ "courtier": {
+  "descrizione": "Un mondano ambizioso dagli abiti vistosi.",
+  "motivazioni": "Screditare, ottenere favori, manovrare, tramare",
+  "attacco": "Pugnali",
+  "esperienze": [
+   "Mondano"
+  ],
+  "capacita": [
+   {
+    "nome": "Scherno",
+    "testo": "Segna 1 Stress per dire qualcosa di beffardo e costringere un bersaglio entro gittata Vicina a fare un Tiro di reazione di Presenza (14) per salvare la faccia. Se fallisce, il bersaglio deve segnare 2 Stress ed è Vulnerabile fino alla fine della scena."
+   },
+   {
+    "nome": "Capro espiatorio",
+    "testo": "Spendi 1 Paura e scegli un PG come bersaglio. Il Cortigiano convince una folla o una persona influente che il bersaglio è la causa dei loro attuali conflitti o sventure."
+   }
+  ]
+ },
+ "deeproot-defender": {
+  "descrizione": "Un robusto essere vegetale dai rampicanti prensili.",
+  "motivazioni": "Tendere agguati, afferrare, proteggere, percuotere",
+  "attacco": "Rampicanti",
+  "esperienze": [
+   "Enorme"
+  ],
+  "capacita": [
+   {
+    "nome": "Schianto al suolo",
+    "testo": "Colpisce il terreno, scagliando tutti i bersagli entro gittata Molto vicina indietro fino a gittata Lontana. Ogni bersaglio scagliato in questo modo deve segnare 1 Stress."
+   },
+   {
+    "nome": "Afferrare e trascinare",
+    "testo": "Fai un attacco contro un bersaglio entro gittata Vicina. Se riesce, spendi 1 Paura per trascinarlo in Mischia, infliggergli 1d6+2 danni fisici e renderlo Trattenuto finché il Difensore non subisce un danno Gravissimo."
+   }
+  ]
+ },
+ "dire-wolf": {
+  "descrizione": "Un grosso lupo dai denti minacciosi, raramente da solo.",
+  "motivazioni": "Difendere il territorio, tormentare, proteggere il branco, circondare, inseguire",
+  "attacco": "Artigli",
+  "esperienze": [
+   "Sensi acuti"
+  ],
+  "capacita": [
+   {
+    "nome": "Tattica del branco",
+    "testo": "Se il Lupo mette a segno un attacco standard e un altro Lupo crudele è in Mischia con il bersaglio, infligge 1d6+5 danni fisici invece del danno standard e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Colpo azzoppante",
+    "testo": "Segna 1 Stress per fare un attacco contro un bersaglio in Mischia. Se riesce, infligge 3d4+10 danni fisici diretti e rende il bersaglio Vulnerabile finché non libera almeno 1 PF."
+   }
+  ]
+ },
+ "giant-mosquitoes": {
+  "descrizione": "Decine di zanzare grandi come un pugno, che volano in gruppo per proteggersi.",
+  "motivazioni": "Volare via, molestare, succhiare sangue",
+  "attacco": "Proboscide",
+  "esperienze": [
+   "Mimetismo"
+  ],
+  "capacita": [
+   {
+    "nome": "Orda (1d4+1)",
+    "testo": "Quando le Zanzare hanno segnato metà o più dei loro PF, il loro attacco standard infligge invece 1d4+1 danni fisici."
+   },
+   {
+    "nome": "Volante",
+    "testo": "Mentre volano, le Zanzare hanno un bonus di +2 alla Difficoltà."
+   },
+   {
+    "nome": "Succhiasangue",
+    "testo": "Quando l'attacco delle Zanzare fa segnare PF a un bersaglio, puoi segnare 1 Stress per costringerlo a segnare 1 PF aggiuntivo."
+   }
+  ]
+ },
+ "giant-rat": {
+  "descrizione": "Un roditore grande come un gatto, abile a rovistare e a sopravvivere.",
+  "motivazioni": "Scavare, avere fame, rovistare, sfiancare",
+  "attacco": "Artigli",
+  "esperienze": [
+   "Sensi acuti"
+  ],
+  "capacita": [
+   {
+    "nome": "Gregario (3)",
+    "testo": "Il Ratto è sconfitto quando subisce un danno qualsiasi. Per ogni 3 danni che un PG infligge al Ratto, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti i Ratti giganti entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 1 danno fisico ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "giant-scorpion": {
+  "descrizione": "Un insetto grande come un essere umano, con chele laceranti e una coda velenosa.",
+  "motivazioni": "Tendere agguati, nutrirsi, afferrare, avvelenare",
+  "attacco": "Chele",
+  "esperienze": [
+   "Mimetismo"
+  ],
+  "capacita": [
+   {
+    "nome": "Doppio colpo",
+    "testo": "Segna 1 Stress per fare un attacco standard contro due bersagli in Mischia."
+   },
+   {
+    "nome": "Pungiglione velenoso",
+    "testo": "Fai un attacco contro un bersaglio entro gittata Molto vicina. Se riesce, spendi 1 Paura per infliggergli 1d4+4 danni fisici e avvelenarlo fino al suo prossimo riposo o finché non supera un Tiro di Conoscenza (16). Finché è Avvelenato, il bersaglio deve tirare un d6 prima di ogni tiro d'azione: con 4 o meno deve segnare 1 Stress."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando lo Scorpione mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "glass-snake": {
+  "descrizione": "Un serpente trasparente dalla testa enorme, che ovunque vada si lascia dietro una scia di schegge di vetro.",
+  "motivazioni": "Arrampicarsi, nutrirsi, mantenere le distanze, spaventare",
+  "attacco": "Zanne di vetro",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Schegge tritarmature",
+    "testo": "Chi mette a segno un attacco in Mischia contro il Serpente deve segnare uno Slot Armatura senza riceverne i benefici (può comunque usare l'armatura per ridurre il danno). Se non può segnare uno Slot Armatura, deve segnare 1 PF aggiuntivo."
+   },
+   {
+    "nome": "Serpente rotante",
+    "testo": "Segna 1 Stress per fare un attacco contro tutti i bersagli entro gittata Molto vicina. I bersagli colpiti subiscono 1d6+1 danni fisici."
+   },
+   {
+    "nome": "Sputatore",
+    "testo": "Spendi 1 Paura per introdurre un Dado dello Sputo (d6). Quando il Serpente ha i riflettori, tira questo dado: con 5 o più, tutti i bersagli davanti al Serpente entro gittata Lontana devono superare un Tiro di reazione di Agilità o subire 1d4 danni fisici. Il Serpente può ricevere i riflettori una seconda volta in questo turno del GM."
+   }
+  ]
+ },
+ "harrier": {
+  "descrizione": "Un combattente agile armato di giavellotti.",
+  "motivazioni": "Aggirare, tormentare, colpire e ritirarsi, trarre profitto",
+  "attacco": "Giavellotto",
+  "esperienze": [
+   "Mimetismo"
+  ],
+  "capacita": [
+   {
+    "nome": "Mantenere le distanze",
+    "testo": "Dopo aver fatto un attacco standard, il Predone può muoversi ovunque entro gittata Lontana."
+   },
+   {
+    "nome": "Ripiegare",
+    "testo": "Quando una creatura entra in Mischia per attaccarlo, puoi segnare 1 Stress prima del tiro d'attacco per muovere il Predone ovunque entro gittata Vicina e fare un attacco contro quella creatura. Se riesce, infligge 1d10+2 danni fisici."
+   }
+  ]
+ },
+ "archer-guard": {
+  "descrizione": "Una guardia alta con un arco lungo e una faretra di frecce impennate con i colori dell'insediamento.",
+  "motivazioni": "Arrestare, chiudere i cancelli, arrivare a fine giornata, inchiodare sul posto",
+  "attacco": "Arco lungo",
+  "esperienze": [
+   "Conoscenza del luogo"
+  ],
+  "capacita": [
+   {
+    "nome": "Tiro azzoppante",
+    "testo": "Fai un attacco contro un bersaglio entro gittata Lontana. Se riesce, segna 1 Stress per infliggere 1d12+3 danni fisici. Se il bersaglio segna PF per questo attacco, ha svantaggio ai Tiri di Agilità finché non libera almeno 1 PF."
+   }
+  ]
+ },
+ "bladed-guard": {
+  "descrizione": "Una guardia corazzata con spada e scudo dipinto con i colori dell'insediamento.",
+  "motivazioni": "Arrestare, chiudere i cancelli, arrivare a fine giornata, inchiodare sul posto",
+  "attacco": "Spada lunga",
+  "esperienze": [
+   "Conoscenza del luogo"
+  ],
+  "capacita": [
+   {
+    "nome": "Muro di scudi",
+    "testo": "Una creatura che prova a muoversi entro gittata Molto vicina dalla Guardia deve superare un Tiro di Agilità. Se altre Guardie armate di lama sono schierate in fila accanto alla prima, ciascuna in Mischia con un'altra guardia della fila, la Difficoltà aumenta del numero totale di guardie nella fila."
+   },
+   {
+    "nome": "Trattenere",
+    "testo": "Fai un attacco contro un bersaglio entro gittata Molto vicina. Se riesce, segna 1 Stress per rendere il bersaglio Trattenuto finché non si libera con un attacco riuscito, un Tiro di Destrezza o un Tiro di Forza."
+   }
+  ]
+ },
+ "head-guard": {
+  "descrizione": "Una guardia esperta con una mazza, un fischietto e una voce tonante.",
+  "motivazioni": "Arrestare, chiudere i cancelli, inchiodare sul posto, cercare la gloria",
+  "attacco": "Mazza",
+  "esperienze": [
+   "Comandante",
+   "Conoscenza del luogo"
+  ],
+  "capacita": [
+   {
+    "nome": "Radunare le guardie",
+    "testo": "Spendi 2 Paura per dare i riflettori al Capo delle guardie e a un massimo di 2d4 alleati entro gittata Lontana."
+   },
+   {
+    "nome": "Al mio segnale",
+    "testo": "Conto alla rovescia (5). La prima volta che il Capo delle guardie riceve i riflettori, attiva il conto alla rovescia. Scende ogni volta che un PG fa un tiro d'attacco. Quando si attiva, tutte le Guardie arciere entro gittata Lontana fanno un attacco standard con vantaggio contro il bersaglio più vicino a loro gittata. Se più attacchi colpiscono lo stesso bersaglio, somma i danni."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando il Capo delle guardie mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "jagged-knife-bandit": {
+  "descrizione": "Un criminale astuto avvolto in un mantello, armato di uno dei coltelli simbolo della banda.",
+  "motivazioni": "Fuggire, trarre profitto, rubare, lanciare fumogeni",
+  "attacco": "Pugnali",
+  "esperienze": [
+   "Ladro"
+  ],
+  "capacita": [
+   {
+    "nome": "Scalatore",
+    "testo": "Il Bandito si arrampica con la stessa facilità con cui corre."
+   },
+   {
+    "nome": "Dall'alto",
+    "testo": "Quando il Bandito mette a segno un attacco standard da una posizione più alta del bersaglio, infligge 1d10+1 danni fisici invece del danno standard."
+   }
+  ]
+ },
+ "jagged-knife-hexer": {
+  "descrizione": "Un bandito armato di bastone, con un mantello ornato di paccottiglia magica, che usa maledizioni per tormentare i nemici.",
+  "motivazioni": "Comandare, maledire, trarre profitto",
+  "attacco": "Bastone",
+  "esperienze": [
+   "Conoscenza magica"
+  ],
+  "capacita": [
+   {
+    "nome": "Maledizione",
+    "testo": "Scegli un bersaglio entro gittata Lontana e Maledicilo temporaneamente. Finché è Maledetto, quando il bersaglio tira con Speranza puoi segnare 1 Stress per far diventare il tiro con Paura."
+   },
+   {
+    "nome": "Flusso caotico",
+    "testo": "Fai un attacco contro un massimo di tre bersagli entro gittata Molto vicina. Segna 1 Stress per infliggere 2d6+3 danni magici ai bersagli colpiti."
+   }
+  ]
+ },
+ "jagged-knife-kneebreaker": {
+  "descrizione": "Un attaccabrighe imponente che porta una grossa clava.",
+  "motivazioni": "Afferrare, intimidire, trarre profitto, rubare",
+  "attacco": "Clava",
+  "esperienze": [
+   "Ladro",
+   "Minacce esplicite"
+  ],
+  "capacita": [
+   {
+    "nome": "Li tengo io",
+    "testo": "Le creature Trattenute dallo Spaccaginocchia subiscono danni doppi dagli attacchi degli altri avversari."
+   },
+   {
+    "nome": "Tenerli giù",
+    "testo": "Fai un attacco contro un bersaglio in Mischia. Se riesce, il bersaglio non subisce danni ma è Trattenuto e Vulnerabile. Può liberarsi, eliminando entrambe le condizioni, con un Tiro di Forza riuscito; si libera automaticamente se lo Spaccaginocchia subisce un danno Grave o superiore."
+   }
+  ]
+ },
+ "jagged-knife-lackey": {
+  "descrizione": "Un ladro dagli abiti semplici e dai piccoli pugnali, impaziente di mettersi in mostra.",
+  "motivazioni": "Fuggire, trarre profitto, lanciare fumogeni",
+  "attacco": "Pugnali",
+  "esperienze": [
+   "Ladro"
+  ],
+  "capacita": [
+   {
+    "nome": "Gregario (3)",
+    "testo": "Il Tirapiedi è sconfitto quando subisce un danno qualsiasi. Per ogni 3 danni che un PG infligge al Tirapiedi, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti i Tirapiedi del Coltello Seghettato entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 2 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "jagged-knife-lieutenant": {
+  "descrizione": "Un bandito esperto in cuoio di qualità, dalla voce decisa e dallo sguardo astuto.",
+  "motivazioni": "Fare il prepotente, comandare, trarre profitto, rinforzare",
+  "attacco": "Giavellotto",
+  "esperienze": [
+   "Conoscenza del luogo"
+  ],
+  "capacita": [
+   {
+    "nome": "Tattico",
+    "testo": "Quando dai i riflettori al Luogotenente, segna 1 Stress per darli anche a due alleati entro gittata Vicina."
+   },
+   {
+    "nome": "Ce ne sono altri",
+    "testo": "Evoca tre Tirapiedi del Coltello Seghettato, che compaiono a gittata Lontana."
+   },
+   {
+    "nome": "Colpo di grazia",
+    "testo": "Spendi 1 Paura per fare un attacco contro un bersaglio Vulnerabile entro gittata Vicina. Se riesce, infligge 2d6+12 danni fisici e il bersaglio deve segnare 1 Stress."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando il Luogotenente mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "jagged-knife-shadow": {
+  "descrizione": "Un furfante agile con un coltello malvagio, che usa la magia dell'ombra per isolare i bersagli.",
+  "motivazioni": "Tendere agguati, nascondere, dividere, trarre profitto",
+  "attacco": "Pugnali",
+  "esperienze": [
+   "Intrusione"
+  ],
+  "capacita": [
+   {
+    "nome": "Pugnalata alle spalle",
+    "testo": "Quando l'Ombra mette a segno un attacco standard con vantaggio, infligge 1d6+6 danni fisici invece del danno standard."
+   },
+   {
+    "nome": "Ammantato",
+    "testo": "L'Ombra diventa Nascosta fino a dopo il suo prossimo attacco. Gli attacchi fatti mentre è Nascosta grazie a questa capacità hanno vantaggio."
+   }
+  ]
+ },
+ "jagged-knife-sniper": {
+  "descrizione": "Un bandito allampanato che colpisce da copertura con un arco corto.",
+  "motivazioni": "Tendere agguati, nascondersi, trarre profitto, riposizionarsi",
+  "attacco": "Arco corto",
+  "esperienze": [
+   "Furtività"
+  ],
+  "capacita": [
+   {
+    "nome": "Colpo invisibile",
+    "testo": "Se il Cecchino è Nascosto quando mette a segno un attacco standard contro un bersaglio, infligge 1d10+4 danni fisici invece del danno standard."
+   }
+  ]
+ },
+ "merchant": {
+  "descrizione": "Un commerciante elegante, con un occhio attento al guadagno.",
+  "motivazioni": "Comprare a poco e vendere a tanto, creare domanda, gonfiare i prezzi, cercare il profitto",
+  "attacco": "Clava",
+  "esperienze": [
+   "Negoziatore scaltro"
+  ],
+  "capacita": [
+   {
+    "nome": "Trattamento di favore",
+    "testo": "Un PG che supera un Tiro di Presenza contro il Mercante ottiene uno sconto sugli acquisti. Un PG che fallisce un Tiro di Presenza contro il Mercante deve pagare di più e ha svantaggio ai successivi Tiri di Presenza contro di lui."
+   },
+   {
+    "nome": "Giro a vuoto",
+    "testo": "Quando un PG ottiene 14 o meno in un Tiro di Presenza contro il Mercante, deve segnare 1 Stress."
+   }
+  ]
+ },
+ "minor-chaos-elemental": {
+  "descrizione": "Una massa scintillante di magia incontrollabile.",
+  "motivazioni": "Confondere, destabilizzare, trasmutare",
+  "attacco": "Raffica distorcente",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Forma arcana",
+    "testo": "L'Elementale ha resistenza al danno magico."
+   },
+   {
+    "nome": "Flusso nauseante",
+    "testo": "Segna 1 PF per costringere tutti i bersagli entro gittata Vicina a segnare 1 Stress e diventare Vulnerabili fino al loro prossimo riposo o finché non liberano 1 PF."
+   },
+   {
+    "nome": "Rifare la realtà",
+    "testo": "Spendi 1 Paura per trasformare l'area entro gittata Molto vicina in un bioma diverso. Tutti i bersagli in quest'area subiscono 2d6+3 danni magici diretti."
+   },
+   {
+    "nome": "Riflesso magico",
+    "testo": "Quando l'Elementale subisce danni da un attacco entro gittata Vicina, infligge all'attaccante danni pari alla metà di quelli subiti."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando l'Elementale mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "minor-fire-elemental": {
+  "descrizione": "Una fiamma vivente grande come un falò.",
+  "motivazioni": "Accerchiare i nemici, crescere, intimidire, appiccare incendi",
+  "attacco": "Raffica elementale",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Implacabile (2)",
+    "testo": "L'Elementale può ricevere i riflettori fino a due volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Terra bruciata",
+    "testo": "Segna 1 Stress per scegliere un punto entro gittata Lontana. Il terreno entro gittata Molto vicina da quel punto prende fuoco all'istante. Tutte le creature nell'area devono fare un Tiro di reazione di Agilità. Chi fallisce subisce 2d8 danni magici dalle fiamme; chi riesce subisce metà danni."
+   },
+   {
+    "nome": "Esplosione",
+    "testo": "Spendi 1 Paura per eruttare in un'esplosione infuocata. Fai un attacco contro tutti i bersagli entro gittata Vicina. I bersagli colpiti subiscono 1d8 danni magici e vengono scagliati fino a gittata Lontana."
+   },
+   {
+    "nome": "Divorare l'esca",
+    "testo": "Tre volte per scena, quando l'Elementale si muove su oggetti molto infiammabili, li consuma per liberare 1 PF o 1 Stress."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando l'Elementale mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "minor-demon": {
+  "descrizione": "Una creatura cremisi venuta dai Circoli Inferiori, divorata dalla rabbia contro tutti i mortali.",
+  "motivazioni": "Agire in modo imprevedibile, radunare i bersagli, godere del dolore, tormentare",
+  "attacco": "Artigli",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Implacabile (2)",
+    "testo": "Il Demone può ricevere i riflettori fino a due volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Tutti devono cadere",
+    "testo": "Quando un PG ottiene un fallimento con Paura mentre è entro gittata Vicina dal Demone, perde 1 Speranza."
+   },
+   {
+    "nome": "Fuoco infernale",
+    "testo": "Spendi 1 Paura per far piovere fuoco infernale entro gittata Lontana. Tutti i bersagli nell'area devono fare un Tiro di reazione di Agilità. Chi fallisce subisce 1d20+3 danni magici; chi riesce subisce metà danni."
+   },
+   {
+    "nome": "Mietitore",
+    "testo": "Prima di tirare il danno di un attacco del Demone, puoi segnare 1 Stress per ottenere un bonus al tiro di danno pari al numero di PF che il Demone ha segnato."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando il Demone mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "minor-treant": {
+  "descrizione": "Un alberello che cammina, risvegliato per difendere la sua foresta.",
+  "motivazioni": "Schiacciare, sopraffare, proteggere",
+  "attacco": "Ramo artigliato",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (5)",
+    "testo": "Il Treant è sconfitto quando subisce un danno qualsiasi. Per ogni 5 danni che un PG infligge al Treant, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti i Treant minori entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 4 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "green-ooze": {
+  "descrizione": "Un cumulo semovente di melma verde traslucida.",
+  "motivazioni": "Mimetizzarsi, divorare e moltiplicarsi, avvicinarsi di soppiatto, avvolgere",
+  "attacco": "Appendice melmosa",
+  "esperienze": [
+   "Mimetismo"
+  ],
+  "capacita": [
+   {
+    "nome": "Lento",
+    "testo": "Quando dai i riflettori alla Melma e sul suo blocco statistiche non c'è un gettone, non può ancora agire: metti un gettone sul blocco e descrivi cosa si prepara a fare. Quando le dai i riflettori e c'è un gettone, toglilo: ora può agire."
+   },
+   {
+    "nome": "Forma acida",
+    "testo": "Quando la Melma mette a segno un attacco, il bersaglio deve segnare uno Slot Armatura senza riceverne i benefici (può comunque usare l'armatura per ridurre il danno). Se non può segnare uno Slot Armatura, deve segnare 1 PF aggiuntivo."
+   },
+   {
+    "nome": "Avvolgere",
+    "testo": "Fai un attacco standard contro un bersaglio in Mischia. Se riesce, la Melma lo avvolge e il bersaglio deve segnare 2 Stress. Il bersaglio deve segnare 1 Stress aggiuntivo ogni volta che fa un tiro d'azione. Se la Melma subisce un danno Gravissimo, il bersaglio si libera."
+   },
+   {
+    "nome": "Scissione",
+    "testo": "Quando la Melma ha 3 o più PF segnati, puoi spendere 1 Paura per dividerla in due Melme verdi minuscole (senza PF né Stress segnati). Dai subito i riflettori a entrambe."
+   }
+  ]
+ },
+ "tiny-green-ooze": {
+  "descrizione": "Un piccolo cumulo semovente di melma verde traslucida.",
+  "motivazioni": "Mimetizzarsi, avvicinarsi di soppiatto",
+  "attacco": "Appendice melmosa",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Forma acida",
+    "testo": "Quando la Melma mette a segno un attacco, il bersaglio deve segnare uno Slot Armatura senza riceverne i benefici (può comunque usare l'armatura per ridurre il danno). Se non può segnare uno Slot Armatura, deve segnare 1 PF aggiuntivo."
+   }
+  ]
+ },
+ "red-ooze": {
+  "descrizione": "Un cumulo semovente di melma rossa traslucida e fiammeggiante.",
+  "motivazioni": "Mimetizzarsi, divorare e moltiplicarsi, incendiare, appiccare incendi",
+  "attacco": "Appendice melmosa",
+  "esperienze": [
+   "Mimetismo"
+  ],
+  "capacita": [
+   {
+    "nome": "Fuoco strisciante",
+    "testo": "Con il suo movimento normale la Melma può spostarsi solo entro gittata Molto vicina. Dà fuoco a ogni oggetto infiammabile che tocca."
+   },
+   {
+    "nome": "Incendiare",
+    "testo": "Fai un attacco contro un bersaglio entro gittata Molto vicina. Se riesce, il bersaglio subisce 1d8 danni magici ed è In fiamme finché non viene spento con un Tiro di Destrezza (14) riuscito. Finché è In fiamme, il bersaglio subisce 1d4 danni magici ogni volta che fa un tiro d'azione."
+   },
+   {
+    "nome": "Scissione",
+    "testo": "Quando la Melma ha 3 o più PF segnati, puoi spendere 1 Paura per dividerla in due Melme rosse minuscole (senza PF né Stress segnati). Dai subito i riflettori a entrambe."
+   }
+  ]
+ },
+ "tiny-red-ooze": {
+  "descrizione": "Un piccolo cumulo semovente di melma rossa traslucida e fiammeggiante.",
+  "motivazioni": "Ardere, mimetizzarsi",
+  "attacco": "Appendice melmosa",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Ardente",
+    "testo": "Quando una creatura in Mischia infligge danni alla Melma, subisce 1d6 danni magici diretti."
+   }
+  ]
+ },
+ "petty-noble": {
+  "descrizione": "Un aristocratico riccamente vestito e ornato, traboccante di superbia.",
+  "motivazioni": "Abusare del potere, accumulare risorse, mobilitare i sottoposti",
+  "attacco": "Stocco",
+  "esperienze": [
+   "Aristocratico"
+  ],
+  "capacita": [
+   {
+    "nome": "La mia terra, le mie regole",
+    "testo": "Tutte le azioni sociali contro il Nobile sulle sue terre hanno svantaggio."
+   },
+   {
+    "nome": "Guardie, prendeteli!",
+    "testo": "Una volta per scena, segna 1 Stress per evocare 1d4 Guardie armate di lama, che compaiono a gittata Lontana per imporre la volontà del Nobile."
+   },
+   {
+    "nome": "Esilio",
+    "testo": "Spendi 1 Paura e scegli un PG come bersaglio. Il Nobile proclama che il bersaglio e i suoi alleati sono esiliati dal suo territorio. Finché sono esiliati, nelle situazioni sociali all'interno del dominio del Nobile hanno svantaggio."
+   }
+  ]
+ },
+ "pirate-captain": {
+  "descrizione": "Un lupo di mare carismatico con un cappello vistoso, impaziente di razziare e saccheggiare.",
+  "motivazioni": "Comandare, far camminare sull'asse, saccheggiare, razziare",
+  "attacco": "Sciabola",
+  "esperienze": [
+   "Comandante",
+   "Marinaio"
+  ],
+  "capacita": [
+   {
+    "nome": "Spadaccino",
+    "testo": "Quando il Capitano segna 2 PF o meno per un attacco in Mischia, l'attaccante deve segnare 1 Stress."
+   },
+   {
+    "nome": "Rinforzi",
+    "testo": "Una volta per scena, segna 1 Stress per evocare un'Orda di Predoni pirati, che compare a gittata Lontana."
+   },
+   {
+    "nome": "Niente pietà",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio che ha tre o più Pirati in Mischia. Il Capitano guida i Pirati in un coro di minacce e promesse di una tomba in fondo al mare. Il bersaglio deve fare un Tiro di reazione di Presenza: se fallisce, segna 1d4+1 Stress; se riesce, deve comunque segnare 1 Stress."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando il Capitano mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "pirate-raiders": {
+  "descrizione": "Canaglie di mare che si muovono in un branco devastatore.",
+  "motivazioni": "Fare branco, saccheggiare, razziare",
+  "attacco": "Sciabola",
+  "esperienze": [
+   "Marinaio"
+  ],
+  "capacita": [
+   {
+    "nome": "Orda (1d4+1)",
+    "testo": "Quando i Predoni hanno segnato metà o più dei loro PF, il loro attacco standard infligge invece 1d4+1 danni fisici."
+   },
+   {
+    "nome": "Spadaccini",
+    "testo": "Quando i Predoni segnano 2 PF o meno per un attacco in Mischia, l'attaccante deve segnare 1 Stress."
+   }
+  ]
+ },
+ "pirate-tough": {
+  "descrizione": "Un pirata muscoloso e tatuato, con pugni grandi come meloni.",
+  "motivazioni": "Saccheggiare, razziare, distruggere, terrorizzare",
+  "attacco": "Pugni enormi",
+  "esperienze": [
+   "Marinaio"
+  ],
+  "capacita": [
+   {
+    "nome": "Spadaccino",
+    "testo": "Quando l'Energumeno segna 2 PF o meno per un attacco in Mischia, l'attaccante deve segnare 1 Stress."
+   },
+   {
+    "nome": "Sgombrare il ponte",
+    "testo": "Fai un attacco contro un bersaglio entro gittata Molto vicina. Se riesce, segna 1 Stress per muoverti in Mischia con il bersaglio, infliggergli 3d4 danni fisici e scagliarlo fino a gittata Vicina."
+   }
+  ]
+ },
+ "sellsword": {
+  "descrizione": "Un mercenario armato che tenta la fortuna.",
+  "motivazioni": "Caricare, lacerare, sopraffare, trarre profitto",
+  "attacco": "Spada lunga",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (4)",
+    "testo": "La Spada prezzolata è sconfitta quando subisce un danno qualsiasi. Per ogni 4 danni che un PG le infligge, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutte le Spade prezzolate entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 3 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "skeleton-archer": {
+  "descrizione": "Uno scheletro fragile con arco corto e frecce.",
+  "motivazioni": "Trafiggere i bersagli distratti, fingersi morto, rubare la pelle",
+  "attacco": "Arco corto",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Opportunista",
+    "testo": "Quando due o più avversari sono entro gittata Molto vicina da una creatura, tutti i danni che l'Arciere infligge a quella creatura raddoppiano."
+   },
+   {
+    "nome": "Tiro letale",
+    "testo": "Fai un attacco contro un bersaglio Vulnerabile entro gittata Lontana. Se riesce, segna 1 Stress per infliggere 3d4+8 danni fisici."
+   }
+  ]
+ },
+ "skeleton-dredge": {
+  "descrizione": "Un mucchio di ossa che sferraglia.",
+  "motivazioni": "Andare in pezzi, sopraffare, fingersi morto, rubare la pelle",
+  "attacco": "Artigli d'osso",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (4)",
+    "testo": "Lo Sterratore è sconfitto quando subisce un danno qualsiasi. Per ogni 4 danni che un PG gli infligge, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti gli Sterratori entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 1 danno fisico ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "skeleton-knight": {
+  "descrizione": "Un grande scheletro corazzato con un'enorme lama.",
+  "motivazioni": "Abbattere i vivi, rubare la pelle, seminare il caos",
+  "attacco": "Spadone arrugginito",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Terrificante",
+    "testo": "Quando il Cavaliere mette a segno un attacco, tutti i PG entro gittata Vicina perdono 1 Speranza e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Fino all'osso",
+    "testo": "Segna 1 Stress per fare un attacco contro tutti i bersagli entro gittata Molto vicina. I bersagli colpiti subiscono 1d8+2 danni fisici e devono segnare 1 Stress."
+   },
+   {
+    "nome": "Scavare due fosse",
+    "testo": "Quando il Cavaliere viene sconfitto, fa un attacco contro un bersaglio entro gittata Molto vicina (con priorità per la creatura che lo ha ucciso). Se riesce, il bersaglio subisce 1d4+8 danni fisici e perde 1d4 Speranza."
+   }
+  ]
+ },
+ "skeleton-warrior": {
+  "descrizione": "Uno scheletro coperto di terra, armato di una lama arrugginita.",
+  "motivazioni": "Fingersi morto, fare branco, rubare la pelle",
+  "attacco": "Spada",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Solo ossa",
+    "testo": "Il Guerriero ha resistenza al danno fisico."
+   },
+   {
+    "nome": "Non resta morto",
+    "testo": "Quando il Guerriero viene sconfitto, puoi dargli i riflettori e tirare un d6. Con 6, se sul campo di battaglia ci sono altri avversari, il Guerriero si ricompone senza PF segnati."
+   }
+  ]
+ },
+ "spellblade": {
+  "descrizione": "Un mercenario che unisce scherma e magia con effetti letali.",
+  "motivazioni": "Bersagliare, comandare, resistere",
+  "attacco": "Spada lunga potenziata",
+  "esperienze": [
+   "Conoscenza magica"
+  ],
+  "capacita": [
+   {
+    "nome": "Acciaio arcano",
+    "testo": "Il danno dell'attacco standard della Lama incantata è considerato sia fisico sia magico."
+   },
+   {
+    "nome": "Raffica di soppressione",
+    "testo": "Segna 1 Stress e scegli come bersaglio un gruppo entro gittata Lontana. Tutti i bersagli devono superare un Tiro di reazione di Agilità o subire 1d8+2 danni magici. Guadagni 1 Paura per ogni bersaglio che ha segnato PF per questo attacco."
+   },
+   {
+    "nome": "Muoversi come un'unità",
+    "testo": "Spendi 2 Paura per dare i riflettori a un massimo di cinque alleati entro gittata Lontana."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando la Lama incantata mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "swarm-of-rats": {
+  "descrizione": "Una massa brulicante di comuni roditori che si muove come un'unica onda famelica.",
+  "motivazioni": "Divorare, oscurare, sciamare",
+  "attacco": "Artigli",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Orda (1d4+1)",
+    "testo": "Quando lo Sciame ha segnato metà o più dei suoi PF, il suo attacco standard infligge invece 1d4+1 danni fisici."
+   },
+   {
+    "nome": "Addosso",
+    "testo": "Tutti i bersagli in Mischia hanno svantaggio agli attacchi contro bersagli diversi dallo Sciame."
+   }
+  ]
+ },
+ "sylvan-soldier": {
+  "descrizione": "Un guerriero fatato con un'armatura di foglie e corteccia.",
+  "motivazioni": "Tendere agguati, nascondersi, sopraffare, proteggere, seguire le tracce",
+  "attacco": "Falce",
+  "esperienze": [
+   "Inseguitore"
+  ],
+  "capacita": [
+   {
+    "nome": "Tattica del branco",
+    "testo": "Se il Soldato fa un attacco standard e un altro Soldato silvano è in Mischia con il bersaglio, infligge 1d8+5 danni fisici invece del danno standard."
+   },
+   {
+    "nome": "Controllo della foresta",
+    "testo": "Spendi 1 Paura per abbattere un albero entro gittata Vicina. Una creatura colpita dall'albero deve superare un Tiro di reazione di Agilità (15) o subire 1d10 danni fisici."
+   },
+   {
+    "nome": "Confondersi",
+    "testo": "Quando il Soldato mette a segno un attacco, puoi segnare 1 Stress per renderlo Nascosto fino al suo prossimo attacco o finché un PG non supera un Tiro di Istinto (14) per trovarlo."
+   }
+  ]
+ },
+ "tangle-bramble-swarm": {
+  "descrizione": "Un ammasso di cespugli rotolanti animati e assetati di sangue, ognuno grande come una zucca.",
+  "motivazioni": "Digerire, intrappolare, immobilizzare",
+  "attacco": "Spine",
+  "esperienze": [
+   "Mimetismo"
+  ],
+  "capacita": [
+   {
+    "nome": "Orda (1d4+2)",
+    "testo": "Quando lo Sciame ha segnato metà o più dei suoi PF, il suo attacco standard infligge invece 1d4+2 danni fisici."
+   },
+   {
+    "nome": "Stritolare",
+    "testo": "Segna 1 Stress per infliggere 2d6+8 danni fisici diretti a un bersaglio con 3 o più gettoni rovo."
+   },
+   {
+    "nome": "Impacciare",
+    "testo": "Quando lo Sciame mette a segno un attacco, dai al bersaglio un gettone rovo. Un bersaglio con almeno un gettone rovo è Trattenuto; con 3 o più gettoni è anche Vulnerabile. Tutti i gettoni rovo si possono rimuovere superando un Tiro di Destrezza (12 + il numero di gettoni rovo) o infliggendo allo Sciame un danno Grave o superiore. Se i gettoni vengono rimossi con un Tiro di Destrezza, in Mischia compaiono tanti Gregari Rovo intricato quanti sono i gettoni rimossi."
+   }
+  ]
+ },
+ "tangle-bramble": {
+  "descrizione": "Un cespuglio rotolante animato e assetato di sangue.",
+  "motivazioni": "Unirsi, prosciugare, intrappolare",
+  "attacco": "Spine",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (4)",
+    "testo": "Il Rovo è sconfitto quando subisce un danno qualsiasi. Per ogni 4 danni che un PG infligge al Rovo intricato, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti i Rovi intricati entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 2 danni fisici ciascuno. Somma questi danni."
+   },
+   {
+    "nome": "Prosciugare e moltiplicarsi",
+    "testo": "Quando un attacco del Rovo fa segnare PF a un bersaglio e ci sono tre o più Gregari Rovo intricato entro gittata Vicina, puoi unirli in un'Orda Sciame di rovi intricati. I PF dell'Orda sono pari al numero di Gregari uniti."
+   }
+  ]
+ },
+ "young-dryad": {
+  "descrizione": "Un imperioso essere arboreo che guida la difesa della sua foresta.",
+  "motivazioni": "Comandare, nutrire, potare gli indesiderati",
+  "attacco": "Falce",
+  "esperienze": [
+   "Comando"
+  ],
+  "capacita": [
+   {
+    "nome": "Voce della foresta",
+    "testo": "Segna 1 Stress per dare i riflettori a 1d4 alleati che sono a gittata di un bersaglio che possono attaccare senza muoversi. Se riescono, i loro attacchi infliggono metà danni."
+   },
+   {
+    "nome": "Gabbia di spine",
+    "testo": "Spendi 1 Paura per formare una gabbia attorno a un bersaglio entro gittata Molto vicina e renderlo Trattenuto finché non si libera con un Tiro di Forza riuscito. Quando una creatura fa un tiro d'azione contro la gabbia, deve segnare 1 Stress."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando la Driade mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "brawny-zombie": {
+  "descrizione": "Un grosso cadavere, gonfio di putrefazione e furioso.",
+  "motivazioni": "Schiacciare, distruggere, scagliare detriti, colpire",
+  "attacco": "Schianto",
+  "esperienze": [
+   "Danni collaterali",
+   "Lanciare"
+  ],
+  "capacita": [
+   {
+    "nome": "Lento",
+    "testo": "Quando dai i riflettori allo Zombi e sul suo blocco statistiche non c'è un gettone, non può ancora agire: metti un gettone sul blocco e descrivi cosa si prepara a fare. Quando gli dai i riflettori e c'è un gettone, toglilo: ora può agire."
+   },
+   {
+    "nome": "Fare a pezzi",
+    "testo": "Fai un attacco standard con vantaggio contro un bersaglio che lo Zombi tiene Trattenuto. Se riesce, l'attacco infligge danno diretto."
+   },
+   {
+    "nome": "Strappare e lacerare",
+    "testo": "Quando lo Zombi mette a segno un attacco standard, puoi segnare 1 Stress per rendere temporaneamente Trattenuto il bersaglio e costringerlo a segnare 2 Stress."
+   }
+  ]
+ },
+ "patchwork-zombie-hulk": {
+  "descrizione": "Un ammasso torreggiante di cadaveri che si muove come un tutt'uno, con arti grandi come un torso e pugni grandi come un halfling adulto.",
+  "motivazioni": "Assorbire cadaveri, menare colpi alla cieca, avere fame, terrorizzare",
+  "attacco": "Troppe braccia",
+  "esperienze": [
+   "Intimidire",
+   "Fare a pezzi le cose"
+  ],
+  "capacita": [
+   {
+    "nome": "Distruttibile",
+    "testo": "Quando lo Zombi subisce un danno Grave o superiore, segna 1 PF aggiuntivo."
+   },
+   {
+    "nome": "Arti che si agitano",
+    "testo": "Quando lo Zombi fa un attacco standard, può attaccare tutti i bersagli entro gittata Molto vicina."
+   },
+   {
+    "nome": "Un altro per il mucchio",
+    "testo": "Quando lo Zombi è entro gittata Molto vicina da un cadavere, può incorporarlo in sé, liberando 1 PF e 1 Stress."
+   },
+   {
+    "nome": "Urla tormentate",
+    "testo": "Segna 1 Stress per costringere tutti i PG entro gittata Lontana a fare un Tiro di reazione di Presenza (13). Chi fallisce perde 1 Speranza e tu guadagni 1 Paura per ciascuno di loro. Chi riesce deve segnare 1 Stress."
+   }
+  ]
+ },
+ "rotted-zombie": {
+  "descrizione": "Un cadavere in decomposizione che arranca verso la preda.",
+  "motivazioni": "Mangiare carne, avere fame, sbranare, circondare",
+  "attacco": "Morso",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (3)",
+    "testo": "Lo Zombi è sconfitto quando subisce un danno qualsiasi. Per ogni 3 danni che un PG infligge allo Zombi, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti gli Zombi putrefatti entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 2 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "shambling-zombie": {
+  "descrizione": "Un cadavere animato che si muove barcollando, spinto solo dalla fame.",
+  "motivazioni": "Divorare, avere fame, accalcarsi sul nemico, dilaniare la carne",
+  "attacco": "Morso",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Troppi da gestire",
+    "testo": "Quando lo Zombi è in Mischia con una creatura e almeno un altro Zombi è entro gittata Vicina, tutti gli attacchi contro quella creatura hanno vantaggio."
+   },
+   {
+    "nome": "Raccapricciante",
+    "testo": "I bersagli che segnano PF per gli attacchi dello Zombi devono anche segnare 1 Stress."
+   }
+  ]
+ },
+ "archer-squadron": {
+  "descrizione": "Un gruppo di arcieri addestrati con archi enormi.",
+  "motivazioni": "Restare uniti, sopravvivere, tirare a raffica",
+  "attacco": "Arco lungo",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Orda (1d6+3)",
+    "testo": "Quando lo Squadrone ha segnato metà o più dei suoi PF, il suo attacco standard infligge invece 1d6+3 danni fisici."
+   },
+   {
+    "nome": "Raffica concentrata",
+    "testo": "Spendi 1 Paura per scegliere un punto entro gittata Lontana. Fai un attacco con vantaggio contro tutti i bersagli entro gittata Vicina da quel punto. I bersagli colpiti subiscono 1d10+4 danni fisici."
+   },
+   {
+    "nome": "Fuoco di copertura",
+    "testo": "Segna 1 Stress per scegliere un punto entro gittata Lontana. Fino al prossimo tiro con Paura, una creatura che si muove entro gittata Vicina da quel punto deve fare un Tiro di reazione di Agilità: se fallisce subisce 2d6+3 danni fisici, se riesce ne subisce la metà."
+   }
+  ]
+ },
+ "apprentice-assassin": {
+  "descrizione": "Un giovane allievo impaziente di mettersi alla prova.",
+  "motivazioni": "Agire in modo avventato, uccidere, dimostrare il proprio valore, mettersi in mostra",
+  "attacco": "Pugnale da lancio",
+  "esperienze": [
+   "Intrusione"
+  ],
+  "capacita": [
+   {
+    "nome": "Gregario (6)",
+    "testo": "L'Assassino è sconfitto quando subisce un danno qualsiasi. Per ogni 6 danni che un PG infligge all'Assassino, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti gli Assassini apprendisti entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 4 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "zombie-pack": {
+  "descrizione": "Un gruppo di cadaveri barcollanti che si muovono insieme d'istinto.",
+  "motivazioni": "Divorare carne, avere fame, sbranare",
+  "attacco": "Morso",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Orda (1d4+2)",
+    "testo": "Quando gli Zombi hanno segnato metà o più dei loro PF, il loro attacco standard infligge invece 1d4+2 danni fisici."
+   },
+   {
+    "nome": "Sopraffare",
+    "testo": "Quando gli Zombi segnano PF per un attacco in Mischia, puoi segnare 1 Stress per fare un attacco standard contro l'attaccante."
+   }
+  ]
+ },
+ "assassin-poisoner": {
+  "descrizione": "Un furfante astuto, esperto di veleni e di agguati.",
+  "motivazioni": "Anticipare, farsi pagare, uccidere, contaminare cibo e acqua",
+  "attacco": "Pugnale da lancio avvelenato",
+  "esperienze": [
+   "Intrusione"
+  ],
+  "capacita": [
+   {
+    "nome": "Veleno di dentemacina",
+    "testo": "I bersagli che segnano PF per gli attacchi dell'Assassino sono Vulnerabili finché non liberano 1 PF."
+   },
+   {
+    "nome": "Dal nulla",
+    "testo": "L'Assassino ha vantaggio agli attacchi se è Nascosto."
+   },
+   {
+    "nome": "Fumigazione",
+    "testo": "Lancia una bomba fumogena che riempie di fumo l'aria entro gittata Vicina, Stordendo tutti i bersagli nell'area. I bersagli Storditi hanno svantaggio al loro prossimo tiro d'azione, poi la condizione svanisce."
+   }
+  ]
+ },
+ "master-assassin": {
+  "descrizione": "Un assassino esperto dalla voce minacciosa e dalla lama letale.",
+  "motivazioni": "Tendere agguati, uscirne vivo, uccidere, prepararsi a ogni evenienza",
+  "attacco": "Pugnale seghettato",
+  "esperienze": [
+   "Comando",
+   "Intrusione"
+  ],
+  "capacita": [
+   {
+    "nome": "Non lo vedrai arrivare",
+    "testo": "L'Assassino infligge danno diretto mentre è Nascosto."
+   },
+   {
+    "nome": "Colpire come uno solo",
+    "testo": "Segna 1 Stress per dare i riflettori a tanti altri Assassini quanti sono gli Stress non segnati del Maestro assassino."
+   },
+   {
+    "nome": "La lama sottile",
+    "testo": "Quando l'Assassino mette a segno un attacco standard contro un bersaglio Vulnerabile, puoi spendere 1 Paura per infliggere un danno Gravissimo invece del danno standard."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando l'Assassino mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "battle-box": {
+  "descrizione": "Un costrutto a forma di cubo con una runa diversa su ciascuna delle sei facce.",
+  "motivazioni": "Cambiare tattica, travolgere i nemici, attendere camuffato",
+  "attacco": "Schianto",
+  "esperienze": [
+   "Mimetismo"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (2)",
+    "testo": "La Scatola può ricevere i riflettori fino a due volte per turno del GM. Spendi Paura come di consueto per darle i riflettori."
+   },
+   {
+    "nome": "Tattiche casuali",
+    "testo": "Segna 1 Stress e tira un d6. La Scatola usa la mossa corrispondente: 1. Raggio di mana. La Scatola spara un raggio rovente. Fai un attacco contro un bersaglio entro gittata Lontana; se riesce, infligge 2d10+2 danni magici. 2. Getti di fuoco. La Scatola schizza in aria, ruotando e sprigionando getti di fiamme. Fai un attacco contro tutti i bersagli entro gittata Vicina; i bersagli colpiti subiscono 2d8 danni fisici. 3. Travolgere. La Scatola sfreccia qua e là all'impazzata. Fai un attacco contro tutti i PG entro gittata Vicina; i bersagli colpiti subiscono 1d6+5 danni fisici e sono Vulnerabili fino al loro prossimo tiro con Speranza. 4. Gas folgorante. La Scatola spruzza un gas argenteo che crepita di fulmini. Tutti i bersagli entro gittata Vicina devono superare un Tiro di reazione di Destrezza o segnare 3 Stress. 5. Battito stordente. La Scatola balza e sbatte le facce, creando un piccolo boato sonico. Tutti i bersagli entro gittata Molto vicina devono superare un Tiro di reazione di Forza o diventare Vulnerabili finché il cubo non è sconfitto. 6. Ronzio psionico. La Scatola libera uno sciame di api meccaniche il cui ronzio scuote le menti mortali. Tutti i bersagli entro gittata Vicina devono superare un Tiro di reazione di Presenza o subire 2d4+9 danni magici diretti."
+   },
+   {
+    "nome": "Sovraccarico",
+    "testo": "Prima di tirare il danno di un attacco della Scatola, puoi segnare 1 Stress per aggiungere un d6 al tiro di danno. Inoltre, guadagni 1 Paura."
+   },
+   {
+    "nome": "Terremoto di morte",
+    "testo": "Quando la Scatola segna il suo ultimo PF, la magia che la alimenta si spezza in un'esplosione di forza. Tutti i bersagli entro gittata Vicina devono superare un Tiro di reazione di Istinto o subire 2d8+1 danni magici."
+   }
+  ]
+ },
+ "chaos-skull": {
+  "descrizione": "Un teschio umanoide fluttuante, animato da una magia scintillante.",
+  "motivazioni": "Sghignazzare, divorare la magia, servire il creatore",
+  "attacco": "Raffica di energia",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Levitazione",
+    "testo": "Il Teschio levita a qualche metro da terra e non può essere Trattenuto."
+   },
+   {
+    "nome": "Protezioni",
+    "testo": "Il Teschio ha resistenza al danno magico."
+   },
+   {
+    "nome": "Esplosione magica",
+    "testo": "Segna 1 Stress per fare un attacco contro tutti i bersagli entro gittata Vicina. I bersagli colpiti subiscono 2d6+4 danni magici."
+   },
+   {
+    "nome": "Prosciugare la magia",
+    "testo": "Spendi 1 Paura per fare un attacco contro un PG con un tratto da incantatore entro gittata Molto vicina. Se riesce, il bersaglio segna 1d4 Stress e il Teschio ne libera altrettanti. Inoltre, se riesce, il Teschio può ricevere di nuovo i riflettori subito."
+   }
+  ]
+ },
+ "conscript": {
+  "descrizione": "Un civile mal addestrato, costretto alla guerra.",
+  "motivazioni": "Eseguire gli ordini, fare branco, sopravvivere",
+  "attacco": "Lance",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (6)",
+    "testo": "Il Coscritto è sconfitto quando subisce un danno qualsiasi. Per ogni 6 danni che un PG infligge al Coscritto, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti i Coscritti entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 6 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "courtesan": {
+  "descrizione": "Una manipolatrice consumata, maestra delle arti sociali.",
+  "motivazioni": "Sedurre, manovrare, assicurarsi protettori",
+  "attacco": "Pugnale",
+  "esperienze": [
+   "Manipolazione",
+   "Mondanità"
+  ],
+  "capacita": [
+   {
+    "nome": "Sguardo rovente",
+    "testo": "Quando un PG entro gittata Vicina fa un Tiro di Presenza, puoi segnare 1 Stress perché la Cortigiana lanci uno sguardo sulle conseguenze. Se il bersaglio fallisce, deve segnare 2 Stress ed è Vulnerabile fino alla fine della scena o finché non riesce in un'azione sociale contro la Cortigiana. Se il bersaglio riesce, deve segnare 1 Stress."
+   }
+  ]
+ },
+ "cult-adept": {
+  "descrizione": "Un mago esperto che padroneggia ombra e paura.",
+  "motivazioni": "Ingraziarsi i superiori, ostacolare i nemici, scoprire conoscenze",
+  "attacco": "Verga coperta di rune",
+  "esperienze": [
+   "Sapere dei Caduti",
+   "Rituali"
+  ],
+  "capacita": [
+   {
+    "nome": "Raffica debilitante",
+    "testo": "Spendi 1 Paura per fare un attacco standard contro un bersaglio a gittata. Se riesce, il bersaglio deve segnare 1 Stress."
+   },
+   {
+    "nome": "Sudario dei Caduti",
+    "testo": "Segna 1 Stress per avvolgere un alleato entro gittata Vicina in un sudario di Protezione finché l'Adepto non segna il suo ultimo PF. Finché è Protetto, il bersaglio ha resistenza a tutti i danni."
+   },
+   {
+    "nome": "Catene d'ombra",
+    "testo": "Spendi 1 Paura e scegli un punto entro gittata Lontana. Tutti i bersagli entro gittata Vicina da quel punto sono Trattenuti da catene di fumo finché non si liberano con un Tiro di Forza o di Istinto riuscito. Un bersaglio Trattenuto da questa capacità deve spendere 1 Speranza per fare un tiro d'azione."
+   },
+   {
+    "nome": "La paura è carburante",
+    "testo": "Due volte per scena, quando un PG ottiene un fallimento con Paura, libera 1 Stress."
+   }
+  ]
+ },
+ "cult-fang": {
+  "descrizione": "Un assassino di professione diventato cultista.",
+  "motivazioni": "Catturare vittime sacrificali, isolare la preda, salire di grado",
+  "attacco": "Coltello lungo",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Abbraccio dell'ombra",
+    "testo": "La Zanna può arrampicarsi e camminare su superfici verticali. Segna 1 Stress per spostarti da un'ombra a un'altra entro gittata Lontana."
+   },
+   {
+    "nome": "Colpire chi resta indietro",
+    "testo": "Segna 1 Stress per costringere un bersaglio in Mischia a fare un Tiro di reazione di Istinto. Se fallisce, il bersaglio deve segnare 2 Stress e viene teletrasportato con la Zanna in un'ombra entro gittata Lontana, diventando temporaneamente Vulnerabile. Se riesce, deve segnare 1 Stress."
+   }
+  ]
+ },
+ "cult-initiate": {
+  "descrizione": "Un cultista di basso rango in semplici tuniche, desideroso di potere.",
+  "motivazioni": "Eseguire gli ordini, ottenere potere, cercare conoscenze proibite",
+  "attacco": "Pugnale rituale",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (6)",
+    "testo": "L'Iniziato è sconfitto quando subisce un danno qualsiasi. Per ogni 6 danni che un PG infligge all'Iniziato, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti gli Iniziati del culto entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 5 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "demonic-hound-pack": {
+  "descrizione": "Segugi innaturali illuminati dall'interno dal fuoco infernale.",
+  "motivazioni": "Incutere paura, divorare carne, compiacere i padroni",
+  "attacco": "Artigli e zanne",
+  "esperienze": [
+   "Seguire le tracce col fiuto"
+  ],
+  "capacita": [
+   {
+    "nome": "Orda (2d4+1)",
+    "testo": "Quando la Muta ha segnato metà o più dei suoi PF, il suo attacco standard infligge invece 2d4+1 danni fisici."
+   },
+   {
+    "nome": "Ululato del terrore",
+    "testo": "Segna 1 Stress per far perdere 1 Speranza a tutti i bersagli entro gittata Molto vicina. Se un bersaglio non può perdere Speranza, deve invece segnare 2 Stress."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando la Muta mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "electric-eels": {
+  "descrizione": "Uno sciame di anguille che circondano e folgorano.",
+  "motivazioni": "Evitare i predatori più grandi, folgorare la preda, fare a pezzi",
+  "attacco": "Morso folgorante",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Orda (2d4+1)",
+    "testo": "Quando le Anguille hanno segnato metà o più dei loro PF, il loro attacco standard infligge invece 2d4+1 danni fisici."
+   },
+   {
+    "nome": "Scarica paralizzante",
+    "testo": "Segna 1 Stress per fare un attacco standard contro tutti i bersagli entro gittata Molto vicina. Guadagni 1 Paura per ogni bersaglio che segna PF."
+   }
+  ]
+ },
+ "elite-soldier": {
+  "descrizione": "Uno scudiero in armatura o un popolano esperto che cerca di fare carriera.",
+  "motivazioni": "Ottenere gloria, mantenere l'ordine, stringere alleanze",
+  "attacco": "Lancia",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Rinforzare",
+    "testo": "Segna 1 Stress per muoverti in Mischia con un alleato e fare un attacco standard contro un bersaglio entro gittata Molto vicina. Se riesce, infligge 2d10+2 danni fisici e l'alleato può liberare 1 Stress."
+   },
+   {
+    "nome": "Lealtà del vassallo",
+    "testo": "Quando il Soldato è entro gittata Molto vicina da un cavaliere o da un altro nobile che sta per subire danni, puoi segnare 1 Stress per muoverlo in Mischia con lui e fargli subire il danno al suo posto."
+   }
+  ]
+ },
+ "failed-experiment": {
+  "descrizione": "Un esperimento di negromanzia magica andato storto, che lo ha lasciato deforme e sgraziato.",
+  "motivazioni": "Divorare, cacciare, seguire le tracce",
+  "attacco": "Morso e artiglio",
+  "esperienze": [
+   "Imitatore"
+  ],
+  "capacita": [
+   {
+    "nome": "Tempra deforme",
+    "testo": "L'Esperimento ha resistenza al danno fisico."
+   },
+   {
+    "nome": "Sopraffare",
+    "testo": "Quando un bersaglio attaccato dall'Esperimento ha altri avversari entro gittata Molto vicina, l'Esperimento infligge danni doppi."
+   },
+   {
+    "nome": "Balzo barcollante",
+    "testo": "Segna 1 Stress per dare i riflettori all'Esperimento come mossa aggiuntiva del GM, invece di spendere Paura."
+   }
+  ]
+ },
+ "giant-beastmaster": {
+  "descrizione": "Un guerriero vestito di cuoio con una frusta e un arco enorme.",
+  "motivazioni": "Comandare, guadagnarsi da vivere, manovrare, inchiodare sul posto, proteggere gli animali compagni",
+  "attacco": "Arco lungo",
+  "esperienze": [
+   "Addestrare animali"
+  ],
+  "capacita": [
+   {
+    "nome": "Due come uno",
+    "testo": "Quando dai i riflettori al Domatore, puoi darli anche a un avversario animale di Tier 1 sotto il suo controllo."
+   },
+   {
+    "nome": "Colpo inchiodante",
+    "testo": "Fai un attacco standard contro un bersaglio. Se riesce, puoi segnare 1 Stress per inchiodarlo a una superficie vicina. Il bersaglio inchiodato è Trattenuto finché non si libera con un Tiro di Destrezza o di Forza riuscito."
+   },
+   {
+    "nome": "Compagno letale",
+    "testo": "Due volte per scena, evoca un Orso, un Lupo crudele o un simile avversario animale di Tier 1 sotto il controllo del Domatore. L'avversario compare a gittata Vicina e riceve subito i riflettori."
+   }
+  ]
+ },
+ "giant-brawler": {
+  "descrizione": "Un gigante particolarmente muscoloso che brandisce un martello da guerra più grande di un essere umano.",
+  "motivazioni": "Guadagnarsi da vivere, sopraffare, colpire, abbattere",
+  "attacco": "Martello da guerra",
+  "esperienze": [
+   "Intrusione"
+  ],
+  "capacita": [
+   {
+    "nome": "Ariete",
+    "testo": "Segna 1 Stress: l'Attaccabrighe carica un oggetto inanimato entro gittata Vicina che potrebbe plausibilmente sfondare (come un muro, un carro o una bancarella) e lo distrugge. Tutti i bersagli entro gittata Molto vicina dall'oggetto devono superare un Tiro di reazione di Agilità o subire 2d4+3 danni fisici dalle schegge."
+   },
+   {
+    "nome": "Rappresaglia sanguinosa",
+    "testo": "Quando l'Attaccabrighe segna 2 o più PF per un attacco entro gittata Molto vicina, puoi fare un attacco standard contro l'attaccante. Se riesce, l'Attaccabrighe infligge 2d6+15 danni fisici invece del danno standard."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando l'Attaccabrighe mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "giant-eagle": {
+  "descrizione": "Un gigantesco rapace dagli artigli macchiati di sangue.",
+  "motivazioni": "Cacciare prede, restare in movimento, colpire in modo decisivo",
+  "attacco": "Artigli e becco",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Volo",
+    "testo": "Mentre vola, l'Aquila ha un bonus di +3 alla Difficoltà."
+   },
+   {
+    "nome": "Picchiata letale",
+    "testo": "Segna 1 Stress per attaccare un bersaglio entro gittata Lontana. Se riesce, infligge 2d10+2 danni fisici e atterra il bersaglio, rendendolo Vulnerabile fino alla sua prossima azione."
+   },
+   {
+    "nome": "Decollo",
+    "testo": "Fai un attacco contro un bersaglio entro gittata Molto vicina. Se riesce, infligge 2d4+3 danni fisici e il bersaglio deve superare un Tiro di reazione di Agilità o diventare temporaneamente Trattenuto tra gli enormi artigli dell'Aquila. Se il bersaglio è Trattenuto, l'Aquila si alza subito in volo tenendolo stretto, fino a gittata Molto lontana sopra il campo di battaglia."
+   },
+   {
+    "nome": "Caduta letale",
+    "testo": "Mentre vola, l'Aquila può lasciar cadere un bersaglio Trattenuto che sta trasportando. Il bersaglio non è più Trattenuto ma comincia a precipitare. Se la caduta non viene impedita durante la prossima azione dei PG, all'impatto il bersaglio subisce 2d20 danni fisici."
+   }
+  ]
+ },
+ "giant-recruit": {
+  "descrizione": "Un combattente gigante che indossa un'armatura presa in prestito.",
+  "motivazioni": "Percuotere, guadagnarsi da vivere, sopraffare, terrorizzare",
+  "attacco": "Martello da guerra",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (7)",
+    "testo": "La Recluta è sconfitta quando subisce un danno qualsiasi. Per ogni 7 danni che un PG infligge alla Recluta, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti i Giganti recluta entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 5 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "gorgon": {
+  "descrizione": "Un umanoide squamato con serpenti al posto dei capelli e un arco dorato, furioso perché la sua pace è stata disturbata.",
+  "motivazioni": "Mettere all'angolo, colpire e fuggire, pietrificare, cercare vendetta",
+  "attacco": "Arco corto ardisole",
+  "esperienze": [
+   "Furtività"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (2)",
+    "testo": "La Gorgone può ricevere i riflettori fino a due volte per turno del GM. Spendi Paura come di consueto per darle i riflettori."
+   },
+   {
+    "nome": "Frecce ardisole",
+    "testo": "Quando la Gorgone mette a segno un attacco standard, il bersaglio Risplende fino alla fine della scena e non può diventare Nascosto. I tiri d'attacco contro un bersaglio che Risplende hanno vantaggio."
+   },
+   {
+    "nome": "Corona di serpenti",
+    "testo": "Fai un tiro d'attacco contro un bersaglio in Mischia usando i serpenti protettivi della Gorgone. Se riesce, segna 1 Stress per infliggere 2d10+4 danni fisici; il bersaglio deve segnare 1 Stress."
+   },
+   {
+    "nome": "Sguardo pietrificante",
+    "testo": "Quando la Gorgone subisce danni da un attacco entro gittata Vicina, puoi spendere 1 Paura per costringere l'attaccante a fare un Tiro di reazione di Istinto. Se fallisce, comincia a trasformarsi in pietra: segna 1 PF e parte un Conto alla rovescia di pietrificazione (4), che scende ogni volta che la Gorgone viene attaccata. Quando si attiva, il bersaglio deve compiere una Mossa della Morte. Se la Gorgone viene sconfitta, tutti i conti alla rovescia di pietrificazione terminano."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando la Gorgone mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "juvenile-flickerfly": {
+  "descrizione": "Un insetto grande come un cavallo, con scaglie iridescenti e ali cristalline che si muovono più veloci dell'occhio.",
+  "motivazioni": "Collezionare cose luccicanti, cacciare, piombare in picchiata",
+  "attacco": "Fendente d'ala",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Implacabile (3)",
+    "testo": "La Guizzafalena può ricevere i riflettori fino a tre volte per turno del GM. Spendi Paura come di consueto per darle i riflettori."
+   },
+   {
+    "nome": "Precisione impareggiabile",
+    "testo": "Prima che la Guizzafalena faccia un attacco, tira un d6. Con 4 o più, l'Evasione del bersaglio è dimezzata contro questo attacco."
+   },
+   {
+    "nome": "Danza mentale",
+    "testo": "Segna 1 Stress per creare uno spettacolo magico abbagliante che cattura la mente dei nemici vicini. Tutti i bersagli entro gittata Vicina devono fare un Tiro di reazione di Istinto. Per ogni bersaglio che fallisce, guadagni 1 Paura e la Guizzafalena scopre una delle sue paure."
+   },
+   {
+    "nome": "Soffio allucinogeno",
+    "testo": "Conto alla rovescia (ciclico 1d6). La prima volta che la Guizzafalena subisce danni, attiva il conto alla rovescia. Quando si attiva, la Guizzafalena soffia un gas allucinogeno su tutti i bersagli davanti a sé fino a gittata Lontana. I bersagli devono superare un Tiro di reazione di Istinto o essere tormentati da allucinazioni spaventose; quelli di cui la Guizzafalena conosce le paure hanno svantaggio al tiro. Chi fallisce deve segnare 1 Stress e perdere 1 Speranza."
+   }
+  ]
+ },
+ "knight-of-the-realm": {
+  "descrizione": "Un soldato decorato, con un'armatura pesante e un destriero possente.",
+  "motivazioni": "Travolgere, cercare la gloria, mostrare la propria superiorità",
+  "attacco": "Spada lunga",
+  "esperienze": [
+   "Conoscenze antiche",
+   "Alta società",
+   "Tattica"
+  ],
+  "capacita": [
+   {
+    "nome": "Cavaliere",
+    "testo": "Mentre è in sella, il Cavaliere ha un bonus di +2 alla Difficoltà. Quando subisce un danno Gravissimo viene disarcionato e perde questo beneficio fino alla prossima volta che riceve i riflettori."
+   },
+   {
+    "nome": "Corazzato",
+    "testo": "Quando il Cavaliere subisce danni fisici, riducili di 3."
+   },
+   {
+    "nome": "Carica di cavalleria",
+    "testo": "Se è in sella, il Cavaliere si muove fino a gittata Lontana e fa un attacco standard contro un bersaglio. Se riesce, infligge 2d8+4 danni fisici e il bersaglio deve segnare 1 Stress."
+   },
+   {
+    "nome": "Per il regno!",
+    "testo": "Segna 1 Stress per dare i riflettori a 1d4+1 alleati. Gli attacchi che fanno mentre hanno i riflettori in questo modo infliggono metà danni."
+   }
+  ]
+ },
+ "masked-thief": {
+  "descrizione": "Un ladro astuto, abile acrobata con un debole per i gesti teatrali.",
+  "motivazioni": "Eludere, nascondersi, sgraffignare, trarre profitto",
+  "attacco": "Spada a un filo",
+  "esperienze": [
+   "Acrobazia"
+  ],
+  "capacita": [
+   {
+    "nome": "Mani leste",
+    "testo": "Fai un attacco contro un bersaglio in Mischia. Se riesce, infligge 1d8+2 danni fisici e il Ladro ruba un oggetto o un consumabile dall'inventario del bersaglio."
+   },
+   {
+    "nome": "Piano di fuga",
+    "testo": "Segna 1 Stress per rivelare una trappola a laccio che il Ladro ha piazzato in un punto qualsiasi del campo di battaglia. Tutti i bersagli entro gittata Molto vicina dalla trappola devono superare un Tiro di reazione di Agilità (13) o vengono sollevati da terra e restano appesi a testa in giù. Il bersaglio è Trattenuto e Vulnerabile finché non si libera, eliminando entrambe le condizioni, con un Tiro di Destrezza o di Forza (13) riuscito."
+   }
+  ]
+ },
+ "merchant-baron": {
+  "descrizione": "Un mercante affermato, a capo di una grande impresa.",
+  "motivazioni": "Abusare del potere, accumulare risorse, mobilitare i sottoposti",
+  "attacco": "Stocco",
+  "esperienze": [
+   "Nobiltà",
+   "Commercio"
+  ],
+  "capacita": [
+   {
+    "nome": "Tutti hanno un prezzo",
+    "testo": "Spendi 1 Paura per offrire a un bersaglio un patto pericoloso in cambio di qualcosa che desidera o di cui ha bisogno. Se il bersaglio è un PG, deve fare un Tiro di reazione di Presenza (17): se fallisce, deve segnare 2 Stress o accettare il patto."
+   },
+   {
+    "nome": "I migliori muscoli che il denaro possa comprare",
+    "testo": "Una volta per scena, segna 1 Stress per evocare 1d4+1 avversari di Tier 1, che compaiono a gittata Lontana per imporre la volontà del Barone."
+   }
+  ]
+ },
+ "minotaur-wrecker": {
+  "descrizione": "Un enorme firbolg dalla testa di toro e dal carattere irascibile.",
+  "motivazioni": "Divorare, incornare, orientarsi, sopraffare, inseguire",
+  "attacco": "Ascia da battaglia",
+  "esperienze": [
+   "Orientamento"
+  ],
+  "capacita": [
+   {
+    "nome": "Furia crescente",
+    "testo": "Devi spendere 1 Paura per dare i riflettori al Minotauro. Mentre ha i riflettori, può fare il suo attacco standard contro tutti i bersagli a gittata."
+   },
+   {
+    "nome": "Toro alla carica",
+    "testo": "Segna 1 Stress per caricare attraverso un gruppo entro gittata Vicina e fare un attacco contro tutti i bersagli sul percorso del Minotauro. I bersagli colpiti subiscono 2d6+8 danni fisici e vengono scagliati fino a gittata Molto lontana. Se un bersaglio va a sbattere contro un oggetto solido o un'altra creatura, subisce 1d6 danni extra (somma i danni)."
+   },
+   {
+    "nome": "Incornata",
+    "testo": "Fai un attacco contro un bersaglio entro gittata Molto vicina, muovendo il Minotauro in Mischia con lui. Se riesce, infligge 2d8 danni fisici diretti."
+   }
+  ]
+ },
+ "mortal-hunter": {
+  "descrizione": "Una figura non morta con un pesante cappotto di cuoio, occhi indagatori e una crudeltà disinvolta.",
+  "motivazioni": "Divorare, cacciare, seguire le tracce",
+  "attacco": "Strappare la carne",
+  "esperienze": [
+   "Segugio"
+  ],
+  "capacita": [
+   {
+    "nome": "Terrificante",
+    "testo": "Quando il Cacciatore mette a segno un attacco, tutti i PG entro gittata Lontana perdono 1 Speranza e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Sigillo di morte",
+    "testo": "Spendi 1 Paura per maledire un bersaglio entro gittata Molto vicina con un Sigillo di morte necrotico fino alla fine della scena. Gli attacchi del Cacciatore contro un bersaglio con il Sigillo di morte infliggono danno diretto. Il Cacciatore può mantenere un solo Sigillo di morte alla volta."
+   },
+   {
+    "nome": "Morte inevitabile",
+    "testo": "Segna 1 Stress per dare i riflettori a 1d4 alleati. Gli attacchi che fanno mentre hanno i riflettori in questo modo infliggono metà danni."
+   },
+   {
+    "nome": "Furia",
+    "testo": "Conto alla rovescia (ciclico 1d6). La prima volta che il Cacciatore riceve i riflettori, attiva il conto alla rovescia. Quando si attiva, muovi il Cacciatore in linea retta fino a un punto entro gittata Lontana e fai un attacco contro tutti i bersagli sul suo percorso. I bersagli colpiti subiscono 2d8+2 danni fisici."
+   }
+  ]
+ },
+ "royal-advisor": {
+  "descrizione": "Un cortigiano di alto rango che ha l'orecchio della nobiltà locale.",
+  "motivazioni": "Ingraziarsi i potenti, fabbricare prove, tramare",
+  "attacco": "Bacchetta",
+  "esperienze": [
+   "Amministrazione",
+   "Cortigiano"
+  ],
+  "capacita": [
+   {
+    "nome": "Replica devastante",
+    "testo": "Un PG che ottiene meno di 17 in un tiro d'azione che ha come bersaglio il Consigliere deve segnare 1 Stress."
+   },
+   {
+    "nome": "Sussurrare all'orecchio",
+    "testo": "Segna 1 Stress per influenzare con parole sussurrate un PNG in Mischia. L'opinione del bersaglio su una questione si sposta verso quella preferita dal Consigliere, a meno che non sia in diretto contrasto con le motivazioni del bersaglio."
+   },
+   {
+    "nome": "Capro espiatorio",
+    "testo": "Spendi 1 Paura per convincere una folla o una persona importante che un individuo o un gruppo è responsabile di un problema che il bersaglio sta affrontando. Il bersaglio diventa ostile al capro espiatorio finché non viene convinto della sua innocenza con un Tiro di Presenza (17) riuscito."
+   }
+  ]
+ },
+ "secret-keeper": {
+  "descrizione": "Un capo clandestino con un canale diretto verso gli Dèi Caduti.",
+  "motivazioni": "Accumulare grande potere, complottare, prendere il comando",
+  "attacco": "Bastone coperto di sigilli",
+  "esperienze": [
+   "Coercizione",
+   "Sapere dei Caduti"
+  ],
+  "capacita": [
+   {
+    "nome": "Cogli l'attimo",
+    "testo": "Spendi 2 Paura per dare i riflettori a 1d4 alleati. Gli attacchi che fanno mentre hanno i riflettori in questo modo infliggono metà danni."
+   },
+   {
+    "nome": "La volontà del nostro padrone",
+    "testo": "Quando dai i riflettori a un alleato entro gittata Lontana, segna 1 Stress per guadagnare 1 Paura."
+   },
+   {
+    "nome": "Rituale di evocazione",
+    "testo": "Conto alla rovescia (6). La prima volta che il Custode di segreti riceve i riflettori, attiva il conto alla rovescia. Quando segna PF, fai avanzare il conto alla rovescia di tanti passi quanti sono i PF segnati. Quando si attiva, evoca un Demone minore che compare a gittata Vicina."
+   },
+   {
+    "nome": "Segugi dei Caduti",
+    "testo": "Una volta per scena, quando il Custode di segreti segna 2 o più PF, puoi segnare 1 Stress per evocare una Muta di segugi demoniaci, che compare a gittata Vicina e riceve subito i riflettori."
+   }
+  ]
+ },
+ "shark": {
+  "descrizione": "Un grande predatore acquatico, sempre in movimento.",
+  "motivazioni": "Trovare il sangue, isolare la preda, puntare sui deboli",
+  "attacco": "Fauci dentate",
+  "esperienze": [
+   "Olfatto"
+  ],
+  "capacita": [
+   {
+    "nome": "Terrificante",
+    "testo": "Quando lo Squalo mette a segno un attacco, tutti i PG entro gittata Lontana perdono 1 Speranza e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Morso lacerante",
+    "testo": "Quando lo Squalo mette a segno un attacco, il bersaglio deve segnare uno Slot Armatura senza riceverne i benefici (può comunque usare l'armatura per ridurre il danno). Se non può segnare uno Slot Armatura, deve segnare 1 PF aggiuntivo."
+   },
+   {
+    "nome": "Sangue nell'acqua",
+    "testo": "Quando una creatura entro gittata Vicina dallo Squalo segna PF per l'attacco di un'altra creatura, puoi segnare 1 Stress per dare subito i riflettori allo Squalo, che si muove in Mischia con il bersaglio e fa un attacco standard."
+   }
+  ]
+ },
+ "siren": {
+  "descrizione": "Un essere per metà pesce, dalle scaglie scintillanti e dalla voce irresistibile.",
+  "motivazioni": "Divorare, attirare la preda, soggiogare con il canto",
+  "attacco": "Morso a mascella dilatata",
+  "esperienze": [
+   "Repertorio di canti"
+  ],
+  "capacita": [
+   {
+    "nome": "Pubblico prigioniero",
+    "testo": "Se la Sirena fa un attacco standard contro un bersaglio Ammaliato dal suo canto, l'attacco infligge 2d10+1 danni invece del danno standard."
+   },
+   {
+    "nome": "Canto incantatore",
+    "testo": "Spendi 1 Paura per intonare un canto che colpisce tutti i bersagli entro gittata Vicina. I bersagli devono superare un Tiro di reazione di Istinto o diventano Ammaliati finché non segnano 2 Stress. Le altre Sirene entro gittata Vicina dal bersaglio possono segnare 1 Stress ciascuna per aggiungere +1 alla Difficoltà del tiro di reazione. Finché è Ammaliato, un bersaglio non può agire ed è Vulnerabile."
+   }
+  ]
+ },
+ "spectral-archer": {
+  "descrizione": "Un combattente spettrale con un arco etereo, incapace di trovare pace finché ciò che protegge è in pericolo.",
+  "motivazioni": "Attraversare oggetti solidi, restare fuori dalla mischia, rivivere vecchie battaglie",
+  "attacco": "Arco lungo",
+  "esperienze": [
+   "Conoscenze antiche"
+  ],
+  "capacita": [
+   {
+    "nome": "Fantasma",
+    "testo": "L'Arciere ha resistenza al danno fisico. Segna 1 Stress per muoverti fino a gittata Vicina attraverso oggetti solidi."
+   },
+   {
+    "nome": "Scegli il bersaglio",
+    "testo": "Spendi 1 Paura per fare un attacco entro gittata Lontana contro un PG che è entro gittata Molto vicina da almeno altri due PG. Se riesce, il bersaglio subisce 2d8+12 danni fisici."
+   }
+  ]
+ },
+ "spectral-captain": {
+  "descrizione": "Un comandante spettrale che guida le sue truppe oltre la morte.",
+  "motivazioni": "Attraversare oggetti solidi, radunare le truppe, rivivere vecchie battaglie",
+  "attacco": "Arco lungo",
+  "esperienze": [
+   "Conoscenze antiche"
+  ],
+  "capacita": [
+   {
+    "nome": "Fantasma",
+    "testo": "Il Capitano ha resistenza al danno fisico. Segna 1 Stress per muoverti fino a gittata Vicina attraverso oggetti solidi."
+   },
+   {
+    "nome": "Battaglia senza fine",
+    "testo": "Spendi 2 Paura per riportare in battaglia fino a 1d4+1 alleati Spettrali sconfitti, nei punti in cui erano comparsi la prima volta (senza PF né Stress segnati)."
+   },
+   {
+    "nome": "Tenete duro",
+    "testo": "Quando gli alleati Spettrali del Capitano devono fare un tiro di reazione, puoi segnare 1 Stress per dar loro un bonus di +2 al tiro."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando il Capitano mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "spectral-guardian": {
+  "descrizione": "Un combattente spettrale con lance e spade, ancorato al proprio dovere.",
+  "motivazioni": "Attraversare oggetti solidi, proteggere il tesoro, rivivere vecchie battaglie",
+  "attacco": "Lancia",
+  "esperienze": [
+   "Conoscenze antiche"
+  ],
+  "capacita": [
+   {
+    "nome": "Fantasma",
+    "testo": "Il Guardiano ha resistenza al danno fisico. Segna 1 Stress per muoverti fino a gittata Vicina attraverso oggetti solidi."
+   },
+   {
+    "nome": "Lama della tomba",
+    "testo": "Spendi 1 Paura per fare un attacco contro un bersaglio entro gittata Molto vicina. Se riesce, infligge 2d10+6 danni fisici e il bersaglio deve segnare 1 Stress."
+   }
+  ]
+ },
+ "spy": {
+  "descrizione": "Un abile agente di spionaggio, con il talento di trovarsi nel posto giusto per origliare segreti.",
+  "motivazioni": "Colpire e fuggire, travestirsi, origliare",
+  "attacco": "Pugnale",
+  "esperienze": [
+   "Spionaggio"
+  ],
+  "capacita": [
+   {
+    "nome": "Raccogliere segreti",
+    "testo": "Spendi 1 Paura per descrivere come la Spia conosce un segreto su un PG presente nella scena."
+   },
+   {
+    "nome": "Mosca sul muro",
+    "testo": "Quando un PG o un gruppo discute di qualcosa di delicato, puoi segnare 1 Stress per rivelare che la Spia è presente nella scena e li sta osservando. Se la Spia fugge dalla scena per riferire ciò che ha scoperto, guadagni 1d4 Paura."
+   }
+  ]
+ },
+ "stonewraith": {
+  "descrizione": "Un cacciatore furtivo dal corpo di pietra grigio ardesia, simile a un puma che si aggira di soppiatto.",
+  "motivazioni": "Difendere il territorio, isolare la preda, braccare",
+  "attacco": "Morso e artigli",
+  "esperienze": [
+   "Senso della pietra"
+  ],
+  "capacita": [
+   {
+    "nome": "Camminapietra",
+    "testo": "Lo Spettro di pietra si muove attraverso pietra e terra con la stessa facilità con cui si muove nell'aria. Mentre è dentro la pietra o la terra è Nascosto e immune a tutti i danni."
+   },
+   {
+    "nome": "Agguato roccioso",
+    "testo": "Mentre è Nascosto, segna 1 Stress per balzare in Mischia con un bersaglio entro gittata Molto vicina. Il bersaglio deve superare un Tiro di reazione di Agilità o di Istinto (15) o subire 2d8 danni fisici e diventare temporaneamente Trattenuto."
+   },
+   {
+    "nome": "Ruggito valanga",
+    "testo": "Spendi 1 Paura: lo Spettro ruggisce dentro una caverna e provoca un crollo. Tutti i bersagli entro gittata Vicina devono superare un Tiro di reazione di Agilità (14) o subire 2d10 danni fisici. Le macerie si possono sgombrare con un Conto alla rovescia di progresso (8)."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando lo Spettro di pietra mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "war-wizard": {
+  "descrizione": "Un mago temprato dalla battaglia, addestrato alla magia distruttiva.",
+  "motivazioni": "Sviluppare nuovi incantesimi, cercare il potere, spezzare le formazioni",
+  "attacco": "Bastone",
+  "esperienze": [
+   "Conoscenza magica",
+   "Strategia"
+  ],
+  "capacita": [
+   {
+    "nome": "Teletrasporto da battaglia",
+    "testo": "Prima o dopo aver fatto un attacco standard, puoi segnare 1 Stress per teletrasportare il Mago in un punto entro gittata Lontana."
+   },
+   {
+    "nome": "Rinnovare la sfera protettiva",
+    "testo": "Segna 1 Stress per rinnovare la reazione \"Sfera protettiva\" del Mago."
+   },
+   {
+    "nome": "Eruzione",
+    "testo": "Spendi 1 Paura e scegli un punto entro gittata Lontana. Un'area Molto vicina attorno a quel punto erutta diventando terreno invalicabile. Tutti i bersagli nell'area devono fare un Tiro di reazione di Agilità (14). Chi fallisce subisce 2d10 danni fisici e viene sbalzato fuori dall'area; chi riesce subisce metà danni e non viene spostato."
+   },
+   {
+    "nome": "Artiglieria arcana",
+    "testo": "Spendi 1 Paura per scatenare una grandinata precisa di raffiche magiche. Tutti i bersagli nella scena devono fare un Tiro di reazione di Agilità. Chi fallisce subisce 2d12 danni magici; chi riesce subisce metà danni."
+   },
+   {
+    "nome": "Sfera protettiva",
+    "testo": "Quando il Mago subisce danni da un attacco entro gittata Vicina, infliggi 2d6 danni magici all'attaccante. Questa reazione non si può usare di nuovo finché il Mago non la rinnova con l'azione \"Rinnovare la sfera protettiva\"."
+   }
+  ]
+ },
+ "adult-flickerfly": {
+  "descrizione": "Un insetto alato grande come una casa, con scaglie iridescenti e ali troppo veloci per seguirle con lo sguardo.",
+  "motivazioni": "Collezionare cose luccicanti, cacciare, nidificare, piombare in picchiata",
+  "attacco": "Fendente d'ala",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Implacabile (4)",
+    "testo": "La Guizzafalena può ricevere i riflettori fino a quattro volte per turno del GM. Spendi Paura come di consueto per darle i riflettori."
+   },
+   {
+    "nome": "Non sbaglia mai",
+    "testo": "Quando la Guizzafalena fa un attacco, l'Evasione del bersaglio è dimezzata contro quell'attacco."
+   },
+   {
+    "nome": "Volo letale",
+    "testo": "Mentre vola, prima di compiere un'azione la Guizzafalena può muoversi fino a gittata Lontana invece che Vicina."
+   },
+   {
+    "nome": "Turbine",
+    "testo": "Spendi 1 Paura per farla turbinare, facendo un attacco contro tutti i bersagli entro gittata Molto vicina. I bersagli colpiti subiscono 3d8 danni fisici diretti."
+   },
+   {
+    "nome": "Danza mentale",
+    "testo": "Segna 1 Stress per creare uno spettacolo magico abbagliante che cattura la mente dei nemici vicini. Tutti i bersagli entro gittata Vicina devono fare un Tiro di reazione di Istinto. Per ogni bersaglio che fallisce, guadagni 1 Paura e la Guizzafalena scopre una delle sue paure."
+   },
+   {
+    "nome": "Soffio allucinogeno",
+    "testo": "Conto alla rovescia (ciclico 1d6). La prima volta che la Guizzafalena subisce danni, attiva il conto alla rovescia. Quando si attiva, la Guizzafalena soffia un gas allucinogeno su tutti i bersagli davanti a sé fino a gittata Lontana. I bersagli devono fare un Tiro di reazione di Istinto o essere tormentati da allucinazioni spaventose; quelli di cui la Guizzafalena conosce le paure hanno svantaggio al tiro. Chi fallisce perde 2 Speranza e subisce 3d8+3 danni magici diretti."
+   },
+   {
+    "nome": "Riflessi prodigiosi",
+    "testo": "Quando la Guizzafalena subisce danni da un attacco entro gittata Vicina, puoi segnare 1 Stress per farle subire metà danni."
+   }
+  ]
+ },
+ "demon-of-avarice": {
+  "descrizione": "Una mostruosità regale ammantata, con corna ricurve adorne di tesori.",
+  "motivazioni": "Divorare, alimentare l'avidità, seminare discordia",
+  "attacco": "Fauci affamate",
+  "esperienze": [
+   "Manipolazione"
+  ],
+  "capacita": [
+   {
+    "nome": "Il denaro parla",
+    "testo": "Gli attacchi contro il Demone hanno svantaggio, a meno che l'attaccante non spenda una manciata d'oro. Il Demone parte con tante manciate d'oro quanti sono i PG. Quando un bersaglio segna PF per l'attacco standard del Demone, può spendere manciate d'oro invece di segnare PF (1 manciata per PF). Aggiungi al Demone una manciata d'oro per ogni manciata che i PG spendono con questa capacità."
+   },
+   {
+    "nome": "I numeri devono salire",
+    "testo": "Aggiungi ai tiri d'attacco del Demone un bonus pari al numero di manciate d'oro che possiede."
+   },
+   {
+    "nome": "Il tempo è denaro",
+    "testo": "Spendi 3 manciate d'oro (o 1 Paura) per dare i riflettori a 1d4+1 alleati."
+   }
+  ]
+ },
+ "demon-of-despair": {
+  "descrizione": "Una creatura demoniaca ammantata, dagli arti lunghi, che trasuda ombre.",
+  "motivazioni": "Rendere contagiosa la paura, restare nell'ombra, minare la determinazione",
+  "attacco": "Dardo di miasma",
+  "esperienze": [
+   "Manipolazione"
+  ],
+  "capacita": [
+   {
+    "nome": "Abisso di disperazione",
+    "testo": "Il Demone infligge danni doppi ai PG con 0 Speranza."
+   },
+   {
+    "nome": "La tua lotta è inutile",
+    "testo": "Spendi 1 Paura per abbattere lo spirito di tutti i PG entro gittata Lontana. Tutti i bersagli colpiti sostituiscono il loro Dado della Speranza con un d8 finché non ottengono un successo con Speranza o fino al loro prossimo riposo."
+   },
+   {
+    "nome": "I tuoi amici ti deluderanno",
+    "testo": "Quando un PG fallisce con Paura, puoi segnare 1 Stress per far perdere 1 Speranza a tutti gli altri PG entro gittata Vicina."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando il Demone mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "demon-of-hubris": {
+  "descrizione": "Un demone di bellezza perfetta e crudeltà infinita, con una lancia scintillante e vesti eleganti.",
+  "motivazioni": "Trattare con sufficienza, cantare vittoria troppo presto, dimostrare la propria superiorità",
+  "attacco": "Lancia perfetta",
+  "esperienze": [
+   "Manipolazione"
+  ],
+  "capacita": [
+   {
+    "nome": "Terrificante",
+    "testo": "Quando il Demone mette a segno un attacco, tutti i PG entro gittata Lontana devono perdere 1 Speranza e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Lascia o raddoppia",
+    "testo": "Quando un PG entro gittata Lontana fallisce un tiro, può scegliere di ritirare il Dado della Paura e tenere il nuovo risultato. Se fallisce comunque, segna 2 Stress e il Demone libera 1 Stress."
+   },
+   {
+    "nome": "Abilità impareggiabile",
+    "testo": "Segna 1 Stress per infliggere il danno dell'attacco standard del Demone a un bersaglio entro gittata Vicina."
+   },
+   {
+    "nome": "La radice della malvagità",
+    "testo": "Spendi 1 Paura per dare i riflettori ad altri due Demoni entro gittata Lontana."
+   },
+   {
+    "nome": "Al confronto sei nulla",
+    "testo": "Quando un PG fallisce un tiro entro gittata Vicina dal Demone, deve segnare 1 Stress."
+   }
+  ]
+ },
+ "demon-of-jealousy": {
+  "descrizione": "Una creatura volubile dagli arti esili e dai desideri insaziabili.",
+  "motivazioni": "Approfittare del successo altrui, prendere ciò che appartiene agli altri, serbare rancore",
+  "attacco": "Assalto psichico",
+  "esperienze": [
+   "Manipolazione"
+  ],
+  "capacita": [
+   {
+    "nome": "Mente indifesa",
+    "testo": "L'attacco standard del Demone infligge danno diretto."
+   },
+   {
+    "nome": "Tocca a me",
+    "testo": "Quando il Demone segna PF per un attacco, spendi tanta Paura quanti sono i PF segnati dal Demone per costringere l'attaccante a segnare lo stesso numero di PF."
+   },
+   {
+    "nome": "Rivalità",
+    "testo": "Quando una creatura entro gittata Vicina subisce danni da un altro avversario, puoi segnare 1 Stress per aggiungere un d4 al tiro di danno."
+   },
+   {
+    "nome": "Ciò che è tuo è mio",
+    "testo": "Quando un PG subisce un danno Gravissimo entro gittata Molto vicina dal Demone, puoi spendere 1 Paura per costringerlo a fare un Tiro di reazione di Destrezza. Se fallisce, il Demone si impadronisce di un oggetto o consumabile a sua scelta dall'inventario del bersaglio."
+   }
+  ]
+ },
+ "demon-of-wrath": {
+  "descrizione": "Un demone massiccio con pugni grandi come macigni, spinto da una rabbia senza fine.",
+  "motivazioni": "Alimentare la rabbia, impressionare i rivali, seminare il caos",
+  "attacco": "Pugni",
+  "esperienze": [
+   "Intimidire"
+  ],
+  "capacita": [
+   {
+    "nome": "Rabbia inarrestabile",
+    "testo": "Gli attacchi del Demone infliggono danno diretto."
+   },
+   {
+    "nome": "Sete di battaglia",
+    "testo": "Spendi 1 Paura per far ribollire il sangue di tutti i PG entro gittata Lontana. Usano un d20 come Dado della Paura fino alla fine della scena."
+   },
+   {
+    "nome": "Ritorsione",
+    "testo": "Quando il Demone subisce danni da un attacco entro gittata Vicina, puoi segnare 1 Stress per fare un attacco standard contro l'attaccante."
+   },
+   {
+    "nome": "Sangue e anime",
+    "testo": "Conto alla rovescia (ciclico 6). Si attiva la prima volta che viene fatto un attacco in vista del Demone. Scende ogni volta che un PG compie un'azione violenta. Quando si attiva, evoca 1d4 Demoni minori, che compaiono a gittata Vicina."
+   }
+  ]
+ },
+ "dire-bat": {
+  "descrizione": "Una bestia dalle ampie ali, fedele senza limiti al suo padrone vampiro.",
+  "motivazioni": "Attaccare in picchiata, nascondersi, proteggere il capo",
+  "attacco": "Artigli e denti",
+  "esperienze": [
+   "Assetato di sangue"
+  ],
+  "capacita": [
+   {
+    "nome": "Volante",
+    "testo": "Mentre vola, il Pipistrello ha un bonus di +3 alla Difficoltà."
+   },
+   {
+    "nome": "Stridio",
+    "testo": "Segna 1 Stress per lanciare uno stridio acutissimo verso tutti i bersagli davanti al Pipistrello entro gittata Lontana. Quei bersagli devono segnare 1d4 Stress."
+   },
+   {
+    "nome": "Guardiano",
+    "testo": "Quando un Vampiro alleato segna PF, puoi segnare 1 Stress per far volare il Pipistrello in Mischia con l'attaccante e fare un attacco con vantaggio contro di lui. Se riesce, infligge 2d6+2 danni fisici."
+   }
+  ]
+ },
+ "dryad": {
+  "descrizione": "Uno spirito della natura con l'aspetto di un albero umanoide.",
+  "motivazioni": "Comandare, coltivare, scacciare, preservare la foresta",
+  "attacco": "Arco corto di legno caduto",
+  "esperienze": [
+   "Conoscenza della foresta"
+  ],
+  "capacita": [
+   {
+    "nome": "Macchia di rovi",
+    "testo": "Segna 1 Stress per scegliere un punto entro gittata Lontana. Crea una macchia di spine che copre l'area entro gittata Vicina da quel punto. Tutti i bersagli nell'area subiscono 2d6+2 danni fisici quando agiscono. Per lasciare l'area un bersaglio deve superare un Tiro di Destrezza o infliggere più di 20 danni alla Driade con un attacco."
+   },
+   {
+    "nome": "Far crescere alberelli",
+    "testo": "Spendi 1 Paura per far crescere tre Gregari Treant alberello, che compaiono a gittata Vicina e ricevono subito i riflettori."
+   },
+   {
+    "nome": "Siamo tutti uno",
+    "testo": "Quando un alleato muore entro gittata Vicina, puoi spendere 1 Paura per liberare 2 PF e 2 Stress, mentre la forza vitale dell'alleato caduto torna alla foresta."
+   }
+  ]
+ },
+ "elemental-spark": {
+  "descrizione": "Una scintilla ardente di fuoco elementale.",
+  "motivazioni": "Esplodere, divorare, crescere",
+  "attacco": "Vampate di fuoco",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (9)",
+    "testo": "L'Elementale è sconfitto quando subisce un danno qualsiasi. Per ogni 9 danni che un PG infligge all'Elementale, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutte le Scintille elementali entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 5 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "greater-earth-elemental": {
+  "descrizione": "Una frana vivente di massi e polvere, grande come una casa.",
+  "motivazioni": "Travolgere come una valanga, abbattere, percuotere",
+  "attacco": "Pugno di roccia",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Lento",
+    "testo": "Quando dai i riflettori all'Elementale e sul suo blocco statistiche non c'è un gettone, non può ancora agire: metti un gettone sul blocco e descrivi cosa si prepara a fare. Quando gli dai i riflettori e c'è un gettone, toglilo: ora può agire."
+   },
+   {
+    "nome": "Colpi schiaccianti",
+    "testo": "Quando l'Elementale mette a segno un attacco, il bersaglio deve segnare uno Slot Armatura senza riceverne i benefici (può comunque usare l'armatura per ridurre il danno). Se non può segnare uno Slot Armatura, deve segnare 1 PF aggiuntivo."
+   },
+   {
+    "nome": "Oggetto inamovibile",
+    "testo": "Un attacco che sposterebbe l'Elementale lo sposta di due gittate in meno (per esempio, Lontana diventa Molto vicina). Quando l'Elementale subisce danni fisici, riducili di 7."
+   },
+   {
+    "nome": "Frana",
+    "testo": "Segna 1 Stress per provocare una frana che seppellisce di rocce il terreno davanti all'Elementale entro gittata Vicina. Tutti i bersagli nell'area devono fare un Tiro di reazione di Agilità (19). Chi fallisce subisce 2d12+5 danni fisici e diventa Vulnerabile fino al suo prossimo tiro con Speranza; chi riesce subisce metà danni."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando l'Elementale mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "greater-water-elemental": {
+  "descrizione": "Un'enorme onda vivente che si abbatte sui nemici.",
+  "motivazioni": "Inondare, disperdere, annegare",
+  "attacco": "Onda che si infrange",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Getto d'acqua",
+    "testo": "Segna 1 Stress per attaccare un bersaglio entro gittata Molto vicina. Se riesce, infligge 2d4+7 danni fisici e la prossima azione del bersaglio ha svantaggio. Se fallisce, il bersaglio deve comunque segnare 1 Stress."
+   },
+   {
+    "nome": "Abbraccio soffocante",
+    "testo": "Spendi 1 Paura per fare un attacco contro tutti i bersagli entro gittata Molto vicina. I bersagli colpiti diventano Trattenuti e Vulnerabili perché cominciano ad annegare. Un bersaglio può liberarsi, eliminando entrambe le condizioni, con un Tiro di Forza o di Istinto riuscito."
+   },
+   {
+    "nome": "Alta marea",
+    "testo": "Quando l'Elementale mette a segno un attacco standard, puoi segnare 1 Stress per scagliare il bersaglio fino a gittata Vicina."
+   }
+  ]
+ },
+ "huge-green-ooze": {
+  "descrizione": "Un cumulo traslucido di acido verde, più alto della maggior parte degli esseri umani.",
+  "motivazioni": "Mimetizzarsi, avvicinarsi di soppiatto, avvolgere, moltiplicarsi",
+  "attacco": "Appendice melmosa",
+  "esperienze": [
+   "Confondersi"
+  ],
+  "capacita": [
+   {
+    "nome": "Lento",
+    "testo": "Quando dai i riflettori alla Melma e sul suo blocco statistiche non c'è un gettone, non può ancora agire: metti un gettone sul blocco e descrivi cosa si prepara a fare. Quando le dai i riflettori e c'è un gettone, toglilo: ora può agire."
+   },
+   {
+    "nome": "Forma acida",
+    "testo": "Quando la Melma mette a segno un attacco, il bersaglio deve segnare uno Slot Armatura senza riceverne i benefici (può comunque usare l'armatura per ridurre il danno). Se non può segnare uno Slot Armatura, deve segnare 1 PF aggiuntivo."
+   },
+   {
+    "nome": "Avvolgere",
+    "testo": "Fai un attacco contro un bersaglio in Mischia. Se riesce, la Melma lo Avvolge e il bersaglio deve segnare 2 Stress. Finché è Avvolto, il bersaglio deve segnare 1 Stress aggiuntivo ogni volta che fa un tiro d'azione. Quando la Melma subisce un danno Gravissimo, tutti i bersagli Avvolti si liberano e la condizione svanisce."
+   },
+   {
+    "nome": "Scissione",
+    "testo": "Quando la Melma ha 4 o più PF segnati, puoi spendere 1 Paura per dividerla in due Melme verdi (senza PF né Stress segnati). Dai subito i riflettori a entrambe."
+   }
+  ]
+ },
+ "hydra": {
+  "descrizione": "Una bestia squamata a quattro zampe con più teste dal collo lungo, ognuna piena di zanne minacciose.",
+  "motivazioni": "Divorare, rigenerarsi, terrorizzare",
+  "attacco": "Morso",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Minaccia dalle molte teste",
+    "testo": "L'Idra parte con tre teste e può averne fino a cinque. Quando subisce un danno Grave o superiore, perde una testa."
+   },
+   {
+    "nome": "Implacabile (X)",
+    "testo": "L'Idra può ricevere i riflettori X volte per turno del GM, dove X è il suo numero di teste. Spendi Paura come di consueto per darle i riflettori."
+   },
+   {
+    "nome": "Rigenerazione",
+    "testo": "Se l'Idra ha PF segnati, spendi 1 Paura per liberare 1 PF e far crescere due teste."
+   },
+   {
+    "nome": "Coro terrificante",
+    "testo": "Tutti i PG entro gittata Lontana perdono 2 Speranza."
+   },
+   {
+    "nome": "Debolezza magica",
+    "testo": "Quando l'Idra subisce un danno magico, diventa Stordita fino al prossimo tiro con Paura. Finché è Stordita non può usare l'azione Rigenerazione, ma è immune al danno magico."
+   }
+  ]
+ },
+ "monarch": {
+  "descrizione": "Il sovrano di una nazione, avvolto nei privilegi della tradizione e dotato di un potere senza pari nel suo dominio.",
+  "motivazioni": "Controllare i vassalli, distruggere i rivali, forgiare un'eredità",
+  "attacco": "Martello da guerra",
+  "esperienze": [
+   "Storia",
+   "Nobiltà"
+  ],
+  "capacita": [
+   {
+    "nome": "Giustiziateli!",
+    "testo": "Spendi 1 Paura per ogni PG del gruppo per far condannare il gruppo per crimini veri o immaginari. Un PG che supera un Tiro di Presenza può pretendere un duello giudiziario o un'altra forma speciale di processo."
+   },
+   {
+    "nome": "Guardia della corona",
+    "testo": "Una volta per scena, segna 1 Stress per evocare sei Gregari di Tier 3, che compaiono a gittata Vicina per imporre la volontà del Monarca."
+   },
+   {
+    "nome": "Casus belli",
+    "testo": "Conto alla rovescia a lungo termine (8). Spendi 1 Paura per attivarlo dopo che il desiderio di guerra del Monarca è stato rivelato per la prima volta. Quando si attiva, il Monarca ha un pretesto per chiamare la nazione alle armi e il sostegno per farlo. Guadagni 1d4 Paura."
+   }
+  ]
+ },
+ "oak-treant": {
+  "descrizione": "Un robusto albero secolare animato.",
+  "motivazioni": "Nascondersi in piena vista, preservare la foresta, mettere radici, agitare i rami",
+  "attacco": "Ramo",
+  "esperienze": [
+   "Conoscenza della foresta"
+  ],
+  "capacita": [
+   {
+    "nome": "Solo un albero",
+    "testo": "Prima del suo primo attacco in uno scontro, o dopo essere diventato Nascosto, il Treant è indistinguibile dagli altri alberi finché non agisce di nuovo o un PG non supera un Tiro di Istinto per riconoscerlo."
+   },
+   {
+    "nome": "Raffica di semi",
+    "testo": "Segna 1 Stress e fai un attacco contro un massimo di tre bersagli entro gittata Vicina, bersagliandoli con ghiande giganti. I bersagli colpiti subiscono 2d10+5 danni fisici."
+   },
+   {
+    "nome": "Mettere radici",
+    "testo": "Segna 1 Stress per Radicare il Treant sul posto. Mentre è Radicato il Treant è Trattenuto, e quando ha i riflettori può porre fine all'effetto invece di muoversi. Mentre è Radicato, ha resistenza al danno fisico."
+   }
+  ]
+ },
+ "treant-sapling": {
+  "descrizione": "Un piccolo alberello senziente.",
+  "motivazioni": "Confondersi, preservare la foresta, percuotere, circondare",
+  "attacco": "Rami",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (6)",
+    "testo": "L'Alberello è sconfitto quando subisce un danno qualsiasi. Per ogni 6 danni che un PG infligge all'Alberello, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti i Treant alberello entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 8 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "head-vampire": {
+  "descrizione": "Un non morto affascinante, vestito con raffinatezza aristocratica.",
+  "motivazioni": "Creare servi, ammaliare, comandare, volare, intimidire",
+  "attacco": "Stocco",
+  "esperienze": [
+   "Aristocratico"
+  ],
+  "capacita": [
+   {
+    "nome": "Terrificante",
+    "testo": "Quando il Vampiro mette a segno un attacco, tutti i PG entro gittata Lontana perdono 1 Speranza e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Guardami negli occhi",
+    "testo": "Una creatura che entra in Mischia con il Vampiro deve fare un Tiro di reazione di Istinto. Se fallisce, guadagni 1d4 Paura."
+   },
+   {
+    "nome": "Nutrirsi dei seguaci",
+    "testo": "Quando il Vampiro è in Mischia con un alleato, può fargli segnare 1 PF. Il Vampiro poi libera 1 PF."
+   },
+   {
+    "nome": "La caccia è aperta",
+    "testo": "Spendi 2 Paura per evocare 1d4 Vampiri, che compaiono a gittata Lontana e ricevono subito i riflettori."
+   },
+   {
+    "nome": "Succhiavita",
+    "testo": "Quando il Vampiro riceve i riflettori, tira un d8. Con 6 o più, tutti i bersagli entro gittata Molto vicina devono segnare 1 PF."
+   }
+  ]
+ },
+ "vampire": {
+  "descrizione": "Un non morto intelligente, dalle labbra macchiate di sangue e dal sorriso da predatore.",
+  "motivazioni": "Mordere, ammaliare, ingannare, nutrirsi, intimidire",
+  "attacco": "Stocco",
+  "esperienze": [
+   "Cacciatore notturno"
+  ],
+  "capacita": [
+   {
+    "nome": "Morso prosciugante",
+    "testo": "Fai un attacco contro un bersaglio in Mischia. Se riesce, infligge 5d4 danni fisici. Un bersaglio che segna PF per questo attacco perde 1 Speranza e deve segnare 1 Stress. Il Vampiro poi libera 1 PF."
+   },
+   {
+    "nome": "Forma di nebbia",
+    "testo": "Quando il Vampiro subisce danni fisici, puoi spendere 1 Paura per fargli subire metà danni."
+   }
+  ]
+ },
+ "vault-guardian-gaoler": {
+  "descrizione": "Un costrutto squadrato e impolverato, con spesse ante metalliche sul torso.",
+  "motivazioni": "Portare via, intrappolare, proteggere, percuotere",
+  "attacco": "Spallata",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Scudo bloccante",
+    "testo": "Le creature in Mischia con il Carceriere hanno svantaggio ai tiri d'attacco contro di lui. Le creature intrappolate dentro il Carceriere non sono soggette a questa capacità."
+   },
+   {
+    "nome": "Rinchiudere",
+    "testo": "Segna 1 Stress per fare un attacco contro un bersaglio entro gittata Molto vicina. Se riesce, il bersaglio è Trattenuto dentro il Carceriere finché non si libera con un Tiro di Forza (18) riuscito. Finché è Trattenuto, il bersaglio può attaccare solo il Carceriere."
+   }
+  ]
+ },
+ "vault-guardian-sentinel": {
+  "descrizione": "Un costrutto dorato e impolverato, dalle membra squadrate e con un'enorme mazza al posto della mano.",
+  "motivazioni": "Distruggere a ogni costo, cancellare, proteggere",
+  "attacco": "Mazza carica",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Schianto cinetico",
+    "testo": "I bersagli che subiscono danni dall'attacco standard della Sentinella vengono scagliati indietro fino a gittata Molto vicina."
+   },
+   {
+    "nome": "Chiudere in trappola",
+    "testo": "Segna 1 Stress per scegliere un bersaglio entro gittata Molto vicina su cui concentrarsi. Quel bersaglio ha svantaggio ai tiri d'attacco quando è entro gittata Molto vicina dalla Sentinella. La Sentinella può concentrarsi su un solo bersaglio alla volta."
+   },
+   {
+    "nome": "Dardo di mana",
+    "testo": "Spendi 1 Paura per scagliare magia esplosiva su un punto entro gittata Lontana. Tutti i bersagli entro gittata Molto vicina da quel punto devono fare un Tiro di reazione di Agilità. Chi fallisce subisce 2d8+20 danni magici e viene scagliato fino a gittata Vicina; chi riesce subisce metà danni e non viene spostato."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando la Sentinella mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "vault-guardian-turret": {
+  "descrizione": "Un'enorme torretta vivente con armatura rinforzata e dodici zampe meccaniche azionate da pistoni.",
+  "motivazioni": "Concentrare il fuoco, bloccare, marcare, proteggere",
+  "attacco": "Cannone magitecnico",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Fuoco lento",
+    "testo": "Quando dai i riflettori alla Torretta e sul suo blocco statistiche non c'è un gettone, non può fare un attacco standard: metti un gettone sul blocco e descrivi cosa si prepara a fare. Quando le dai i riflettori e c'è un gettone, toglilo: ora può attaccare."
+   },
+   {
+    "nome": "Marcare il bersaglio",
+    "testo": "Spendi 1 Paura per Marcare un bersaglio entro gittata Lontana finché la Torretta non viene distrutta o il bersaglio Marcato non diventa Nascosto. Finché è Marcato, l'Evasione del bersaglio è dimezzata."
+   },
+   {
+    "nome": "Concentrare il fuoco",
+    "testo": "Quando un altro avversario infligge danni a un bersaglio entro gittata Lontana dalla Torretta, puoi segnare 1 Stress per aggiungere al tiro di danno il danno dell'attacco standard della Torretta."
+   },
+   {
+    "nome": "Detonazione",
+    "testo": "Quando la Torretta viene distrutta, esplode. Tutti i bersagli entro gittata Vicina devono fare un Tiro di reazione di Agilità. Chi fallisce subisce 3d20 danni fisici; chi riesce subisce metà danni."
+   }
+  ]
+ },
+ "young-ice-dragon": {
+  "descrizione": "Un drago azzurro ghiacciaio, con quattro zampe possenti e ali orlate di brina.",
+  "motivazioni": "Scatenare valanghe, difendere la tana, volare, congelare, difendere ciò che è suo, sbranare",
+  "attacco": "Morso e artigli",
+  "esperienze": [
+   "Proteggere ciò che è mio"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (3)",
+    "testo": "Il Drago può ricevere i riflettori fino a tre volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Dilaniare e schiacciare",
+    "testo": "Se un bersaglio danneggiato dal Drago non segna uno Slot Armatura per ridurre il danno, deve segnare 1 Stress."
+   },
+   {
+    "nome": "Nessuna speranza",
+    "testo": "Quando un PG tira con Paura mentre è entro gittata Lontana dal Drago, perde 1 Speranza."
+   },
+   {
+    "nome": "Soffio di bufera",
+    "testo": "Spendi 2 Paura per sprigionare un vortice gelido davanti al Drago entro gittata Vicina. Tutti i bersagli nell'area devono fare un Tiro di reazione di Agilità. Chi fallisce subisce 4d6+5 danni magici ed è Trattenuto dal ghiaccio finché non si libera con un Tiro di Forza riuscito. Chi riesce deve segnare 2 Stress o subire metà danni."
+   },
+   {
+    "nome": "Valanga",
+    "testo": "Spendi 1 Paura: il Drago scatena un'enorme caduta di neve e ghiaccio che ricopre tutte le altre creature entro gittata Lontana. Tutti i bersagli nell'area devono superare un Tiro di reazione di Istinto o restano sepolti sotto neve e rocce, diventando Vulnerabili finché non si liberano dai detriti. Per ogni PG che fallisce il tiro di reazione, guadagni 1 Paura."
+   },
+   {
+    "nome": "Scaglie gelate",
+    "testo": "Quando una creatura mette a segno un attacco contro il Drago da gittata Molto vicina, deve segnare 1 Stress e diventa Assiderata fino al suo prossimo riposo o finché non libera 1 Stress. Finché è Assiderata ha svantaggio ai tiri d'attacco."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando il Drago mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "arch-necromancer": {
+  "descrizione": "Un mago in decomposizione, avvolto in vesti scure e lacere.",
+  "motivazioni": "Corrompere, far decadere, fuggire per combattere un altro giorno, resuscitare",
+  "attacco": "Raffica necrotica",
+  "esperienze": [
+   "Conoscenze proibite",
+   "Saggezza dei secoli"
+  ],
+  "capacita": [
+   {
+    "nome": "Danza macabra",
+    "testo": "Segna 1 Stress per dare i riflettori a 1d4 alleati. Gli attacchi che fanno mentre hanno i riflettori in questo modo infliggono metà danni, o danni pieni se spendi 1 Paura."
+   },
+   {
+    "nome": "Raggio della decomposizione",
+    "testo": "Segna 2 Stress per costringere tutti i bersagli entro gittata Lontana a fare un Tiro di reazione di Forza. Chi fallisce subisce 2d20+12 danni magici e tu guadagni 1 Paura; chi riesce subisce metà danni. Un bersaglio che segna 2 o più PF deve anche segnare 2 Stress e diventa Vulnerabile finché non tira con Speranza."
+   },
+   {
+    "nome": "Aprire le porte della morte",
+    "testo": "Spendi 1 Paura per evocare una Legione di zombi, che compare a gittata Vicina e riceve subito i riflettori."
+   },
+   {
+    "nome": "Non oggi, miei cari",
+    "testo": "Quando il Negromante ha segnato 7 o più PF, puoi spendere 1 Paura per farlo teletrasportare in un luogo sicuro dove riprendersi. Un PG che supera un Tiro di Istinto può seguire la magia del teletrasporto fino alla sua destinazione."
+   },
+   {
+    "nome": "La tua vita è mia",
+    "testo": "Conto alla rovescia (ciclico 2d6). Quando il Negromante ha segnato 6 o più PF, attiva il conto alla rovescia. Quando si attiva, infliggi 2d10+6 danni magici diretti a un bersaglio entro gittata Vicina. Il Negromante poi libera tanti Stress o PF quanti sono i PF segnati dal bersaglio per questo attacco."
+   }
+  ]
+ },
+ "fallen-shock-troop": {
+  "descrizione": "Un'anima maledetta, vincolata alla volontà dei Caduti.",
+  "motivazioni": "Schiacciare, dominare, guadagnarsi sollievo, punire",
+  "attacco": "Ascia maledetta",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (12)",
+    "testo": "La Truppa d'assalto è sconfitta quando subisce un danno qualsiasi. Per ogni 12 danni che un PG le infligge, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Aura di rovina",
+    "testo": "Quando un PG segna PF per un attacco della Truppa d'assalto, perde 1 Speranza."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutte le Truppe d'assalto dei Caduti entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 12 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "fallen-sorcerer": {
+  "descrizione": "Un mago potente, vincolato dai patti stretti in vita.",
+  "motivazioni": "Acquisire, scoraggiare, dominare, tormentare",
+  "attacco": "Bastone corrotto",
+  "esperienze": [
+   "Conoscenze antiche"
+  ],
+  "capacita": [
+   {
+    "nome": "Conflagrazione",
+    "testo": "Spendi 1 Paura per scatenare una tempesta di fuoco divorante e fai un attacco contro tutti i bersagli entro gittata Vicina. I bersagli colpiti subiscono 2d10+6 danni magici diretti."
+   },
+   {
+    "nome": "Quadro da incubo",
+    "testo": "Segna 1 Stress per intrappolare un bersaglio entro gittata Lontana in una potente illusione delle sue peggiori paure. Finché è intrappolato, il bersaglio è Trattenuto e Vulnerabile, finché non si libera, eliminando entrambe le condizioni, con un Tiro di Istinto riuscito."
+   },
+   {
+    "nome": "Sfuggente",
+    "testo": "Quando lo Stregone subisce danni da un attacco, può teletrasportarsi fino a gittata Lontana."
+   },
+   {
+    "nome": "Catene del rimorso",
+    "testo": "Conto alla rovescia (ciclico 2d6). La prima volta che lo Stregone riceve i riflettori, attiva il conto alla rovescia. Quando si attiva, tutti i bersagli entro gittata Lontana diventano Vulnerabili e devono segnare 1 Stress mentre rivivono i loro rimpianti più grandi. Un bersaglio può liberarsi dal rimpianto con un Tiro di Presenza o di Forza riuscito. Quando un PG non riesce a liberarsi, perde 1 Speranza."
+   }
+  ]
+ },
+ "fallen-warlord-realm-breaker": {
+  "descrizione": "Un Dio Caduto, avvolto da rabbia e risentimento, con millenni di esperienza nello spezzare lo spirito degli eroi.",
+  "motivazioni": "Corrompere, dominare, punire, spezzare i deboli",
+  "attacco": "Frusta uncinata",
+  "esperienze": [
+   "Conquista",
+   "Storia",
+   "Intimidire"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (2)",
+    "testo": "Lo Spezzaregni può ricevere i riflettori fino a due volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Armatura a piastre di fuocodispetto",
+    "testo": "Quando lo Spezzaregni subisce danni, riducili di 2d10."
+   },
+   {
+    "nome": "Sferzata tormentatrice",
+    "testo": "Segna 1 Stress per fare un attacco standard contro tutti i bersagli entro gittata Molto vicina. Quando un bersaglio usa l'armatura per ridurre il danno di questo attacco, deve segnare 2 Slot Armatura."
+   },
+   {
+    "nome": "Rabbia divorante",
+    "testo": "Conto alla rovescia (decrescente 8). La prima volta che lo Spezzaregni riceve i riflettori, attiva il conto alla rovescia. Quando si attiva, crea un torrente di rabbia incarnata che strappa la carne dalle ossa. Tutti i bersagli entro gittata Lontana devono fare un Tiro di reazione di Presenza. Chi fallisce subisce 2d6+10 danni magici diretti; chi riesce subisce metà danni. Per ogni PF segnato a causa di questo danno, evoca una Truppa d'assalto dei Caduti entro gittata Molto vicina dal bersaglio che ha segnato quel PF. Se il valore massimo del conto alla rovescia scende a 0, lo Spezzaregni segna tutti i PF che gli restano e tutti i bersagli entro gittata Lontana devono segnare tutti i PF rimanenti e compiere una Mossa della Morte."
+   },
+   {
+    "nome": "Portatore di rovina",
+    "testo": "Quando un bersaglio segna PF per un attacco dello Spezzaregni, tutti i PG entro gittata Lontana dal bersaglio devono perdere 1 Speranza."
+   },
+   {
+    "nome": "Non ho mai conosciuto sconfitta (cambio di fase)",
+    "testo": "Quando lo Spezzaregni segna il suo ultimo PF, sostituiscilo con il Campione imbattuto e dagli subito i riflettori."
+   }
+  ]
+ },
+ "fallen-warlord-undefeated-champion": {
+  "descrizione": "Ciò che solo i più temuti possono temere.",
+  "motivazioni": "Dispensare morte senza pietà, punire chi si ribella, ottenere la vittoria a ogni costo",
+  "attacco": "Spada spezzacuori",
+  "esperienze": [
+   "Conquista",
+   "Storia",
+   "Intimidire"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (3)",
+    "testo": "Il Campione imbattuto può ricevere i riflettori fino a tre volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Armatura cedevole",
+    "testo": "Quando il Campione imbattuto subisce danni, riducili di 1d10."
+   },
+   {
+    "nome": "Colpo frantumante",
+    "testo": "Segna 1 Stress per fare un attacco standard contro tutti i bersagli entro gittata Molto vicina. I PG colpiti perdono tanta Speranza quanti sono i PF segnati per questo attacco."
+   },
+   {
+    "nome": "Legioni senza fine",
+    "testo": "Spendi 1 Paura per evocare un numero di Truppe d'assalto dei Caduti pari al doppio dei PG. Le Truppe d'assalto compaiono a gittata Lontana."
+   },
+   {
+    "nome": "Cerchio della profanazione",
+    "testo": "Conto alla rovescia (1d8). La prima volta che il Campione imbattuto riceve i riflettori, attiva il conto alla rovescia. Quando si attiva, attiva un cerchio magico che copre un'area entro gittata Lontana dal Campione. Un bersaglio nell'area è Vulnerabile finché non esce dal cerchio. Il cerchio si può rimuovere infliggendo un danno Gravissimo al Campione imbattuto."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando il Campione imbattuto mette a segno un attacco contro un PG, guadagni 1 Paura."
+   },
+   {
+    "nome": "Portatore di rovina",
+    "testo": "Quando un bersaglio segna PF per un attacco del Campione imbattuto, tutti i PG entro gittata Lontana dal bersaglio perdono 1 Speranza."
+   }
+  ]
+ },
+ "hallowed-archer": {
+  "descrizione": "Soldati spirituali con archi consacrati.",
+  "motivazioni": "Concentrare il fuoco, obbedire, riposizionarsi, tirare a raffica",
+  "attacco": "Arco lungo consacrato",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Punire i colpevoli",
+    "testo": "L'Arciere infligge danni doppi ai bersagli marchiati come Colpevoli da un Alto serafino."
+   },
+   {
+    "nome": "Raffica divina",
+    "testo": "Segna 1 Stress per fare un attacco standard contro un massimo di tre bersagli."
+   }
+  ]
+ },
+ "hallowed-soldier": {
+  "descrizione": "Anime dei fedeli, elevate con armi divine.",
+  "motivazioni": "Obbedire, sopravanzare, punire, sciamare",
+  "attacco": "Spada e scudo",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (13)",
+    "testo": "Il Soldato è sconfitto quando subisce un danno qualsiasi. Per ogni 13 danni che un PG infligge al Soldato, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Volo divino",
+    "testo": "Mentre il Soldato vola, spendi 1 Paura per farlo muovere fino a gittata Lontana invece che Vicina prima di compiere un'azione."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti i Soldati consacrati entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 10 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "high-seraph": {
+  "descrizione": "Un campione divino, a capo di una schiera consacrata di guerrieri che impongono la volontà del loro dio.",
+  "motivazioni": "Imporre il dogma, volare, pronunciare il giudizio, colpire",
+  "attacco": "Spada sacra",
+  "esperienze": [
+   "Conoscenza divina"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (2)",
+    "testo": "Il Serafino può ricevere i riflettori fino a tre volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Volo divino",
+    "testo": "Mentre il Serafino vola, spendi 1 Paura per farlo muovere fino a gittata Lontana invece che Vicina prima di compiere un'azione."
+   },
+   {
+    "nome": "Giudizio",
+    "testo": "Spendi 1 Paura per rendere un bersaglio Colpevole agli occhi del dio del Serafino finché il Serafino non viene sconfitto. Finché è Colpevole, il bersaglio non guadagna Speranza con un risultato con Speranza. Quando il Serafino mette a segno un attacco standard contro un bersaglio Colpevole, infligge un danno Gravissimo invece del danno standard. Il Serafino può marchiare un solo bersaglio alla volta."
+   },
+   {
+    "nome": "Raggi divini",
+    "testo": "Segna 1 Stress per riflettere una scheggia di divinità sotto forma di un raggio di luce rovente che colpisce fino a venti bersagli entro gittata Molto lontana. I bersagli devono fare un Tiro di reazione di Presenza, con svantaggio se sono marchiati come Colpevoli. Chi fallisce subisce 4d6+12 danni magici; chi riesce subisce metà danni."
+   },
+   {
+    "nome": "Siamo uno",
+    "testo": "Una volta per scena, spendi 1 Paura per dare i riflettori a tutti gli altri avversari entro gittata Lontana. Gli attacchi che fanno mentre hanno i riflettori in questo modo infliggono metà danni."
+   }
+  ]
+ },
+ "kraken": {
+  "descrizione": "Una bestia marina leggendaria, più grande del più grande dei galeoni, con tentacoli pieni di ventose e fauci terrificanti.",
+  "motivazioni": "Divorare, stritolare, annegare, afferrare",
+  "attacco": "Tentacoli",
+  "esperienze": [
+   "Nuotare"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (3)",
+    "testo": "Il Kraken può ricevere i riflettori fino a tre volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Molti tentacoli",
+    "testo": "Finché il Kraken ha 7 o meno PF segnati, può fare il suo attacco standard contro due bersagli a gittata."
+   },
+   {
+    "nome": "Afferrare e annegare",
+    "testo": "Fai un tiro d'attacco contro un bersaglio entro gittata Vicina. Se riesce, segna 1 Stress per afferrarlo con un tentacolo e trascinarlo sott'acqua. Il bersaglio è Trattenuto e Vulnerabile finché non si libera con un Tiro di Forza riuscito o finché il Kraken non subisce un danno Grave o superiore. Finché è Trattenuto e Vulnerabile in questo modo, il bersaglio deve segnare 1 Stress ogni volta che fa un tiro d'azione."
+   },
+   {
+    "nome": "Getto bollente",
+    "testo": "Spendi 1 Paura per sputare una linea di acqua bollente contro un qualsiasi numero di bersagli allineati fino a gittata Lontana. Tutti i bersagli devono superare un Tiro di reazione di Agilità o subire 4d6+9 danni fisici. Se un bersaglio segna uno Slot Armatura per ridurre il danno, deve anche segnare 1 Stress."
+   },
+   {
+    "nome": "Slancio",
+    "testo": "Quando il Kraken mette a segno un attacco contro un PG, guadagni 1 Paura."
+   }
+  ]
+ },
+ "oracle-of-doom": {
+  "descrizione": "Un immortale torreggiante, incarnazione del fato, maledetto a vedere solo esiti funesti.",
+  "motivazioni": "Cambiare l'ambiente, condannare, scoraggiare, gettare da parte",
+  "attacco": "Attacco psichico",
+  "esperienze": [
+   "Conoscenza sconfinata"
+  ],
+  "capacita": [
+   {
+    "nome": "Terrificante",
+    "testo": "Quando l'Oracolo mette a segno un attacco, tutti i PG entro gittata Lontana perdono 1 Speranza e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Le pareti si stringono",
+    "testo": "Quando una creatura ottiene un fallimento mentre è entro gittata Molto lontana dall'Oracolo, deve segnare 1 Stress."
+   },
+   {
+    "nome": "Pronunciare il fato",
+    "testo": "Spendi 1 Paura per mostrare a un bersaglio entro gittata Lontana una visione del suo incubo personale. Il bersaglio deve fare un Tiro di reazione di Conoscenza. Se fallisce, perde tutta la Speranza e subisce 2d20+4 danni magici diretti. Se riesce, subisce metà danni e perde 1 Speranza."
+   },
+   {
+    "nome": "Evocare tormentatori",
+    "testo": "Una volta al giorno, spendi 2 Paura per evocare 2d4 Gregari di Tier 2 o inferiore legati a uno degli incubi personali di un PG. Compaiono a gittata Vicina da quel PG."
+   },
+   {
+    "nome": "Conoscenza infausta",
+    "testo": "Quando l'Oracolo vede una creatura mortale, conosce all'istante uno dei suoi incubi personali."
+   },
+   {
+    "nome": "Fato vendicativo",
+    "testo": "Quando l'Oracolo segna PF per un attacco entro gittata Molto vicina, puoi segnare 1 Stress per scagliare l'attaccante fino a gittata Lontana e infliggergli 2d10+4 danni fisici."
+   }
+  ]
+ },
+ "outer-realms-abomination": {
+  "descrizione": "Una caotica parodia della vita, in perenne mutamento.",
+  "motivazioni": "Demolire, divorare, minare",
+  "attacco": "Pseudopodo enorme",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Forma caotica",
+    "testo": "Quando l'Abominio attacca, tira 2d4 e usa il risultato come suo modificatore d'attacco."
+   },
+   {
+    "nome": "Presenza disorientante",
+    "testo": "Quando un bersaglio subisce danni dall'Abominio, deve fare un Tiro di reazione di Istinto. Se fallisce, ha svantaggio al suo prossimo tiro d'azione e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Sisma della realtà",
+    "testo": "Spendi 1 Paura per scuotere i confini della realtà entro gittata Lontana dall'Abominio. Tutti i bersagli nell'area devono superare un Tiro di reazione di Conoscenza o diventano Sganciati dalla realtà fino alla fine della scena. Quando un bersaglio Sganciato spende Speranza o segna Slot Armatura, PF o Stress, deve raddoppiare la quantità spesa o segnata."
+   },
+   {
+    "nome": "Forma irreale",
+    "testo": "Quando l'Abominio subisce danni, riducili di 1d20. Se l'Abominio segna 1 PF o meno per un attacco riuscito contro di lui, guadagni 1 Paura."
+   }
+  ]
+ },
+ "outer-realms-corrupter": {
+  "descrizione": "Una massa informe e mutevole, apparentemente fatta di luce cromatica.",
+  "motivazioni": "Confondere, distrarre, sopraffare",
+  "attacco": "Pseudopodo corrosivo",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Tocco spezzavolontà",
+    "testo": "Quando un PG subisce danni dal Corruttore, perde 1 Speranza."
+   },
+   {
+    "nome": "Rigurgitare relitti di realtà",
+    "testo": "Segna 1 Stress per vomitare frammenti semidigeriti di realtà divorate su tutti i bersagli entro gittata Vicina. I bersagli devono superare un Tiro di reazione di Conoscenza o segnare 2 Stress."
+   }
+  ]
+ },
+ "outer-realms-thrall": {
+  "descrizione": "Una forma vagamente umanoide, spogliata di memoria e identità.",
+  "motivazioni": "Distruggere, disgustare, disorientare, intimidire",
+  "attacco": "Artigli e denti",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Gregario (13)",
+    "testo": "Il Servo è sconfitto quando subisce un danno qualsiasi. Per ogni 13 danni che un PG infligge al Servo, sconfiggi un altro Gregario a gittata che l'attacco avrebbe colpito."
+   },
+   {
+    "nome": "Attacco di gruppo",
+    "testo": "Spendi 1 Paura per scegliere un bersaglio e dare i riflettori a tutti i Servi dei Reami Esterni entro gittata Vicina da esso. Questi Gregari si muovono in Mischia con il bersaglio e fanno un unico tiro d'attacco condiviso. Se riesce, infliggono 11 danni fisici ciascuno. Somma questi danni."
+   }
+  ]
+ },
+ "volcanic-dragon-ashen-tyrant": {
+  "descrizione": "Nessun nemico ha mai avuto l'insolenza di ferire il drago in questo modo. Mentre la lava si assesta, si riduce in cenere come i nemici passati del drago.",
+  "motivazioni": "Soffocare, volare, intimidire, uccidere o essere ucciso",
+  "attacco": "Artigli e denti",
+  "esperienze": [
+   "Cacciare dall'alto"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (4)",
+    "testo": "Il Tiranno di cenere può ricevere i riflettori fino a quattro volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Messo all'angolo",
+    "testo": "Segna 1 Stress invece di spendere 1 Paura per dare i riflettori al Tiranno di cenere."
+   },
+   {
+    "nome": "Ali ferite",
+    "testo": "Mentre vola, il Tiranno di cenere ha un bonus di +1 alla Difficoltà."
+   },
+   {
+    "nome": "Cenere alla cenere",
+    "testo": "Quando un PG ottiene un fallimento mentre è entro gittata Vicina dal Tiranno di cenere, perde 1 Speranza e tu guadagni 1 Paura. Se il PG non può perdere Speranza, deve segnare 1 PF."
+   },
+   {
+    "nome": "Furia disperata",
+    "testo": "Segna 1 Stress per fare un attacco contro tutti i bersagli entro gittata Vicina. I bersagli colpiti subiscono 2d20+2 danni fisici, vengono scagliati fino a gittata Vicina dal punto in cui si trovavano e devono segnare 1 Stress."
+   },
+   {
+    "nome": "Nube di cenere",
+    "testo": "Spendi 1 Paura per colpire il terreno e sollevare cenere entro gittata Lontana. Dentro la nube di cenere, un bersaglio ha svantaggio ai tiri d'azione. La nube si dirada la prossima volta che un avversario riceve i riflettori."
+   },
+   {
+    "nome": "Dimenarsi apocalittico",
+    "testo": "Conto alla rovescia (1d12). Spendi 1 Paura per attivarlo. Scende ogni volta che un PG tira con Paura. Quando si attiva, il Tiranno di cenere si dimena provocando danni all'ambiente (come un terremoto, una valanga o il crollo di muri). Tutti i bersagli entro gittata Lontana devono fare un Tiro di reazione di Forza. Chi fallisce subisce 2d10+10 danni fisici ed è Trattenuto dalle macerie finché non si libera con un Tiro di Forza riuscito; chi riesce subisce metà danni. Se il Tiranno di cenere viene sconfitto mentre il conto alla rovescia è attivo, il conto si attiva subito: è la distruzione causata dai suoi spasmi di morte."
+   }
+  ]
+ },
+ "volcanic-dragon-molten-scourge": {
+  "descrizione": "Infuriato dalle ferite, il drago esplode in lava fusa.",
+  "motivazioni": "Inondare di lava, incenerire, respingere gli invasori, riposizionarsi",
+  "attacco": "Artigli ricoperti di lava",
+  "esperienze": [
+   "Cacciare dall'alto"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (3)",
+    "testo": "Il Flagello fuso può ricevere i riflettori fino a tre volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Scaglie incrinate",
+    "testo": "Quando il Flagello fuso subisce danni, tira tanti d6 quanti sono i PF segnati. Per ogni risultato di 4 o più, guadagni 1 Paura."
+   },
+   {
+    "nome": "Potenza devastante",
+    "testo": "Segna 1 Stress per fare un attacco contro un bersaglio entro gittata Molto vicina. Se riesce, il bersaglio subisce 4d8+1 danni fisici, perde 1 Speranza e viene scagliato fino a gittata Vicina. Il Flagello fuso libera 1 Stress."
+   },
+   {
+    "nome": "Eruzione",
+    "testo": "Spendi 1 Paura per far eruttare lava da sotto le scaglie del Flagello fuso, riempiendo di lava l'area entro gittata Molto vicina. Tutti i bersagli nell'area devono superare un Tiro di reazione di Agilità o subire 4d6+6 danni fisici ed essere scagliati fino a gittata Vicina. L'area resta coperta di lava: quando una creatura diversa dal Flagello fuso vi entra o vi agisce dentro, deve segnare 6 PF."
+   },
+   {
+    "nome": "Soffio vulcanico",
+    "testo": "Quando il Flagello fuso subisce un danno Grave, tira un d10. Con 8 o più, il Flagello fuso soffia una colata di lava davanti a sé entro gittata Lontana. Tutti i bersagli nell'area devono fare un Tiro di reazione di Agilità. Chi fallisce subisce 2d10+4 danni fisici, segna 1d4 Stress ed è Vulnerabile finché non libera 1 Stress; chi riesce subisce metà danni e deve segnare 1 Stress."
+   },
+   {
+    "nome": "Schizzi di lava",
+    "testo": "Quando il Flagello fuso subisce un danno Gravissimo da un attacco entro gittata Molto vicina, dalla ferita sgorga sangue fuso che infligge all'attaccante 2d10+4 danni fisici diretti."
+   },
+   {
+    "nome": "Vendetta di cenere (cambio di fase)",
+    "testo": "Quando il Flagello fuso segna il suo ultimo PF, sostituiscilo con il Tiranno di cenere e dagli subito i riflettori."
+   }
+  ]
+ },
+ "perfected-zombie": {
+  "descrizione": "Uno zombi torreggiante e muscoloso, con forza e abilità infuse dalla magia.",
+  "motivazioni": "Divorare, braccare, mutilare, terrorizzare",
+  "attacco": "Ascia bipenne",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Terrificante",
+    "testo": "Quando lo Zombi mette a segno un attacco, tutti i PG entro gittata Lontana perdono 1 Speranza e tu guadagni 1 Paura."
+   },
+   {
+    "nome": "Presenza spaventosa",
+    "testo": "I PG non possono spendere Speranza per usare capacità contro lo Zombi."
+   },
+   {
+    "nome": "Colpo perfetto",
+    "testo": "Segna 1 Stress per fare un attacco standard contro tutti i bersagli entro gittata Molto vicina. I bersagli colpiti sono Vulnerabili fino al loro prossimo riposo."
+   },
+   {
+    "nome": "Opportunista abile",
+    "testo": "Quando un altro avversario infligge danni a un bersaglio entro gittata Molto vicina dallo Zombi, puoi spendere 1 Paura per aggiungere al tiro di danno il danno dell'attacco standard dello Zombi."
+   }
+  ]
+ },
+ "volcanic-dragon-obsidian-predator": {
+  "descrizione": "Un'enorme creatura alata con scaglie d'ossidiana e artigli incredibilmente affilati.",
+  "motivazioni": "Difendere la tana, attaccare in picchiata, volare, cacciare, intimidire",
+  "attacco": "Artigli d'ossidiana",
+  "esperienze": [
+   "Cacciare dall'alto"
+  ],
+  "capacita": [
+   {
+    "nome": "Implacabile (2)",
+    "testo": "Il Predatore d'ossidiana può ricevere i riflettori fino a due volte per turno del GM. Spendi Paura come di consueto per dargli i riflettori."
+   },
+   {
+    "nome": "Volante",
+    "testo": "Mentre vola, il Predatore d'ossidiana ha un bonus di +3 alla Difficoltà."
+   },
+   {
+    "nome": "Scaglie d'ossidiana",
+    "testo": "Il Predatore d'ossidiana ha resistenza al danno fisico."
+   },
+   {
+    "nome": "Coda valanga",
+    "testo": "Segna 1 Stress per fare un attacco contro tutti i bersagli entro gittata Vicina. I bersagli colpiti subiscono 4d6+4 danni fisici, vengono scagliati fino a gittata Lontana e sono Vulnerabili fino al loro prossimo tiro con Speranza."
+   },
+   {
+    "nome": "Picchiata",
+    "testo": "Se il Predatore d'ossidiana sta volando, segna 1 Stress per scegliere un punto entro gittata Lontana. Si sposta in quel punto e fa un attacco contro tutti i bersagli entro gittata Molto vicina. I bersagli colpiti subiscono 2d10+6 danni fisici, devono segnare 1 Stress e perdono 1 Speranza."
+   },
+   {
+    "nome": "Rabbia eruttiva (cambio di fase)",
+    "testo": "Quando il Predatore d'ossidiana segna il suo ultimo PF, sostituiscilo con il Flagello fuso e dagli subito i riflettori."
+   }
+  ]
+ },
+ "zombie-legion": {
+  "descrizione": "Un grande branco di non morti, ancora potenti nonostante la carne putrefatta.",
+  "motivazioni": "Divorare cervelli, dilaniare la carne, circondare",
+  "attacco": "Tentacoli",
+  "esperienze": [],
+  "capacita": [
+   {
+    "nome": "Orda (2d6+5)",
+    "testo": "Quando la Legione ha segnato metà o più dei suoi PF, il suo attacco standard infligge invece 2d6+5 danni fisici."
+   },
+   {
+    "nome": "Inflessibile",
+    "testo": "La Legione ha resistenza al danno fisico."
+   },
+   {
+    "nome": "Implacabile (2)",
+    "testo": "La Legione può ricevere i riflettori fino a due volte per turno del GM. Spendi Paura come di consueto per darle i riflettori."
+   },
+   {
+    "nome": "Sopraffare",
+    "testo": "Quando la Legione subisce un danno Lieve da un attacco in Mischia, puoi segnare 1 Stress per fare un attacco standard con vantaggio contro l'attaccante."
+   }
+  ]
+ }
+}

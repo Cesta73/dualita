@@ -38,6 +38,9 @@ def environments():
         i += 1
         feats, cur = [], None
         for l in rows[i:]:
+            # p.103: il riquadro con l'elenco degli ambienti di Tier 4 (corpo 9-11) finisce in mezzo alle capacità (corpo 8)
+            if l.size > 8.5:
+                continue
             is_q = 'Slab' in l.font and l.italic
             fm = FEAT.match(l.text) if (l.spans[0][3].endswith('BoldItalic')) else None
             if fm:
