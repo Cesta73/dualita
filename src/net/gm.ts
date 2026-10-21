@@ -129,3 +129,23 @@ export async function setSpotlightTracker(tableId: string, enabled: boolean, tok
   const { error } = await supabase.from('game_tables').update({ spotlight_tracker: enabled, spotlight_tokens: tokens }).eq('id', tableId);
   if (error) fail(error);
 }
+
+// ─── Fase 5: riposi, bottino, salita di livello ────────────────────────────
+
+/** SRD p.41 – il GM avvia un riposo (il server tira la Paura) o lo chiude */
+export const startRest = (tableId: string, kind: 'breve' | 'lungo') => invoke<RollRecord>({ tipo: 'inizio-riposo', tableId, kind });
+export const endRest = (tableId: string) => invoke<{ ok: true }>({ tipo: 'fine-riposo', tableId });
+
+/** SRD p.41 – le due mosse di pausa del giocatore */
+export const downtimeMoves = (tableId: string, moves: { move: string; targetId?: string | null; withParty?: boolean }[]) =>
+  invoke<RollRecord>({ tipo: 'pausa', tableId, moves });
+
+/** SRD p.57, p.59 – il GM tira sulle tabelle del bottino */
+export const rollLootTable = (tableId: string, table: 'oggetti' | 'consumabili', rarity: string, dice: number) =>
+  invoke<RollRecord>({ tipo: 'bottino', tableId, table, rarity, dice });
+
+/** SRD p.42 – il GM fa salire di livello il gruppo (null = chiudi) */
+export async function setLevelUp(tableId: string, level: number | null) {
+  const { error } = await supabase.from('game_tables').update({ level_up_to: level }).eq('id', tableId);
+  if (error) fail(error);
+}

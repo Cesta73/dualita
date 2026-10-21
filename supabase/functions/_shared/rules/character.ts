@@ -112,10 +112,10 @@ export function ignoresBurden(classe: ClassInfo, multiclassId?: string | null): 
  * SRD p.5, p.44 – equipaggiamento iniziale: armi e armatura di Tier 1; una primaria a due mani,
  * oppure una primaria e una secondaria a una mano; armi magiche solo con un tratto da incantatore.
  */
-export function validateEquipment(c: Pick<CharacterChoices, 'classe' | 'sottoclasse' | 'primaryWeapon' | 'secondaryWeapon' | 'armor' | 'level'>): string[] {
+export function validateEquipment(c: Pick<CharacterChoices, 'classe' | 'sottoclasse' | 'primaryWeapon' | 'secondaryWeapon' | 'armor' | 'level' | 'multiclassId'>, opts: { requireAll?: boolean } = {}): string[] {
   const errors: string[] = [];
   const maxTier = tierForLevel(c.level);
-  if (!c.primaryWeapon) errors.push("Scegli un'arma primaria.");
+  if (!c.primaryWeapon && opts.requireAll !== false) errors.push("Scegli un'arma primaria.");
   if (c.primaryWeapon && c.primaryWeapon.categoria !== 'primaria') errors.push("L'arma primaria deve essere della categoria \"primaria\".");
   if (c.secondaryWeapon && c.secondaryWeapon.categoria !== 'secondaria') errors.push("L'arma secondaria deve essere della categoria \"secondaria\".");
   for (const w of [c.primaryWeapon, c.secondaryWeapon]) {
@@ -127,11 +127,11 @@ export function validateEquipment(c: Pick<CharacterChoices, 'classe' | 'sottocla
     }
   }
   const burden = (c.primaryWeapon?.impugnatura ?? 0) + (c.secondaryWeapon?.impugnatura ?? 0);
-  if (burden > MAX_BURDEN && !ignoresBurden(c.classe)) {
+  if (burden > MAX_BURDEN && !ignoresBurden(c.classe, c.multiclassId)) {
     errors.push('Le armi occupano più di due mani: con un\'arma primaria a due mani non puoi avere anche una secondaria.');
   }
-  if (!c.armor) errors.push("Scegli un'armatura.");
-  else if (c.armor.tier > maxTier) errors.push(`L'armatura "${c.armor.id}" è di Tier ${c.armor.tier}: al livello ${c.level} puoi usare fino al Tier ${maxTier}.`);
+  if (!c.armor && opts.requireAll !== false) errors.push("Scegli un'armatura.");
+  if (c.armor && c.armor.tier > maxTier) errors.push(`L'armatura "${c.armor.id}" è di Tier ${c.armor.tier}: al livello ${c.level} puoi usare fino al Tier ${maxTier}.`);
   return errors;
 }
 

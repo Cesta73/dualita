@@ -12,6 +12,8 @@ import { SceltaPersonaggio } from './componenti/SceltaPersonaggio';
 import { Paura } from './componenti/Paura';
 import { Bottone, Riquadro } from './componenti/Riquadro';
 import { RichiestaTiro } from './componenti/RichiestaTiro';
+import { RiposoGiocatore } from './componenti/RiposoGiocatore';
+import { SalitaLivello } from './personaggio/SalitaLivello';
 import { TiraDadi } from './componenti/TiraDadi';
 import { PannelloGM } from './gm/PannelloGM';
 import { SchedaGioco } from './scheda/SchedaGioco';
@@ -25,6 +27,7 @@ export default function Tavolo() {
   const [errore, setErrore] = useState<string | null>(null);
   const [mostraInvito, setMostraInvito] = useState(false);
   const [vista, setVista] = useState<'dadi' | 'scheda'>('dadi');
+  const [salitaAperta, setSalitaAperta] = useState(false);
 
   // Accesso anonimo e ricerca del tavolo
   useEffect(() => {
@@ -177,6 +180,24 @@ export default function Tavolo() {
               </div>
             </section>
           )}
+          {!isGm && io && mioPersonaggio && stato.table.rest_kind && io.rest_done !== stato.table.rest_id && (
+            <RiposoGiocatore key={stato.table.rest_id} tableId={tableId} kind={stato.table.rest_kind} personaggio={mioPersonaggio} onErrore={onErrore}
+              alleati={stato.members.filter((m) => m.user_id !== userId && m.character_id && stato.characters[m.character_id]).map((m) => stato.characters[m.character_id!])} />
+          )}
+          {!isGm && io && mioPersonaggio && stato.table.rest_kind && io.rest_done === stato.table.rest_id && (
+            <p role="status" className="rounded-2xl border border-bordo p-3 text-sm text-tenue">Hai fatto le tue mosse di pausa. Durante il riposo puoi spostare gratis le carte tra attive e Deposito dalla tua scheda.</p>
+          )}
+          {!isGm && mioPersonaggio && stato.table.level_up_to && mioPersonaggio.level < stato.table.level_up_to && (
+            salitaAperta ? (
+              <SalitaLivello key={`${mioPersonaggio.id}-${mioPersonaggio.level}`} pg={mioPersonaggio} livelloGruppo={stato.table.level_up_to} onErrore={onErrore}
+                onFatto={() => setSalitaAperta(false)} />
+            ) : (
+              <section role="alert" className="rounded-2xl border-2 border-accento bg-accento/10 p-4">
+                <p className="font-titolo text-xl">Il gruppo sale al livello {stato.table.level_up_to}!</p>
+                <Bottone variante="primario" className="mt-2 w-full" onClick={() => setSalitaAperta(true)}>Sali di livello ({mioPersonaggio.level} → {mioPersonaggio.level + 1})</Bottone>
+              </section>
+            )
+          )}
           {!isGm && io && <SceltaPersonaggio tableId={tableId} attuale={mioPersonaggio} onErrore={onErrore} />}
           {!isGm && io && mioPersonaggio && (
             <div className="flex gap-2" role="tablist" aria-label="Vista">
@@ -189,7 +210,7 @@ export default function Tavolo() {
             </div>
           )}
           {!isGm && io && (vista === 'dadi' || !mioPersonaggio) && <TiraDadi tableId={tableId} hope={mioPersonaggio ? mioPersonaggio.hope : io.hope} personaggio={mioPersonaggio} onErrore={onErrore} />}
-          {!isGm && mioPersonaggio && vista === 'scheda' && <SchedaGioco pg={mioPersonaggio} tableId={tableId} modificabile onErrore={onErrore} />}
+          {!isGm && mioPersonaggio && vista === 'scheda' && <SchedaGioco pg={mioPersonaggio} tableId={tableId} modificabile inRiposo={!!stato.table.rest_kind} onErrore={onErrore} />}
           {isGm && (
             <PannelloGM table={stato.table} members={stato.members} characters={stato.characters} requests={stato.requests}
               hidden={stato.hidden} adversaries={stato.adversaries} notes={stato.notes} fear={stato.fear} onErrore={onErrore} />

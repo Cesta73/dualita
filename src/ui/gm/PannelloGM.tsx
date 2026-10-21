@@ -5,11 +5,11 @@ import type { GlossaryKey } from '../../i18n/glossario';
 import { term } from '../../i18n/glossario';
 import type { CharacterRow } from '../../net/characters';
 import {
-  addAdversary, adversaryAttack, cancelRollRequest, createRollRequest, refillSpotlightTokens, removeAdversary, saveNotes,
+  addAdversary, adversaryAttack, endRest, rollLootTable, setLevelUp, startRest, cancelRollRequest, createRollRequest, refillSpotlightTokens, removeAdversary, saveNotes,
   setSpotlightTracker, updateAdversary, type EncounterAdversary, type RollRequest,
 } from '../../net/gm';
 import { adjustFear, type GameTable, type TableMember } from '../../net/tables';
-import { battleBudget, battlePointsSpent, type AdversaryTypeId } from '../../rules';
+import { battleBudget, battlePointsSpent, canTakeShortRest, LOOT_DICE, MAX_LEVEL, type AdversaryTypeId, type LootRarity } from '../../rules';
 import { Aiuto } from '../componenti/Aiuto';
 import { Bottone, Riquadro } from '../componenti/Riquadro';
 
@@ -288,6 +288,95 @@ function Ambiente() {
   );
 }
 
+// ─── Pausa, salita di livello, bottino (Fase 5) ────────────────────────────
+function Pausa({ table, members, characters, onErrore }: Props) {
+  const [inCorso, setInCorso] = useState(false);
+  const giocatori = members.filter((m) => m.role === 'player');
+  const esegui = async (f: () => Promise<unknown>) => {
+    setInCorso(true);
+    try { await f(); } catch (e) { onErrore(e as Error); } finally { setInCorso(false); }
+  };
+  const breveOk = canTakeShortRest(table.short_rests_in_row);
+  return (
+    <Riquadro titolo={<>{term('downtime')}<Aiuto termine="downtime">Riposo breve (circa un'ora): ognuno sceglie 2 mosse e libera 1d4+Tier; tu guadagni 1d4 Paura. Riposo lungo (una notte): si libera tutto; tu guadagni 1d4 Paura + 1 per PG. Dopo tre riposi brevi di fila serve un riposo lungo (SRD p.41).</Aiuto></>}>
+      {table.rest_kind ? (
+        <>
+          <p className="text-sm">Riposo <strong>{table.rest_kind}</strong> in corso. Mosse di pausa:</p>
+          <ul className="mt-1 space-y-1 text-sm">
+            {giocatori.map((m) => (
+              <li key={m.user_id}>{m.rest_done === table.rest_id ? '✓' : '⏳'} {nomeGiocatore(m, characters)}</li>
+            ))}
+          </ul>
+          <Bottone className="mt-3" disabled={inCorso} onClick={() => void esegui(() => endRest(table.id))}>Termina il riposo</Bottone>
+          <p className="mt-1 text-xs text-tenue">Se il riposo viene interrotto (es. da un attacco), chiudilo: chi non ha ancora scelto non ne ottiene i benefici.</p>
+        </>
+      ) : (
+        <>
+          <div className="flex flex-wrap gap-2">
+            <Bottone disabled={inCorso || !breveOk} onClick={() => void esegui(() => startRest(table.id, 'breve'))}>{term('shortRest')}</Bottone>
+            <Bottone variante="primario" disabled={inCorso} onClick={() => void esegui(() => startRest(table.id, 'lungo'))}>{term('longRest')}</Bottone>
+          </div>
+          <p className="mt-2 text-xs text-tenue">
+            Riposi brevi di fila: {table.short_rests_in_row} / 3{!breveOk && ' — ora serve un riposo lungo.'}
+          </p>
+        </>
+      )}
+    </Riquadro>
+  );
+}
+
+function SalitaDiLivello({ table, members, characters, onErrore }: Props) {
+  const pg = members.filter((m) => m.role === 'player' && m.character_id).map((m) => characters[m.character_id!]).filter(Boolean);
+  const livelloGruppo = pg.length ? Math.max(...pg.map((c) => c.level)) : 1;
+  const prossimo = Math.min(MAX_LEVEL, (table.level_up_to ?? livelloGruppo) + (table.level_up_to ? 0 : 1));
+  return (
+    <Riquadro titolo={<>Salita di livello<Aiuto termine="levelUp">Il gruppo sale di livello tutto insieme quando lo decidi tu, di solito dopo un traguardo narrativo (circa ogni 3 sessioni, SRD p.42). Ogni giocatore troverà la procedura guidata sul suo telefono.</Aiuto></>}>
+      {table.level_up_to ? (
+        <>
+          <p className="text-sm">Il gruppo sta salendo al <strong>livello {table.level_up_to}</strong>:</p>
+          <ul className="mt-1 space-y-1 text-sm">
+            {pg.map((c) => <li key={c.id}>{c.level >= table.level_up_to! ? '✓' : '⏳'} {c.name} (livello {c.level})</li>)}
+          </ul>
+          <Bottone className="mt-3" onClick={() => setLevelUp(table.id, null).catch(onErrore)}>Chiudi la salita di livello</Bottone>
+        </>
+      ) : (
+        <>
+          <p className="text-sm text-tenue">Livello attuale del gruppo: {livelloGruppo}.</p>
+          <Bottone className="mt-2" disabled={livelloGruppo >= MAX_LEVEL} onClick={() => setLevelUp(table.id, prossimo).catch(onErrore)}>
+            Fai salire il gruppo al livello {prossimo}
+          </Bottone>
+        </>
+      )}
+    </Riquadro>
+  );
+}
+
+const nomiRarita: Record<LootRarity, string> = { comune: 'Comune', 'non-comune': 'Non comune', raro: 'Raro', leggendario: 'Leggendario' };
+
+function Bottino({ table, onErrore }: Props) {
+  const [tabella, setTabella] = useState<'oggetti' | 'consumabili'>('oggetti');
+  const [rarita, setRarita] = useState<LootRarity>('comune');
+  const [dadi, setDadi] = useState(1);
+  const opzioni = LOOT_DICE[rarita];
+  return (
+    <Riquadro titolo={<>Bottino<Aiuto termine="loot">Scegli la rarità e quanti d12 tirare: il totale indica la voce della tabella (SRD p.57 oggetti, p.59 consumabili). Il risultato compare nel registro tiri di tutti.</Aiuto></>}>
+      <div className="flex flex-wrap gap-2">
+        <select className={stileInput} value={tabella} onChange={(e) => setTabella(e.target.value as 'oggetti' | 'consumabili')} aria-label="Tabella">
+          <option value="oggetti">Oggetti</option><option value="consumabili">Consumabili</option>
+        </select>
+        <select className={stileInput} value={rarita} aria-label="Rarità"
+          onChange={(e) => { const r = e.target.value as LootRarity; setRarita(r); setDadi(LOOT_DICE[r][0]); }}>
+          {(Object.keys(LOOT_DICE) as LootRarity[]).map((r) => <option key={r} value={r}>{nomiRarita[r]}</option>)}
+        </select>
+        <select className={stileInput} value={dadi} onChange={(e) => setDadi(Number(e.target.value))} aria-label="Dadi">
+          {opzioni.map((n) => <option key={n} value={n}>{n}d12</option>)}
+        </select>
+        <Bottone variante="primario" onClick={() => rollLootTable(table.id, tabella, rarita, dadi).catch(onErrore)}>Tira</Bottone>
+      </div>
+    </Riquadro>
+  );
+}
+
 // ─── Riflettori e note ─────────────────────────────────────────────────────
 function Riflettori({ table, onErrore }: Props) {
   return (
@@ -340,6 +429,9 @@ export function PannelloGM(p: Props) {
       <ChiediTiro {...p} />
       <Scontro {...p} />
       <Ambiente />
+      <Pausa {...p} />
+      <SalitaDiLivello {...p} />
+      <Bottino {...p} />
       <Riflettori {...p} />
       <Note {...p} />
     </div>

@@ -1,7 +1,7 @@
 // Bozza del personaggio durante la procedura guidata e conversione verso il motore delle regole.
 // Qui non ci sono regole di gioco: si collegano gli id scelti ai dati (src/data) e si chiama src/rules.
 import { armature, armi, carteDominio, classi, comunita, sottoclassi, stirpi } from '../../data';
-import { deriveStats, validateCharacter, type CharacterChoices, type DerivedStats, type Trait } from '../../rules';
+import { deriveStats, summarizeLevelUps, validateCharacter, type CharacterChoices, type DerivedStats, type LevelUpRecord, type Trait } from '../../rules';
 
 export interface Bozza {
   nome: string;
@@ -42,6 +42,12 @@ export interface CharacterData extends Omit<Bozza, 'traits'> {
   /** SRD p.42 – ogni cicatrice cancella uno slot Speranza */
   cicatrici?: number;
   note?: string;
+  /** Fase 5 – salite di livello già fatte (SRD p.42-43) */
+  livelli?: LevelUpRecord[];
+  /** Fase 5 – armi di riserva nell'inventario, al massimo 2 (SRD p.44) */
+  armiInventario?: string[];
+  /** SRD p.55 – Slot Armatura segnati delle armature tolte (id armatura → segnati) */
+  slotArmature?: Record<string, number>;
 }
 
 export const bozzaVuota = (): Bozza => ({
@@ -156,4 +162,38 @@ export function erroriPassi(b: Bozza): string[][] {
 export function datiDaSalvare(b: Bozza): CharacterData {
   const derived = valoriDerivati(b)!;
   return { ...b, traits: b.traits as Record<Trait, number>, derived };
+}
+
+// ─── Fase 5: scheda dopo salite di livello e cambi di equipaggiamento ─────
+
+/** Capacità di sottoclasse possedute oltre al fondamento: specializzazione, maestria, fondamento della multiclasse */
+export function capacitaSottoclasseExtra(data: CharacterData): string[] {
+  const p = summarizeLevelUps(data.livelli ?? []);
+  const s = trovaSottoclasse(data.subclassId);
+  const ids: string[] = [];
+  if (s && p.subclassStage >= 1) ids.push(...s.specializzazione.map((f) => f.id));
+  if (s && p.subclassStage >= 2) ids.push(...s.maestria.map((f) => f.id));
+  if (p.multiclass) ids.push(...(trovaSottoclasse(p.multiclass.subclassId)?.fondamento.map((f) => f.id) ?? []));
+  return ids;
+}
+
+/** Scelte per il motore delle regole a partire dai dati salvati (livello, avanzamenti, equipaggiamento attuale) */
+export function sceltePersonaggio(data: CharacterData): CharacterChoices | null {
+  const s = sceltePerRegole({ ...data, traits: data.traits });
+  if (!s) return null;
+  const progression = summarizeLevelUps(data.livelli ?? []);
+  return {
+    ...s,
+    level: progression.level,
+    progression,
+    extraSubclassFeatureIds: capacitaSottoclasseExtra(data),
+    multiclassId: progression.multiclass?.classId ?? null,
+    domainCards: (data.carte ?? []).map(trovaCarta).filter(Boolean) as NonNullable<ReturnType<typeof trovaCarta>>[],
+  };
+}
+
+/** Ricalcola i valori derivati (da usare dopo ogni salita di livello o cambio di equipaggiamento) */
+export function ricalcola(data: CharacterData): CharacterData {
+  const s = sceltePersonaggio(data);
+  return s ? { ...data, derived: deriveStats(s) } : data;
 }

@@ -1,6 +1,9 @@
 // Operazioni sul tavolo di gioco (tutte verificate dal database con la Row Level Security).
 import { FunctionsHttpError } from '@supabase/supabase-js';
-import type { ActionRollInput, ActionRollResult, AdversaryAttackInput, AdversaryAttackResult, DamageRollResult, DeathMove, DeathMoveResult } from '../rules';
+import type {
+  ActionRollInput, ActionRollResult, AdversaryAttackInput, AdversaryAttackResult, DamageRollResult, DeathMove, DeathMoveResult,
+  DowntimeMove, LootRarity, RestEffect, RestKind,
+} from '../rules';
 import { ensureSession } from './session';
 import { supabase } from './supabase';
 
@@ -13,6 +16,11 @@ export interface GameTable {
   spotlight_user_id: string | null;
   spotlight_tracker: boolean;
   spotlight_tokens: number;
+  /** Fase 5: riposo in corso, riposi brevi di fila, salita di livello avviata dal GM */
+  rest_kind: RestKind | null;
+  rest_id: string | null;
+  short_rests_in_row: number;
+  level_up_to: number | null;
   created_at: string;
 }
 
@@ -24,6 +32,8 @@ export interface TableMember {
   hope: number;
   character_id: string | null;
   tokens: number;
+  /** id del riposo in cui il giocatore ha già fatto le mosse di pausa */
+  rest_done: string | null;
   joined_at: string;
 }
 
@@ -47,7 +57,12 @@ export type AdversaryRoll = RollBase & {
   input: AdversaryAttackInput & { targetUserId: string; targetName: string; damageType: 'fisico' | 'magico' | 'fisico+magico'; adversaryId: string | null };
   result: AdversaryAttackResult;
 };
-export type RollRecord = ActionRoll | DamageRoll | DeathRoll | AdversaryRoll;
+export type RestRoll = RollBase & (
+  | { kind: 'riposo'; input: { phase: 'inizio'; kind: RestKind; players: number }; result: { roll: number; fear: number } }
+  | { kind: 'riposo'; input: { phase: 'mosse'; kind: RestKind; moves: DowntimeMove[]; names: Record<string, string>; self: string | null }; result: { effects: RestEffect[] } }
+);
+export type LootRoll = RollBase & { kind: 'bottino'; input: { rarity: LootRarity; table: 'oggetti' | 'consumabili'; dice: number }; result: { dice: number[]; total: number } };
+export type RollRecord = ActionRoll | DamageRoll | DeathRoll | AdversaryRoll | RestRoll | LootRoll;
 
 function fail(error: { message: string } | null): never {
   throw new Error(error?.message ?? 'Errore sconosciuto');

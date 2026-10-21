@@ -1,4 +1,5 @@
 // Riquadro esito di un tiro: tiro d'azione (due d12), tiro di danno o Mossa della Morte.
+import { consumabili, oggetti } from '../../data';
 import { undoRoll, type ActionRoll, type DamageRoll, type DeathRoll, type RollRecord } from '../../net/tables';
 import { consequenceLines, outcomeHint, outcomeTitle, outcomeTone, totalBreakdown } from '../esito';
 import { Dado } from './Dado';
@@ -9,6 +10,13 @@ const toni = {
   successo: 'text-successo',
   fallimento: 'text-fallimento',
 };
+
+const mossePausa: Record<string, string> = {
+  'tend-wounds': 'Curare le ferite', 'clear-stress': 'Liberare lo Stress', 'repair-armor': "Riparare l'armatura",
+  prepare: 'Prepararsi', project: 'Lavorare a un progetto',
+};
+const risorse: Record<string, string> = { hp: 'PF', stress: 'Stress', armor: 'Slot Armatura' };
+const rarita: Record<string, string> = { comune: 'comune', 'non-comune': 'non comune', raro: 'raro', leggendario: 'leggendario' };
 
 const mosse = { 'blaze-of-glory': 'Fine gloriosa', 'avoid-death': 'Evitare la morte', 'risk-it-all': 'Rischiare il tutto' };
 
@@ -36,6 +44,37 @@ function descrivi(roll: RollRecord, chi: string): { titolo: string; tono: string
       else { titolo += ': la Speranza vince'; tono = toni.speranza; righe.push(`${chi} resta in piedi e libera ${r.clearPoints} punti tra PF e Stress, divisi come preferisce.`); }
     }
     return { titolo, tono, suggerimento: 'Mossa della Morte (SRD p.42)', righe, totale: null };
+  }
+  if (roll.kind === 'riposo') {
+    const tipo = roll.input.kind === 'breve' ? 'breve' : 'lungo';
+    if (roll.input.phase === 'inizio') {
+      const r = roll.result as { roll: number; fear: number };
+      return {
+        titolo: `Riposo ${tipo}`, tono: toni.paura, totale: null,
+        suggerimento: 'Pausa (SRD p.41): ognuno sceglie 2 mosse di pausa; le carte si spostano gratis tra attive e Deposito.',
+        righe: [`Il GM guadagna ${r.fear} Paura (${tipo === 'breve' ? '1d4' : `1d4 + ${roll.input.players} PG`}: d4 = ${r.roll}).`],
+      };
+    }
+    const inp = roll.input;
+    const r = roll.result as { effects: { move: string; targetId: string | null; resource: string | null; amount: number | 'all'; roll?: number }[] };
+    const righe = r.effects.map((e) => {
+      const su = e.targetId ? (inp.names[e.targetId] ?? 'un alleato') : chi;
+      if (e.resource === 'hope') return `${mossePausa[e.move]}: ${chi} guadagna ${e.amount} Speranza${e.amount === 2 ? ' (insieme al gruppo)' : ''}.`;
+      if (!e.resource) return `${mossePausa[e.move]}: il progetto avanza (con l'approvazione del GM).`;
+      const quanto = e.amount === 'all' ? 'tutti i' : `${e.amount}`;
+      return `${mossePausa[e.move]}: ${su} libera ${quanto} ${risorse[e.resource]}${e.roll ? ` (d4 = ${e.roll} + Tier)` : ''}.`;
+    });
+    return { titolo: `Mosse di pausa (riposo ${tipo})`, tono: toni.speranza, suggerimento: 'SRD p.41', righe, totale: null };
+  }
+  if (roll.kind === 'bottino') {
+    const r = roll.result;
+    const tabella = roll.input.table === 'consumabili' ? consumabili : oggetti;
+    const voce = tabella.find((x) => x.tiro === r.total);
+    return {
+      titolo: voce ? voce.nome : `Totale ${r.total}`, tono: toni.speranza, totale: r.total,
+      suggerimento: `Bottino ${rarita[roll.input.rarity]} (${roll.input.dice}d12) dalla tabella ${roll.input.table === 'consumabili' ? 'dei consumabili (SRD p.59)' : 'degli oggetti (SRD p.57)'}`,
+      righe: [`Dadi: ${r.dice.join(' + ')} = ${r.total}`, ...(voce ? [voce.testo ?? voce.testoOriginale] : [])],
+    };
   }
   if (roll.kind === 'avversario') {
     const r = roll.result;
@@ -74,6 +113,9 @@ function Dadi({ roll, anima, piccolo }: { roll: RollRecord; anima: boolean; picc
   }
   if (roll.kind === 'avversario') {
     return <Dado valore={roll.result.d20} tipo="d6" anima={anima} piccolo={piccolo} />;
+  }
+  if (roll.kind === 'bottino') {
+    return <>{roll.result.dice.map((d, i) => <Dado key={i} valore={d} tipo="d6" anima={anima} piccolo />)}</>;
   }
   if (roll.kind === 'danno') {
     const r = (roll as DamageRoll).result;

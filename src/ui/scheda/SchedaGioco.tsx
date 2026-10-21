@@ -11,7 +11,10 @@ import {
 } from '../../rules';
 import { Aiuto } from '../componenti/Aiuto';
 import { Bottone, Riquadro } from '../componenti/Riquadro';
-import type { CharacterData } from '../personaggio/bozza';
+import { capacitaSottoclasseExtra, trovaClasse, trovaSottoclasse, type CharacterData } from '../personaggio/bozza';
+import { summarizeLevelUps } from '../../rules';
+import { sottoclassi } from '../../data';
+import { Equipaggiamento } from './Equipaggiamento';
 import { nomeGlossario } from '../personaggio/comuni';
 
 const segno = (n: number) => (n > 0 ? `+${n}` : `${n}`);
@@ -44,8 +47,10 @@ function Caselle({ etichetta, segnate, totale, colore, onImposta, disabilitato, 
   );
 }
 
-export function SchedaGioco({ pg, tableId, modificabile, onAggiornato, onErrore }: {
+export function SchedaGioco({ pg, tableId, modificabile, inRiposo = false, onAggiornato, onErrore }: {
   pg: CharacterRow;
+  /** C'è un riposo in corso al tavolo: carte e armi si scambiano gratis (SRD p.41, p.44) */
+  inRiposo?: boolean;
   /** Serve per tirare i dadi delle Mosse della Morte sul server */
   tableId?: string | null;
   modificabile: boolean;
@@ -112,9 +117,41 @@ export function SchedaGioco({ pg, tableId, modificabile, onAggiornato, onErrore 
       {modificabile && !caduto && <SubisciDanno pg={pg} salva={salva} />}
 
       <Condizioni pg={pg} stressPieno={stressPieno} modificabile={modificabile} salva={salva} />
-      <Carte pg={pg} modificabile={modificabile} salva={salva} />
+      <Carte pg={pg} modificabile={modificabile} salva={salva} riposoAlTavolo={inRiposo} />
+      <Equipaggiamento pg={pg} modificabile={modificabile} inRiposo={inRiposo} salva={salva} />
+      <Progressione pg={pg} />
       <Inventario pg={pg} modificabile={modificabile} salvaDati={salvaDati} />
     </div>
+  );
+}
+
+// ─── Livelli, sottoclasse e multiclasse (SRD p.42-43) ──────────────────────
+function Progressione({ pg }: { pg: CharacterRow }) {
+  const data = pg.data as CharacterData;
+  const livelli = data.livelli ?? [];
+  if (livelli.length === 0) return null;
+  const p = summarizeLevelUps(livelli);
+  const extra = new Set(capacitaSottoclasseExtra(data));
+  const capacita = sottoclassi.flatMap((s) => [...s.fondamento, ...s.specializzazione, ...s.maestria]).filter((f) => extra.has(f.id));
+  const multi = p.multiclass ? trovaClasse(p.multiclass.classId) : null;
+  return (
+    <Riquadro titolo={<>Livello {pg.level}<Aiuto termine="levelUp">Riepilogo di ciò che hai ottenuto salendo di livello (SRD p.42-43).</Aiuto></>}>
+      <p className="text-sm">
+        {term('proficiency')} {data.derived.proficiency} · sottoclasse {trovaSottoclasse(data.subclassId)?.nome}: {['fondamento', 'specializzazione', 'maestria'][p.subclassStage]}
+        {multi && <> · multiclasse <strong>{multi.nome}</strong> ({nomeGlossario(p.multiclass!.domain)}, {trovaSottoclasse(p.multiclass!.subclassId)?.nome})</>}
+      </p>
+      {p.markedTraits.length > 0 && <p className="text-sm text-tenue">Tratti segnati in questo Tier: {p.markedTraits.map((t) => term(t)).join(', ')}</p>}
+      {multi && (
+        <ul className="mt-2 space-y-1 text-sm">
+          {multi.capacitaDiClasse.map((f) => <li key={f.id}><strong>{f.nome}</strong> ({multi.nome}): <span className="whitespace-pre-line">{f.testo ?? f.testoOriginale}</span></li>)}
+        </ul>
+      )}
+      {capacita.length > 0 && (
+        <ul className="mt-2 space-y-1 text-sm">
+          {capacita.map((f) => <li key={f.id}><strong>{f.nome}</strong>: <span className="whitespace-pre-line">{f.testo ?? f.testoOriginale}</span></li>)}
+        </ul>
+      )}
+    </Riquadro>
   );
 }
 
@@ -273,12 +310,13 @@ function Condizioni({ pg, stressPieno, modificabile, salva }: {
 }
 
 // ─── Carte attive e Deposito (SRD p.8) ─────────────────────────────────────
-function Carte({ pg, modificabile, salva }: { pg: CharacterRow; modificabile: boolean; salva: (p: CharacterPatch, msg?: string) => Promise<void> }) {
+function Carte({ pg, modificabile, salva, riposoAlTavolo }: { pg: CharacterRow; modificabile: boolean; salva: (p: CharacterPatch, msg?: string) => Promise<void>; riposoAlTavolo: boolean }) {
   const data = pg.data as CharacterData;
   const tutte = data.carte ?? [];
   const attive = data.attive ?? tutte.slice(0, MAX_LOADOUT);
   const deposito = tutte.filter((c) => !attive.includes(c));
-  const [inRiposo, setInRiposo] = useState(false);
+  const [inRiposoManuale, setInRiposo] = useState(false);
+  const inRiposo = riposoAlTavolo || inRiposoManuale;
   const stressLiberi = data.derived.stressSlots - pg.stress_marked;
   const carta = (id: string) => carteDominio.find((c) => c.id === id)!;
 
@@ -323,7 +361,8 @@ function Carte({ pg, modificabile, salva }: { pg: CharacterRow; modificabile: bo
       {deposito.length > 0 && (
         <>
           <h4 className="mt-4 mb-2 font-titolo">{term('vault')}</h4>
-          {modificabile && (
+          {modificabile && riposoAlTavolo && <p className="mb-2 text-sm text-speranza">Riposo in corso: richiamo gratuito.</p>}
+          {modificabile && !riposoAlTavolo && (
             <label className="mb-2 flex items-center gap-2 text-sm text-tenue">
               <input type="checkbox" className="h-5 w-5 accent-accento" checked={inRiposo} onChange={(e) => setInRiposo(e.target.checked)} />
               Sono all'inizio di un riposo (richiamo gratuito)
