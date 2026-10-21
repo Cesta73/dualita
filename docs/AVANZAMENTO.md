@@ -57,3 +57,12 @@ traduzioni scritte da Claude e riviste da Gianluca dopo, con calma.
 - [x] Provato: personaggio creato dal telefono (Gianluca); scelta del personaggio al tavolo e tiro con tratti/Esperienze della scheda
 
 **Fase 2 completata il 21/10/2026.** Da fare con calma: Gianluca rilegge `docs/TRADUZIONI_FASE2.md`.
+
+## Fase 3 — Scheda e gestione in partita
+Decisione (21/10/2026): conseguenze "miste" — Speranza/Paura automatiche; Stress del critico, danni e armatura con un tocco; il GM può annullare un tiro.
+- [x] Regole: danni subiti (resistenza, immunità, danno diretto, Soglie, Slot Armatura, Danno Massiccio), Stress pieno, Mosse della Morte, carte attive/Deposito, oro, consumabili (`src/rules/sheet.ts`, 18 test)
+- [x] Database: tipi di tiro (azione/danno/morte), conseguenze applicate registrate, "annulla" del GM (`supabase/migrations/20261021090000_tiri_annulla.sql`)
+- [x] Funzione server: tiri di danno e Mosse della Morte (prova completa riuscita)
+- [x] Scheda interattiva: PF/Stress/Armatura/Speranza a caselle, Subisci danno, Mosse della Morte, condizioni, carte attive/Deposito, oro, consumabili, oggetti
+- [x] Al tavolo: schede "Dadi" e "La mia scheda"; attacchi con le armi, "Tira il danno", "Libera Stress" dopo un critico; il GM apre e modifica le schede dal nome
+- [ ] Prova di Gianluca sul telefono

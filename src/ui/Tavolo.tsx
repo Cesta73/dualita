@@ -12,6 +12,7 @@ import { SceltaPersonaggio } from './componenti/SceltaPersonaggio';
 import { Paura } from './componenti/Paura';
 import { Bottone, Riquadro } from './componenti/Riquadro';
 import { TiraDadi } from './componenti/TiraDadi';
+import { SchedaGioco } from './scheda/SchedaGioco';
 
 export default function Tavolo() {
   const { code = '' } = useParams();
@@ -21,6 +22,7 @@ export default function Tavolo() {
   const [nome, setNome] = useState(savedName);
   const [errore, setErrore] = useState<string | null>(null);
   const [mostraInvito, setMostraInvito] = useState(false);
+  const [vista, setVista] = useState<'dadi' | 'scheda'>('dadi');
 
   // Accesso anonimo e ricerca del tavolo
   useEffect(() => {
@@ -147,7 +149,18 @@ export default function Tavolo() {
       <div className="grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <div className="min-w-0 space-y-4">
           {!isGm && io && <SceltaPersonaggio tableId={tableId} attuale={mioPersonaggio} onErrore={onErrore} />}
-          {!isGm && io && <TiraDadi tableId={tableId} hope={mioPersonaggio ? mioPersonaggio.hope : io.hope} personaggio={mioPersonaggio} onErrore={onErrore} />}
+          {!isGm && io && mioPersonaggio && (
+            <div className="flex gap-2" role="tablist" aria-label="Vista">
+              {(['dadi', 'scheda'] as const).map((v) => (
+                <button key={v} type="button" role="tab" aria-selected={vista === v} onClick={() => setVista(v)}
+                  className={`min-h-11 flex-1 rounded-xl border px-3 ${vista === v ? 'border-accento bg-accento/15' : 'border-bordo text-tenue'}`}>
+                  {v === 'dadi' ? 'Dadi' : 'La mia scheda'}
+                </button>
+              ))}
+            </div>
+          )}
+          {!isGm && io && (vista === 'dadi' || !mioPersonaggio) && <TiraDadi tableId={tableId} hope={mioPersonaggio ? mioPersonaggio.hope : io.hope} personaggio={mioPersonaggio} onErrore={onErrore} />}
+          {!isGm && mioPersonaggio && vista === 'scheda' && <SchedaGioco pg={mioPersonaggio} tableId={tableId} modificabile onErrore={onErrore} />}
           {isGm && (
             <Riquadro titolo="Sei il GM">
               <p className="text-sm text-tenue">
@@ -157,18 +170,18 @@ export default function Tavolo() {
               </p>
             </Riquadro>
           )}
-          <div className="lg:hidden">{ultimo && <EsitoTiro roll={ultimo} nome={nomeDi(ultimo.user_id, ultimo.display_name)} anima={anima} />}</div>
+          <div className="lg:hidden">{ultimo && <EsitoTiro roll={ultimo} nome={nomeDi(ultimo.user_id, ultimo.display_name)} anima={anima} isGm={isGm} onErrore={onErrore} />}</div>
           <Partecipanti tableId={tableId} members={stato.members} characters={stato.characters} online={stato.online} me={userId} isGm={isGm} onErrore={onErrore} />
         </div>
 
         <div className="space-y-4">
           <Paura tableId={tableId} fear={stato.fear} isGm={isGm} visibile={stato.table.fear_visible} onErrore={onErrore} />
-          <div className="hidden lg:block">{ultimo && <EsitoTiro roll={ultimo} nome={nomeDi(ultimo.user_id, ultimo.display_name)} anima={anima} />}</div>
+          <div className="hidden lg:block">{ultimo && <EsitoTiro roll={ultimo} nome={nomeDi(ultimo.user_id, ultimo.display_name)} anima={anima} isGm={isGm} onErrore={onErrore} />}</div>
           <Riquadro titolo="Registro tiri">
             {stato.rolls.length === 0 ? (
               <p className="text-sm text-tenue">Ancora nessun tiro.</p>
             ) : (
-              <ul>{stato.rolls.slice(1).map((r) => <EsitoTiro key={r.id} roll={r} nome={nomeDi(r.user_id, r.display_name)} compatto />)}</ul>
+              <ul>{stato.rolls.slice(1).map((r) => <EsitoTiro key={r.id} roll={r} nome={nomeDi(r.user_id, r.display_name)} compatto isGm={isGm} onErrore={onErrore} />)}</ul>
             )}
           </Riquadro>
         </div>

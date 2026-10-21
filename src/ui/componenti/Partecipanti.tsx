@@ -33,7 +33,7 @@ export function Partecipanti({ tableId, members, characters, online, me, isGm, o
                 aria-label={presente ? 'Collegato' : 'Non collegato'}
               />
               <span className="min-w-0 font-medium">
-                {pg ? <Link to={`/personaggi/${pg.id}`} className="underline decoration-bordo underline-offset-4 hover:decoration-testo">{pg.name}</Link> : m.display_name}
+                {pg ? <Link to={`/personaggi/${pg.id}?tavolo=${tableId}`} className="underline decoration-bordo underline-offset-4 hover:decoration-testo">{pg.name}</Link> : m.display_name}
                 {m.user_id === me && <span className="text-tenue"> (tu)</span>}
                 {pg && <span className="block text-xs font-normal text-tenue">{m.display_name} · {descriviPersonaggio(pg)}</span>}
               </span>

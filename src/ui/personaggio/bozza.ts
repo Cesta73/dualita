@@ -34,6 +34,14 @@ export interface Bozza {
 export interface CharacterData extends Omit<Bozza, 'traits'> {
   traits: Record<Trait, number>;
   derived: DerivedStats;
+  /** In partita (Fase 3) */
+  attive?: string[];
+  inventario?: string[];
+  oro?: { handfuls: number; bags: number; chests: number };
+  consumabili?: Record<string, number>;
+  /** SRD p.42 – ogni cicatrice cancella uno slot Speranza */
+  cicatrici?: number;
+  note?: string;
 }
 
 export const bozzaVuota = (): Bozza => ({

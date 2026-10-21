@@ -52,6 +52,10 @@ export function useTable(tableId: string | null, userId: string | null) {
         const roll = p.new as RollRecord;
         setState((s) => (s.rolls.some((r) => r.id === roll.id) ? s : { ...s, rolls: [roll, ...s.rolls].slice(0, 50) }));
       })
+      .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'rolls', filter }, (p) => {
+        const roll = p.new as RollRecord;
+        setState((s) => ({ ...s, rolls: s.rolls.map((r) => (r.id === roll.id ? roll : r)) }));
+      })
       .on('postgres_changes', { event: '*', schema: 'public', table: 'table_members', filter }, () => {
         // un giocatore è entrato, ha cambiato nome o personaggio: ricarico membri e schede
         void reload();

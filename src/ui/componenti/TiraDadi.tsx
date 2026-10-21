@@ -3,8 +3,10 @@
 import { useEffect, useState } from 'react';
 import type { GlossaryKey } from '../../i18n/glossario';
 import { term } from '../../i18n/glossario';
-import type { CharacterRow } from '../../net/characters';
-import { requestRoll } from '../../net/tables';
+import { armi } from '../../data';
+import { updateCharacter, type CharacterRow } from '../../net/characters';
+import { requestDamageRoll, requestRoll, type ActionRoll } from '../../net/tables';
+import { changeStress, formatDice } from '../../rules';
 import type { Trait } from '../../rules';
 import { Aiuto } from './Aiuto';
 import { Bottone, Riquadro } from './Riquadro';
@@ -53,6 +55,8 @@ export function TiraDadi({ tableId, hope, personaggio, onErrore }: {
   const [usate, setUsate] = useState<Set<number>>(new Set());
   const [nuovaEsp, setNuovaEsp] = useState('');
   const [inCorso, setInCorso] = useState(false);
+  /** Ultimo tiro fatto da qui, con l'eventuale arma (per proporre danno e Stress) */
+  const [ultimo, setUltimo] = useState<{ roll: ActionRoll; armaId: string | null } | null>(null);
 
   useEffect(() => {
     try {
@@ -73,7 +77,7 @@ export function TiraDadi({ tableId, hope, personaggio, onErrore }: {
     setInCorso(true);
     try {
       const label = `${reazione ? 'Reazione' : 'Tiro'}${tratto ? ` di ${term(tratto)}` : ''}`;
-      await requestRoll(tableId, label, {
+      const roll = await requestRoll(tableId, label, {
         kind: reazione ? 'reaction' : 'action',
         traitModifier: valoreEffettivo,
         experiences: [...usate].map((i) => ({ name: elencoEsperienze[i].nome, bonus: elencoEsperienze[i].bonus })),
@@ -81,6 +85,7 @@ export function TiraDadi({ tableId, hope, personaggio, onErrore }: {
         disadvantage: vantaggio === 'svantaggio' ? 1 : 0,
         difficulty: conDifficolta ? difficolta : null,
       });
+      setUltimo({ roll, armaId: null });
       setUsate(new Set());
     } catch (e) {
       onErrore(e as Error);
@@ -88,6 +93,59 @@ export function TiraDadi({ tableId, hope, personaggio, onErrore }: {
       setInCorso(false);
     }
   };
+
+  /** SRD p.39, p.44 – attacco con un'arma: tiro d'azione con il tratto dell'arma contro la Difficoltà del bersaglio */
+  const attacca = async (armaId: string) => {
+    const w = scheda?.weapons.find((x) => x.id === armaId);
+    if (!w || inCorso || speranzaInsufficiente) return;
+    setInCorso(true);
+    try {
+      const nome = armi.find((a) => a.id === armaId)?.nome ?? armaId;
+      const roll = await requestRoll(tableId, `Attacco: ${nome}`, {
+        kind: 'action',
+        traitModifier: w.attackModifier,
+        experiences: [...usate].map((i) => ({ name: elencoEsperienze[i].nome, bonus: elencoEsperienze[i].bonus })),
+        advantage: vantaggio === 'vantaggio' ? 1 : 0,
+        disadvantage: vantaggio === 'svantaggio' ? 1 : 0,
+        difficulty: conDifficolta ? difficolta : null,
+        isAttack: true,
+      });
+      setUltimo({ roll, armaId });
+      setUsate(new Set());
+    } catch (e) {
+      onErrore(e as Error);
+    } finally {
+      setInCorso(false);
+    }
+  };
+
+  const tiraDanno = async () => {
+    const w = scheda?.weapons.find((x) => x.id === ultimo?.armaId);
+    if (!w || !ultimo) return;
+    try {
+      const nome = armi.find((a) => a.id === w.id)?.nome ?? w.id;
+      await requestDamageRoll(tableId, `Danno: ${nome}`, w.damage, ultimo.roll.result.consequences.criticalDamage);
+      setUltimo(null);
+    } catch (e) {
+      onErrore(e as Error);
+    }
+  };
+
+  // SRD p.36 – il critico libera 1 Stress (proposto con un tocco)
+  const liberaStress = async () => {
+    if (!personaggio || !ultimo) return;
+    try {
+      const r = changeStress(personaggio.stress_marked, -ultimo.roll.result.consequences.stressCleared, scheda!.stressSlots);
+      await updateCharacter(personaggio.id, { stress_marked: r.value });
+      setUltimo({ ...ultimo, roll: { ...ultimo.roll, result: { ...ultimo.roll.result, consequences: { ...ultimo.roll.result.consequences, stressCleared: 0 } } } });
+    } catch (e) {
+      onErrore(e as Error);
+    }
+  };
+
+  const daApplicare = ultimo && (
+    (ultimo.armaId && ultimo.roll.result.success) || (personaggio && ultimo.roll.result.consequences.stressCleared > 0 && personaggio.stress_marked > 0)
+  );
 
   // Scorciatoia da tastiera su computer: tasto "T" per tirare (se non si sta scrivendo).
   useEffect(() => {
@@ -185,6 +243,22 @@ export function TiraDadi({ tableId, hope, personaggio, onErrore }: {
           {speranzaInsufficiente && <p className="mt-1 text-sm text-fallimento">Non hai abbastanza Speranza ({hope}) per {costo} Esperienze.</p>}
         </div>
 
+        {scheda && scheda.weapons.length > 0 && (
+          <div>
+            <span className="mb-1 flex items-center text-sm text-tenue">
+              Attacchi
+              <Aiuto termine="attackRoll">Un attacco è un tiro d'azione con il tratto dell'arma, contro la Difficoltà del bersaglio. Se riesci, tiri il danno: tanti dadi quanto la tua Competenza.</Aiuto>
+            </span>
+            <div className="flex flex-wrap gap-2">
+              {scheda.weapons.map((w) => (
+                <Bottone key={w.id} type="button" disabled={inCorso || speranzaInsufficiente} onClick={() => void attacca(w.id)}>
+                  {armi.find((a) => a.id === w.id)?.nome} <span className="text-xs text-tenue">{w.attackModifier >= 0 ? '+' : ''}{w.attackModifier} · {formatDice(w.damage)}</span>
+                </Bottone>
+              ))}
+            </div>
+          </div>
+        )}
+
         <label className="flex items-center gap-2 text-sm text-tenue">
           <input type="checkbox" checked={reazione} onChange={(e) => setReazione(e.target.checked)} className="h-5 w-5 accent-accento" />
           {term('reactionRoll')}
@@ -196,6 +270,22 @@ export function TiraDadi({ tableId, hope, personaggio, onErrore }: {
           <span className="ml-2 hidden text-sm font-normal opacity-70 lg:inline">(tasto T)</span>
         </Bottone>
       </form>
+      {daApplicare && (
+        <div className="mt-4 space-y-2 rounded-xl border border-accento/50 bg-accento/10 p-3" role="status">
+          <p className="text-sm font-medium">Da applicare dopo l'ultimo tiro:</p>
+          <div className="flex flex-wrap gap-2">
+            {ultimo.armaId && ultimo.roll.result.success && (
+              <Bottone variante="primario" onClick={() => void tiraDanno()}>
+                Tira il danno {formatDice(scheda!.weapons.find((w) => w.id === ultimo.armaId)!.damage)}{ultimo.roll.result.consequences.criticalDamage ? ' (critico!)' : ''}
+              </Bottone>
+            )}
+            {personaggio && ultimo.roll.result.consequences.stressCleared > 0 && personaggio.stress_marked > 0 && (
+              <Bottone onClick={() => void liberaStress()}>Libera {ultimo.roll.result.consequences.stressCleared} Stress (critico)</Bottone>
+            )}
+            <Bottone variante="tenue" onClick={() => setUltimo(null)}>Chiudi</Bottone>
+          </div>
+        </div>
+      )}
     </Riquadro>
   );
 }

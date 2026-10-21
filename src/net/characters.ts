@@ -43,6 +43,14 @@ export async function createCharacter(name: string, data: CharacterData): Promis
   return row as CharacterRow;
 }
 
+export type CharacterPatch = Partial<Pick<CharacterRow, 'name' | 'level' | 'data' | 'hope' | 'hp_marked' | 'stress_marked' | 'armor_marked' | 'conditions'>>;
+
+export async function updateCharacter(id: string, patch: CharacterPatch): Promise<CharacterRow> {
+  const { data, error } = await supabase.from('characters').update(patch).eq('id', id).select().single();
+  if (error) fail(error);
+  return data as CharacterRow;
+}
+
 export async function deleteCharacter(id: string) {
   const { error } = await supabase.from('characters').delete().eq('id', id);
   if (error) fail(error);

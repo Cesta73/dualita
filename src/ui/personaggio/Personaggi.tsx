@@ -1,11 +1,12 @@
 // Elenco dei miei personaggi e pagina di una scheda salvata.
 import { useEffect, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { deleteCharacter, getCharacter, listMyCharacters, type CharacterRow } from '../../net/characters';
 import { ensureSession } from '../../net/session';
 import { Bottone, Riquadro } from '../componenti/Riquadro';
 import { caricaBozza, trovaClasse, trovaSottoclasse, trovaStirpe } from './bozza';
 import { RiepilogoPersonaggio } from './Riepilogo';
+import { SchedaGioco } from '../scheda/SchedaGioco';
 
 export function descriviPersonaggio(p: CharacterRow) {
   const d = p.data;
@@ -49,6 +50,8 @@ export function ElencoPersonaggi() {
 
 export function SchedaPersonaggio() {
   const { id = '' } = useParams();
+  const [params] = useSearchParams();
+  const tavolo = params.get('tavolo');
   const nav = useNavigate();
   const [p, setP] = useState<CharacterRow | null | undefined>(undefined);
   const [mio, setMio] = useState(false);
@@ -78,14 +81,22 @@ export function SchedaPersonaggio() {
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-6">
-      <Link to="/personaggi" className="text-sm text-tenue hover:text-testo">← I miei personaggi</Link>
-      <div className="mt-3">
+      {tavolo ? (
+        <button type="button" onClick={() => nav(-1)} className="text-sm text-tenue hover:text-testo">← Torna al tavolo</button>
+      ) : (
+        <Link to="/personaggi" className="text-sm text-tenue hover:text-testo">← I miei personaggi</Link>
+      )}
+      <h1 className="mt-2 font-titolo text-3xl">{p.name}</h1>
+      <div className="mt-3 grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+        {/* Il GM del tavolo può modificare la scheda: lo garantisce la Row Level Security */}
+        <SchedaGioco pg={p} tableId={tavolo} modificabile={mio || !!tavolo} onAggiornato={setP} onErrore={(e) => setErrore(e.message)} />
         <RiepilogoPersonaggio bozza={p.data} />
       </div>
-      <Riquadro className="mt-4">
-        <p className="text-sm text-tenue">Nella Fase 3 questa pagina diventerà la scheda interattiva (PF, Stress, armatura, condizioni, inventario).</p>
-        {mio && <Bottone className="mt-3" variante="tenue" onClick={() => void elimina()}>Elimina personaggio</Bottone>}
-      </Riquadro>
+      {mio && (
+        <Riquadro className="mt-4">
+          <Bottone variante="tenue" onClick={() => void elimina()}>Elimina personaggio</Bottone>
+        </Riquadro>
+      )}
       {errore && <p role="alert" className="mt-2 text-fallimento">{errore}</p>}
     </main>
   );

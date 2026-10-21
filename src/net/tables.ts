@@ -1,6 +1,6 @@
 // Operazioni sul tavolo di gioco (tutte verificate dal database con la Row Level Security).
 import { FunctionsHttpError } from '@supabase/supabase-js';
-import type { ActionRollInput, ActionRollResult } from '../rules';
+import type { ActionRollInput, ActionRollResult, DamageRollResult, DeathMove, DeathMoveResult } from '../rules';
 import { ensureSession } from './session';
 import { supabase } from './supabase';
 
@@ -23,16 +23,22 @@ export interface TableMember {
   joined_at: string;
 }
 
-export interface RollRecord {
+interface RollBase {
   id: string;
   table_id: string;
   user_id: string;
   display_name: string;
   label: string | null;
-  input: ActionRollInput;
-  result: ActionRollResult;
+  character_id: string | null;
+  /** Speranza e Paura davvero applicate dal tiro (per l'annulla) */
+  applied: { hope?: number; fear?: number };
+  undone_at: string | null;
   created_at: string;
 }
+export type ActionRoll = RollBase & { kind: 'azione'; input: ActionRollInput; result: ActionRollResult };
+export type DamageRoll = RollBase & { kind: 'danno'; input: { count: number; sides: number; bonus: number; critical: boolean }; result: DamageRollResult };
+export type DeathRoll = RollBase & { kind: 'morte'; input: { move: DeathMove; level: number }; result: DeathMoveResult };
+export type RollRecord = ActionRoll | DamageRoll | DeathRoll;
 
 function fail(error: { message: string } | null): never {
   throw new Error(error?.message ?? 'Errore sconosciuto');
@@ -93,9 +99,8 @@ export async function setFearVisible(tableId: string, visible: boolean) {
   if (error) fail(error);
 }
 
-/** Chiede al server di tirare i dadi (il risultato arriva a tutti tramite il tempo reale). */
-export async function requestRoll(tableId: string, label: string | null, input: ActionRollInput): Promise<RollRecord> {
-  const { data, error } = await supabase.functions.invoke('tira-dadi', { body: { tableId, label, ...input } });
+async function invokeRoll<T>(body: Record<string, unknown>): Promise<T> {
+  const { data, error } = await supabase.functions.invoke('tira-dadi', { body });
   if (error) {
     if (error instanceof FunctionsHttpError) {
       const body = await error.context.json().catch(() => null);
@@ -103,5 +108,26 @@ export async function requestRoll(tableId: string, label: string | null, input: 
     }
     throw new Error(error.message);
   }
-  return data as RollRecord;
+  return data as T;
+}
+
+/** Chiede al server di tirare i dadi (il risultato arriva a tutti tramite il tempo reale). */
+export function requestRoll(tableId: string, label: string | null, input: ActionRollInput) {
+  return invokeRoll<ActionRoll>({ tableId, label, ...input });
+}
+
+/** SRD p.39 – tiro di danno sul server */
+export function requestDamageRoll(tableId: string, label: string, dice: { count: number; sides: number; bonus: number }, critical: boolean) {
+  return invokeRoll<DamageRoll>({ tipo: 'danno', tableId, label, ...dice, critical });
+}
+
+/** SRD p.42 – Mossa della Morte sul server */
+export function requestDeathRoll(tableId: string, move: DeathMove, level: number) {
+  return invokeRoll<DeathRoll>({ tipo: 'morte', tableId, move, level });
+}
+
+/** Il GM annulla un tiro: tornano indietro Speranza e Paura che aveva dato */
+export async function undoRoll(rollId: string) {
+  const { error } = await supabase.rpc('undo_roll', { p_roll: rollId });
+  if (error) fail(error);
 }
