@@ -363,6 +363,32 @@ describe('Traduzioni di avversari e ambienti (Fase 4)', () => {
   });
 });
 
+describe('Traduzioni della Fase 5', () => {
+  // quali espressioni di dadi compaiono (non quante volte: la traduzione può evitare ripetizioni)
+  const dadi = (x: string) => [...new Set((x.match(/\d*d\d+(\+\d+)?/g) ?? []).map((d) => (d.startsWith('d') ? `1${d}` : d)))].sort().join(',');
+
+  it('tutte le carte dominio, le capacità di sottoclasse, armi, armature, oggetti e consumabili sono in italiano', () => {
+    for (const c of carteDominio) expect(c.testo, c.id).toBeTruthy();
+    for (const s of sottoclassi) for (const f of [...s.fondamento, ...s.specializzazione, ...s.maestria]) expect(f.testo, `${s.id}/${f.id}`).toBeTruthy();
+    for (const a of [...armi, ...armature].filter((x) => x.capacita)) expect(a.capacita!.testo, a.id).toBeTruthy();
+    for (const o of [...oggetti, ...consumabili]) expect(o.testo, o.id).toBeTruthy();
+  });
+
+  it('nei testi tradotti i dadi sono gli stessi dell\'SRD', () => {
+    const coppie: [string, string, string][] = [
+      ...carteDominio.map((c) => [c.id, c.testo!, c.testoOriginale] as [string, string, string]),
+      ...[...oggetti, ...consumabili].map((o) => [o.id, o.testo!, o.testoOriginale] as [string, string, string]),
+      ...sottoclassi.flatMap((s) => [...s.specializzazione, ...s.maestria].map((f) => [f.id, f.testo!, f.testoOriginale] as [string, string, string])),
+    ];
+    for (const [id, it, en] of coppie) expect(dadi(it), id).toBe(dadi(en));
+  });
+
+  it("p.132: il testo di \"Tempesta\" non finisce più in coda a \"Mani guaritrici\"", () => {
+    expect(carteDominio.find((c) => c.id === 'healing-hands')!.testoOriginale).not.toMatch(/Hurricane/);
+    expect(carteDominio.find((c) => c.id === 'tempest')!.testoOriginale).toMatch(/Sandstorm/);
+  });
+});
+
 describe('Testi estratti puliti', () => {
   it('nessun residuo di impaginazione nei testi', () => {
     const tutto = JSON.stringify([domini, classi, sottoclassi, stirpi, comunita, formeBestiali, carteDominio,

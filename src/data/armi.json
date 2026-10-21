@@ -870,7 +870,8 @@
       "id": "brutal",
       "nome": "Brutale",
       "nomeOriginale": "Brutal",
-      "testoOriginale": "When you roll the maximum value on a damage die, roll an additional damage die."
+      "testoOriginale": "When you roll the maximum value on a damage die, roll an additional damage die.",
+      "testo": "Quando un dado di danno dà il valore massimo, tira un dado di danno in più."
     },
     "pagina": 46
   },
@@ -892,7 +893,8 @@
       "id": "deadly",
       "nome": "Letale",
       "nomeOriginale": "Deadly",
-      "testoOriginale": "When you deal Severe damage, the target must mark an additional HP."
+      "testoOriginale": "When you deal Severe damage, the target must mark an additional HP.",
+      "testo": "Quando infliggi un danno Gravissimo, il bersaglio deve segnare 1 PF aggiuntivo."
     },
     "pagina": 46
   },
@@ -937,7 +939,8 @@
       "id": "scary",
       "nome": "Spaventosa",
       "nomeOriginale": "Scary",
-      "testoOriginale": "On a successful attack, the target must mark a Stress."
+      "testoOriginale": "On a successful attack, the target must mark a Stress.",
+      "testo": "Con un attacco riuscito, il bersaglio deve segnare 1 Stress."
     },
     "pagina": 46
   },
@@ -985,7 +988,8 @@
       "id": "reloading",
       "nome": "Da ricaricare",
       "nomeOriginale": "Reloading",
-      "testoOriginale": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+      "testoOriginale": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again.",
+      "testo": "Dopo aver fatto un attacco, tira un d6. Con 1 devi segnare 1 Stress per ricaricare l'arma prima di poter tirare di nuovo."
     },
     "pagina": 46
   },
@@ -1181,7 +1185,8 @@
       "id": "versatile",
       "nome": "Versatile",
       "nomeOriginale": "Versatile",
-      "testoOriginale": "This weapon can also be used with these statistics—Presence, Melee, d8+3."
+      "testoOriginale": "This weapon can also be used with these statistics—Presence, Melee, d8+3.",
+      "testo": "Quest'arma si può usare anche con queste statistiche: Presenza, Mischia, d8+3."
     },
     "pagina": 47
   },
@@ -1243,7 +1248,8 @@
       "id": "pompous",
       "nome": "Pomposa",
       "nomeOriginale": "Pompous",
-      "testoOriginale": "You must have a Presence of 0 or lower to use this weapon."
+      "testoOriginale": "You must have a Presence of 0 or lower to use this weapon.",
+      "testo": "Per usare quest'arma devi avere Presenza 0 o inferiore."
     },
     "pagina": 47
   },
@@ -1265,7 +1271,8 @@
       "id": "versatile",
       "nome": "Versatile",
       "nomeOriginale": "Versatile",
-      "testoOriginale": "This weapon can also be used with these statistics—Knowledge, Far, d6+3."
+      "testoOriginale": "This weapon can also be used with these statistics—Knowledge, Far, d6+3.",
+      "testo": "Quest'arma si può usare anche con queste statistiche: Conoscenza, Lontano, d6+3."
     },
     "pagina": 47
   },
@@ -1287,7 +1294,8 @@
       "id": "scary",
       "nome": "Spaventosa",
       "nomeOriginale": "Scary",
-      "testoOriginale": "On a successful attack, the target must mark a Stress."
+      "testoOriginale": "On a successful attack, the target must mark a Stress.",
+      "testo": "Con un attacco riuscito, il bersaglio deve segnare 1 Stress."
     },
     "pagina": 47
   },
@@ -1309,7 +1317,8 @@
       "id": "eruptive",
       "nome": "Eruttiva",
       "nomeOriginale": "Eruptive",
-      "testoOriginale": "On a successful attack against a target within Melee range, all other adversaries within Very Close range must succeed on a reaction roll (14) or take half damage."
+      "testoOriginale": "On a successful attack against a target within Melee range, all other adversaries within Very Close range must succeed on a reaction roll (14) or take half damage.",
+      "testo": "Con un attacco riuscito contro un bersaglio in Mischia, tutti gli altri avversari entro gittata Molto vicina devono superare un tiro di reazione (14) o subire metà del danno."
     },
     "pagina": 47
   },
@@ -1331,7 +1340,8 @@
       "id": "brutal",
       "nome": "Brutale",
       "nomeOriginale": "Brutal",
-      "testoOriginale": "When you roll the maximum value on a damage die, roll an additional damage die."
+      "testoOriginale": "When you roll the maximum value on a damage die, roll an additional damage die.",
+      "testo": "Quando un dado di danno dà il valore massimo, tira un dado di danno in più."
     },
     "pagina": 47
   },
@@ -1376,7 +1386,8 @@
       "id": "invigorating",
       "nome": "Rinvigorente",
       "nomeOriginale": "Invigorating",
-      "testoOriginale": "On a successful attack, roll a d4. On a result of 4, clear a Stress."
+      "testoOriginale": "On a successful attack, roll a d4. On a result of 4, clear a Stress.",
+      "testo": "Con un attacco riuscito, tira un d4. Con 4, libera 1 Stress."
     },
     "pagina": 47
   },
@@ -1398,7 +1409,8 @@
       "id": "persuasive",
       "nome": "Persuasiva",
       "nomeOriginale": "Persuasive",
-      "testoOriginale": "Before you make a Presence Roll, you can mark a Stress to gain a +2 bonus to the result."
+      "testoOriginale": "Before you make a Presence Roll, you can mark a Stress to gain a +2 bonus to the result.",
+      "testo": "Prima di fare un Tiro di Presenza, puoi segnare 1 Stress per ottenere +2 al risultato."
     },
     "pagina": 47
   },
@@ -1767,7 +1779,8 @@
       "id": "sharpwing",
       "nome": "Alatagliente",
       "nomeOriginale": "Sharpwing",
-      "testoOriginale": "Gain a bonus to your damage rolls equal to your Agility."
+      "testoOriginale": "Gain a bonus to your damage rolls equal to your Agility.",
+      "testo": "Ottieni ai tiri di danno un bonus pari alla tua Agilità."
     },
     "pagina": 48
   },
@@ -1789,7 +1802,8 @@
       "id": "brave",
       "nome": "Coraggiosa",
       "nomeOriginale": "Brave",
-      "testoOriginale": "-1 to Evasion; +3 to Severe damage threshold"
+      "testoOriginale": "-1 to Evasion; +3 to Severe damage threshold",
+      "testo": "−1 all'Evasione; +3 alla soglia Gravissimo"
     },
     "pagina": 48,
     "modificatori": {
@@ -1815,7 +1829,8 @@
       "id": "devastating",
       "nome": "Devastante",
       "nomeOriginale": "Devastating",
-      "testoOriginale": "Before you make an attack roll, you can mark a Stress to use a d20 as your damage die."
+      "testoOriginale": "Before you make an attack roll, you can mark a Stress to use a d20 as your damage die.",
+      "testo": "Prima di fare un tiro d'attacco, puoi segnare 1 Stress per usare un d20 come dado di danno."
     },
     "pagina": 48
   },
@@ -1863,7 +1878,8 @@
       "id": "dueling",
       "nome": "Da duello",
       "nomeOriginale": "Dueling",
-      "testoOriginale": "When there are no other creatures within Close range of the target, gain advantage on your attack roll against them."
+      "testoOriginale": "When there are no other creatures within Close range of the target, gain advantage on your attack roll against them.",
+      "testo": "Quando non ci sono altre creature entro gittata Vicina dal bersaglio, hai vantaggio al tiro d'attacco contro di lui."
     },
     "pagina": 48
   },
@@ -1885,7 +1901,8 @@
       "id": "retractable",
       "nome": "Retrattile",
       "nomeOriginale": "Retractable",
-      "testoOriginale": "The blade can be hidden in the hilt to avoid detection."
+      "testoOriginale": "The blade can be hidden in the hilt to avoid detection.",
+      "testo": "La lama si può nascondere nell'elsa per non farsi notare."
     },
     "pagina": 48
   },
@@ -1930,7 +1947,8 @@
       "id": "brutal",
       "nome": "Brutale",
       "nomeOriginale": "Brutal",
-      "testoOriginale": "When you roll the maximum value on a damage die, roll an additional damage die."
+      "testoOriginale": "When you roll the maximum value on a damage die, roll an additional damage die.",
+      "testo": "Quando un dado di danno dà il valore massimo, tira un dado di danno in più."
     },
     "pagina": 48
   },
@@ -1952,7 +1970,8 @@
       "id": "reloading",
       "nome": "Da ricaricare",
       "nomeOriginale": "Reloading",
-      "testoOriginale": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+      "testoOriginale": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again.",
+      "testo": "Dopo aver fatto un attacco, tira un d6. Con 1 devi segnare 1 Stress per ricaricare l'arma prima di poter tirare di nuovo."
     },
     "pagina": 48
   },
@@ -1974,7 +1993,8 @@
       "id": "versatile",
       "nome": "Versatile",
       "nomeOriginale": "Versatile",
-      "testoOriginale": "This weapon can also be used with these statistics—Agility, Melee, d10+5."
+      "testoOriginale": "This weapon can also be used with these statistics—Agility, Melee, d10+5.",
+      "testo": "Quest'arma si può usare anche con queste statistiche: Agilità, Mischia, d10+5."
     },
     "pagina": 48
   },
@@ -2340,7 +2360,8 @@
       "id": "concussive",
       "nome": "Contundente",
       "nomeOriginale": "Concussive",
-      "testoOriginale": "On a successful attack, you can spend a Hope to knock the target back to Far range."
+      "testoOriginale": "On a successful attack, you can spend a Hope to knock the target back to Far range.",
+      "testo": "Con un attacco riuscito, puoi spendere 1 Speranza per scagliare il bersaglio fino a gittata Lontana."
     },
     "pagina": 49
   },
@@ -2362,7 +2383,8 @@
       "id": "destructive",
       "nome": "Distruttiva",
       "nomeOriginale": "Destructive",
-      "testoOriginale": "-1 to Agility; on a successful attack, all adversaries within Very Close range must mark a Stress."
+      "testoOriginale": "-1 to Agility; on a successful attack, all adversaries within Very Close range must mark a Stress.",
+      "testo": "−1 all'Agilità; con un attacco riuscito, tutti gli avversari entro gittata Molto vicina devono segnare 1 Stress."
     },
     "pagina": 49,
     "modificatori": {
@@ -2389,7 +2411,8 @@
       "id": "serrated",
       "nome": "Seghettata",
       "nomeOriginale": "Serrated",
-      "testoOriginale": "When you roll a 1 on a damage die, it deals 8 damage instead."
+      "testoOriginale": "When you roll a 1 on a damage die, it deals 8 damage instead.",
+      "testo": "Quando un dado di danno dà 1, infligge invece 8 danni."
     },
     "pagina": 49
   },
@@ -2411,7 +2434,8 @@
       "id": "long",
       "nome": "Lunga",
       "nomeOriginale": "Long",
-      "testoOriginale": "This weapon's attack targets all adversaries in a line within range."
+      "testoOriginale": "This weapon's attack targets all adversaries in a line within range.",
+      "testo": "L'attacco di quest'arma colpisce tutti gli avversari allineati entro la gittata."
     },
     "pagina": 49
   },
@@ -2433,7 +2457,8 @@
       "id": "grappling",
       "nome": "Avvinghiante",
       "nomeOriginale": "Grappling",
-      "testoOriginale": "On a successful attack, you can spend a Hope to Restrain the target or pull them into Melee range with you."
+      "testoOriginale": "On a successful attack, you can spend a Hope to Restrain the target or pull them into Melee range with you.",
+      "testo": "Con un attacco riuscito, puoi spendere 1 Speranza per rendere Trattenuto il bersaglio o tirarlo in Mischia con te."
     },
     "pagina": 49
   },
@@ -2455,7 +2480,8 @@
       "id": "bouncing",
       "nome": "Rimbalzante",
       "nomeOriginale": "Bouncing",
-      "testoOriginale": "Mark 1 or more Stress to hit that many targets in range of the attack."
+      "testoOriginale": "Mark 1 or more Stress to hit that many targets in range of the attack.",
+      "testo": "Segna 1 o più Stress per colpire altrettanti bersagli entro la gittata dell'attacco."
     },
     "pagina": 49
   },
@@ -2503,7 +2529,8 @@
       "id": "reloading",
       "nome": "Da ricaricare",
       "nomeOriginale": "Reloading",
-      "testoOriginale": "After you make an attack, roll a d6. On a 1, you must mark a Stress to reload this weapon before you can fire it again."
+      "testoOriginale": "After you make an attack, roll a d6. On a 1, you must mark a Stress to reload this weapon before you can fire it again.",
+      "testo": "Dopo aver fatto un attacco, tira un d6. Con 1 devi segnare 1 Stress per ricaricare l'arma prima di poter tirare di nuovo."
     },
     "pagina": 49
   },
@@ -2650,7 +2677,8 @@
       "id": "versatile",
       "nome": "Versatile",
       "nomeOriginale": "Versatile",
-      "testoOriginale": "This weapon can also be used with these statistics—Presence, Melee, d8+6."
+      "testoOriginale": "This weapon can also be used with these statistics—Presence, Melee, d8+6.",
+      "testo": "Quest'arma si può usare anche con queste statistiche: Presenza, Mischia, d8+6."
     },
     "pagina": 50
   },
@@ -2712,7 +2740,8 @@
       "id": "hot",
       "nome": "Rovente",
       "nomeOriginale": "Hot",
-      "testoOriginale": "This weapon cuts through solid material."
+      "testoOriginale": "This weapon cuts through solid material.",
+      "testo": "Quest'arma taglia i materiali solidi."
     },
     "pagina": 50
   },
@@ -2734,7 +2763,8 @@
       "id": "lifestealing",
       "nome": "Rubavita",
       "nomeOriginale": "Lifestealing",
-      "testoOriginale": "On a successful attack, roll a d6. On a result of 6, clear a Hit Point or clear a Stress."
+      "testoOriginale": "On a successful attack, roll a d6. On a result of 6, clear a Hit Point or clear a Stress.",
+      "testo": "Con un attacco riuscito, tira un d6. Con 6, libera 1 PF o 1 Stress."
     },
     "pagina": 50
   },
@@ -2756,7 +2786,8 @@
       "id": "greedy",
       "nome": "Avida",
       "nomeOriginale": "Greedy",
-      "testoOriginale": "Spend a handful of gold to gain a +1 bonus to your Proficiency on a damage roll."
+      "testoOriginale": "Spend a handful of gold to gain a +1 bonus to your Proficiency on a damage roll.",
+      "testo": "Spendi una manciata d'oro per ottenere +1 alla Competenza in un tiro di danno."
     },
     "pagina": 50
   },
@@ -2801,7 +2832,8 @@
       "id": "painful",
       "nome": "Dolorosa",
       "nomeOriginale": "Painful",
-      "testoOriginale": "Each time you make a successful attack, you must mark a Stress."
+      "testoOriginale": "Each time you make a successful attack, you must mark a Stress.",
+      "testo": "Ogni volta che fai un attacco riuscito, devi segnare 1 Stress."
     },
     "pagina": 50
   },
@@ -2849,7 +2881,8 @@
       "id": "timebending",
       "nome": "Piegatempo",
       "nomeOriginale": "Timebending",
-      "testoOriginale": "You can choose the target of your attack after making your attack roll."
+      "testoOriginale": "You can choose the target of your attack after making your attack roll.",
+      "testo": "Puoi scegliere il bersaglio dell'attacco dopo aver fatto il tiro d'attacco."
     },
     "pagina": 50
   },
@@ -2871,7 +2904,8 @@
       "id": "reloading",
       "nome": "Da ricaricare",
       "nomeOriginale": "Reloading",
-      "testoOriginale": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+      "testoOriginale": "After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again.",
+      "testo": "Dopo aver fatto un attacco, tira un d6. Con 1 devi segnare 1 Stress per ricaricare l'arma prima di poter tirare di nuovo."
     },
     "pagina": 50
   },
@@ -2893,7 +2927,8 @@
       "id": "bonded",
       "nome": "Legata",
       "nomeOriginale": "Bonded",
-      "testoOriginale": "Gain a bonus to your damage rolls equal to your level."
+      "testoOriginale": "Gain a bonus to your damage rolls equal to your level.",
+      "testo": "Ottieni ai tiri di danno un bonus pari al tuo livello."
     },
     "pagina": 50
   },
@@ -3077,7 +3112,8 @@
       "id": "paired",
       "nome": "In coppia",
       "nomeOriginale": "Paired",
-      "testoOriginale": "+3 to primary weapon damage to targets within Melee range"
+      "testoOriginale": "+3 to primary weapon damage to targets within Melee range",
+      "testo": "+3 al danno dell'arma primaria contro bersagli in Mischia"
     },
     "pagina": 51
   },
@@ -3099,7 +3135,8 @@
       "id": "protective",
       "nome": "Protettiva",
       "nomeOriginale": "Protective",
-      "testoOriginale": "+2 to Armor Score"
+      "testoOriginale": "+2 to Armor Score",
+      "testo": "+2 al Punteggio Armatura"
     },
     "pagina": 51,
     "modificatori": {
@@ -3124,7 +3161,8 @@
       "id": "barrier",
       "nome": "Barriera",
       "nomeOriginale": "Barrier",
-      "testoOriginale": "+3 to Armor Score; -1 to Evasion"
+      "testoOriginale": "+3 to Armor Score; -1 to Evasion",
+      "testo": "+3 al Punteggio Armatura; −1 all'Evasione"
     },
     "pagina": 51,
     "modificatori": {
@@ -3150,7 +3188,8 @@
       "id": "paired",
       "nome": "In coppia",
       "nomeOriginale": "Paired",
-      "testoOriginale": "+3 to primary weapon damage to targets within Melee range"
+      "testoOriginale": "+3 to primary weapon damage to targets within Melee range",
+      "testo": "+3 al danno dell'arma primaria contro bersagli in Mischia"
     },
     "pagina": 51
   },
@@ -3235,7 +3274,8 @@
       "id": "double-duty",
       "nome": "Doppio uso",
       "nomeOriginale": "Double Duty",
-      "testoOriginale": "+1 to Armor Score; +1 to primary weapon damage within Melee range"
+      "testoOriginale": "+1 to Armor Score; +1 to primary weapon damage within Melee range",
+      "testo": "+1 al Punteggio Armatura; +1 al danno dell'arma primaria in Mischia"
     },
     "pagina": 51,
     "modificatori": {
@@ -3260,7 +3300,8 @@
       "id": "parry",
       "nome": "Parata",
       "nomeOriginale": "Parry",
-      "testoOriginale": "When you are attacked, roll this weapon's damage dice. If any of the attacker's damage dice rolled the same value as your dice, the matching results are discarded from the attacker's damage dice before the damage you take is totaled."
+      "testoOriginale": "When you are attacked, roll this weapon's damage dice. If any of the attacker's damage dice rolled the same value as your dice, the matching results are discarded from the attacker's damage dice before the damage you take is totaled.",
+      "testo": "Quando vieni attaccato, tira i dadi di danno di quest'arma. Se qualche dado di danno dell'attaccante ha lo stesso valore di uno dei tuoi, quei risultati vengono scartati dai dadi dell'attaccante prima di sommare il danno che subisci."
     },
     "pagina": 51
   },
@@ -3305,7 +3346,8 @@
       "id": "paired",
       "nome": "In coppia",
       "nomeOriginale": "Paired",
-      "testoOriginale": "+4 to primary weapon damage to targets within Melee range"
+      "testoOriginale": "+4 to primary weapon damage to targets within Melee range",
+      "testo": "+4 al danno dell'arma primaria contro bersagli in Mischia"
     },
     "pagina": 52
   },
@@ -3327,7 +3369,8 @@
       "id": "protective",
       "nome": "Protettiva",
       "nomeOriginale": "Protective",
-      "testoOriginale": "+3 to Armor Score"
+      "testoOriginale": "+3 to Armor Score",
+      "testo": "+3 al Punteggio Armatura"
     },
     "pagina": 52,
     "modificatori": {
@@ -3352,7 +3395,8 @@
       "id": "barrier",
       "nome": "Barriera",
       "nomeOriginale": "Barrier",
-      "testoOriginale": "+4 to Armor Score; -1 to Evasion"
+      "testoOriginale": "+4 to Armor Score; -1 to Evasion",
+      "testo": "+4 al Punteggio Armatura; −1 all'Evasione"
     },
     "pagina": 52,
     "modificatori": {
@@ -3378,7 +3422,8 @@
       "id": "paired",
       "nome": "In coppia",
       "nomeOriginale": "Paired",
-      "testoOriginale": "+4 to primary weapon damage to targets within Melee range"
+      "testoOriginale": "+4 to primary weapon damage to targets within Melee range",
+      "testo": "+4 al danno dell'arma primaria contro bersagli in Mischia"
     },
     "pagina": 52
   },
@@ -3463,7 +3508,8 @@
       "id": "deflecting",
       "nome": "Deviante",
       "nomeOriginale": "Deflecting",
-      "testoOriginale": "When you are attacked, you can mark an Armor Slot to gain a bonus to your Evasion equal to your Armor Score against the attack."
+      "testoOriginale": "When you are attacked, you can mark an Armor Slot to gain a bonus to your Evasion equal to your Armor Score against the attack.",
+      "testo": "Quando vieni attaccato, puoi segnare uno Slot Armatura per ottenere contro quell'attacco un bonus all'Evasione pari al tuo Punteggio Armatura."
     },
     "pagina": 52
   },
@@ -3485,7 +3531,8 @@
       "id": "charged",
       "nome": "Carica",
       "nomeOriginale": "Charged",
-      "testoOriginale": "Mark a Stress to gain a +1 bonus to your Proficiency on a primary weapon attack."
+      "testoOriginale": "Mark a Stress to gain a +1 bonus to your Proficiency on a primary weapon attack.",
+      "testo": "Segna 1 Stress per ottenere +1 alla Competenza in un attacco con l'arma primaria."
     },
     "pagina": 52
   },
@@ -3507,7 +3554,8 @@
       "id": "versatile",
       "nome": "Versatile",
       "nomeOriginale": "Versatile",
-      "testoOriginale": "This weapon can also be used with these statistics—Finesse, Close, d8+4."
+      "testoOriginale": "This weapon can also be used with these statistics—Finesse, Close, d8+4.",
+      "testo": "Quest'arma si può usare anche con queste statistiche: Destrezza, Vicino, d8+4."
     },
     "pagina": 52
   },
@@ -3529,7 +3577,8 @@
       "id": "paired",
       "nome": "In coppia",
       "nomeOriginale": "Paired",
-      "testoOriginale": "+5 to primary weapon damage to targets within Melee range"
+      "testoOriginale": "+5 to primary weapon damage to targets within Melee range",
+      "testo": "+5 al danno dell'arma primaria contro bersagli in Mischia"
     },
     "pagina": 52
   },
@@ -3551,7 +3600,8 @@
       "id": "protective",
       "nome": "Protettiva",
       "nomeOriginale": "Protective",
-      "testoOriginale": "+4 to Armor Score"
+      "testoOriginale": "+4 to Armor Score",
+      "testo": "+4 al Punteggio Armatura"
     },
     "pagina": 52,
     "modificatori": {
@@ -3576,7 +3626,8 @@
       "id": "barrier",
       "nome": "Barriera",
       "nomeOriginale": "Barrier",
-      "testoOriginale": "+5 to Armor Score; -1 to Evasion."
+      "testoOriginale": "+5 to Armor Score; -1 to Evasion.",
+      "testo": "+5 al Punteggio Armatura; −1 all'Evasione."
     },
     "pagina": 52,
     "modificatori": {
@@ -3602,7 +3653,8 @@
       "id": "paired",
       "nome": "In coppia",
       "nomeOriginale": "Paired",
-      "testoOriginale": "+5 to primary weapon damage to targets within Melee range"
+      "testoOriginale": "+5 to primary weapon damage to targets within Melee range",
+      "testo": "+5 al danno dell'arma primaria contro bersagli in Mischia"
     },
     "pagina": 52
   },
@@ -3687,7 +3739,8 @@
       "id": "sheltering",
       "nome": "Riparante",
       "nomeOriginale": "Sheltering",
-      "testoOriginale": "When you mark an Armor Slot, it reduces damage for you and all allies within Melee range of you who took the same damage."
+      "testoOriginale": "When you mark an Armor Slot, it reduces damage for you and all allies within Melee range of you who took the same damage.",
+      "testo": "Quando segni uno Slot Armatura, il danno si riduce per te e per tutti gli alleati in Mischia con te che hanno subito lo stesso danno."
     },
     "pagina": 52
   },
@@ -3709,7 +3762,8 @@
       "id": "doubled-up",
       "nome": "Raddoppiata",
       "nomeOriginale": "Doubled Up",
-      "testoOriginale": "When you make an attack with your primary weapon, you can deal damage to another target within Melee range."
+      "testoOriginale": "When you make an attack with your primary weapon, you can deal damage to another target within Melee range.",
+      "testo": "Quando attacchi con l'arma primaria, puoi infliggere danni a un altro bersaglio in Mischia."
     },
     "pagina": 52
   },
@@ -3731,7 +3785,8 @@
       "id": "locked-on",
       "nome": "Agganciato",
       "nomeOriginale": "Locked On",
-      "testoOriginale": "On a successful attack, your next attack against the same target with your primary weapon automatically succeeds."
+      "testoOriginale": "On a successful attack, your next attack against the same target with your primary weapon automatically succeeds.",
+      "testo": "Con un attacco riuscito, il tuo prossimo attacco con l'arma primaria contro lo stesso bersaglio riesce automaticamente."
     },
     "pagina": 52
   },

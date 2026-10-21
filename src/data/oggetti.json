@@ -5,7 +5,8 @@
     "nomeOriginale": "Premium Bedroll",
     "tiro": 1,
     "pagina": 57,
-    "testoOriginale": "During downtime, you automatically clear a Stress."
+    "testoOriginale": "During downtime, you automatically clear a Stress.",
+    "testo": "Durante la pausa liberi automaticamente 1 Stress."
   },
   {
     "id": "piper-whistle",
@@ -13,7 +14,8 @@
     "nomeOriginale": "Piper Whistle",
     "tiro": 2,
     "pagina": 57,
-    "testoOriginale": "This handcrafted whistle has a distinctive sound. When you blow this whistle, its piercing tone can be heard within a 1-mile radius."
+    "testoOriginale": "This handcrafted whistle has a distinctive sound. When you blow this whistle, its piercing tone can be heard within a 1-mile radius.",
+    "testo": "Questo fischietto fatto a mano ha un suono inconfondibile. Quando ci soffi dentro, il suo fischio acuto si sente nel raggio di circa un chilometro e mezzo."
   },
   {
     "id": "charging-quiver",
@@ -21,7 +23,8 @@
     "nomeOriginale": "Charging Quiver",
     "tiro": 3,
     "pagina": 57,
-    "testoOriginale": "When you succeed on an attack with an arrow stored in this quiver, gain a bonus to the damage roll equal to your current tier."
+    "testoOriginale": "When you succeed on an attack with an arrow stored in this quiver, gain a bonus to the damage roll equal to your current tier.",
+    "testo": "Quando metti a segno un attacco con una freccia presa da questa faretra, ottieni al tiro di danno un bonus pari al tuo Tier attuale."
   },
   {
     "id": "alistairs-torch",
@@ -29,7 +32,8 @@
     "nomeOriginale": "Alistair's Torch",
     "tiro": 4,
     "pagina": 57,
-    "testoOriginale": "You can light this magic torch at will. The flame's light fills a much larger space than it should, enough to illuminate a cave bright as day."
+    "testoOriginale": "You can light this magic torch at will. The flame's light fills a much larger space than it should, enough to illuminate a cave bright as day.",
+    "testo": "Puoi accendere questa torcia magica a volontà. La sua luce riempie uno spazio molto più grande del normale, abbastanza da illuminare una caverna a giorno."
   },
   {
     "id": "speaking-orbs",
@@ -37,7 +41,8 @@
     "nomeOriginale": "Speaking Orbs",
     "tiro": 5,
     "pagina": 57,
-    "testoOriginale": "This pair of orbs allows any creatures holding them to communicate with each other across any distance."
+    "testoOriginale": "This pair of orbs allows any creatures holding them to communicate with each other across any distance.",
+    "testo": "Questa coppia di sfere permette a chi le tiene in mano di comunicare tra loro a qualsiasi distanza."
   },
   {
     "id": "manacles",
@@ -45,7 +50,8 @@
     "nomeOriginale": "Manacles",
     "tiro": 6,
     "pagina": 57,
-    "testoOriginale": "This pair of locking cuffs comes with a key."
+    "testoOriginale": "This pair of locking cuffs comes with a key.",
+    "testo": "Un paio di manette con serratura, completo di chiave."
   },
   {
     "id": "arcane-cloak",
@@ -53,7 +59,8 @@
     "nomeOriginale": "Arcane Cloak",
     "tiro": 7,
     "pagina": 57,
-    "testoOriginale": "A creature with a Spellcast trait wearing this cloak can adjust its color, texture, and size at will."
+    "testoOriginale": "A creature with a Spellcast trait wearing this cloak can adjust its color, texture, and size at will.",
+    "testo": "Una creatura con un tratto da incantatore che indossa questo mantello può cambiarne colore, consistenza e dimensioni a volontà."
   },
   {
     "id": "woven-net",
@@ -61,7 +68,8 @@
     "nomeOriginale": "Woven Net",
     "tiro": 8,
     "pagina": 57,
-    "testoOriginale": "You can make a Finesse Roll using this net to trap a small creature. A trapped target can break free with a successful Attack Roll (16)."
+    "testoOriginale": "You can make a Finesse Roll using this net to trap a small creature. A trapped target can break free with a successful Attack Roll (16).",
+    "testo": "Puoi fare un Tiro di Destrezza usando questa rete per intrappolare una piccola creatura. Un bersaglio intrappolato può liberarsi con un Tiro d'attacco (16) riuscito."
   },
   {
     "id": "fire-jar",
@@ -69,7 +77,8 @@
     "nomeOriginale": "Fire Jar",
     "tiro": 9,
     "pagina": 57,
-    "testoOriginale": "You can pour out the strange liquid contents of this jar to instantly produce fire. The contents regenerate when you take a long rest."
+    "testoOriginale": "You can pour out the strange liquid contents of this jar to instantly produce fire. The contents regenerate when you take a long rest.",
+    "testo": "Puoi versare lo strano liquido contenuto in questa giara per produrre all'istante del fuoco. Il contenuto si rigenera quando fai un riposo lungo."
   },
   {
     "id": "suspended-rod",
@@ -77,7 +86,8 @@
     "nomeOriginale": "Suspended Rod",
     "tiro": 10,
     "pagina": 57,
-    "testoOriginale": "This flat rod is inscribed with runes. When you activate the rod, it is immediately suspended in place. Until the rod is deactivated, it can't move, doesn't abide by the rules of gravity, and remains in place."
+    "testoOriginale": "This flat rod is inscribed with runes. When you activate the rod, it is immediately suspended in place. Until the rod is deactivated, it can't move, doesn't abide by the rules of gravity, and remains in place.",
+    "testo": "Questa verga piatta è incisa di rune. Quando la attivi, resta subito sospesa dov'è. Finché non viene disattivata non si può muovere, non obbedisce alla gravità e resta al suo posto."
   },
   {
     "id": "glamour-stone",
@@ -85,7 +95,8 @@
     "nomeOriginale": "Glamour Stone",
     "tiro": 11,
     "pagina": 57,
-    "testoOriginale": "Activate this pebble-sized stone to memorize the appearance of someone you can see. Spend a Hope to magically recreate this guise on yourself as an illusion."
+    "testoOriginale": "Activate this pebble-sized stone to memorize the appearance of someone you can see. Spend a Hope to magically recreate this guise on yourself as an illusion.",
+    "testo": "Attiva questa pietruzza per memorizzare l'aspetto di qualcuno che puoi vedere. Spendi 1 Speranza per ricreare magicamente su di te quell'aspetto come illusione."
   },
   {
     "id": "empty-chest",
@@ -93,7 +104,8 @@
     "nomeOriginale": "Empty Chest",
     "tiro": 12,
     "pagina": 57,
-    "testoOriginale": "This magical chest appears empty. When you speak a specific trigger word or action and open the chest, you can see the items stored within it."
+    "testoOriginale": "This magical chest appears empty. When you speak a specific trigger word or action and open the chest, you can see the items stored within it.",
+    "testo": "Questo forziere magico sembra vuoto. Quando pronunci una parola o compi un gesto convenuto e lo apri, puoi vedere gli oggetti che contiene."
   },
   {
     "id": "companion-case",
@@ -101,7 +113,8 @@
     "nomeOriginale": "Companion Case",
     "tiro": 13,
     "pagina": 57,
-    "testoOriginale": "This case can fit a small animal companion. While the companion is inside, the animal and case are immune to all damage and harmful effects."
+    "testoOriginale": "This case can fit a small animal companion. While the companion is inside, the animal and case are immune to all damage and harmful effects.",
+    "testo": "In questa custodia può stare un piccolo animale compagno. Finché è dentro, l'animale e la custodia sono immuni a tutti i danni e agli effetti nocivi."
   },
   {
     "id": "piercing-arrows",
@@ -109,7 +122,8 @@
     "nomeOriginale": "Piercing Arrows",
     "tiro": 14,
     "pagina": 57,
-    "testoOriginale": "Three times per rest when you succeed on an attack with one of these arrows, you can add your Proficiency to the damage roll."
+    "testoOriginale": "Three times per rest when you succeed on an attack with one of these arrows, you can add your Proficiency to the damage roll.",
+    "testo": "Tre volte per riposo, quando metti a segno un attacco con una di queste frecce, puoi aggiungere la tua Competenza al tiro di danno."
   },
   {
     "id": "valorstone",
@@ -117,7 +131,8 @@
     "nomeOriginale": "Valorstone",
     "tiro": 15,
     "pagina": 57,
-    "testoOriginale": "You can attach this stone to armor that doesn't already have a feature. The armor gains the following feature. Resilient: Before you mark your last Armor Slot, roll a d6. On a result of 6, reduce the severity by one threshold without marking an Armor Slot."
+    "testoOriginale": "You can attach this stone to armor that doesn't already have a feature. The armor gains the following feature. Resilient: Before you mark your last Armor Slot, roll a d6. On a result of 6, reduce the severity by one threshold without marking an Armor Slot.",
+    "testo": "Puoi fissare questa pietra a un'armatura che non ha già una capacità. L'armatura ottiene questa capacità. Resiliente: prima di segnare il tuo ultimo Slot Armatura, tira un d6. Con 6, riduci la gravità di una soglia senza segnare lo Slot Armatura."
   },
   {
     "id": "skeleton-key",
@@ -125,7 +140,8 @@
     "nomeOriginale": "Skeleton Key",
     "tiro": 16,
     "pagina": 57,
-    "testoOriginale": "When you use this key to open a locked door, you gain advantage on the Finesse Roll."
+    "testoOriginale": "When you use this key to open a locked door, you gain advantage on the Finesse Roll.",
+    "testo": "Quando usi questa chiave per aprire una porta chiusa a chiave, hai vantaggio al Tiro di Destrezza."
   },
   {
     "id": "arcane-prism",
@@ -133,7 +149,8 @@
     "nomeOriginale": "Arcane Prism",
     "tiro": 17,
     "pagina": 57,
-    "testoOriginale": "Position this prism in a location of your choosing and activate it. All allies within Close range of it gain a +1 bonus to their Spellcast Rolls. While activated, the prism can't be moved. Once the prism is deactivated, it can't be activated again until your next long rest."
+    "testoOriginale": "Position this prism in a location of your choosing and activate it. All allies within Close range of it gain a +1 bonus to their Spellcast Rolls. While activated, the prism can't be moved. Once the prism is deactivated, it can't be activated again until your next long rest.",
+    "testo": "Sistema questo prisma in un punto a tua scelta e attivalo. Tutti gli alleati entro gittata Vicina dal prisma ottengono +1 ai Tiri da incantatore. Mentre è attivo, il prisma non si può spostare. Una volta disattivato, non si può riattivare fino al tuo prossimo riposo lungo."
   },
   {
     "id": "minor-stamina-potion-recipe",
@@ -141,7 +158,8 @@
     "nomeOriginale": "Minor Stamina Potion Recipe",
     "tiro": 18,
     "pagina": 57,
-    "testoOriginale": "As a downtime move, you can use the bone of a creature to craft a Minor Stamina Potion."
+    "testoOriginale": "As a downtime move, you can use the bone of a creature to craft a Minor Stamina Potion.",
+    "testo": "Come mossa di pausa, puoi usare l'osso di una creatura per preparare una Pozione di Vigore minore."
   },
   {
     "id": "minor-health-potion-recipe",
@@ -149,7 +167,8 @@
     "nomeOriginale": "Minor Health Potion Recipe",
     "tiro": 19,
     "pagina": 57,
-    "testoOriginale": "As a downtime move, you can use a vial of blood to craft a Minor Health Potion."
+    "testoOriginale": "As a downtime move, you can use a vial of blood to craft a Minor Health Potion.",
+    "testo": "Come mossa di pausa, puoi usare una fiala di sangue per preparare una Pozione di Salute minore."
   },
   {
     "id": "homing-compasses",
@@ -157,7 +176,8 @@
     "nomeOriginale": "Homing Compasses",
     "tiro": 20,
     "pagina": 57,
-    "testoOriginale": "These two compasses point toward each other no matter how far apart they are."
+    "testoOriginale": "These two compasses point toward each other no matter how far apart they are.",
+    "testo": "Queste due bussole puntano l'una verso l'altra, per quanto siano lontane."
   },
   {
     "id": "corrector-sprite",
@@ -165,7 +185,8 @@
     "nomeOriginale": "Corrector Sprite",
     "tiro": 21,
     "pagina": 57,
-    "testoOriginale": "This tiny sprite sits in the curve of your ear canal and whispers helpful advice during combat. Once per short rest, you can gain advantage on an attack roll."
+    "testoOriginale": "This tiny sprite sits in the curve of your ear canal and whispers helpful advice during combat. Once per short rest, you can gain advantage on an attack roll.",
+    "testo": "Questo minuscolo folletto si siede nella curva del tuo orecchio e durante il combattimento ti sussurra consigli utili. Una volta per riposo breve, puoi ottenere vantaggio a un tiro d'attacco."
   },
   {
     "id": "gecko-gloves",
@@ -173,7 +194,8 @@
     "nomeOriginale": "Gecko Gloves",
     "tiro": 22,
     "pagina": 57,
-    "testoOriginale": "You can climb up vertical surfaces and across ceilings."
+    "testoOriginale": "You can climb up vertical surfaces and across ceilings.",
+    "testo": "Puoi arrampicarti su superfici verticali e camminare sui soffitti."
   },
   {
     "id": "lorekeeper",
@@ -181,7 +203,8 @@
     "nomeOriginale": "Lorekeeper",
     "tiro": 23,
     "pagina": 57,
-    "testoOriginale": "You can store the name and details of up to three hostile creatures inside this book. You gain a +1 bonus to action rolls against those creatures."
+    "testoOriginale": "You can store the name and details of up to three hostile creatures inside this book. You gain a +1 bonus to action rolls against those creatures.",
+    "testo": "In questo libro puoi registrare il nome e i dettagli di un massimo di tre creature ostili. Ottieni +1 ai tiri d'azione contro quelle creature."
   },
   {
     "id": "vial-of-darksmoke-recipe",
@@ -189,7 +212,8 @@
     "nomeOriginale": "Vial of Darksmoke Recipe",
     "tiro": 24,
     "pagina": 58,
-    "testoOriginale": "As a downtime move, you can mark a Stress to craft a Vial of Darksmoke."
+    "testoOriginale": "As a downtime move, you can mark a Stress to craft a Vial of Darksmoke.",
+    "testo": "Come mossa di pausa, puoi segnare 1 Stress per preparare una Fiala di fumo nero."
   },
   {
     "id": "bloodstone",
@@ -197,7 +221,8 @@
     "nomeOriginale": "Bloodstone",
     "tiro": 25,
     "pagina": 58,
-    "testoOriginale": "You can attach this stone to a weapon that doesn't already have a feature. The weapon gains the following feature. Brutal: When you roll the maximum value on a damage die, roll an additional damage die."
+    "testoOriginale": "You can attach this stone to a weapon that doesn't already have a feature. The weapon gains the following feature. Brutal: When you roll the maximum value on a damage die, roll an additional damage die.",
+    "testo": "Puoi fissare questa pietra a un'arma che non ha già una capacità. L'arma ottiene questa capacità. Brutale: quando un dado di danno dà il valore massimo, tira un dado di danno in più."
   },
   {
     "id": "greatstone",
@@ -205,7 +230,8 @@
     "nomeOriginale": "Greatstone",
     "tiro": 26,
     "pagina": 58,
-    "testoOriginale": "You can attach this stone to a weapon that doesn't already have a feature. The weapon gains the following feature. Powerful: On a successful attack, roll an additional damage die and discard the lowest result."
+    "testoOriginale": "You can attach this stone to a weapon that doesn't already have a feature. The weapon gains the following feature. Powerful: On a successful attack, roll an additional damage die and discard the lowest result.",
+    "testo": "Puoi fissare questa pietra a un'arma che non ha già una capacità. L'arma ottiene questa capacità. Potente: con un attacco riuscito, tira un dado di danno in più e scarta il risultato più basso."
   },
   {
     "id": "glider",
@@ -213,7 +239,8 @@
     "nomeOriginale": "Glider",
     "tiro": 27,
     "pagina": 58,
-    "testoOriginale": "While falling, you can mark a Stress to deploy this small parachute and glide safely to the ground."
+    "testoOriginale": "While falling, you can mark a Stress to deploy this small parachute and glide safely to the ground.",
+    "testo": "Mentre cadi, puoi segnare 1 Stress per aprire questo piccolo paracadute e planare al suolo senza danni."
   },
   {
     "id": "ring-of-silence",
@@ -221,7 +248,8 @@
     "nomeOriginale": "Ring of Silence",
     "tiro": 28,
     "pagina": 58,
-    "testoOriginale": "Spend a Hope to activate this ring. Your footsteps are silent until your next rest."
+    "testoOriginale": "Spend a Hope to activate this ring. Your footsteps are silent until your next rest.",
+    "testo": "Spendi 1 Speranza per attivare questo anello. I tuoi passi sono silenziosi fino al tuo prossimo riposo."
   },
   {
     "id": "calming-pendant",
@@ -229,7 +257,8 @@
     "nomeOriginale": "Calming Pendant",
     "tiro": 29,
     "pagina": 58,
-    "testoOriginale": "When you would mark your last Stress, roll a d6. On a result of 5 or higher, don't mark it."
+    "testoOriginale": "When you would mark your last Stress, roll a d6. On a result of 5 or higher, don't mark it.",
+    "testo": "Quando dovresti segnare il tuo ultimo Stress, tira un d6. Con 5 o più, non lo segni."
   },
   {
     "id": "dual-flask",
@@ -237,7 +266,8 @@
     "nomeOriginale": "Dual Flask",
     "tiro": 30,
     "pagina": 58,
-    "testoOriginale": "This flask can hold two different liquids. You can swap between them by flipping a small switch on the flask's side."
+    "testoOriginale": "This flask can hold two different liquids. You can swap between them by flipping a small switch on the flask's side.",
+    "testo": "Questa fiasca può contenere due liquidi diversi. Puoi passare dall'uno all'altro azionando un piccolo interruttore sul fianco."
   },
   {
     "id": "bag-of-ficklesand",
@@ -245,7 +275,8 @@
     "nomeOriginale": "Bag of Ficklesand",
     "tiro": 31,
     "pagina": 58,
-    "testoOriginale": "You can convince this small bag of sand to be much heavier or lighter with a successful Presence Roll (10). Additionally, on a successful Finesse Roll (10), you can blow a bit of sand into a target's face to make them temporarily Vulnerable."
+    "testoOriginale": "You can convince this small bag of sand to be much heavier or lighter with a successful Presence Roll (10). Additionally, on a successful Finesse Roll (10), you can blow a bit of sand into a target's face to make them temporarily Vulnerable.",
+    "testo": "Con un Tiro di Presenza (10) riuscito puoi convincere questo sacchetto di sabbia a diventare molto più pesante o più leggero. Inoltre, con un Tiro di Destrezza (10) riuscito, puoi soffiare un po' di sabbia in faccia a un bersaglio per renderlo temporaneamente Vulnerabile."
   },
   {
     "id": "ring-of-resistance",
@@ -253,7 +284,8 @@
     "nomeOriginale": "Ring of Resistance",
     "tiro": 32,
     "pagina": 58,
-    "testoOriginale": "Once per long rest, you can activate this ring after a successful attack against you to halve the damage."
+    "testoOriginale": "Once per long rest, you can activate this ring after a successful attack against you to halve the damage.",
+    "testo": "Una volta per riposo lungo, puoi attivare questo anello dopo un attacco riuscito contro di te per dimezzare il danno."
   },
   {
     "id": "phoenix-feather",
@@ -261,7 +293,8 @@
     "nomeOriginale": "Phoenix Feather",
     "tiro": 33,
     "pagina": 58,
-    "testoOriginale": "If you have at least one Phoenix Feather on you when you fall unconscious, you gain a +1 bonus to the roll you make to determine whether you gain a scar."
+    "testoOriginale": "If you have at least one Phoenix Feather on you when you fall unconscious, you gain a +1 bonus to the roll you make to determine whether you gain a scar.",
+    "testo": "Se hai con te almeno una Piuma di fenice quando perdi i sensi, ottieni +1 al tiro che stabilisce se ricevi una cicatrice."
   },
   {
     "id": "box-of-many-goods",
@@ -269,7 +302,8 @@
     "nomeOriginale": "Box of Many Goods",
     "tiro": 34,
     "pagina": 58,
-    "testoOriginale": "Once per long rest, you can open this small box and roll a d12. On a result of 1-6, it's empty. On a result of 7-10, it contains one random common consumable. On a result of 11-12, it contains two random common consumables."
+    "testoOriginale": "Once per long rest, you can open this small box and roll a d12. On a result of 1-6, it's empty. On a result of 7-10, it contains one random common consumable. On a result of 11-12, it contains two random common consumables.",
+    "testo": "Una volta per riposo lungo, puoi aprire questa scatoletta e tirare un d12. Con 1-6 è vuota; con 7-10 contiene un consumabile comune casuale; con 11-12 ne contiene due."
   },
   {
     "id": "airblade-charm",
@@ -277,7 +311,8 @@
     "nomeOriginale": "Airblade Charm",
     "tiro": 35,
     "pagina": 58,
-    "testoOriginale": "You can attach this charm to a weapon with a Melee range. Three times per rest, you can activate the charm and attack a target within Close range."
+    "testoOriginale": "You can attach this charm to a weapon with a Melee range. Three times per rest, you can activate the charm and attack a target within Close range.",
+    "testo": "Puoi fissare questo amuleto a un'arma con gittata Mischia. Tre volte per riposo puoi attivarlo e attaccare un bersaglio entro gittata Vicina."
   },
   {
     "id": "portal-seed",
@@ -285,7 +320,8 @@
     "nomeOriginale": "Portal Seed",
     "tiro": 36,
     "pagina": 58,
-    "testoOriginale": "You can plant this seed in the ground to grow a portal in that spot. The portal is ready to use in 24 hours. You can use this portal to travel to any other location where you planted a portal seed. A portal can be destroyed by dealing any amount of magic damage to it."
+    "testoOriginale": "You can plant this seed in the ground to grow a portal in that spot. The portal is ready to use in 24 hours. You can use this portal to travel to any other location where you planted a portal seed. A portal can be destroyed by dealing any amount of magic damage to it.",
+    "testo": "Puoi piantare questo seme nel terreno per far crescere lì un portale, pronto all'uso in 24 ore. Con questo portale puoi viaggiare verso qualsiasi altro luogo dove hai piantato un seme del portale. Un portale si distrugge infliggendogli una qualsiasi quantità di danno magico."
   },
   {
     "id": "paragons-chain",
@@ -293,7 +329,8 @@
     "nomeOriginale": "Paragon's Chain",
     "tiro": 37,
     "pagina": 58,
-    "testoOriginale": "As a downtime move, you can meditate on an ideal or principle you hold dear and focus your will into this chain. Once per long rest, you can spend a Hope to roll a d20 as your Hope Die for rolls that directly align with that principle."
+    "testoOriginale": "As a downtime move, you can meditate on an ideal or principle you hold dear and focus your will into this chain. Once per long rest, you can spend a Hope to roll a d20 as your Hope Die for rolls that directly align with that principle.",
+    "testo": "Come mossa di pausa, puoi meditare su un ideale o un principio a cui tieni e concentrare la tua volontà in questa catena. Una volta per riposo lungo, puoi spendere 1 Speranza per tirare un d20 come Dado della Speranza nei tiri direttamente in linea con quel principio."
   },
   {
     "id": "elusive-amulet",
@@ -301,7 +338,8 @@
     "nomeOriginale": "Elusive Amulet",
     "tiro": 38,
     "pagina": 58,
-    "testoOriginale": "Once per long rest, you can activate this amulet to become Hidden until you move. While Hidden in this way, you remain unseen even if an adversary moves to where they would normally see you."
+    "testoOriginale": "Once per long rest, you can activate this amulet to become Hidden until you move. While Hidden in this way, you remain unseen even if an adversary moves to where they would normally see you.",
+    "testo": "Una volta per riposo lungo, puoi attivare questo amuleto per diventare Nascosto finché non ti muovi. Mentre sei Nascosto in questo modo resti invisibile anche se un avversario si sposta dove normalmente ti vedrebbe."
   },
   {
     "id": "hopekeeper-locket",
@@ -309,7 +347,8 @@
     "nomeOriginale": "Hopekeeper Locket",
     "tiro": 39,
     "pagina": 58,
-    "testoOriginale": "During a long rest, if you have 6 Hope, you can spend a Hope to imbue this locket with your bountiful resolve. When you have 0 Hope, you can use the locket to immediately gain a Hope. The locket must be re-imbued before it can be used this way again."
+    "testoOriginale": "During a long rest, if you have 6 Hope, you can spend a Hope to imbue this locket with your bountiful resolve. When you have 0 Hope, you can use the locket to immediately gain a Hope. The locket must be re-imbued before it can be used this way again.",
+    "testo": "Durante un riposo lungo, se hai 6 Speranza, puoi spenderne 1 per infondere nel medaglione la tua determinazione. Quando hai 0 Speranza, puoi usare il medaglione per guadagnare subito 1 Speranza. Va infuso di nuovo prima di poterlo riusare così."
   },
   {
     "id": "infinite-bag",
@@ -317,7 +356,8 @@
     "nomeOriginale": "Infinite Bag",
     "tiro": 40,
     "pagina": 58,
-    "testoOriginale": "When you store items in this bag, they are kept in a pocket dimension that never runs out of space. You can retrieve an item at any time."
+    "testoOriginale": "When you store items in this bag, they are kept in a pocket dimension that never runs out of space. You can retrieve an item at any time.",
+    "testo": "Gli oggetti che riponi in questa borsa finiscono in una dimensione tascabile dove lo spazio non finisce mai. Puoi riprendere un oggetto in qualsiasi momento."
   },
   {
     "id": "stride-relic",
@@ -325,7 +365,8 @@
     "nomeOriginale": "Stride Relic",
     "tiro": 41,
     "pagina": 58,
-    "testoOriginale": "You gain a +1 bonus to your Agility. You can only carry one relic."
+    "testoOriginale": "You gain a +1 bonus to your Agility. You can only carry one relic.",
+    "testo": "Ottieni +1 all'Agilità. Puoi portare con te una sola reliquia."
   },
   {
     "id": "bolster-relic",
@@ -333,7 +374,8 @@
     "nomeOriginale": "Bolster Relic",
     "tiro": 42,
     "pagina": 58,
-    "testoOriginale": "You gain a +1 bonus to your Strength. You can only carry one relic."
+    "testoOriginale": "You gain a +1 bonus to your Strength. You can only carry one relic.",
+    "testo": "Ottieni +1 alla Forza. Puoi portare con te una sola reliquia."
   },
   {
     "id": "control-relic",
@@ -341,7 +383,8 @@
     "nomeOriginale": "Control Relic",
     "tiro": 43,
     "pagina": 58,
-    "testoOriginale": "You gain a +1 bonus to your Finesse. You can only carry one relic."
+    "testoOriginale": "You gain a +1 bonus to your Finesse. You can only carry one relic.",
+    "testo": "Ottieni +1 alla Destrezza. Puoi portare con te una sola reliquia."
   },
   {
     "id": "attune-relic",
@@ -349,7 +392,8 @@
     "nomeOriginale": "Attune Relic",
     "tiro": 44,
     "pagina": 58,
-    "testoOriginale": "You gain a +1 bonus to your Instinct. You can only carry one relic."
+    "testoOriginale": "You gain a +1 bonus to your Instinct. You can only carry one relic.",
+    "testo": "Ottieni +1 all'Istinto. Puoi portare con te una sola reliquia."
   },
   {
     "id": "charm-relic",
@@ -357,7 +401,8 @@
     "nomeOriginale": "Charm Relic",
     "tiro": 45,
     "pagina": 58,
-    "testoOriginale": "You gain a +1 bonus to your Presence. You can only carry one relic."
+    "testoOriginale": "You gain a +1 bonus to your Presence. You can only carry one relic.",
+    "testo": "Ottieni +1 alla Presenza. Puoi portare con te una sola reliquia."
   },
   {
     "id": "enlighten-relic",
@@ -365,7 +410,8 @@
     "nomeOriginale": "Enlighten Relic",
     "tiro": 46,
     "pagina": 58,
-    "testoOriginale": "You gain a +1 bonus to your Knowledge. You can only carry one relic."
+    "testoOriginale": "You gain a +1 bonus to your Knowledge. You can only carry one relic.",
+    "testo": "Ottieni +1 alla Conoscenza. Puoi portare con te una sola reliquia."
   },
   {
     "id": "honing-relic",
@@ -373,7 +419,8 @@
     "nomeOriginale": "Honing Relic",
     "tiro": 47,
     "pagina": 58,
-    "testoOriginale": "You gain a +1 bonus to an Experience of your choice. You can only carry one relic."
+    "testoOriginale": "You gain a +1 bonus to an Experience of your choice. You can only carry one relic.",
+    "testo": "Ottieni +1 a un'Esperienza a tua scelta. Puoi portare con te una sola reliquia."
   },
   {
     "id": "flickerfly-pendant",
@@ -381,7 +428,8 @@
     "nomeOriginale": "Flickerfly Pendant",
     "tiro": 48,
     "pagina": 58,
-    "testoOriginale": "While you carry this pendant, your weapons with a Melee range that deal physical damage have a gossamer sheen and can attack targets within Very Close range."
+    "testoOriginale": "While you carry this pendant, your weapons with a Melee range that deal physical damage have a gossamer sheen and can attack targets within Very Close range.",
+    "testo": "Finché porti questo ciondolo, le tue armi con gittata Mischia che infliggono danno fisico hanno un riflesso sottile come una ragnatela e possono attaccare bersagli entro gittata Molto vicina."
   },
   {
     "id": "lakestrider-boots",
@@ -389,7 +437,8 @@
     "nomeOriginale": "Lakestrider Boots",
     "tiro": 49,
     "pagina": 58,
-    "testoOriginale": "You can walk on the surface of water as if it were soft ground."
+    "testoOriginale": "You can walk on the surface of water as if it were soft ground.",
+    "testo": "Puoi camminare sulla superficie dell'acqua come se fosse terreno morbido."
   },
   {
     "id": "clay-companion",
@@ -397,7 +446,8 @@
     "nomeOriginale": "Clay Companion",
     "tiro": 50,
     "pagina": 59,
-    "testoOriginale": "When you sculpt this ball of clay into a clay animal companion, it behaves as that animal. For example, a clay spider can spin clay webs, while a clay bird can fly. The clay companion retains memory and identity across different shapes, but they can adopt new mannerisms with each form."
+    "testoOriginale": "When you sculpt this ball of clay into a clay animal companion, it behaves as that animal. For example, a clay spider can spin clay webs, while a clay bird can fly. The clay companion retains memory and identity across different shapes, but they can adopt new mannerisms with each form.",
+    "testo": "Quando modelli questa palla d'argilla a forma di animale compagno, si comporta come quell'animale: per esempio, un ragno d'argilla tesse ragnatele d'argilla e un uccello d'argilla vola. Il compagno conserva memoria e identità nelle diverse forme, ma a ogni forma può prendere nuove abitudini."
   },
   {
     "id": "mythic-dust-recipe",
@@ -405,7 +455,8 @@
     "nomeOriginale": "Mythic Dust Recipe",
     "tiro": 51,
     "pagina": 59,
-    "testoOriginale": "As a downtime move, you can use a handful of fine gold dust to craft Mythic Dust."
+    "testoOriginale": "As a downtime move, you can use a handful of fine gold dust to craft Mythic Dust.",
+    "testo": "Come mossa di pausa, puoi usare una manciata di polvere d'oro fine per preparare la Polvere mitica."
   },
   {
     "id": "shard-of-memory",
@@ -413,7 +464,8 @@
     "nomeOriginale": "Shard of Memory",
     "tiro": 52,
     "pagina": 59,
-    "testoOriginale": "Once per long rest, you can spend 2 Hope to recall a domain card from your vault instead of paying its Recall Cost."
+    "testoOriginale": "Once per long rest, you can spend 2 Hope to recall a domain card from your vault instead of paying its Recall Cost.",
+    "testo": "Una volta per riposo lungo, puoi spendere 2 Speranza per richiamare una carta dominio dal Deposito invece di pagarne il costo di richiamo."
   },
   {
     "id": "gem-of-alacrity",
@@ -421,7 +473,8 @@
     "nomeOriginale": "Gem of Alacrity",
     "tiro": 53,
     "pagina": 59,
-    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Agility when making an attack with that weapon."
+    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Agility when making an attack with that weapon.",
+    "testo": "Puoi fissare questa gemma a un'arma: potrai usare l'Agilità quando attacchi con quell'arma."
   },
   {
     "id": "gem-of-might",
@@ -429,7 +482,8 @@
     "nomeOriginale": "Gem of Might",
     "tiro": 54,
     "pagina": 59,
-    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Strength when making an attack with that weapon."
+    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Strength when making an attack with that weapon.",
+    "testo": "Puoi fissare questa gemma a un'arma: potrai usare la Forza quando attacchi con quell'arma."
   },
   {
     "id": "gem-of-precision",
@@ -437,7 +491,8 @@
     "nomeOriginale": "Gem of Precision",
     "tiro": 55,
     "pagina": 59,
-    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Finesse when making an attack with that weapon."
+    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Finesse when making an attack with that weapon.",
+    "testo": "Puoi fissare questa gemma a un'arma: potrai usare la Destrezza quando attacchi con quell'arma."
   },
   {
     "id": "gem-of-insight",
@@ -445,7 +500,8 @@
     "nomeOriginale": "Gem of Insight",
     "tiro": 56,
     "pagina": 59,
-    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Instinct when making an attack with that weapon."
+    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Instinct when making an attack with that weapon.",
+    "testo": "Puoi fissare questa gemma a un'arma: potrai usare l'Istinto quando attacchi con quell'arma."
   },
   {
     "id": "gem-of-audacity",
@@ -453,7 +509,8 @@
     "nomeOriginale": "Gem of Audacity",
     "tiro": 57,
     "pagina": 59,
-    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Presence when making an attack with that weapon."
+    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Presence when making an attack with that weapon.",
+    "testo": "Puoi fissare questa gemma a un'arma: potrai usare la Presenza quando attacchi con quell'arma."
   },
   {
     "id": "gem-of-sagacity",
@@ -461,7 +518,8 @@
     "nomeOriginale": "Gem of Sagacity",
     "tiro": 58,
     "pagina": 59,
-    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Knowledge when making an attack with that weapon."
+    "testoOriginale": "You can attach this gem to a weapon, allowing you to use your Knowledge when making an attack with that weapon.",
+    "testo": "Puoi fissare questa gemma a un'arma: potrai usare la Conoscenza quando attacchi con quell'arma."
   },
   {
     "id": "ring-of-unbreakable-resolve",
@@ -469,7 +527,8 @@
     "nomeOriginale": "Ring of Unbreakable Resolve",
     "tiro": 59,
     "pagina": 59,
-    "testoOriginale": "Once per session, when the GM spends a Fear, you can spend 4 Hope to cancel the effects of that spent Fear."
+    "testoOriginale": "Once per session, when the GM spends a Fear, you can spend 4 Hope to cancel the effects of that spent Fear.",
+    "testo": "Una volta per sessione, quando il GM spende 1 Paura, puoi spendere 4 Speranza per annullare gli effetti di quella Paura spesa."
   },
   {
     "id": "belt-of-unity",
@@ -477,6 +536,7 @@
     "nomeOriginale": "Belt of Unity",
     "tiro": 60,
     "pagina": 59,
-    "testoOriginale": "Once per session, you can spend 5 Hope to lead a Tag Team Roll with three PCs instead of two."
+    "testoOriginale": "Once per session, you can spend 5 Hope to lead a Tag Team Roll with three PCs instead of two.",
+    "testo": "Una volta per sessione, puoi spendere 5 Speranza per guidare un Tiro di Squadra con tre PG invece di due."
   }
 ]

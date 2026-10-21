@@ -9,7 +9,7 @@ import {
 } from '../../rules';
 import { Aiuto } from '../componenti/Aiuto';
 import { Bottone, Riquadro } from '../componenti/Riquadro';
-import { sceltePersonaggio, trovaClasse, trovaSottoclasse, type CharacterData } from './bozza';
+import { ricalcola, sceltePersonaggio, trovaClasse, trovaSottoclasse, type CharacterData } from './bozza';
 import { nomeGlossario } from './comuni';
 
 const NOMI: Record<AdvancementId, string> = {
@@ -90,9 +90,13 @@ export function SalitaLivello({ pg, livelloGruppo, onFatto, onErrore }: {
     cardBenefits: beneficiCarta, exchange: scambio && scambio.removeId && scambio.addId ? scambio : null,
   };
   const posseduti = data.carte ?? [];
+  // Scuola della Conoscenza: "Provetto" e "Brillante" danno una carta dominio in più (SRD p.25)
+  const prossimaSottoclasse = progression.subclassStage === 0 ? sottoclasse?.specializzazione : sottoclasse?.maestria;
+  const sottoclasseDaCarta = !!prossimaSottoclasse?.some((f) => f.id === 'accomplished' || f.id === 'brilliant');
   const errori = validateLevelUp({
     progression, classe, classes: classi, subclasses: sottoclassi, ownedCardIds: posseduti,
     findCard: (id) => carteDominio.find((c) => c.id === id), experienceCount: data.derived.experiences.length,
+    subclassGrantsCard: sottoclasseDaCarta,
   }, record);
 
   // Anteprima dei nuovi valori
@@ -169,6 +173,7 @@ export function SalitaLivello({ pg, livelloGruppo, onFatto, onErrore }: {
             <div className="mt-2 text-sm">
               <p className="text-tenue">{progression.subclassStage === 0 ? 'Specializzazione' : 'Maestria'} di {sottoclasse?.nome}:</p>
               {prossima.map((f) => <p key={f.id} className="mt-1"><strong>{f.nome}</strong>: {f.testo ?? f.testoOriginale}</p>)}
+              {sottoclasseDaCarta && <div className="mt-2">{selCarta(a.cardId ?? '', (id) => cambiaAv(i, { ...a, cardId: id }), [carta])}</div>}
             </div>
           ) : <p className="mt-2 text-sm text-tenue">Hai già la maestria.</p>
         )}
@@ -201,15 +206,14 @@ export function SalitaLivello({ pg, livelloGruppo, onFatto, onErrore }: {
     try {
       // Carte nuove: avanzamento "carta in più", carta del passo 4, scambio
       let carte = [...posseduti];
-      const nuove = [...avanzamenti.filter((a) => a.id === 'domain-card' && a.cardId).map((a) => a.cardId!), carta];
+      const nuove = [...avanzamenti.filter((a) => (a.id === 'domain-card' || a.id === 'subclass') && a.cardId).map((a) => a.cardId!), carta];
       if (record.exchange) { carte = carte.filter((c) => c !== record.exchange!.removeId); nuove.push(record.exchange.addId); }
       carte.push(...nuove);
       // SRD p.43 – la nuova carta va tra le attive se c'è posto, altrimenti nel Deposito
       let attive = (data.attive ?? posseduti.slice(0, MAX_LOADOUT)).filter((c) => carte.includes(c));
       for (const id of nuove) if (attive.length < MAX_LOADOUT && !CARDS_WITH_BENEFITS.includes(id)) attive = [...attive, id];
       const nuovo: CharacterData = { ...data, carte, attive, livelli: [...precedenti, record] };
-      const derived = anteprima!;
-      const salvato = await updateCharacter(pg.id, { level: livello, data: { ...nuovo, derived } });
+      const salvato = await updateCharacter(pg.id, { level: livello, data: ricalcola(nuovo) });
       onFatto(salvato);
     } catch (e) {
       onErrore(e as Error);

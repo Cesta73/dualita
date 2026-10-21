@@ -44,7 +44,20 @@ def extract():
         i += 1
     cur['testoOriginale'] = join_text(body)
     cards.append(cur)
+    fix_overflow(cards)
     return cards
+
+
+def fix_overflow(cards):
+    """p.132: la fine di "Tempest" continua nella colonna accanto e finisce in coda a "Healing Hands"."""
+    by = {c['id']: c for c in cards}
+    hh, te = by.get('healing-hands'), by.get('tempest')
+    marker = '\ntemporararily Vulnerable.'
+    if hh and te and marker in hh['testoOriginale']:
+        head, tail = hh['testoOriginale'].split(marker, 1)
+        hh['testoOriginale'] = head
+        # "temporararily" è un refuso dell'SRD: lo correggiamo in "temporarily"
+        te['testoOriginale'] = te['testoOriginale'] + ' temporarily Vulnerable.' + tail
 
 
 if __name__ == '__main__':

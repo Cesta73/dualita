@@ -21,7 +21,8 @@
         "id": "maestro",
         "nome": "Maestro",
         "nomeOriginale": "Maestro",
-        "testoOriginale": "Your rallying songs steel the courage of those who listen. When you give a Rally Die to an ally, they can gain a Hope or clear a Stress."
+        "testoOriginale": "Your rallying songs steel the courage of those who listen. When you give a Rally Die to an ally, they can gain a Hope or clear a Stress.",
+        "testo": "I tuoi canti di incoraggiamento temprano il coraggio di chi ascolta. Quando dai un Dado di Incoraggiamento a un alleato, questi può guadagnare 1 Speranza o liberare 1 Stress."
       }
     ],
     "maestria": [
@@ -29,7 +30,8 @@
         "id": "virtuoso",
         "nome": "Virtuoso",
         "nomeOriginale": "Virtuoso",
-        "testoOriginale": "You are among the greatest of your craft and your skill is boundless. You can perform each of your \"Gifted Performer\" feature's songs twice per long rest."
+        "testoOriginale": "You are among the greatest of your craft and your skill is boundless. You can perform each of your \"Gifted Performer\" feature's songs twice per long rest.",
+        "testo": "Sei tra i più grandi della tua arte e il tuo talento non ha limiti. Puoi eseguire ciascuno dei canti della capacità \"Artista dotato\" due volte per riposo lungo."
       }
     ],
     "descrizione": "Gioca il Trovatore se vuoi suonare musica per sostenere i tuoi alleati."
@@ -63,7 +65,8 @@
         "id": "eloquent",
         "nome": "Eloquente",
         "nomeOriginale": "Eloquent",
-        "testoOriginale": "Your moving words boost morale. Once per session, when you encourage an ally, you can do one of the following:\n• Allow them to find a mundane object or tool they need.\n• Help an Ally without spending Hope.\n• Give them an additional downtime move during their next rest."
+        "testoOriginale": "Your moving words boost morale. Once per session, when you encourage an ally, you can do one of the following:\n• Allow them to find a mundane object or tool they need.\n• Help an Ally without spending Hope.\n• Give them an additional downtime move during their next rest.",
+        "testo": "Le tue parole commoventi risollevano il morale. Una volta per sessione, quando incoraggi un alleato, puoi fare una di queste cose:\n• Permettergli di trovare un oggetto o uno strumento comune di cui ha bisogno.\n• Aiutare un alleato senza spendere Speranza.\n• Dargli una mossa di pausa aggiuntiva durante il suo prossimo riposo."
       }
     ],
     "maestria": [
@@ -71,7 +74,8 @@
         "id": "epic-poetry",
         "nome": "Poesia epica",
         "nomeOriginale": "Epic Poetry",
-        "testoOriginale": "Your Rally Die increases to a d10. Additionally, when you Help an Ally, you can narrate the moment as if you were writing the tale of their heroism in a memoir. When you do, roll a d10 as your advantage die."
+        "testoOriginale": "Your Rally Die increases to a d10. Additionally, when you Help an Ally, you can narrate the moment as if you were writing the tale of their heroism in a memoir. When you do, roll a d10 as your advantage die.",
+        "testo": "Il tuo Dado di Incoraggiamento diventa un d10. Inoltre, quando Aiuti un alleato, puoi narrare il momento come se stessi scrivendo il racconto del suo eroismo in un libro di memorie. Quando lo fai, tira un d10 come dado di vantaggio."
       }
     ],
     "descrizione": "Gioca l'Affabulatore se vuoi usare giochi di parole brillanti e incantare le folle."
@@ -98,7 +102,8 @@
         "id": "elemental-aura",
         "nome": "Aura elementale",
         "nomeOriginale": "Elemental Aura",
-        "testoOriginale": "Once per rest while Channeling, you can assume an aura matching your element. The aura affects targets within Close range until your Channeling ends.\n• Fire: When an adversary marks 1 or more Hit Points, they must also mark a Stress.\n• Earth: Your allies gain a +1 bonus to Strength.\n• Water: When an adversary deals damage to you, you can mark a Stress to move them anywhere within Very Close range of where they are.\n• Air: When you or an ally takes damage from an attack beyond Melee range, reduce the damage by 1d8."
+        "testoOriginale": "Once per rest while Channeling, you can assume an aura matching your element. The aura affects targets within Close range until your Channeling ends.\n• Fire: When an adversary marks 1 or more Hit Points, they must also mark a Stress.\n• Earth: Your allies gain a +1 bonus to Strength.\n• Water: When an adversary deals damage to you, you can mark a Stress to move them anywhere within Very Close range of where they are.\n• Air: When you or an ally takes damage from an attack beyond Melee range, reduce the damage by 1d8.",
+        "testo": "Una volta per riposo, mentre Incanali, puoi assumere un'aura corrispondente al tuo elemento. L'aura influenza i bersagli entro gittata Vicina finché non smetti di Incanalare.\n• Fuoco: quando un avversario segna 1 o più PF, deve segnare anche 1 Stress.\n• Terra: i tuoi alleati ottengono +1 alla Forza.\n• Acqua: quando un avversario ti infligge danni, puoi segnare 1 Stress per spostarlo ovunque entro gittata Molto vicina dal punto in cui si trova.\n• Aria: quando tu o un alleato subite danni da un attacco oltre la Mischia, riducete il danno di 1d8."
       }
     ],
     "maestria": [
@@ -106,7 +111,8 @@
         "id": "elemental-dominion",
         "nome": "Dominio elementale",
         "nomeOriginale": "Elemental Dominion",
-        "testoOriginale": "You further embody your element. While Channeling, you gain the following benefit:\n• Fire: You gain a +1 bonus to your Proficiency for attacks and spells that deal damage.\n• Earth: When you would mark Hit Points, roll a d6 per Hit Point marked. For each result of 6, reduce the number of Hit Points you mark by 1.\n• Water: When an attack against you succeeds, you can mark a Stress to make the attacker temporarily Vulnerable.\n• Air: You gain a +1 bonus to your Evasion and can fly."
+        "testoOriginale": "You further embody your element. While Channeling, you gain the following benefit:\n• Fire: You gain a +1 bonus to your Proficiency for attacks and spells that deal damage.\n• Earth: When you would mark Hit Points, roll a d6 per Hit Point marked. For each result of 6, reduce the number of Hit Points you mark by 1.\n• Water: When an attack against you succeeds, you can mark a Stress to make the attacker temporarily Vulnerable.\n• Air: You gain a +1 bonus to your Evasion and can fly.",
+        "testo": "Incarni ancora di più il tuo elemento. Mentre Incanali, ottieni questo beneficio:\n• Fuoco: +1 alla Competenza per attacchi e incantesimi che infliggono danni.\n• Terra: quando dovresti segnare PF, tira un d6 per ogni PF; per ogni 6 segni 1 PF in meno.\n• Acqua: quando un attacco contro di te riesce, puoi segnare 1 Stress per rendere l'attaccante temporaneamente Vulnerabile.\n• Aria: ottieni +1 all'Evasione e puoi volare."
       }
     ],
     "descrizione": "Gioca il Custode degli Elementi se vuoi incarnare gli elementi naturali delle terre selvagge."
@@ -140,7 +146,8 @@
         "id": "regenerative-reach",
         "nome": "Portata rigenerante",
         "nomeOriginale": "Regenerative Reach",
-        "testoOriginale": "You can target creatures within Very Close range with your \"Regeneration\" feature.\nWarden's Protection: Once per long rest, spend 2 Hope to clear 2 Hit Points on 1d4 allies within Close range."
+        "testoOriginale": "You can target creatures within Very Close range with your \"Regeneration\" feature.\nWarden's Protection: Once per long rest, spend 2 Hope to clear 2 Hit Points on 1d4 allies within Close range.",
+        "testo": "Puoi scegliere come bersaglio della capacità \"Rigenerazione\" le creature entro gittata Molto vicina.\nProtezione del Custode: una volta per riposo lungo, spendi 2 Speranza per liberare 2 PF a 1d4 alleati entro gittata Vicina."
       }
     ],
     "maestria": [
@@ -148,7 +155,8 @@
         "id": "defender",
         "nome": "Difensore",
         "nomeOriginale": "Defender",
-        "testoOriginale": "Your animal transformation embodies a healing guardian spirit. When you're in Beastform and an ally within Close range marks 2 or more Hit Points, you can mark a Stress to reduce the number of Hit Points they mark by 1."
+        "testoOriginale": "Your animal transformation embodies a healing guardian spirit. When you're in Beastform and an ally within Close range marks 2 or more Hit Points, you can mark a Stress to reduce the number of Hit Points they mark by 1.",
+        "testo": "La tua trasformazione animale incarna uno spirito guardiano guaritore. Quando sei in Forma bestiale e un alleato entro gittata Vicina segna 2 o più PF, puoi segnare 1 Stress per ridurre di 1 i PF che segna."
       }
     ],
     "descrizione": "Gioca il Custode del Rinnovamento se vuoi usare una magia potente per curare il tuo gruppo."
@@ -182,13 +190,15 @@
         "id": "unrelenting",
         "nome": "Implacabile",
         "nomeOriginale": "Unrelenting",
-        "testoOriginale": "Gain a permanent +2 bonus to your damage thresholds."
+        "testoOriginale": "Gain a permanent +2 bonus to your damage thresholds.",
+        "testo": "Ottieni un bonus permanente di +2 alle tue Soglie di Danno."
       },
       {
         "id": "partners-in-arms",
         "nome": "Compagni d'arme",
         "nomeOriginale": "Partners-in-Arms",
-        "testoOriginale": "When an ally within Very Close range takes damage, you can mark an Armor Slot to reduce the severity by one threshold."
+        "testoOriginale": "When an ally within Very Close range takes damage, you can mark an Armor Slot to reduce the severity by one threshold.",
+        "testo": "Quando un alleato entro gittata Molto vicina subisce danni, puoi segnare uno Slot Armatura per ridurre la gravità del danno di una soglia."
       }
     ],
     "maestria": [
@@ -196,13 +206,15 @@
         "id": "undaunted",
         "nome": "Impavido",
         "nomeOriginale": "Undaunted",
-        "testoOriginale": "Gain a permanent +3 bonus to your damage thresholds."
+        "testoOriginale": "Gain a permanent +3 bonus to your damage thresholds.",
+        "testo": "Ottieni un bonus permanente di +3 alle tue Soglie di Danno."
       },
       {
         "id": "loyal-protector",
         "nome": "Protettore leale",
         "nomeOriginale": "Loyal Protector",
-        "testoOriginale": "When an ally within Close range has 2 or fewer Hit Points and would take damage, you can mark a Stress to sprint to their side and take the damage instead."
+        "testoOriginale": "When an ally within Close range has 2 or fewer Hit Points and would take damage, you can mark a Stress to sprint to their side and take the damage instead.",
+        "testo": "Quando un alleato entro gittata Vicina ha 2 PF liberi o meno e sta per subire danni, puoi segnare 1 Stress per scattare al suo fianco e subire il danno al suo posto."
       }
     ],
     "descrizione": "Gioca l'Incrollabile se vuoi incassare colpi pesanti e continuare a combattere."
@@ -236,7 +248,8 @@
         "id": "act-of-reprisal",
         "nome": "Atto di rappresaglia",
         "nomeOriginale": "Act of Reprisal",
-        "testoOriginale": "When an adversary damages an ally within Melee range, you gain a +1 bonus to your Proficiency for the next successful attack you make against that adversary."
+        "testoOriginale": "When an adversary damages an ally within Melee range, you gain a +1 bonus to your Proficiency for the next successful attack you make against that adversary.",
+        "testo": "Quando un avversario danneggia un alleato in Mischia con te, ottieni +1 alla Competenza per il prossimo attacco riuscito che fai contro quell'avversario."
       }
     ],
     "maestria": [
@@ -244,7 +257,8 @@
         "id": "nemesis",
         "nome": "Nemesi",
         "nomeOriginale": "Nemesis",
-        "testoOriginale": "Spend 2 Hope to Prioritize an adversary until your next rest. When you make an attack against your Prioritized adversary, you can swap the results of your Hope and Fear Dice. You can only Prioritize one adversary at a time."
+        "testoOriginale": "Spend 2 Hope to Prioritize an adversary until your next rest. When you make an attack against your Prioritized adversary, you can swap the results of your Hope and Fear Dice. You can only Prioritize one adversary at a time.",
+        "testo": "Spendi 2 Speranza per Prendere di mira un avversario fino al tuo prossimo riposo. Quando attacchi l'avversario Preso di mira, puoi scambiare i risultati del Dado della Speranza e del Dado della Paura. Puoi Prendere di mira un solo avversario alla volta."
       }
     ],
     "descrizione": "Gioca la Vendetta se vuoi abbattere i nemici che fanno del male a te o ai tuoi alleati."
@@ -271,13 +285,15 @@
         "id": "expert-training",
         "nome": "Addestramento esperto",
         "nomeOriginale": "Expert Training",
-        "testoOriginale": "Choose an additional level-up option for your companion."
+        "testoOriginale": "Choose an additional level-up option for your companion.",
+        "testo": "Scegli un'opzione di avanzamento aggiuntiva per il tuo compagno animale."
       },
       {
         "id": "battle-bonded",
         "nome": "Legame di battaglia",
         "nomeOriginale": "Battle-Bonded",
-        "testoOriginale": "When an adversary attacks you while they're within your companion's Melee range, you gain a +2 bonus to your Evasion against the attack."
+        "testoOriginale": "When an adversary attacks you while they're within your companion's Melee range, you gain a +2 bonus to your Evasion against the attack.",
+        "testo": "Quando un avversario ti attacca mentre è in Mischia con il tuo compagno animale, ottieni +2 all'Evasione contro quell'attacco."
       }
     ],
     "maestria": [
@@ -285,13 +301,15 @@
         "id": "advanced-training",
         "nome": "Addestramento avanzato",
         "nomeOriginale": "Advanced Training",
-        "testoOriginale": "Choose two additional level-up options for your companion."
+        "testoOriginale": "Choose two additional level-up options for your companion.",
+        "testo": "Scegli due opzioni di avanzamento aggiuntive per il tuo compagno animale."
       },
       {
         "id": "loyal-friend",
         "nome": "Amico leale",
         "nomeOriginale": "Loyal Friend",
-        "testoOriginale": "Once per long rest, when the damage from an attack would mark your companion's last Stress or your last Hit Point and you're within Close range of each other, you or your companion can rush to the other's side and take that damage instead."
+        "testoOriginale": "Once per long rest, when the damage from an attack would mark your companion's last Stress or your last Hit Point and you're within Close range of each other, you or your companion can rush to the other's side and take that damage instead.",
+        "testo": "Una volta per riposo lungo, quando il danno di un attacco farebbe segnare l'ultimo Stress al tuo compagno o il tuo ultimo PF e siete entro gittata Vicina l'uno dall'altro, tu o il tuo compagno potete correre al fianco dell'altro e subire il danno al suo posto."
       }
     ],
     "descrizione": "Gioca il Legato alle Bestie se vuoi stringere un legame profondo con un animale alleato."
@@ -325,7 +343,8 @@
         "id": "elusive-predator",
         "nome": "Predatore sfuggente",
         "nomeOriginale": "Elusive Predator",
-        "testoOriginale": "When your Focus makes an attack against you, you gain a +2 bonus to your Evasion against the attack."
+        "testoOriginale": "When your Focus makes an attack against you, you gain a +2 bonus to your Evasion against the attack.",
+        "testo": "Quando il tuo Obiettivo ti attacca, ottieni +2 all'Evasione contro quell'attacco."
       }
     ],
     "maestria": [
@@ -333,7 +352,8 @@
         "id": "apex-predator",
         "nome": "Superpredatore",
         "nomeOriginale": "Apex Predator",
-        "testoOriginale": "Before you make an attack roll against your Focus, you can spend a Hope. On a successful attack, you remove a Fear from the GM's Fear pool."
+        "testoOriginale": "Before you make an attack roll against your Focus, you can spend a Hope. On a successful attack, you remove a Fear from the GM's Fear pool.",
+        "testo": "Prima di fare un tiro d'attacco contro il tuo Obiettivo, puoi spendere 1 Speranza. Se l'attacco riesce, togli 1 Paura alla riserva del GM."
       }
     ],
     "descrizione": "Gioca l'Esploratore se vuoi braccare la tua preda e colpire con forza letale."
@@ -360,13 +380,15 @@
         "id": "dark-cloud",
         "nome": "Nube oscura",
         "nomeOriginale": "Dark Cloud",
-        "testoOriginale": "Make a Spellcast Roll (15). On a success, create a temporary dark cloud that covers any area within Close range. Anyone in this cloud can't see outside of it, and anyone outside of it can't see in. You're considered Cloaked from any adversary for whom the cloud blocks line of sight."
+        "testoOriginale": "Make a Spellcast Roll (15). On a success, create a temporary dark cloud that covers any area within Close range. Anyone in this cloud can't see outside of it, and anyone outside of it can't see in. You're considered Cloaked from any adversary for whom the cloud blocks line of sight.",
+        "testo": "Fai un Tiro da incantatore (15). Se riesce, crei una nube oscura temporanea che copre un'area qualsiasi entro gittata Vicina. Chi è nella nube non vede fuori e chi è fuori non vede dentro. Sei considerato Celato rispetto a ogni avversario a cui la nube blocca la linea di vista."
       },
       {
         "id": "adrenaline",
         "nome": "Adrenalina",
         "nomeOriginale": "Adrenaline",
-        "testoOriginale": "While you're Vulnerable, add your level to your damage rolls."
+        "testoOriginale": "While you're Vulnerable, add your level to your damage rolls.",
+        "testo": "Mentre sei Vulnerabile, aggiungi il tuo livello ai tiri di danno."
       }
     ],
     "maestria": [
@@ -374,13 +396,15 @@
         "id": "fleeting-shadow",
         "nome": "Ombra fugace",
         "nomeOriginale": "Fleeting Shadow",
-        "testoOriginale": "Gain a permanent +1 bonus to your Evasion. You can use your \"Shadow Stepper\" feature to move within Very Far range."
+        "testoOriginale": "Gain a permanent +1 bonus to your Evasion. You can use your \"Shadow Stepper\" feature to move within Very Far range.",
+        "testo": "Ottieni un bonus permanente di +1 all'Evasione. Puoi usare la capacità \"Passo d'ombra\" per muoverti entro gittata Molto lontana."
       },
       {
         "id": "vanishing-act",
         "nome": "Numero di sparizione",
         "nomeOriginale": "Vanishing Act",
-        "testoOriginale": "Mark a Stress to become Cloaked at any time. When Cloaked from this feature, you automatically clear the Restrained condition if you have it. You remain Cloaked in this way until you roll with Fear or until your next rest."
+        "testoOriginale": "Mark a Stress to become Cloaked at any time. When Cloaked from this feature, you automatically clear the Restrained condition if you have it. You remain Cloaked in this way until you roll with Fear or until your next rest.",
+        "testo": "Segna 1 Stress per diventare Celato in qualsiasi momento. Quando sei Celato grazie a questa capacità, elimini automaticamente la condizione Trattenuto se ce l'hai. Resti Celato in questo modo finché non tiri con Paura o fino al tuo prossimo riposo."
       }
     ],
     "descrizione": "Gioca il Viandante Notturno se vuoi manipolare le ombre per muoverti nell'ambiente."
@@ -407,7 +431,8 @@
         "id": "contacts-everywhere",
         "nome": "Contatti ovunque",
         "nomeOriginale": "Contacts Everywhere",
-        "testoOriginale": "Once per session, you can briefly call on a shady contact. Choose one of the following benefits and describe what brought them here to help you in this moment:\n• They provide 1 handful of gold, a unique tool, or a mundane object that the situation requires.\n• On your next action roll, their help provides a +3 bonus to the result of your Hope or Fear Die.\n• The next time you deal damage, they snipe from the shadows, adding 2d8 to your damage roll."
+        "testoOriginale": "Once per session, you can briefly call on a shady contact. Choose one of the following benefits and describe what brought them here to help you in this moment:\n• They provide 1 handful of gold, a unique tool, or a mundane object that the situation requires.\n• On your next action roll, their help provides a +3 bonus to the result of your Hope or Fear Die.\n• The next time you deal damage, they snipe from the shadows, adding 2d8 to your damage roll.",
+        "testo": "Una volta per sessione puoi chiamare brevemente in aiuto un contatto losco. Scegli uno di questi benefici e descrivi che cosa l'ha portato qui ad aiutarti proprio ora:\n• Ti procura 1 manciata d'oro, uno strumento particolare o un oggetto comune che serve nella situazione.\n• Al tuo prossimo tiro d'azione, il suo aiuto dà +3 al risultato del Dado della Speranza o della Paura.\n• La prossima volta che infliggi danni, colpisce dall'ombra e aggiunge 2d8 al tiro di danno."
       }
     ],
     "maestria": [
@@ -415,7 +440,8 @@
         "id": "reliable-backup",
         "nome": "Rinforzi affidabili",
         "nomeOriginale": "Reliable Backup",
-        "testoOriginale": "You can use your \"Contacts Everywhere\" feature three times per session. The following options are added to the list of benefits you can choose from when you use that feature:\n• When you mark 1 or more Hit Points, they can rush out to shield you, reducing the Hit Points marked by 1.\n• When you make a Presence Roll in conversation, they back you up. You can roll a d20 as your Hope Die."
+        "testoOriginale": "You can use your \"Contacts Everywhere\" feature three times per session. The following options are added to the list of benefits you can choose from when you use that feature:\n• When you mark 1 or more Hit Points, they can rush out to shield you, reducing the Hit Points marked by 1.\n• When you make a Presence Roll in conversation, they back you up. You can roll a d20 as your Hope Die.",
+        "testo": "Puoi usare la capacità \"Contatti ovunque\" tre volte per sessione. Ai benefici tra cui scegliere si aggiungono questi:\n• Quando segni 1 o più PF, il contatto accorre a farti da scudo e riduce di 1 i PF segnati.\n• Quando fai un Tiro di Presenza in una conversazione, il contatto ti spalleggia: puoi tirare un d20 come Dado della Speranza."
       }
     ],
     "descrizione": "Gioca il Mafioso se vuoi avere una rete di contatti ovunque tu vada."
@@ -449,7 +475,8 @@
         "id": "devout",
         "nome": "Devoto",
         "nomeOriginale": "Devout",
-        "testoOriginale": "When you roll your Prayer Dice, you can roll an additional die and discard the lowest result. Additionally, you can use your \"Sparing Touch\" feature twice instead of once per long rest."
+        "testoOriginale": "When you roll your Prayer Dice, you can roll an additional die and discard the lowest result. Additionally, you can use your \"Sparing Touch\" feature twice instead of once per long rest.",
+        "testo": "Quando tiri i Dadi della Preghiera, puoi tirarne uno in più e scartare il risultato più basso. Inoltre puoi usare la capacità \"Tocco risanatore\" due volte invece di una per riposo lungo."
       }
     ],
     "maestria": [
@@ -457,7 +484,8 @@
         "id": "sacred-resonance",
         "nome": "Risonanza sacra",
         "nomeOriginale": "Sacred Resonance",
-        "testoOriginale": "When you roll damage for your \"Spirit Weapon\" feature, if any of the die results match, double the value of each matching die. For example, if you roll two 5s, they count as two 10s."
+        "testoOriginale": "When you roll damage for your \"Spirit Weapon\" feature, if any of the die results match, double the value of each matching die. For example, if you roll two 5s, they count as two 10s.",
+        "testo": "Quando tiri il danno della capacità \"Arma spirituale\", se alcuni dadi danno lo stesso risultato, raddoppia il valore di ciascuno di quei dadi. Per esempio, se ottieni due 5, valgono come due 10."
       }
     ],
     "descrizione": "Gioca il Portatore Divino se vuoi dominare il campo di battaglia con un'arma leggendaria."
@@ -484,7 +512,8 @@
         "id": "ethereal-visage",
         "nome": "Volto etereo",
         "nomeOriginale": "Ethereal Visage",
-        "testoOriginale": "Your supernatural visage strikes awe and fear. While flying, you have advantage on Presence Rolls. When you succeed with Hope on a Presence Roll, you can remove a Fear from the GM's Fear pool instead of gaining Hope."
+        "testoOriginale": "Your supernatural visage strikes awe and fear. While flying, you have advantage on Presence Rolls. When you succeed with Hope on a Presence Roll, you can remove a Fear from the GM's Fear pool instead of gaining Hope.",
+        "testo": "Il tuo aspetto soprannaturale incute timore reverenziale. Mentre voli hai vantaggio ai Tiri di Presenza. Quando ottieni un successo con Speranza in un Tiro di Presenza, puoi togliere 1 Paura alla riserva del GM invece di guadagnare Speranza."
       }
     ],
     "maestria": [
@@ -492,13 +521,15 @@
         "id": "ascendant",
         "nome": "Ascendente",
         "nomeOriginale": "Ascendant",
-        "testoOriginale": "Gain a permanent +4 bonus to your Severe damage threshold."
+        "testoOriginale": "Gain a permanent +4 bonus to your Severe damage threshold.",
+        "testo": "Ottieni un bonus permanente di +4 alla soglia di danno Gravissimo."
       },
       {
         "id": "power-of-the-gods",
         "nome": "Potere degli dèi",
         "nomeOriginale": "Power of the Gods",
-        "testoOriginale": "While flying, you deal an extra 1d12 damage instead of 1d8 from your \"Wings of Light\" feature."
+        "testoOriginale": "While flying, you deal an extra 1d12 damage instead of 1d8 from your \"Wings of Light\" feature.",
+        "testo": "Mentre voli, la capacità \"Ali di luce\" infligge 1d12 danni extra invece di 1d8."
       }
     ],
     "descrizione": "Gioca la Sentinella Alata se vuoi spiccare il volo e colpire con forza devastante dal cielo."
@@ -525,7 +556,8 @@
         "id": "natural-evasion",
         "nome": "Evasione naturale",
         "nomeOriginale": "Natural Evasion",
-        "testoOriginale": "You can call forth your element to protect you from harm. When an attack roll against you succeeds, you can mark a Stress and describe how you use your element to defend you. When you do, roll a d6 and add its result to your Evasion against the attack."
+        "testoOriginale": "You can call forth your element to protect you from harm. When an attack roll against you succeeds, you can mark a Stress and describe how you use your element to defend you. When you do, roll a d6 and add its result to your Evasion against the attack.",
+        "testo": "Puoi richiamare il tuo elemento per proteggerti. Quando un tiro d'attacco contro di te riesce, puoi segnare 1 Stress e descrivere come usi il tuo elemento per difenderti. Se lo fai, tira un d6 e aggiungi il risultato alla tua Evasione contro quell'attacco."
       }
     ],
     "maestria": [
@@ -533,7 +565,8 @@
         "id": "transcendence",
         "nome": "Trascendenza",
         "nomeOriginale": "Transcendence",
-        "testoOriginale": "Once per long rest, you can transform into a physical manifestation of your element. When you do, describe your transformation and choose two of the following benefits to gain until your next rest:\n• +4 bonus to your Severe threshold\n• +1 bonus to a character trait of your choice\n• +1 bonus to your Proficiency\n• +2 bonus to your Evasion"
+        "testoOriginale": "Once per long rest, you can transform into a physical manifestation of your element. When you do, describe your transformation and choose two of the following benefits to gain until your next rest:\n• +4 bonus to your Severe threshold\n• +1 bonus to a character trait of your choice\n• +1 bonus to your Proficiency\n• +2 bonus to your Evasion",
+        "testo": "Una volta per riposo lungo puoi trasformarti in una manifestazione fisica del tuo elemento. Quando lo fai, descrivi la trasformazione e scegli due di questi benefici, validi fino al tuo prossimo riposo:\n• +4 alla soglia Gravissimo\n• +1 a un tratto a tua scelta\n• +1 alla Competenza\n• +2 all'Evasione"
       }
     ],
     "descrizione": "Gioca l'Origine Elementale se vuoi incanalare la magia grezza per dare forma a un elemento."
@@ -560,7 +593,8 @@
         "id": "enchanted-aid",
         "nome": "Aiuto incantato",
         "nomeOriginale": "Enchanted Aid",
-        "testoOriginale": "You can enhance the magic of others with your essence. When you Help an Ally with a Spellcast Roll, you can roll a d8 as your advantage die. Once per long rest, after an ally has made a Spellcast Roll with your help, you can swap the results of their Duality Dice."
+        "testoOriginale": "You can enhance the magic of others with your essence. When you Help an Ally with a Spellcast Roll, you can roll a d8 as your advantage die. Once per long rest, after an ally has made a Spellcast Roll with your help, you can swap the results of their Duality Dice.",
+        "testo": "Puoi potenziare la magia degli altri con la tua essenza. Quando Aiuti un alleato in un Tiro da incantatore, puoi tirare un d8 come dado di vantaggio. Una volta per riposo lungo, dopo che un alleato ha fatto un Tiro da incantatore con il tuo aiuto, puoi scambiare i risultati dei suoi Dadi della Dualità."
       }
     ],
     "maestria": [
@@ -568,7 +602,8 @@
         "id": "arcane-charge",
         "nome": "Carica arcana",
         "nomeOriginale": "Arcane Charge",
-        "testoOriginale": "You can gather magical energy to enhance your capabilities. When you take magic damage, you become Charged. Alternatively, you can spend 2 Hope to become Charged. When you successfully make an attack that deals magic damage while Charged, you can clear your Charge to either gain a +10 bonus to the damage roll or gain a +3 bonus to the Difficulty of a reaction roll the spell causes the target to make. You stop being Charged at your next long rest."
+        "testoOriginale": "You can gather magical energy to enhance your capabilities. When you take magic damage, you become Charged. Alternatively, you can spend 2 Hope to become Charged. When you successfully make an attack that deals magic damage while Charged, you can clear your Charge to either gain a +10 bonus to the damage roll or gain a +3 bonus to the Difficulty of a reaction roll the spell causes the target to make. You stop being Charged at your next long rest.",
+        "testo": "Puoi raccogliere energia magica per potenziare le tue capacità. Quando subisci danni magici diventi Carico; in alternativa puoi spendere 2 Speranza per diventarlo. Quando metti a segno un attacco che infligge danni magici mentre sei Carico, puoi consumare la Carica per ottenere +10 al tiro di danno oppure +3 alla Difficoltà di un tiro di reazione che l'incantesimo impone al bersaglio. Smetti di essere Carico al tuo prossimo riposo lungo."
       }
     ],
     "descrizione": "Gioca l'Origine Primordiale se vuoi rendere i tuoi incantesimi più versatili e potenti."
@@ -602,7 +637,8 @@
         "id": "rise-to-the-challenge",
         "nome": "All'altezza della sfida",
         "nomeOriginale": "Rise to the Challenge",
-        "testoOriginale": "You are vigilant in the face of mounting danger. While you have 2 or fewer Hit Points unmarked, you can roll a d20 as your Hope Die."
+        "testoOriginale": "You are vigilant in the face of mounting danger. While you have 2 or fewer Hit Points unmarked, you can roll a d20 as your Hope Die.",
+        "testo": "Resti vigile di fronte al pericolo crescente. Finché hai 2 PF liberi o meno, puoi tirare un d20 come Dado della Speranza."
       }
     ],
     "maestria": [
@@ -610,7 +646,8 @@
         "id": "camaraderie",
         "nome": "Cameratismo",
         "nomeOriginale": "Camaraderie",
-        "testoOriginale": "Your unwavering bravery is a rallying point for your allies. You can initiate a Tag Team Roll one additional time per session. Additionally, when an ally initiates a Tag Team Roll with you, they only need to spend 2 Hope to do so."
+        "testoOriginale": "Your unwavering bravery is a rallying point for your allies. You can initiate a Tag Team Roll one additional time per session. Additionally, when an ally initiates a Tag Team Roll with you, they only need to spend 2 Hope to do so.",
+        "testo": "Il tuo coraggio incrollabile è un punto di riferimento per gli alleati. Puoi avviare un Tiro di Squadra una volta in più per sessione. Inoltre, quando un alleato avvia un Tiro di Squadra con te, gli bastano 2 Speranza per farlo."
       }
     ],
     "descrizione": "Gioca il Richiamo dell'Audace se vuoi usare la forza dei tuoi nemici per alimentare il tuo potere."
@@ -637,7 +674,8 @@
         "id": "weapon-specialist",
         "nome": "Specialista d'armi",
         "nomeOriginale": "Weapon Specialist",
-        "testoOriginale": "You can wield multiple weapons with dangerous ease. When you succeed on an attack, you can spend a Hope to add one of the damage dice from your secondary weapon to the damage roll. Additionally, once per long rest when you roll your Slayer Dice, reroll any 1s."
+        "testoOriginale": "You can wield multiple weapons with dangerous ease. When you succeed on an attack, you can spend a Hope to add one of the damage dice from your secondary weapon to the damage roll. Additionally, once per long rest when you roll your Slayer Dice, reroll any 1s.",
+        "testo": "Maneggi più armi con pericolosa disinvoltura. Quando un tuo attacco riesce, puoi spendere 1 Speranza per aggiungere al tiro di danno uno dei dadi di danno della tua arma secondaria. Inoltre, una volta per riposo lungo, quando tiri i Dadi dello Sterminatore, ritira tutti gli 1."
       }
     ],
     "maestria": [
@@ -645,7 +683,8 @@
         "id": "martial-preparation",
         "nome": "Preparazione marziale",
         "nomeOriginale": "Martial Preparation",
-        "testoOriginale": "You're an inspirational warrior to all who travel with you. Your party gains access to the Martial Preparation downtime move. To use this move during a\nrest, describe how you instruct and train with your party. You and each ally who chooses this downtime move gain a d6 Slayer Die. A PC with a Slayer Die can spend it to roll the die and add the result to an attack or damage roll of their choice."
+        "testoOriginale": "You're an inspirational warrior to all who travel with you. Your party gains access to the Martial Preparation downtime move. To use this move during a\nrest, describe how you instruct and train with your party. You and each ally who chooses this downtime move gain a d6 Slayer Die. A PC with a Slayer Die can spend it to roll the die and add the result to an attack or damage roll of their choice.",
+        "testo": "Sei un guerriero che ispira tutti quelli che viaggiano con te. Il tuo gruppo ottiene la mossa di pausa Preparazione marziale. Per usarla durante un riposo, descrivi come istruisci il gruppo e ti alleni con loro. Tu e ogni alleato che sceglie questa mossa di pausa ottenete un Dado dello Sterminatore (d6). Un PG con un Dado dello Sterminatore può spenderlo per tirarlo e aggiungerne il risultato a un tiro d'attacco o di danno a sua scelta."
       }
     ],
     "descrizione": "Gioca il Richiamo dello Sterminatore se vuoi abbattere gli avversari con una forza immensa."
@@ -679,13 +718,15 @@
         "id": "accomplished",
         "nome": "Provetto",
         "nomeOriginale": "Accomplished",
-        "testoOriginale": "Take an additional domain card of your level or lower from a domain you have access to."
+        "testoOriginale": "Take an additional domain card of your level or lower from a domain you have access to.",
+        "testo": "Prendi una carta dominio aggiuntiva del tuo livello o inferiore da un dominio a cui hai accesso."
       },
       {
         "id": "perfect-recall",
         "nome": "Memoria perfetta",
         "nomeOriginale": "Perfect Recall",
-        "testoOriginale": "Once per rest, when you recall a domain card in your vault, you can reduce its Recall Cost by 1."
+        "testoOriginale": "Once per rest, when you recall a domain card in your vault, you can reduce its Recall Cost by 1.",
+        "testo": "Una volta per riposo, quando richiami una carta dominio dal Deposito, puoi ridurne di 1 il costo di richiamo."
       }
     ],
     "maestria": [
@@ -693,13 +734,15 @@
         "id": "brilliant",
         "nome": "Brillante",
         "nomeOriginale": "Brilliant",
-        "testoOriginale": "Take an additional domain card of your level or lower from a domain you have access to."
+        "testoOriginale": "Take an additional domain card of your level or lower from a domain you have access to.",
+        "testo": "Prendi una carta dominio aggiuntiva del tuo livello o inferiore da un dominio a cui hai accesso."
       },
       {
         "id": "honed-expertise",
         "nome": "Competenza affinata",
         "nomeOriginale": "Honed Expertise",
-        "testoOriginale": "When you use an Experience, roll a d6. On a result of 5 or higher, you can use it without spending Hope."
+        "testoOriginale": "When you use an Experience, roll a d6. On a result of 5 or higher, you can use it without spending Hope.",
+        "testo": "Quando usi un'Esperienza, tira un d6. Con 5 o più puoi usarla senza spendere Speranza."
       }
     ],
     "descrizione": "Gioca la Scuola della Conoscenza se vuoi una comprensione profonda del mondo che ti circonda."
@@ -733,13 +776,15 @@
         "id": "conjure-shield",
         "nome": "Evocare scudo",
         "nomeOriginale": "Conjure Shield",
-        "testoOriginale": "You can maintain a protective barrier of magic. While you have at least 2 Hope, you add your Proficiency to your Evasion."
+        "testoOriginale": "You can maintain a protective barrier of magic. While you have at least 2 Hope, you add your Proficiency to your Evasion.",
+        "testo": "Puoi mantenere una barriera magica protettiva. Finché hai almeno 2 Speranza, aggiungi la tua Competenza all'Evasione."
       },
       {
         "id": "fueled-by-fear",
         "nome": "Alimentato dalla Paura",
         "nomeOriginale": "Fueled by Fear",
-        "testoOriginale": "The extra magic damage from your \"Face Your Fear\" feature increases to 2d10."
+        "testoOriginale": "The extra magic damage from your \"Face Your Fear\" feature increases to 2d10.",
+        "testo": "Il danno magico extra della capacità \"Affronta la tua paura\" sale a 2d10."
       }
     ],
     "maestria": [
@@ -747,13 +792,15 @@
         "id": "thrive-in-chaos",
         "nome": "Prosperare nel caos",
         "nomeOriginale": "Thrive in Chaos",
-        "testoOriginale": "When you succeed on an attack, you can mark a Stress after rolling damage to force the target to mark an additional Hit Point."
+        "testoOriginale": "When you succeed on an attack, you can mark a Stress after rolling damage to force the target to mark an additional Hit Point.",
+        "testo": "Quando un tuo attacco riesce, dopo aver tirato il danno puoi segnare 1 Stress per costringere il bersaglio a segnare 1 PF aggiuntivo."
       },
       {
         "id": "have-no-fear",
         "nome": "Niente paura",
         "nomeOriginale": "Have No Fear",
-        "testoOriginale": "The extra magic damage from your \"Face Your Fear\" feature increases to 3d10."
+        "testoOriginale": "The extra magic damage from your \"Face Your Fear\" feature increases to 3d10.",
+        "testo": "Il danno magico extra della capacità \"Affronta la tua paura\" sale a 3d10."
       }
     ],
     "descrizione": "Gioca la Scuola della Guerra se vuoi usare una magia addestrata alla violenza."

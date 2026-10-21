@@ -5,7 +5,8 @@
     "nomeOriginale": "Stride Potion",
     "tiro": 1,
     "pagina": 59,
-    "testoOriginale": "You gain a +1 bonus to your next Agility Roll."
+    "testoOriginale": "You gain a +1 bonus to your next Agility Roll.",
+    "testo": "Ottieni +1 al tuo prossimo Tiro di Agilità."
   },
   {
     "id": "bolster-potion",
@@ -13,7 +14,8 @@
     "nomeOriginale": "Bolster Potion",
     "tiro": 2,
     "pagina": 59,
-    "testoOriginale": "You gain a +1 bonus to your next Strength Roll."
+    "testoOriginale": "You gain a +1 bonus to your next Strength Roll.",
+    "testo": "Ottieni +1 al tuo prossimo Tiro di Forza."
   },
   {
     "id": "control-potion",
@@ -21,7 +23,8 @@
     "nomeOriginale": "Control Potion",
     "tiro": 3,
     "pagina": 59,
-    "testoOriginale": "You gain a +1 bonus to your next Finesse Roll."
+    "testoOriginale": "You gain a +1 bonus to your next Finesse Roll.",
+    "testo": "Ottieni +1 al tuo prossimo Tiro di Destrezza."
   },
   {
     "id": "attune-potion",
@@ -29,7 +32,8 @@
     "nomeOriginale": "Attune Potion",
     "tiro": 4,
     "pagina": 59,
-    "testoOriginale": "You gain a +1 bonus to your next Instinct Roll."
+    "testoOriginale": "You gain a +1 bonus to your next Instinct Roll.",
+    "testo": "Ottieni +1 al tuo prossimo Tiro di Istinto."
   },
   {
     "id": "charm-potion",
@@ -37,7 +41,8 @@
     "nomeOriginale": "Charm Potion",
     "tiro": 5,
     "pagina": 59,
-    "testoOriginale": "You gain a +1 bonus to your next Presence Roll."
+    "testoOriginale": "You gain a +1 bonus to your next Presence Roll.",
+    "testo": "Ottieni +1 al tuo prossimo Tiro di Presenza."
   },
   {
     "id": "enlighten-potion",
@@ -45,7 +50,8 @@
     "nomeOriginale": "Enlighten Potion",
     "tiro": 6,
     "pagina": 59,
-    "testoOriginale": "You gain a +1 bonus to your next Knowledge Roll."
+    "testoOriginale": "You gain a +1 bonus to your next Knowledge Roll.",
+    "testo": "Ottieni +1 al tuo prossimo Tiro di Conoscenza."
   },
   {
     "id": "minor-health-potion",
@@ -53,7 +59,8 @@
     "nomeOriginale": "Minor Health Potion",
     "tiro": 7,
     "pagina": 59,
-    "testoOriginale": "Clear 1d4 HP."
+    "testoOriginale": "Clear 1d4 HP.",
+    "testo": "Libera 1d4 PF."
   },
   {
     "id": "minor-stamina-potion",
@@ -61,7 +68,8 @@
     "nomeOriginale": "Minor Stamina Potion",
     "tiro": 8,
     "pagina": 59,
-    "testoOriginale": "Clear 1d4 Stress."
+    "testoOriginale": "Clear 1d4 Stress.",
+    "testo": "Libera 1d4 Stress."
   },
   {
     "id": "grindletooth-venom",
@@ -69,7 +77,8 @@
     "nomeOriginale": "Grindletooth Venom",
     "tiro": 9,
     "pagina": 59,
-    "testoOriginale": "You can apply this venom to a weapon that deals physical damage to add a d6 to your next damage roll with that weapon."
+    "testoOriginale": "You can apply this venom to a weapon that deals physical damage to add a d6 to your next damage roll with that weapon.",
+    "testo": "Puoi applicare questo veleno a un'arma che infligge danno fisico per aggiungere un d6 al tuo prossimo tiro di danno con quell'arma."
   },
   {
     "id": "varik-leaves",
@@ -77,7 +86,8 @@
     "nomeOriginale": "Varik Leaves",
     "tiro": 10,
     "pagina": 59,
-    "testoOriginale": "You can eat these paired leaves to immediately gain 2 Hope."
+    "testoOriginale": "You can eat these paired leaves to immediately gain 2 Hope.",
+    "testo": "Puoi mangiare queste foglie appaiate per guadagnare subito 2 Speranza."
   },
   {
     "id": "vial-of-moondrip",
@@ -85,7 +95,8 @@
     "nomeOriginale": "Vial of Moondrip",
     "tiro": 11,
     "pagina": 59,
-    "testoOriginale": "When you drink the contents of this vial, you can see in total darkness until your next rest."
+    "testoOriginale": "When you drink the contents of this vial, you can see in total darkness until your next rest.",
+    "testo": "Quando bevi il contenuto di questa fiala, puoi vedere nel buio totale fino al tuo prossimo riposo."
   },
   {
     "id": "unstable-arcane-shard",
@@ -93,7 +104,8 @@
     "nomeOriginale": "Unstable Arcane Shard",
     "tiro": 12,
     "pagina": 59,
-    "testoOriginale": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 1d20 magic damage."
+    "testoOriginale": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 1d20 magic damage.",
+    "testo": "Puoi fare un Tiro di Destrezza per scagliare questa scheggia contro un gruppo di avversari entro gittata Lontana. I bersagli colpiti subiscono 1d20 danni magici."
   },
   {
     "id": "potion-of-stability",
@@ -101,7 +113,8 @@
     "nomeOriginale": "Potion of Stability",
     "tiro": 13,
     "pagina": 59,
-    "testoOriginale": "You can drink this potion to choose one additional downtime move."
+    "testoOriginale": "You can drink this potion to choose one additional downtime move.",
+    "testo": "Puoi bere questa pozione per scegliere una mossa di pausa aggiuntiva."
   },
   {
     "id": "improved-grindletooth-venom",
@@ -109,7 +122,8 @@
     "nomeOriginale": "Improved Grindletooth Venom",
     "tiro": 14,
     "pagina": 59,
-    "testoOriginale": "You can apply this venom to a weapon that deals physical damage to add a d8 to your next damage roll with that weapon."
+    "testoOriginale": "You can apply this venom to a weapon that deals physical damage to add a d8 to your next damage roll with that weapon.",
+    "testo": "Puoi applicare questo veleno a un'arma che infligge danno fisico per aggiungere un d8 al tuo prossimo tiro di danno con quell'arma."
   },
   {
     "id": "morphing-clay",
@@ -117,7 +131,8 @@
     "nomeOriginale": "Morphing Clay",
     "tiro": 15,
     "pagina": 60,
-    "testoOriginale": "You can spend a Hope to use this clay, altering your face enough to make you unrecognizable until your next rest."
+    "testoOriginale": "You can spend a Hope to use this clay, altering your face enough to make you unrecognizable until your next rest.",
+    "testo": "Puoi spendere 1 Speranza per usare quest'argilla e alterarti il volto quanto basta per essere irriconoscibile fino al tuo prossimo riposo."
   },
   {
     "id": "vial-of-darksmoke",
@@ -125,7 +140,8 @@
     "nomeOriginale": "Vial of Darksmoke",
     "tiro": 16,
     "pagina": 60,
-    "testoOriginale": "When an adversary attacks you, use this vial and roll a number of d6s equal to your Agility. Add the highest result to your Evasion against the attack."
+    "testoOriginale": "When an adversary attacks you, use this vial and roll a number of d6s equal to your Agility. Add the highest result to your Evasion against the attack.",
+    "testo": "Quando un avversario ti attacca, usa questa fiala e tira tanti d6 quanto la tua Agilità. Aggiungi il risultato più alto alla tua Evasione contro quell'attacco."
   },
   {
     "id": "jumping-root",
@@ -133,7 +149,8 @@
     "nomeOriginale": "Jumping Root",
     "tiro": 17,
     "pagina": 60,
-    "testoOriginale": "Eat this root to leap up to Far range once without needing to roll."
+    "testoOriginale": "Eat this root to leap up to Far range once without needing to roll.",
+    "testo": "Mangia questa radice per balzare una volta fino a gittata Lontana senza bisogno di tirare."
   },
   {
     "id": "snap-powder",
@@ -141,7 +158,8 @@
     "nomeOriginale": "Snap Powder",
     "tiro": 18,
     "pagina": 60,
-    "testoOriginale": "Mark a Stress and clear a HP."
+    "testoOriginale": "Mark a Stress and clear a HP.",
+    "testo": "Segna 1 Stress e libera 1 PF."
   },
   {
     "id": "health-potion",
@@ -149,7 +167,8 @@
     "nomeOriginale": "Health Potion",
     "tiro": 19,
     "pagina": 60,
-    "testoOriginale": "Clear 1d4+1 HP."
+    "testoOriginale": "Clear 1d4+1 HP.",
+    "testo": "Libera 1d4+1 PF."
   },
   {
     "id": "stamina-potion",
@@ -157,7 +176,8 @@
     "nomeOriginale": "Stamina Potion",
     "tiro": 20,
     "pagina": 60,
-    "testoOriginale": "Clear 1d4+1 Stress."
+    "testoOriginale": "Clear 1d4+1 Stress.",
+    "testo": "Libera 1d4+1 Stress."
   },
   {
     "id": "armor-stitcher",
@@ -165,7 +185,8 @@
     "nomeOriginale": "Armor Stitcher",
     "tiro": 21,
     "pagina": 60,
-    "testoOriginale": "You can use this stitcher to spend any number of Hope and clear that many Armor Slots."
+    "testoOriginale": "You can use this stitcher to spend any number of Hope and clear that many Armor Slots.",
+    "testo": "Puoi usare questo ricucitore per spendere quanta Speranza vuoi e liberare altrettanti Slot Armatura."
   },
   {
     "id": "gill-salve",
@@ -173,7 +194,8 @@
     "nomeOriginale": "Gill Salve",
     "tiro": 22,
     "pagina": 60,
-    "testoOriginale": "You can apply this salve to your neck to breathe underwater for a number of minutes equal to your level."
+    "testoOriginale": "You can apply this salve to your neck to breathe underwater for a number of minutes equal to your level.",
+    "testo": "Puoi spalmarti questo unguento sul collo per respirare sott'acqua per tanti minuti quanto il tuo livello."
   },
   {
     "id": "replication-parchment",
@@ -181,7 +203,8 @@
     "nomeOriginale": "Replication Parchment",
     "tiro": 23,
     "pagina": 60,
-    "testoOriginale": "By touching this piece of parchment to another, you can perfectly copy the second parchment's contents. Once used, this parchment becomes mundane paper."
+    "testoOriginale": "By touching this piece of parchment to another, you can perfectly copy the second parchment's contents. Once used, this parchment becomes mundane paper.",
+    "testo": "Appoggiando questa pergamena a un'altra, ne copi perfettamente il contenuto. Dopo l'uso diventa carta comune."
   },
   {
     "id": "improved-arcane-shard",
@@ -189,7 +212,8 @@
     "nomeOriginale": "Improved Arcane Shard",
     "tiro": 24,
     "pagina": 60,
-    "testoOriginale": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 2d20 magic damage."
+    "testoOriginale": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 2d20 magic damage.",
+    "testo": "Puoi fare un Tiro di Destrezza per scagliare questa scheggia contro un gruppo di avversari entro gittata Lontana. I bersagli colpiti subiscono 2d20 danni magici."
   },
   {
     "id": "major-stride-potion",
@@ -197,7 +221,8 @@
     "nomeOriginale": "Major Stride Potion",
     "tiro": 25,
     "pagina": 60,
-    "testoOriginale": "You gain a +1 bonus to your Agility until your next rest."
+    "testoOriginale": "You gain a +1 bonus to your Agility until your next rest.",
+    "testo": "Ottieni +1 all'Agilità fino al tuo prossimo riposo."
   },
   {
     "id": "major-bolster-potion",
@@ -205,7 +230,8 @@
     "nomeOriginale": "Major Bolster Potion",
     "tiro": 26,
     "pagina": 60,
-    "testoOriginale": "You gain a +1 bonus to your Strength until your next rest."
+    "testoOriginale": "You gain a +1 bonus to your Strength until your next rest.",
+    "testo": "Ottieni +1 alla Forza fino al tuo prossimo riposo."
   },
   {
     "id": "major-control-potion",
@@ -213,7 +239,8 @@
     "nomeOriginale": "Major Control Potion",
     "tiro": 27,
     "pagina": 60,
-    "testoOriginale": "You gain a +1 bonus to your Finesse until your next rest."
+    "testoOriginale": "You gain a +1 bonus to your Finesse until your next rest.",
+    "testo": "Ottieni +1 alla Destrezza fino al tuo prossimo riposo."
   },
   {
     "id": "major-attune-potion",
@@ -221,7 +248,8 @@
     "nomeOriginale": "Major Attune Potion",
     "tiro": 28,
     "pagina": 60,
-    "testoOriginale": "You gain a +1 bonus to your Instinct until your next rest."
+    "testoOriginale": "You gain a +1 bonus to your Instinct until your next rest.",
+    "testo": "Ottieni +1 all'Istinto fino al tuo prossimo riposo."
   },
   {
     "id": "major-charm-potion",
@@ -229,7 +257,8 @@
     "nomeOriginale": "Major Charm Potion",
     "tiro": 29,
     "pagina": 60,
-    "testoOriginale": "You gain a +1 bonus to your Presence until your next rest."
+    "testoOriginale": "You gain a +1 bonus to your Presence until your next rest.",
+    "testo": "Ottieni +1 alla Presenza fino al tuo prossimo riposo."
   },
   {
     "id": "major-enlighten-potion",
@@ -237,7 +266,8 @@
     "nomeOriginale": "Major Enlighten Potion",
     "tiro": 30,
     "pagina": 60,
-    "testoOriginale": "You gain a +1 bonus to your Knowledge until your next rest."
+    "testoOriginale": "You gain a +1 bonus to your Knowledge until your next rest.",
+    "testo": "Ottieni +1 alla Conoscenza fino al tuo prossimo riposo."
   },
   {
     "id": "blood-of-the-yorgi",
@@ -245,7 +275,8 @@
     "nomeOriginale": "Blood of the Yorgi",
     "tiro": 31,
     "pagina": 60,
-    "testoOriginale": "You can drink this blood to disappear from where you are and immediately reappear at a point you can see within Very Far range."
+    "testoOriginale": "You can drink this blood to disappear from where you are and immediately reappear at a point you can see within Very Far range.",
+    "testo": "Puoi bere questo sangue per sparire da dove sei e ricomparire subito in un punto che puoi vedere entro gittata Molto lontana."
   },
   {
     "id": "homets-secret-potion",
@@ -253,7 +284,8 @@
     "nomeOriginale": "Homet's Secret Potion",
     "tiro": 32,
     "pagina": 60,
-    "testoOriginale": "After drinking this potion, the next successful attack you make critically succeeds."
+    "testoOriginale": "After drinking this potion, the next successful attack you make critically succeeds.",
+    "testo": "Dopo aver bevuto questa pozione, il tuo prossimo attacco riuscito è un successo critico."
   },
   {
     "id": "redthorn-saliva",
@@ -261,7 +293,8 @@
     "nomeOriginale": "Redthorn Saliva",
     "tiro": 33,
     "pagina": 60,
-    "testoOriginale": "You can apply this saliva to a weapon that deals physical damage to add a d12 to your next damage roll with that weapon."
+    "testoOriginale": "You can apply this saliva to a weapon that deals physical damage to add a d12 to your next damage roll with that weapon.",
+    "testo": "Puoi applicare questa saliva a un'arma che infligge danno fisico per aggiungere un d12 al tuo prossimo tiro di danno con quell'arma."
   },
   {
     "id": "channelstone",
@@ -269,7 +302,8 @@
     "nomeOriginale": "Channelstone",
     "tiro": 34,
     "pagina": 60,
-    "testoOriginale": "You can use this stone to take a spell or grimoire from your vault, use it once, and return it to your vault."
+    "testoOriginale": "You can use this stone to take a spell or grimoire from your vault, use it once, and return it to your vault.",
+    "testo": "Puoi usare questa pietra per prendere un incantesimo o un grimorio dal Deposito, usarlo una volta e rimetterlo nel Deposito."
   },
   {
     "id": "mythic-dust",
@@ -277,7 +311,8 @@
     "nomeOriginale": "Mythic Dust",
     "tiro": 35,
     "pagina": 60,
-    "testoOriginale": "You can apply this dust to a weapon that deals magic damage to add a d12 to your next damage roll with that weapon."
+    "testoOriginale": "You can apply this dust to a weapon that deals magic damage to add a d12 to your next damage roll with that weapon.",
+    "testo": "Puoi applicare questa polvere a un'arma che infligge danno magico per aggiungere un d12 al tuo prossimo tiro di danno con quell'arma."
   },
   {
     "id": "acidpaste",
@@ -285,7 +320,8 @@
     "nomeOriginale": "Acidpaste",
     "tiro": 36,
     "pagina": 60,
-    "testoOriginale": "This paste eats away walls and other surfaces in bright flashes."
+    "testoOriginale": "This paste eats away walls and other surfaces in bright flashes.",
+    "testo": "Questa pasta corrode muri e altre superfici con lampi accecanti."
   },
   {
     "id": "hopehold-flare",
@@ -293,7 +329,8 @@
     "nomeOriginale": "Hopehold Flare",
     "tiro": 37,
     "pagina": 60,
-    "testoOriginale": "When you use this flare, allies within Close range roll a d6 when they spend a Hope. On a result of 6, they gain the effect of that Hope without spending it. The flare lasts until the end of the scene."
+    "testoOriginale": "When you use this flare, allies within Close range roll a d6 when they spend a Hope. On a result of 6, they gain the effect of that Hope without spending it. The flare lasts until the end of the scene.",
+    "testo": "Quando usi questo razzo, gli alleati entro gittata Vicina tirano un d6 quando spendono Speranza. Con 6 ottengono l'effetto di quella Speranza senza spenderla. Il razzo dura fino alla fine della scena."
   },
   {
     "id": "major-arcane-shard",
@@ -301,7 +338,8 @@
     "nomeOriginale": "Major Arcane Shard",
     "tiro": 38,
     "pagina": 60,
-    "testoOriginale": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 4d20 magic damage."
+    "testoOriginale": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 4d20 magic damage.",
+    "testo": "Puoi fare un Tiro di Destrezza per scagliare questa scheggia contro un gruppo di avversari entro gittata Lontana. I bersagli colpiti subiscono 4d20 danni magici."
   },
   {
     "id": "featherbone",
@@ -309,7 +347,8 @@
     "nomeOriginale": "Featherbone",
     "tiro": 39,
     "pagina": 60,
-    "testoOriginale": "You can use this bone to control your falling speed for a number of minutes equal to your level."
+    "testoOriginale": "You can use this bone to control your falling speed for a number of minutes equal to your level.",
+    "testo": "Puoi usare quest'osso per controllare la velocità di caduta per tanti minuti quanto il tuo livello."
   },
   {
     "id": "circle-of-the-void",
@@ -317,7 +356,8 @@
     "nomeOriginale": "Circle of the Void",
     "tiro": 40,
     "pagina": 60,
-    "testoOriginale": "Mark a Stress to create a void that extends up to Far range. No magic can be cast inside the void, and creatures within the void are immune to magic damage."
+    "testoOriginale": "Mark a Stress to create a void that extends up to Far range. No magic can be cast inside the void, and creatures within the void are immune to magic damage.",
+    "testo": "Segna 1 Stress per creare un vuoto che si estende fino a gittata Lontana. Nel vuoto non si può lanciare magia e le creature al suo interno sono immuni al danno magico."
   },
   {
     "id": "sun-tree-sap",
@@ -325,7 +365,8 @@
     "nomeOriginale": "Sun Tree Sap",
     "tiro": 41,
     "pagina": 60,
-    "testoOriginale": "Consume this sap to roll a d6. On a result of 5-6, clear 2 HP. On a result of 2-4, clear 3 Stress. On a result of 1, see through the veil of death and return changed, gaining one scar."
+    "testoOriginale": "Consume this sap to roll a d6. On a result of 5-6, clear 2 HP. On a result of 2-4, clear 3 Stress. On a result of 1, see through the veil of death and return changed, gaining one scar.",
+    "testo": "Consuma questa linfa e tira un d6. Con 5-6 liberi 2 PF; con 2-4 liberi 3 Stress; con 1 vedi oltre il velo della morte e torni cambiato, ricevendo una cicatrice."
   },
   {
     "id": "dripfang-poison",
@@ -333,7 +374,8 @@
     "nomeOriginale": "Dripfang Poison",
     "tiro": 42,
     "pagina": 60,
-    "testoOriginale": "A creature who consumes this poison takes 8d10 direct magic damage."
+    "testoOriginale": "A creature who consumes this poison takes 8d10 direct magic damage.",
+    "testo": "Una creatura che ingerisce questo veleno subisce 8d10 danni magici diretti."
   },
   {
     "id": "major-health-potion",
@@ -341,7 +383,8 @@
     "nomeOriginale": "Major Health Potion",
     "tiro": 43,
     "pagina": 60,
-    "testoOriginale": "Clear 1d4+2 HP."
+    "testoOriginale": "Clear 1d4+2 HP.",
+    "testo": "Libera 1d4+2 PF."
   },
   {
     "id": "major-stamina-potion",
@@ -349,7 +392,8 @@
     "nomeOriginale": "Major Stamina Potion",
     "tiro": 44,
     "pagina": 60,
-    "testoOriginale": "Clear 1d4+2 Stress."
+    "testoOriginale": "Clear 1d4+2 Stress.",
+    "testo": "Libera 1d4+2 Stress."
   },
   {
     "id": "ogre-musk",
@@ -357,7 +401,8 @@
     "nomeOriginale": "Ogre Musk",
     "tiro": 45,
     "pagina": 60,
-    "testoOriginale": "You can use this musk to prevent anyone from tracking you by mundane or magical means until your next rest."
+    "testoOriginale": "You can use this musk to prevent anyone from tracking you by mundane or magical means until your next rest.",
+    "testo": "Puoi usare questo muschio per impedire a chiunque di seguire le tue tracce, con mezzi comuni o magici, fino al tuo prossimo riposo."
   },
   {
     "id": "wingsprout",
@@ -365,7 +410,8 @@
     "nomeOriginale": "Wingsprout",
     "tiro": 46,
     "pagina": 60,
-    "testoOriginale": "You gain magic wings that allow you to fly for a number of minutes equal to your level."
+    "testoOriginale": "You gain magic wings that allow you to fly for a number of minutes equal to your level.",
+    "testo": "Ottieni ali magiche che ti permettono di volare per tanti minuti quanto il tuo livello."
   },
   {
     "id": "jar-of-lost-voices",
@@ -373,7 +419,8 @@
     "nomeOriginale": "Jar of Lost Voices",
     "tiro": 47,
     "pagina": 60,
-    "testoOriginale": "You can open this jar to release a deafening echo of voices for a number of minutes equal to your Instinct. Creatures within Far range unprepared for the sound take 6d8 magic damage."
+    "testoOriginale": "You can open this jar to release a deafening echo of voices for a number of minutes equal to your Instinct. Creatures within Far range unprepared for the sound take 6d8 magic damage.",
+    "testo": "Puoi aprire questo barattolo per liberare un'eco assordante di voci per tanti minuti quanto il tuo Istinto. Le creature entro gittata Lontana impreparate al suono subiscono 6d8 danni magici."
   },
   {
     "id": "dragonbloom-tea",
@@ -381,7 +428,8 @@
     "nomeOriginale": "Dragonbloom Tea",
     "tiro": 48,
     "pagina": 60,
-    "testoOriginale": "You can drink this tea to unleash a fiery breath attack. Make an Instinct Roll against all adversaries in front of you within Close range. Targets you succeed against take d20 physical damage using your Proficiency."
+    "testoOriginale": "You can drink this tea to unleash a fiery breath attack. Make an Instinct Roll against all adversaries in front of you within Close range. Targets you succeed against take d20 physical damage using your Proficiency.",
+    "testo": "Puoi bere questo tè per scatenare un soffio infuocato. Fai un Tiro di Istinto contro tutti gli avversari davanti a te entro gittata Vicina. I bersagli colpiti subiscono danni fisici con il d20, tirando tanti dadi quanto la tua Competenza."
   },
   {
     "id": "bridge-seed",
@@ -389,7 +437,8 @@
     "nomeOriginale": "Bridge Seed",
     "tiro": 49,
     "pagina": 60,
-    "testoOriginale": "Thick vines grow from your location to a point of your choice within Far range, allowing you to climb up or across them. The vines dissipate on your next short rest."
+    "testoOriginale": "Thick vines grow from your location to a point of your choice within Far range, allowing you to climb up or across them. The vines dissipate on your next short rest.",
+    "testo": "Spessi rampicanti crescono dal punto in cui sei fino a un punto a tua scelta entro gittata Lontana, permettendoti di arrampicarti o di attraversarli. I rampicanti svaniscono al tuo prossimo riposo breve."
   },
   {
     "id": "sleeping-sap",
@@ -397,7 +446,8 @@
     "nomeOriginale": "Sleeping Sap",
     "tiro": 50,
     "pagina": 61,
-    "testoOriginale": "You can drink this potion to fall asleep for a full night's rest. You clear all Stress upon waking."
+    "testoOriginale": "You can drink this potion to fall asleep for a full night's rest. You clear all Stress upon waking.",
+    "testo": "Puoi bere questa pozione per addormentarti per un'intera notte di riposo. Al risveglio liberi tutto lo Stress."
   },
   {
     "id": "feast-of-xuria",
@@ -405,7 +455,8 @@
     "nomeOriginale": "Feast of Xuria",
     "tiro": 51,
     "pagina": 61,
-    "testoOriginale": "You can eat this meal to clear all HP and Stress and gain 1d4 Hope."
+    "testoOriginale": "You can eat this meal to clear all HP and Stress and gain 1d4 Hope.",
+    "testo": "Puoi mangiare questo pasto per liberare tutti i PF e tutto lo Stress e guadagnare 1d4 Speranza."
   },
   {
     "id": "bonding-honey",
@@ -413,7 +464,8 @@
     "nomeOriginale": "Bonding Honey",
     "tiro": 52,
     "pagina": 61,
-    "testoOriginale": "This honey can be used to glue two objects together permanently."
+    "testoOriginale": "This honey can be used to glue two objects together permanently.",
+    "testo": "Questo miele si può usare per incollare per sempre due oggetti."
   },
   {
     "id": "shrinking-potion",
@@ -421,7 +473,8 @@
     "nomeOriginale": "Shrinking Potion",
     "tiro": 53,
     "pagina": 61,
-    "testoOriginale": "You can drink this potion to halve your size until you choose to drop this form or your next rest. While in this form, you have a +2 bonus to Agility and a -1 penalty to your Proficiency."
+    "testoOriginale": "You can drink this potion to halve your size until you choose to drop this form or your next rest. While in this form, you have a +2 bonus to Agility and a -1 penalty to your Proficiency.",
+    "testo": "Puoi bere questa pozione per dimezzare la tua taglia finché non decidi di abbandonare questa forma o fino al tuo prossimo riposo. In questa forma hai +2 all'Agilità e −1 alla Competenza."
   },
   {
     "id": "growing-potion",
@@ -429,7 +482,8 @@
     "nomeOriginale": "Growing Potion",
     "tiro": 54,
     "pagina": 61,
-    "testoOriginale": "You can drink this potion to double your size until you choose to drop this form or your next rest. While in this form, you have a +2 bonus to Strength and a +1 bonus to your Proficiency."
+    "testoOriginale": "You can drink this potion to double your size until you choose to drop this form or your next rest. While in this form, you have a +2 bonus to Strength and a +1 bonus to your Proficiency.",
+    "testo": "Puoi bere questa pozione per raddoppiare la tua taglia finché non decidi di abbandonare questa forma o fino al tuo prossimo riposo. In questa forma hai +2 alla Forza e +1 alla Competenza."
   },
   {
     "id": "knowledge-stone",
@@ -437,7 +491,8 @@
     "nomeOriginale": "Knowledge Stone",
     "tiro": 55,
     "pagina": 61,
-    "testoOriginale": "If you die while holding this stone, an ally can take a card from your loadout to place in their loadout or vault. After they take this knowledge, the stone crumbles."
+    "testoOriginale": "If you die while holding this stone, an ally can take a card from your loadout to place in their loadout or vault. After they take this knowledge, the stone crumbles.",
+    "testo": "Se muori mentre tieni questa pietra, un alleato può prendere una carta del tuo equipaggiamento attivo e metterla nel suo equipaggiamento attivo o nel Deposito. Dopo che ha preso questa conoscenza, la pietra si sgretola."
   },
   {
     "id": "sweet-moss",
@@ -445,7 +500,8 @@
     "nomeOriginale": "Sweet Moss",
     "tiro": 56,
     "pagina": 61,
-    "testoOriginale": "You can consume this moss during a rest to clear 1d4 HP or 1d4 Stress."
+    "testoOriginale": "You can consume this moss during a rest to clear 1d4 HP or 1d4 Stress.",
+    "testo": "Puoi consumare questo muschio durante un riposo per liberare 1d4 PF o 1d4 Stress."
   },
   {
     "id": "blinding-orb",
@@ -453,7 +509,8 @@
     "nomeOriginale": "Blinding Orb",
     "tiro": 57,
     "pagina": 61,
-    "testoOriginale": "You can activate this orb to create a flash of bright light. All targets within Close range become Vulnerable until they mark HP."
+    "testoOriginale": "You can activate this orb to create a flash of bright light. All targets within Close range become Vulnerable until they mark HP.",
+    "testo": "Puoi attivare questa sfera per creare un lampo di luce accecante. Tutti i bersagli entro gittata Vicina diventano Vulnerabili finché non segnano PF."
   },
   {
     "id": "death-tea",
@@ -461,7 +518,8 @@
     "nomeOriginale": "Death Tea",
     "tiro": 58,
     "pagina": 61,
-    "testoOriginale": "After you drink this tea, you instantly kill your target when you critically succeed on an attack. If you don't critically succeed on an attack before your next long rest, you die."
+    "testoOriginale": "After you drink this tea, you instantly kill your target when you critically succeed on an attack. If you don't critically succeed on an attack before your next long rest, you die.",
+    "testo": "Dopo aver bevuto questo tè, uccidi all'istante il bersaglio quando ottieni un successo critico in un attacco. Se non ottieni un successo critico in un attacco prima del tuo prossimo riposo lungo, muori."
   },
   {
     "id": "mirror-of-marigold",
@@ -469,7 +527,8 @@
     "nomeOriginale": "Mirror of Marigold",
     "tiro": 59,
     "pagina": 61,
-    "testoOriginale": "When you take damage, you can spend a Hope to negate that damage, after which the mirror shatters."
+    "testoOriginale": "When you take damage, you can spend a Hope to negate that damage, after which the mirror shatters.",
+    "testo": "Quando subisci danni, puoi spendere 1 Speranza per annullarli; dopodiché lo specchio va in frantumi."
   },
   {
     "id": "stardrop",
@@ -477,6 +536,7 @@
     "nomeOriginale": "Stardrop",
     "tiro": 60,
     "pagina": 61,
-    "testoOriginale": "You can use this stardrop to summon a hailstorm of comets that deals 8d20 physical damage to all targets within Very Far range."
+    "testoOriginale": "You can use this stardrop to summon a hailstorm of comets that deals 8d20 physical damage to all targets within Very Far range.",
+    "testo": "Puoi usare questa goccia di stella per evocare una grandinata di comete che infligge 8d20 danni fisici a tutti i bersagli entro gittata Molto lontana."
   }
 ]

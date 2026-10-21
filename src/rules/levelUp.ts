@@ -55,7 +55,7 @@ export interface Advancement {
   traits?: Trait[];
   /** 'experience': indice dell'Esperienza che riceve +1 */
   experienceIndex?: number;
-  /** 'domain-card': carta aggiuntiva */
+  /** 'domain-card': carta aggiuntiva; 'subclass': carta data da "Provetto"/"Brillante" (SRD p.25) */
   cardId?: string;
   cardBenefits?: CardBenefits;
   /** 'multiclass': classe, dominio e sottoclasse (si prende il suo fondamento) */
@@ -135,7 +135,11 @@ export function applyLevelUp(prev: Progression, r: LevelUpRecord): Progression {
       case 'evasion': p.evasionBonus += 1; break;
       case 'experience': if (a.experienceIndex !== undefined) p.experienceBonus[a.experienceIndex] = (p.experienceBonus[a.experienceIndex] ?? 0) + 1; break;
       case 'domain-card': if (a.cardId) { p.cardsAdded.push(a.cardId); addBenefits(p, a.cardBenefits); } break;
-      case 'subclass': p.subclassStage = Math.min(2, p.subclassStage + 1) as 0 | 1 | 2; p.subclassUpgradeTiers.push(tierForLevel(r.level)); break;
+      case 'subclass':
+        p.subclassStage = Math.min(2, p.subclassStage + 1) as 0 | 1 | 2;
+        p.subclassUpgradeTiers.push(tierForLevel(r.level));
+        if (a.cardId) p.cardsAdded.push(a.cardId);
+        break;
       case 'proficiency': p.proficiencyBonus += 1; break;
       case 'multiclass': if (a.multiclass) p.multiclass = { ...a.multiclass, tier: tierForLevel(r.level) }; break;
     }
@@ -174,6 +178,8 @@ export interface LevelUpContext {
   findCard: (id: string) => CardInfo | undefined;
   /** Numero di Esperienze prima di questa salita di livello */
   experienceCount: number;
+  /** La prossima carta di sottoclasse dà una carta dominio in più (Scuola della Conoscenza, SRD p.25) */
+  subclassGrantsCard?: boolean;
 }
 
 /** Controlla una salita di livello secondo SRD p.42-43. Restituisce gli errori in italiano. */
@@ -215,6 +221,10 @@ export function validateLevelUp(ctx: LevelUpContext, r: LevelUpRecord): string[]
     }
     if (a.id === 'subclass') {
       if (p.subclassStage >= 2) errors.push('Hai già la maestria della sottoclasse.');
+      if (ctx.subclassGrantsCard) {
+        if (!a.cardId) errors.push('La nuova carta di sottoclasse ti dà una carta dominio in più: sceglila.');
+        else newCards.push(a.cardId);
+      }
       // SRD p.43 – la multiclasse cancella l'avanzamento di sottoclasse del Tier in cui la si prende
       if (p.multiclass && p.multiclass.tier === tier) errors.push('In questo Tier hai scelto la multiclasse: niente avanzamento di sottoclasse.');
     }

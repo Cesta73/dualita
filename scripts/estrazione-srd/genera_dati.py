@@ -169,6 +169,11 @@ def main():
     tcl = load('testi_classi')
     tsc = load('testi_stirpi_comunita')
     tce = load('testi_carte_equip')
+    # Fase 5: carte dei livelli 2-10, specializzazioni/maestrie, equipaggiamento Tier 2-4, bottino
+    tf5 = load('testi_fase5')
+    tce['carte'].update(tf5['carte'])
+    tce['capacitaEquipaggiamento'].update(tf5['capacitaEquipaggiamento'])
+    FEATURE_TEXTS.update(tf5['capacitaSottoclassi'])
     FEATURE_TEXTS.update(tcl['capacita'])
     FEATURE_TEXTS.update(tsc['capacita'])
 
@@ -261,6 +266,8 @@ def main():
         lst.sort(key=lambda x: x['tiro'])
         for x in lst:
             del x['tipo']
+            if x['id'] in tf5['bottino']:
+                x['testo'] = tf5['bottino'][x['id']]
 
     # Avversari e ambienti: nomi da avversari.json/ambienti.json, testi da testi_avversari.json/testi_ambienti.json
     ta = load('avversari')

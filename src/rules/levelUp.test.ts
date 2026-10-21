@@ -94,6 +94,14 @@ describe('Salita di livello (SRD p.42-43)', () => {
       .toContain('La carta presa in cambio deve essere di livello pari o inferiore.');
   });
 
+  it('Scuola della Conoscenza: la carta di sottoclasse che dà una carta in più la richiede', () => {
+    const r: LevelUpRecord = { ...livello2, advancements: [{ id: 'subclass' }, { id: 'evasion' }] };
+    expect(validateLevelUp(ctx(emptyProgression(), undefined, { subclassGrantsCard: true }), r)).toContain('La nuova carta di sottoclasse ti dà una carta dominio in più: sceglila.');
+    const ok: LevelUpRecord = { ...livello2, advancements: [{ id: 'subclass', cardId: 'reckless' }, { id: 'evasion' }] };
+    expect(validateLevelUp(ctx(emptyProgression(), undefined, { subclassGrantsCard: true }), ok)).toEqual([]);
+    expect(applyLevelUp(emptyProgression(), ok).cardsAdded).toEqual(['reckless', 'a-soldiers-bond']);
+  });
+
   it('carte con benefici a scelta: Vitalità (p.121) e Maestro dell\'arte (p.127)', () => {
     expect(validateCardBenefits('vitality', { stress: 1, hitPoints: 1 }, 3)).toEqual([]);
     expect(validateCardBenefits('vitality', { stress: 1 }, 3)).toHaveLength(1);
@@ -132,6 +140,18 @@ describe('Scheda dopo le salite di livello', () => {
     const a = deriveStats({ ...base, extraSubclassFeatureIds: ['ascendant'] });
     expect(a.thresholds.severe).toBe(deriveStats(base).thresholds.severe + 4);
     expect(a.thresholds.major).toBe(deriveStats(base).thresholds.major);
+  });
+
+  it('carte attive con bonus: Armatura fortificata, Toccato dalla Lama solo con 4 carte Lama attive', () => {
+    const lama = ['get-back-up', 'not-good-enough', 'whirlwind', 'reckless'].map(card);
+    const b = deriveStats(base);
+    const f = deriveStats({ ...base, activeCards: [card('fortified-armor')] });
+    expect(f.thresholds.major).toBe(b.thresholds.major + 2);
+    const t3 = deriveStats({ ...base, activeCards: [card('blade-touched'), ...lama.slice(0, 2)] });
+    expect(t3.thresholds.severe).toBe(b.thresholds.severe);
+    const t4 = deriveStats({ ...base, activeCards: [card('blade-touched'), ...lama.slice(0, 3)] });
+    expect(t4.thresholds.severe).toBe(b.thresholds.severe + 4);
+    expect(t4.weapons[0].attackModifier).toBe(b.weapons[0].attackModifier + 2);
   });
 
   it("multiclasse Guerriero: anche un'altra classe aggiunge il livello al danno fisico (SRD p.23, p.43)", () => {

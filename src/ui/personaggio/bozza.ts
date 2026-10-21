@@ -189,6 +189,7 @@ export function sceltePersonaggio(data: CharacterData): CharacterChoices | null 
     extraSubclassFeatureIds: capacitaSottoclasseExtra(data),
     multiclassId: progression.multiclass?.classId ?? null,
     domainCards: (data.carte ?? []).map(trovaCarta).filter(Boolean) as NonNullable<ReturnType<typeof trovaCarta>>[],
+    activeCards: (data.attive ?? (data.carte ?? []).slice(0, 5)).map(trovaCarta).filter(Boolean) as NonNullable<ReturnType<typeof trovaCarta>>[],
   };
 }
 

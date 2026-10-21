@@ -72,6 +72,8 @@ export interface CharacterChoices {
   extraSubclassFeatureIds?: string[];
   /** SRD p.43 – classe della multiclasse (se ne si acquisisce la capacità di classe) */
   multiclassId?: string | null;
+  /** SRD p.8 – carte attive (equipaggiamento attivo): solo queste danno i loro bonus */
+  activeCards?: CardInfo[];
 }
 
 // ─── Controlli ─────────────────────────────────────────────────────────────
@@ -205,6 +207,11 @@ export function deriveStats(c: CharacterChoices): DerivedStats {
   const ancestry = c.ancestryFeatureIds;
   const foundation = [...c.sottoclasse.fondamento.map((f) => f.id), ...(c.extraSubclassFeatureIds ?? [])];
   const isWarrior = c.classe.id === 'warrior' || c.multiclassId === 'warrior';
+  // Carte attive con bonus permanenti alla scheda; le "Toccato da…" valgono con almeno 4 carte attive di quel dominio
+  const active = c.activeCards ?? [];
+  const activeIds = active.map((x) => x.id);
+  const touched = (card: string, domain: string) => activeIds.includes(card) && active.filter((x) => x.dominio === domain).length >= 4;
+  const wearingArmor = !!c.armor;
   const equipMods = [c.primaryWeapon?.modificatori, c.secondaryWeapon?.modificatori, c.armor?.modificatori].filter(Boolean) as Modifiers[];
 
   // Tratti effettivi (es. Armatura a piastre completa: −1 Agilità, SRD p.55)
@@ -212,13 +219,15 @@ export function deriveStats(c: CharacterChoices): DerivedStats {
   // SRD p.43 – avanzamento "aumenta due tratti": +1 permanente
   if (prog) for (const t of TRAITS) traits[t] += prog.traitBonus[t];
   for (const m of equipMods) for (const [t, v] of Object.entries(m.tratti ?? {})) traits[t as Trait] += v as number;
+  // Toccato dall'Osso (SRD p.123): +1 all'Agilità
+  if (touched('bone-touched', 'bone')) traits.agility += 1;
 
   // Evasione: valore della classe (SRD p.4) + modificatori
   const evasionSources: StatSource[] = [{ label: 'Classe', value: c.classe.evasioneIniziale, page: 4 }];
   for (const m of equipMods) if (m.evasione) evasionSources.push({ label: 'Equipaggiamento', value: m.evasione, page: 44 });
   if (has(ancestry, 'nimble')) evasionSources.push({ label: 'Simiah: Lesto', value: 1, page: 31 });
   if (prog?.evasionBonus) evasionSources.push({ label: 'Avanzamenti', value: prog.evasionBonus, page: 43 });
-  if (has(foundation, 'fleeting-shadow')) evasionSources.push({ label: 'Camminanotte: Ombra fugace', value: 1, page: 19 });
+  if (has(foundation, 'fleeting-shadow')) evasionSources.push({ label: 'Viandante Notturno: Ombra fugace', value: 1, page: 19 });
   const evasion = evasionSources.reduce((s, x) => s + x.value, 0);
 
   // Punti Ferita: valore della classe (SRD p.4) + capacità
@@ -236,9 +245,11 @@ export function deriveStats(c: CharacterChoices): DerivedStats {
   const stressSlots = stressSources.reduce((s, x) => s + x.value, 0);
 
   // Punteggio Armatura: base dell'armatura + bonus permanenti (SRD p.5, p.55), massimo 12
+  // Armaiolo (SRD p.134): +1 indossando un'armatura; Toccato dal Valore (p.134): +1
+  const cardArmor = (activeIds.includes('armorer') && wearingArmor ? 1 : 0) + (touched('valor-touched', 'valor') ? 1 : 0);
   const armorScore = Math.min(
     MAX_ARMOR_SCORE,
-    (c.armor?.punteggioBase ?? 0) + equipMods.reduce((s, m) => s + (m.punteggioArmatura ?? 0), 0),
+    (c.armor?.punteggioBase ?? 0) + equipMods.reduce((s, m) => s + (m.punteggioArmatura ?? 0), 0) + cardArmor,
   );
 
   // Soglie: base armatura + livello (SRD p.5, p.39); senza armatura livello e 2×livello (p.55)
@@ -247,12 +258,17 @@ export function deriveStats(c: CharacterChoices): DerivedStats {
   let bonus = 0;
   if (has(foundation, 'unwavering')) { bonus += 1; thresholdSources.push({ label: 'Incrollabile: Irremovibile', value: 1, page: 16 }); }
   if (has(ancestry, 'shell')) { bonus += proficiency; thresholdSources.push({ label: 'Galapa: Guscio (= Competenza)', value: proficiency, page: 29 }); }
-  if (has(foundation, 'unrelenting')) { bonus += 2; thresholdSources.push({ label: 'Incrollabile: Inesorabile', value: 2, page: 16 }); }
+  if (has(foundation, 'unrelenting')) { bonus += 2; thresholdSources.push({ label: 'Incrollabile: Implacabile', value: 2, page: 16 }); }
   if (has(foundation, 'undaunted')) { bonus += 3; thresholdSources.push({ label: 'Incrollabile: Impavido', value: 3, page: 16 }); }
   if (prog?.thresholdBonus) { bonus += prog.thresholdBonus; thresholdSources.push({ label: 'Carte dominio', value: prog.thresholdBonus, page: 121 }); }
-  // Sentinella alata, "Ascendente" (SRD p.21): +4 alla sola soglia Gravissimo
-  const severeFeature = has(foundation, 'ascendant') ? 4 : 0;
-  if (severeFeature) thresholdSources.push({ label: 'Sentinella alata: Ascendente (solo Gravissimo)', value: 4, page: 21 });
+  // Sentinella Alata, "Ascendente" (SRD p.21): +4 alla sola soglia Gravissimo
+  let severeFeature = has(foundation, 'ascendant') ? 4 : 0;
+  if (severeFeature) thresholdSources.push({ label: 'Sentinella Alata: Ascendente (solo Gravissimo)', value: 4, page: 21 });
+  // Carte attive (SRD p.121-134)
+  if (activeIds.includes('fortified-armor') && wearingArmor) { bonus += 2; thresholdSources.push({ label: 'Armatura fortificata', value: 2, page: 121 }); }
+  if (activeIds.includes('rise-up')) { severeFeature += proficiency; thresholdSources.push({ label: 'Sollevarsi (solo Gravissimo, = Competenza)', value: proficiency, page: 134 }); }
+  if (touched('blade-touched', 'blade')) { severeFeature += 4; thresholdSources.push({ label: 'Toccato dalla Lama (solo Gravissimo)', value: 4, page: 121 }); }
+  if (touched('splendor-touched', 'splendor')) { severeFeature += 3; thresholdSources.push({ label: 'Toccato dallo Splendore (solo Gravissimo)', value: 3, page: 133 }); }
   const severeExtra = equipMods.reduce((s, m) => s + (m.sogliaGravissimo ?? 0), 0);
   const thresholds: Thresholds = {
     major: base.major! + bonus,
@@ -277,7 +293,9 @@ export function deriveStats(c: CharacterChoices): DerivedStats {
     // Guerriero, Addestramento al combattimento (SRD p.23): +livello al danno fisico
     if (isWarrior && w.tipoDanno === 'fisico') damage.bonus += level;
     // "Affidabile: +1 ai tiri d'attacco" vale per gli attacchi con quell'arma (SRD p.44)
-    weapons.push({ id: w.id, trait, attackModifier: traits[trait] + (w.modificatori?.tiriAttacco ?? 0), damage, damageType: w.tipoDanno });
+    // Toccato dalla Lama (SRD p.121): +2 ai tiri d'attacco
+    const cardAttack = touched('blade-touched', 'blade') ? 2 : 0;
+    weapons.push({ id: w.id, trait, attackModifier: traits[trait] + (w.modificatori?.tiriAttacco ?? 0) + cardAttack, damage, damageType: w.tipoDanno });
   }
 
   return {

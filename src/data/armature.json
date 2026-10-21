@@ -177,7 +177,8 @@
       "id": "warded",
       "nome": "Protetta da rune",
       "nomeOriginale": "Warded",
-      "testoOriginale": "You reduce incoming magic damage by your Armor Score before applying it to your damage thresholds."
+      "testoOriginale": "You reduce incoming magic damage by your Armor Score before applying it to your damage thresholds.",
+      "testo": "Riduci il danno magico in arrivo del tuo Punteggio Armatura prima di confrontarlo con le Soglie di Danno."
     },
     "pagina": 55
   },
@@ -195,7 +196,8 @@
       "id": "resilient",
       "nome": "Resiliente",
       "nomeOriginale": "Resilient",
-      "testoOriginale": "Before you mark your last Armor Slot, roll a d6. On a result of 6, reduce the severity by one threshold without marking an Armor Slot."
+      "testoOriginale": "Before you mark your last Armor Slot, roll a d6. On a result of 6, reduce the severity by one threshold without marking an Armor Slot.",
+      "testo": "Prima di segnare il tuo ultimo Slot Armatura, tira un d6. Con 6, riduci la gravità di una soglia senza segnare lo Slot Armatura."
     },
     "pagina": 55
   },
@@ -213,7 +215,8 @@
       "id": "reinforced",
       "nome": "Rinforzata",
       "nomeOriginale": "Reinforced",
-      "testoOriginale": "When you mark your last Armor Slot, increase your damage thresholds by +2 until you clear at least 1 Armor Slot."
+      "testoOriginale": "When you mark your last Armor Slot, increase your damage thresholds by +2 until you clear at least 1 Armor Slot.",
+      "testo": "Quando segni il tuo ultimo Slot Armatura, le tue Soglie di Danno aumentano di 2 finché non liberi almeno 1 Slot Armatura."
     },
     "pagina": 55
   },
@@ -231,7 +234,8 @@
       "id": "shifting",
       "nome": "Mutevole",
       "nomeOriginale": "Shifting",
-      "testoOriginale": "When you are targeted for an attack, you can mark an Armor Slot to give the attack roll against you disadvantage."
+      "testoOriginale": "When you are targeted for an attack, you can mark an Armor Slot to give the attack roll against you disadvantage.",
+      "testo": "Quando sei bersaglio di un attacco, puoi segnare uno Slot Armatura per dare svantaggio al tiro d'attacco contro di te."
     },
     "pagina": 55
   },
@@ -249,7 +253,8 @@
       "id": "quiet",
       "nome": "Silenziosa",
       "nomeOriginale": "Quiet",
-      "testoOriginale": "You gain a +2 bonus to rolls you make to move silently."
+      "testoOriginale": "You gain a +2 bonus to rolls you make to move silently.",
+      "testo": "Ottieni +2 ai tiri per muoverti in silenzio."
     },
     "pagina": 55
   },
@@ -267,7 +272,8 @@
       "id": "hopeful",
       "nome": "Speranzosa",
       "nomeOriginale": "Hopeful",
-      "testoOriginale": "When you would spend a Hope, you can mark an Armor Slot instead."
+      "testoOriginale": "When you would spend a Hope, you can mark an Armor Slot instead.",
+      "testo": "Quando dovresti spendere 1 Speranza, puoi invece segnare uno Slot Armatura."
     },
     "pagina": 55
   },
@@ -367,7 +373,8 @@
       "id": "gilded",
       "nome": "Dorata",
       "nomeOriginale": "Gilded",
-      "testoOriginale": "+1 to Presence"
+      "testoOriginale": "+1 to Presence",
+      "testo": "+1 alla Presenza"
     },
     "pagina": 56,
     "modificatori": {
@@ -390,7 +397,8 @@
       "id": "impenetrable",
       "nome": "Impenetrabile",
       "nomeOriginale": "Impenetrable",
-      "testoOriginale": "Once per short rest, when you would mark your last Hit Point, you can instead mark a Stress."
+      "testoOriginale": "Once per short rest, when you would mark your last Hit Point, you can instead mark a Stress.",
+      "testo": "Una volta per riposo breve, quando dovresti segnare il tuo ultimo PF, puoi invece segnare 1 Stress."
     },
     "pagina": 56
   },
@@ -408,7 +416,8 @@
       "id": "sharp",
       "nome": "Acuminata",
       "nomeOriginale": "Sharp",
-      "testoOriginale": "On a successful attack against a target within Melee range, add a d4 to the damage roll."
+      "testoOriginale": "On a successful attack against a target within Melee range, add a d4 to the damage roll.",
+      "testo": "Con un attacco riuscito contro un bersaglio in Mischia, aggiungi un d4 al tiro di danno."
     },
     "pagina": 56
   },
@@ -426,7 +435,8 @@
       "id": "physical",
       "nome": "Fisica",
       "nomeOriginale": "Physical",
-      "testoOriginale": "You can't mark an Armor Slot to reduce magic damage."
+      "testoOriginale": "You can't mark an Armor Slot to reduce magic damage.",
+      "testo": "Non puoi segnare Slot Armatura per ridurre il danno magico."
     },
     "pagina": 56
   },
@@ -444,7 +454,8 @@
       "id": "magic",
       "nome": "Magica",
       "nomeOriginale": "Magic",
-      "testoOriginale": "You can't mark an Armor Slot to reduce physical damage."
+      "testoOriginale": "You can't mark an Armor Slot to reduce physical damage.",
+      "testo": "Non puoi segnare Slot Armatura per ridurre il danno fisico."
     },
     "pagina": 56
   },
@@ -462,7 +473,8 @@
       "id": "painful",
       "nome": "Dolorosa",
       "nomeOriginale": "Painful",
-      "testoOriginale": "Each time you mark an Armor Slot, you must mark a Stress."
+      "testoOriginale": "Each time you mark an Armor Slot, you must mark a Stress.",
+      "testo": "Ogni volta che segni uno Slot Armatura, devi segnare 1 Stress."
     },
     "pagina": 56
   },
@@ -562,7 +574,8 @@
       "id": "timeslowing",
       "nome": "Rallentatempo",
       "nomeOriginale": "Timeslowing",
-      "testoOriginale": "Mark an Armor Slot to roll a d4 and add its result as a bonus to your Evasion against an incoming attack."
+      "testoOriginale": "Mark an Armor Slot to roll a d4 and add its result as a bonus to your Evasion against an incoming attack.",
+      "testo": "Segna uno Slot Armatura per tirare un d4 e aggiungerne il risultato all'Evasione contro un attacco in arrivo."
     },
     "pagina": 56
   },
@@ -580,7 +593,8 @@
       "id": "channeling",
       "nome": "Canalizzante",
       "nomeOriginale": "Channeling",
-      "testoOriginale": "+1 to Spellcast Rolls"
+      "testoOriginale": "+1 to Spellcast Rolls",
+      "testo": "+1 ai Tiri da incantatore"
     },
     "pagina": 56,
     "modificatori": {
@@ -601,7 +615,8 @@
       "id": "burning",
       "nome": "Ardente",
       "nomeOriginale": "Burning",
-      "testoOriginale": "When an adversary attacks you within Melee range, they mark a Stress."
+      "testoOriginale": "When an adversary attacks you within Melee range, they mark a Stress.",
+      "testo": "Quando un avversario ti attacca in Mischia, segna 1 Stress."
     },
     "pagina": 56
   },
@@ -619,7 +634,8 @@
       "id": "fortified",
       "nome": "Fortificata",
       "nomeOriginale": "Fortified",
-      "testoOriginale": "When you mark an Armor Slot, you reduce the severity of an attack by two thresholds instead of one."
+      "testoOriginale": "When you mark an Armor Slot, you reduce the severity of an attack by two thresholds instead of one.",
+      "testo": "Quando segni uno Slot Armatura, riduci la gravità di un attacco di due soglie invece di una."
     },
     "pagina": 56
   },
@@ -637,7 +653,8 @@
       "id": "truthseeking",
       "nome": "Cercaverità",
       "nomeOriginale": "Truthseeking",
-      "testoOriginale": "This armor glows when another creature within Close range tells a lie."
+      "testoOriginale": "This armor glows when another creature within Close range tells a lie.",
+      "testo": "Quest'armatura brilla quando un'altra creatura entro gittata Vicina dice una bugia."
     },
     "pagina": 56
   },
@@ -655,7 +672,8 @@
       "id": "difficult",
       "nome": "Difficile",
       "nomeOriginale": "Difficult",
-      "testoOriginale": "-1 to all character traits and Evasion"
+      "testoOriginale": "-1 to all character traits and Evasion",
+      "testo": "−1 a tutti i tratti e all'Evasione"
     },
     "pagina": 56,
     "modificatori": {

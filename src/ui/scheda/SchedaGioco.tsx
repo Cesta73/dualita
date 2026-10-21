@@ -11,7 +11,7 @@ import {
 } from '../../rules';
 import { Aiuto } from '../componenti/Aiuto';
 import { Bottone, Riquadro } from '../componenti/Riquadro';
-import { capacitaSottoclasseExtra, trovaClasse, trovaSottoclasse, type CharacterData } from '../personaggio/bozza';
+import { capacitaSottoclasseExtra, ricalcola, trovaClasse, trovaSottoclasse, type CharacterData } from '../personaggio/bozza';
 import { summarizeLevelUps } from '../../rules';
 import { sottoclassi } from '../../data';
 import { Equipaggiamento } from './Equipaggiamento';
@@ -324,11 +324,11 @@ function Carte({ pg, modificabile, salva, riposoAlTavolo }: { pg: CharacterRow; 
     const r = recallFromVault(attive.length, carta(id).costoRichiamo, inRiposo, stressLiberi);
     if (!r.ok) { alert(r.reason); return; }
     void salva(
-      { data: { ...data, attive: [...attive, id] }, stress_marked: pg.stress_marked + r.stressCost },
+      { data: ricalcola({ ...data, attive: [...attive, id] }), stress_marked: pg.stress_marked + r.stressCost },
       r.stressCost ? `Richiamata dal Deposito: segnati ${r.stressCost} Stress.` : undefined,
     );
   };
-  const togli = (id: string) => void salva({ data: { ...data, attive: attive.filter((x) => x !== id) } });
+  const togli = (id: string) => void salva({ data: ricalcola({ ...data, attive: attive.filter((x) => x !== id) }) });
 
   const Elenco = ({ ids, attiva }: { ids: string[]; attiva: boolean }) => (
     <ul className="space-y-2">
