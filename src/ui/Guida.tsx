@@ -11,7 +11,14 @@ const GIOCATORE: Passo[] = [
     testo: [
       'Apri il link che il GM ha mandato nel gruppo (o scrivi il codice di 6 caratteri nella home).',
       'Scrivi il tuo nome e tocca Entra. Non servono email né password: il telefono si ricorda di te.',
-      'Consiglio: aggiungi l\'app alla schermata Home del telefono, così la ritrovi al volo.',
+    ],
+  },
+  {
+    titolo: 'Installa l\'app sul telefono',
+    testo: [
+      'iPhone: apri il link con Safari, tocca il pulsante Condividi (il quadrato con la freccia) e scegli "Aggiungi alla schermata Home".',
+      'Android: apri il link con Chrome, tocca il menu ⋮ e scegli "Installa app" (o "Aggiungi a schermata Home").',
+      'Da lì Dualità si apre a tutto schermo con la sua icona, come una normale app.',
     ],
   },
   {
@@ -69,7 +76,15 @@ const GIOCATORE: Passo[] = [
   },
   {
     titolo: 'Se cade la connessione',
-    testo: ['Riapri il link del tavolo: ritrovi tutto com\'era. Il pallino accanto al nome del tavolo dice se sei collegato.'],
+    testo: ['Riapri il link del tavolo: ritrovi tutto com\'era. Il pallino accanto al nome del tavolo dice se sei collegato; senza rete compare un avviso in alto.'],
+  },
+  {
+    titolo: 'Backup dei personaggi',
+    testo: [
+      'I personaggi sono legati al dispositivo (e al browser) con cui li hai creati.',
+      'In "I miei personaggi" tocca "Esporta tutti" (o "Esporta" dentro una scheda) per salvare un file di backup.',
+      'Per ritrovarli su un altro telefono o computer, apri "I miei personaggi" lì e tocca "Importa da file".',
+    ],
   },
 ];
 

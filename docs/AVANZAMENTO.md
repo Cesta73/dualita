@@ -90,3 +90,20 @@ Decisioni (21/10/2026): avanzamenti a scelta libera (l'SRD non dice quante volte
 - [x] **Guida all'uso** nell'app (pagina "Guida", per il GM e per i giocatori) — richiesta di Gianluca
 - [x] Prova nel browser: riposo breve e mosse di pausa, salita al livello 2 di Kael, bottino
 - [ ] Prova di Gianluca con il telefono
+
+## Fase 6 — App installabile, backup, robustezza
+Decisioni (21/10/2026): niente notifiche ad app chiusa (bastano avviso e vibrazione con l'app aperta); icona con due d12 (Speranza e Paura).
+- [x] App installabile (PWA): icona, manifesto, service worker (pagine aggiornate dalla rete, file dell'app salvati per riaprirla al volo), margini per la "tacca" dell'iPhone
+- [x] Backup: esportazione di uno o di tutti i personaggi in un file e importazione (i valori si ricalcolano con le regole), con test
+- [x] Robustezza: messaggio chiaro al posto della pagina bianca, ricarica automatica dopo un aggiornamento dell'app, avviso quando manca la rete
+- [x] Caricamento più leggero: pagine caricate quando servono; avversari e ambienti scaricati solo dal GM (la home ora pesa circa un terzo)
+- [x] Guida: installazione su iPhone/Android e backup
+- [x] Verificato sul sito pubblicato: service worker attivo, icone e manifesto corretti; importazione provata nel browser
+- [ ] Prova di Gianluca: installare l'app sul telefono
+
+**Tutte le fasi del piano iniziale sono completate (21/10/2026).**
+
+### Da fare con calma
+- Rileggere le traduzioni: `docs/TRADUZIONI_FASE2.md`, `docs/TRADUZIONI_FASE4.md`, `docs/TRADUZIONI_FASE5.md`.
+- Dubbi aperti in `docs/DUBBI_REGOLE.md` (D3-D7, D9, D10).
+- Se un giorno l'app diventa pubblica (oltre al gruppo di amici): rileggere la licenza DPCGL prima.
