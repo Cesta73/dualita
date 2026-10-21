@@ -135,7 +135,9 @@ Deno.serve(async (req) => {
         damage: { count: int(dmg.count, 0, 20, 1), sides: int(dmg.sides, 2, 20, 6), bonus: int(dmg.bonus, -20, 60, 0) },
       };
       const name = typeof body.label === 'string' ? body.label.trim().slice(0, 60) : 'Avversario';
-      record = { kind: 'avversario', tableId, label: `${name} attacca ${targetName}`, input: { ...input, targetUserId, targetName }, result: rollAdversaryAttack(input, secureRoller), hopeSpent: 0, hopeGained: 0, fearGained: 0 };
+      const damageType = ['fisico', 'magico', 'fisico+magico'].includes(String(body.damageType)) ? String(body.damageType) : 'fisico';
+      const adversaryId = typeof body.adversaryId === 'string' ? body.adversaryId.slice(0, 60) : null;
+      record = { kind: 'avversario', tableId, label: `${name} attacca ${targetName}`, input: { ...input, targetUserId, targetName, damageType, adversaryId }, result: rollAdversaryAttack(input, secureRoller), hopeSpent: 0, hopeGained: 0, fearGained: 0 };
     } else if (tipo === 'danno') {
       // SRD p.39 – tiro di danno: [count]d[sides] + bonus; critico = + massimo dei dadi
       const tableId = String(body.tableId ?? '');
