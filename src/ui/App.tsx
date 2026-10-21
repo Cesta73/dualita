@@ -9,6 +9,7 @@ import Home from './Home';
 const Tavolo = lazy(() => import('./Tavolo'));
 const Crediti = lazy(() => import('./Crediti'));
 const Guida = lazy(() => import('./Guida'));
+const Recupero = lazy(() => import('./Recupero'));
 const Creazione = lazy(() => import('./personaggio/Creazione'));
 const ElencoPersonaggi = lazy(() => import('./personaggio/Personaggi').then((m) => ({ default: m.ElencoPersonaggi })));
 const SchedaPersonaggio = lazy(() => import('./personaggio/Personaggi').then((m) => ({ default: m.SchedaPersonaggio })));
@@ -26,6 +27,7 @@ export default function App() {
             <Route path="/tavolo/:code" element={<Tavolo />} />
             <Route path="/crediti" element={<Crediti />} />
             <Route path="/guida" element={<Guida />} />
+            <Route path="/recupero" element={<Recupero />} />
             <Route path="/personaggi" element={<ElencoPersonaggi />} />
             <Route path="/personaggi/nuovo" element={<Creazione />} />
             <Route path="/personaggi/:id" element={<SchedaPersonaggio />} />

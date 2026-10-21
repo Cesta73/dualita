@@ -1,11 +1,16 @@
 // Pagina iniziale: crea un tavolo (GM) o entra con un codice (giocatore).
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { saveName, savedName } from '../net/session';
+import { needsRecoveryReminder } from '../net/recovery';
 import { createTable } from '../net/tables';
 import { Bottone, Riquadro } from './componenti/Riquadro';
 
 export default function Home() {
+  const [promemoria, setPromemoria] = useState(false);
+  useEffect(() => {
+    needsRecoveryReminder().then(setPromemoria).catch(() => setPromemoria(false));
+  }, []);
   const nav = useNavigate();
   const [nome, setNome] = useState(savedName);
   const [nomeTavolo, setNomeTavolo] = useState('');
@@ -88,6 +93,13 @@ export default function Home() {
         </Riquadro>
       </div>
 
+      {promemoria && (
+        <Riquadro className="mt-4 border-speranza/60">
+          <p className="text-sm"><strong>Proteggi i tuoi personaggi.</strong> Se cancelli i dati del browser o cambi telefono, ti servirà il codice di recupero per ritrovarli.</p>
+          <Link to="/recupero"><Bottone variante="primario" className="mt-3">Crea il codice di recupero</Bottone></Link>
+        </Riquadro>
+      )}
+
       <Riquadro titolo="I miei personaggi" className="mt-4">
         <p className="mb-3 text-sm text-tenue">Crea un personaggio passo passo oppure guarda quelli che hai già.</p>
         <Link to="/personaggi"><Bottone>Apri i miei personaggi</Bottone></Link>
@@ -98,6 +110,8 @@ export default function Home() {
 
       <footer className="mt-10 text-sm text-tenue">
         <Link to="/guida" className="underline hover:text-testo">Guida all'uso</Link>
+        {' · '}
+        <Link to="/recupero" className="underline hover:text-testo">Codice di recupero</Link>
         {' · '}
         <Link to="/crediti" className="underline hover:text-testo">Crediti e licenza</Link>
       </footer>

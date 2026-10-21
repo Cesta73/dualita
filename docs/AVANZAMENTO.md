@@ -101,6 +101,8 @@ Decisioni (21/10/2026): niente notifiche ad app chiusa (bastano avviso e vibrazi
 - [x] Verificato sul sito pubblicato: service worker attivo, icone e manifesto corretti; importazione provata nel browser
 - [ ] Prova di Gianluca: installare l'app sul telefono
 
+- [x] **Codice di recupero** (richiesta di Gianluca, 21/10/2026): senza email né password, chi cancella i dati del browser o cambia telefono ritrova personaggi, tavoli e ruolo di GM; promemoria in home; il browser viene invitato a non cancellare i dati dell'app. 13 controlli superati (`supabase/migrations/20261021170000_codice_recupero.sql`)
+
 **Tutte le fasi del piano iniziale sono completate (21/10/2026).**
 
 ### Da fare con calma

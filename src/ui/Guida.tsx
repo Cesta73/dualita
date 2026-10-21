@@ -79,9 +79,17 @@ const GIOCATORE: Passo[] = [
     testo: ['Riapri il link del tavolo: ritrovi tutto com\'era. Il pallino accanto al nome del tavolo dice se sei collegato; senza rete compare un avviso in alto.'],
   },
   {
+    titolo: 'Codice di recupero (importante)',
+    testo: [
+      'L\'app non usa email né password: il telefono si ricorda di te. Se cancelli i dati del browser o cambi telefono, senza codice non ritrovi i tuoi personaggi.',
+      'In fondo alla home tocca "Codice di recupero" → "Crea il mio codice" e salvalo subito (viene mostrato una sola volta).',
+      'Sul nuovo dispositivo apri la stessa pagina, scrivi il codice in "Recupera" e ritrovi personaggi e tavoli.',
+    ],
+  },
+  {
     titolo: 'Backup dei personaggi',
     testo: [
-      'I personaggi sono legati al dispositivo (e al browser) con cui li hai creati.',
+      'Oltre al codice puoi salvare un file di backup, da conservare per sicurezza.',
       'In "I miei personaggi" tocca "Esporta tutti" (o "Esporta" dentro una scheda) per salvare un file di backup.',
       'Per ritrovarli su un altro telefono o computer, apri "I miei personaggi" lì e tocca "Importa da file".',
     ],
@@ -95,6 +103,7 @@ const GM: Passo[] = [
       'Nella home scrivi il tuo nome e, se vuoi, il nome della campagna, poi tocca "Crea": diventi il GM.',
       'Tocca "Invita": trovi il codice di 6 caratteri, il link da mandare nel gruppo WhatsApp/Telegram e il QR code da far inquadrare.',
       'Su computer il tavolo si dispone su due colonne: comodo da tenere aperto accanto agli appunti.',
+      'Importante: crea subito il tuo codice di recupero (link in fondo alla home). Se cancelli i dati del browser o cambi dispositivo, è l\'unico modo per tornare GM del tuo tavolo.',
     ],
   },
   {

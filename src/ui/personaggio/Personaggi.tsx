@@ -58,7 +58,7 @@ export function ElencoPersonaggi() {
     <main className="mx-auto max-w-4xl px-4 py-6">
       <Link to="/" className="text-sm text-tenue hover:text-testo">← Home</Link>
       <h1 className="mt-2 font-titolo text-3xl">I miei personaggi</h1>
-      <p className="mt-1 text-sm text-tenue">I personaggi sono salvati sul server e legati a questo dispositivo.</p>
+      <p className="mt-1 text-sm text-tenue">I personaggi sono salvati sul server e legati a questo dispositivo (o al tuo codice di recupero).</p>
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <Link to="/personaggi/nuovo"><Bottone variante="primario">{haBozza ? 'Continua la creazione' : '+ Nuovo personaggio'}</Bottone></Link>
         {!!lista?.length && <Bottone onClick={() => scarica(lista)}>Esporta tutti</Bottone>}
@@ -67,7 +67,10 @@ export function ElencoPersonaggi() {
           <input type="file" accept=".json,application/json" className="sr-only" onChange={(e) => { void importa(e.target.files?.[0]); e.target.value = ''; }} />
         </label>
       </div>
-      <p className="mt-2 text-xs text-tenue">Il backup è un file che puoi conservare o aprire su un altro telefono o computer per ritrovare i tuoi personaggi.</p>
+      <p className="mt-2 text-xs text-tenue">
+        Per ritrovare i personaggi su un altro dispositivo usa il <Link to="/recupero" className="underline">codice di recupero</Link>;
+        il backup è un file in più da conservare per sicurezza.
+      </p>
       {messaggio && <p role="status" className="mt-4 text-successo">{messaggio}</p>}
       {errore && <p role="alert" className="mt-4 text-fallimento">{errore}</p>}
       <ul className="mt-4 grid grid-cols-[minmax(0,1fr)] gap-3 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
