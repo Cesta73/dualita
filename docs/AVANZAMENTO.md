@@ -53,5 +53,7 @@ traduzioni scritte da Claude e riviste da Gianluca dopo, con calma.
 - [x] Regole della creazione + calcoli derivati, con test (`src/rules/character.ts`)
 - [x] Tabella personaggi + RLS; Speranza sulla scheda (8 controlli di sicurezza superati)
 - [x] Procedura guidata in 9 passi (provata: creazione e salvataggio OK)
-- [ ] Il GM vede i personaggi; il tiro usa i tratti della scheda
-- [ ] DA FARE: provare la scelta del personaggio al tavolo e il tiro con i tratti della scheda; provare la procedura sul telefono; riepilogo finale della Fase 2
+- [x] Il GM vede i personaggi (nome cliccabile → scheda); il tiro usa tratti ed Esperienze della scheda
+- [x] Provato: personaggio creato dal telefono (Gianluca); scelta del personaggio al tavolo e tiro con tratti/Esperienze della scheda
+
+**Fase 2 completata il 21/10/2026.** Da fare con calma: Gianluca rilegge `docs/TRADUZIONI_FASE2.md`.
