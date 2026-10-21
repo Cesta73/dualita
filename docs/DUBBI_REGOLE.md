@@ -61,4 +61,4 @@ Stato: 🟡 aperto · ✅ risolto
 ## D12 — Bonus delle carte calcolati in automatico (da conoscere) ✅
 - La scheda ricalcola da sola solo i bonus **permanenti e senza condizioni**: Vitalità, Maestro dell'arte, Armatura fortificata e Armaiolo (con l'armatura), Sollevarsi, e le carte "Toccato da…" (con almeno 4 carte attive del dominio); dalle sottoclassi Incrollabile (Implacabile, Impavido), Ombra fugace, Ascendente.
 - Gli effetti **a condizione** (es. "mentre hai almeno 2 Speranza", "mentre voli", "fino al prossimo riposo") non sono calcolati: si applicano al tavolo leggendo la carta.
-- p.95 "Notorious" (Famigerato) non conta nel limite di 5 carte attive: per ora l'app la conta; se ti serve la gestisco a parte.
+- p.127 "Notorious" (Famigerato) non conta nel limite di 5 carte attive: per ora l'app la conta; se ti serve la gestisco a parte.
