@@ -97,6 +97,8 @@ export default function Home() {
       {errore && <p role="alert" className="mt-4 text-fallimento">{errore}</p>}
 
       <footer className="mt-10 text-sm text-tenue">
+        <Link to="/guida" className="underline hover:text-testo">Guida all'uso</Link>
+        {' · '}
         <Link to="/crediti" className="underline hover:text-testo">Crediti e licenza</Link>
       </footer>
     </main>

@@ -79,5 +79,14 @@ Decisioni (21/10/2026): tradurre subito tutti gli avversari e gli ambienti; noti
 - [x] Prova nel browser con un giocatore simulato: richiesta con Difficoltà nascosta, riflettori, attacco dell'Orso
 - [ ] Prova di Gianluca con il telefono (GM sul Mac, giocatore sul telefono)
 
-### Richiesta di Gianluca (21/10/2026)
-- [ ] Alla fine della Fase 5: **tutorial d'uso** dell'app, uno per il GM e uno per i giocatori.
+## Fase 5 — Riposi, salita di livello, equipaggiamento
+Decisioni (21/10/2026): avanzamenti a scelta libera (l'SRD non dice quante volte, vedi D2); tutte le traduzioni subito; riposi e salita di livello li avvia il GM.
+- [x] Regole con test: mosse di pausa (breve 1d4+Tier, lungo tutto), Paura del GM dopo il riposo, 3 riposi brevi di fila, bottino (`src/rules/rest.ts`); salita di livello con traguardi di Tier, avanzamenti, tratti segnati, carte, scambio, multiclasse, sottoclasse (`src/rules/levelUp.ts`); scheda ricalcolata con livelli, specializzazioni/maestrie e carte attive
+- [x] Database e funzione server: riposo avviato dal GM (Paura tirata dal server), mosse di pausa dei giocatori (anche su un alleato), bottino; 15 controlli superati
+- [x] Pannello del GM: Pausa, Salita di livello, Bottino; lato giocatore: scelta delle mosse di pausa, procedura guidata di salita di livello con anteprima
+- [x] Scheda: equipaggiamento (cambio armi e armatura, armi di riserva, Slot Armatura di ogni armatura), riepilogo di livello/sottoclasse/multiclasse, carte gratis durante il riposo
+- [x] Traduzione di tutte le carte dominio (liv. 2-10), specializzazioni e maestrie, capacità di armi e armature, oggetti e consumabili → da rileggere in `docs/TRADUZIONI_FASE5.md`
+- [x] Corretta l'estrazione della carta "Tempesta" (p.132)
+- [x] **Guida all'uso** nell'app (pagina "Guida", per il GM e per i giocatori) — richiesta di Gianluca
+- [x] Prova nel browser: riposo breve e mosse di pausa, salita al livello 2 di Kael, bottino
+- [ ] Prova di Gianluca con il telefono

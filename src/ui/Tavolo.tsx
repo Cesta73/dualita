@@ -158,7 +158,8 @@ export default function Tavolo() {
         <span className="flex items-center gap-1.5 text-xs text-tenue" role="status">
           <span className={`h-2 w-2 rounded-full ${coloreStato}`} /> {testoStato}
         </span>
-        <Bottone className="ml-auto" onClick={() => setMostraInvito((v) => !v)}>{mostraInvito ? 'Chiudi invito' : 'Invita'}</Bottone>
+        <Link to={`/guida${isGm ? '?per=gm' : ''}`} className="ml-auto text-sm text-tenue underline hover:text-testo">Guida</Link>
+        <Bottone onClick={() => setMostraInvito((v) => !v)}>{mostraInvito ? 'Chiudi invito' : 'Invita'}</Bottone>
       </header>
 
       {mostraInvito && <Riquadro className="mb-4"><Condividi code={stato.table.code} /></Riquadro>}

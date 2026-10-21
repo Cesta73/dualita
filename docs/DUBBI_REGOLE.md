@@ -10,12 +10,10 @@ Stato: 🟡 aperto · ✅ risolto
 - **SRD p.2**: l'indice dice, per esempio, "Character Creation … 8", ma il capitolo è a pagina 4. Lo scarto non è costante: "Ancestries" dice 31, ma sono a pagina 27.
 - **Decisione**: usiamo sempre i numeri stampati in fondo alle pagine, che coincidono con le pagine del PDF.
 
-## D2 — Tabella degli avanzamenti incompleta 🟡
+## D2 — Tabella degli avanzamenti incompleta ✅
 - **SRD p.42-43**: a ogni livello si scelgono "due avanzamenti con almeno una casella libera del proprio Tier o inferiore". Pagina 43 elenca i tipi di avanzamento (tratti, PF, Stress, Esperienze, carte dominio, Evasione, sottoclasse, Competenza, multiclasse).
 - **Problema**: l'SRD **non dice quante caselle** ha ogni avanzamento in ogni Tier. Questa informazione sta sulla scheda del personaggio stampata, che non fa parte dell'SRD.
-- **Proposta**: da decidere nella Fase 5. Le strade possibili:
-  - (a) lasciare che il giocatore scelga liberamente, con un avviso;
-  - (b) inserire i valori della scheda ufficiale, ma solo se Gianluca conferma che possiamo usarli.
+- **Decisione (21/10/2026, Gianluca)**: scelta libera. L'app applica tutte le regole scritte nell'SRD (Tier, tratti segnati, Competenza e multiclasse che valgono due avanzamenti, multiclasse dal livello 5, sottoclasse e multiclasse che si escludono nello stesso Tier), ma non limita quante volte si sceglie un avanzamento: decide il tavolo.
 
 ## D3 — Avversario "Weaponmaster" senza statistiche 🟡
 - **SRD p.72**: l'elenco degli avversari di Tier 1 include "Weaponmaster", e anche gli ambienti alle pagine 105 e 109 lo citano.
@@ -58,4 +56,9 @@ Stato: 🟡 aperto · ✅ risolto
 ## D11 — Refusi trovati traducendo gli avversari (gestiti, da conoscere) ✅
 - p.95 "High Seraph": la capacità si chiama "Relentless (2)" ma il testo dice "fino a **tre** volte per turno del GM". Tradotto fedelmente; al tavolo conviene seguire il numero tra parentesi (2), come per tutti gli altri avversari. Dimmi se preferisci 3.
 - p.99 "Zombie Legion": l'attacco standard si chiama "Tentacles" (Tentacoli), strano per degli zombi. Tradotto fedelmente.
-- Gli ambienti citano avversari che nell'SRD non hanno un blocco statistiche: "Weaponmaster" (Maestro d'armi, p.104 e p.107) e "Stag Knight" (Cavaliere cervo, p.106). Restano solo come suggerimento testuale: non si possono aggiungere allo scontro.
+- Gli ambienti citano "Weaponmaster" (Maestro d'armi) e "Stag Knight" (Cavaliere cervo), che non hanno un blocco statistiche: vedi D3 e D6.
+
+## D12 — Bonus delle carte calcolati in automatico (da conoscere) ✅
+- La scheda ricalcola da sola solo i bonus **permanenti e senza condizioni**: Vitalità, Maestro dell'arte, Armatura fortificata e Armaiolo (con l'armatura), Sollevarsi, e le carte "Toccato da…" (con almeno 4 carte attive del dominio); dalle sottoclassi Incrollabile (Implacabile, Impavido), Ombra fugace, Ascendente.
+- Gli effetti **a condizione** (es. "mentre hai almeno 2 Speranza", "mentre voli", "fino al prossimo riposo") non sono calcolati: si applicano al tavolo leggendo la carta.
+- p.95 "Notorious" (Famigerato) non conta nel limite di 5 carte attive: per ora l'app la conta; se ti serve la gestisco a parte.
