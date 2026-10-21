@@ -1,13 +1,11 @@
 // Punto unico di accesso ai dati di gioco (generati da scripts/estrazione-srd/genera_dati.py).
 import type {
-  Ambiente, Armatura, Arma, Avversario, CartaDominio, Classe, Comunita, Dominio,
+  Armatura, Arma, CartaDominio, Classe, Comunita, Dominio,
   FormaBestiale, OggettoBottino, Sottoclasse, Stirpe,
 } from './tipi';
 
-import ambientiJson from './ambienti.json';
 import armatureJson from './armature.json';
 import armiJson from './armi.json';
-import avversariJson from './avversari.json';
 import carteJson from './carte-dominio.json';
 import classiJson from './classi.json';
 import comunitaJson from './comunita.json';
@@ -30,7 +28,6 @@ export const armi = armiJson as Arma[];
 export const armature = armatureJson as Armatura[];
 export const oggetti = oggettiJson as OggettoBottino[];
 export const consumabili = consumabiliJson as OggettoBottino[];
-export const avversari = avversariJson as Avversario[];
-export const ambienti = ambientiJson as Ambiente[];
+// Avversari e ambienti stanno in ./gm.ts: servono solo al GM e si caricano con il suo pannello.
 
 export * from './tipi';

@@ -1,8 +1,9 @@
 // Controlli di completezza e validità dei dati di gioco estratti dall'SRD.
 import { describe, expect, it } from 'vitest';
 import { glossario } from '../i18n/glossario';
+import { ambienti, avversari } from './gm';
 import {
-  ambienti, armature, armi, avversari, carteDominio, classi, comunita, consumabili, domini,
+  armature, armi, carteDominio, classi, comunita, consumabili, domini,
   formeBestiali, oggetti, sottoclassi, stirpi,
 } from './index';
 import type { Capacita, Named } from './tipi';

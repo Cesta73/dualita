@@ -1,6 +1,6 @@
 // Pagina del tavolo: tiro dei dadi, esito, partecipanti, Paura, registro tiri.
 // Telefono: una colonna. Computer: due colonne affiancate.
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ensureSession, saveName, savedName } from '../net/session';
 import { findMyTable, joinTable, type AdversaryRoll } from '../net/tables';
@@ -15,7 +15,8 @@ import { RichiestaTiro } from './componenti/RichiestaTiro';
 import { RiposoGiocatore } from './componenti/RiposoGiocatore';
 import { SalitaLivello } from './personaggio/SalitaLivello';
 import { TiraDadi } from './componenti/TiraDadi';
-import { PannelloGM } from './gm/PannelloGM';
+// Il pannello del GM (con avversari e ambienti) si carica solo per il GM
+const PannelloGM = lazy(() => import('./gm/PannelloGM').then((m) => ({ default: m.PannelloGM })));
 import { SchedaGioco } from './scheda/SchedaGioco';
 
 export default function Tavolo() {
@@ -213,8 +214,8 @@ export default function Tavolo() {
           {!isGm && io && (vista === 'dadi' || !mioPersonaggio) && <TiraDadi tableId={tableId} hope={mioPersonaggio ? mioPersonaggio.hope : io.hope} personaggio={mioPersonaggio} onErrore={onErrore} />}
           {!isGm && mioPersonaggio && vista === 'scheda' && <SchedaGioco pg={mioPersonaggio} tableId={tableId} modificabile inRiposo={!!stato.table.rest_kind} onErrore={onErrore} />}
           {isGm && (
-            <PannelloGM table={stato.table} members={stato.members} characters={stato.characters} requests={stato.requests}
-              hidden={stato.hidden} adversaries={stato.adversaries} notes={stato.notes} fear={stato.fear} onErrore={onErrore} />
+            <Suspense fallback={<p className="text-tenue">Carico il pannello del GM…</p>}><PannelloGM table={stato.table} members={stato.members} characters={stato.characters} requests={stato.requests}
+              hidden={stato.hidden} adversaries={stato.adversaries} notes={stato.notes} fear={stato.fear} onErrore={onErrore} /></Suspense>
           )}
           <div className="lg:hidden">{ultimo && <EsitoTiro roll={ultimo} nome={nomeDi(ultimo.user_id, ultimo.display_name)} anima={anima} isGm={isGm} onErrore={onErrore} />}</div>
           <Partecipanti tableId={tableId} table={stato.table} members={stato.members} characters={stato.characters} online={stato.online} me={userId} isGm={isGm} onErrore={onErrore} />

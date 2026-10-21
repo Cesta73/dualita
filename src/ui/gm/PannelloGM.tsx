@@ -1,6 +1,6 @@
 // Pannello del GM (Fase 4): richieste di tiro, scontro con gli avversari, riflettori, note segrete.
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ambienti, avversari } from '../../data';
+import { ambienti, avversari } from '../../data/gm';
 import type { GlossaryKey } from '../../i18n/glossario';
 import { term } from '../../i18n/glossario';
 import type { CharacterRow } from '../../net/characters';

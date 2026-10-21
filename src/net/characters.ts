@@ -43,6 +43,14 @@ export async function createCharacter(name: string, data: CharacterData): Promis
   return row as CharacterRow;
 }
 
+/** Importa un personaggio da un backup (diventa del giocatore che lo importa) */
+export async function importCharacter(p: Pick<CharacterRow, 'name' | 'level' | 'data' | 'hope' | 'hp_marked' | 'stress_marked' | 'armor_marked' | 'conditions'>): Promise<CharacterRow> {
+  await ensureSession();
+  const { data: row, error } = await supabase.from('characters').insert(p).select().single();
+  if (error) fail(error);
+  return row as CharacterRow;
+}
+
 export type CharacterPatch = Partial<Pick<CharacterRow, 'name' | 'level' | 'data' | 'hope' | 'hp_marked' | 'stress_marked' | 'armor_marked' | 'conditions'>>;
 
 export async function updateCharacter(id: string, patch: CharacterPatch): Promise<CharacterRow> {
