@@ -3,8 +3,14 @@ import { useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { Bottone } from './Riquadro';
 
+/** Indirizzo pubblico dell'app: gli inviti devono funzionare da qualsiasi telefono,
+ *  anche se il tavolo è stato creato dalla versione di prova sul computer (localhost). */
+const INDIRIZZO_PUBBLICO = 'https://cesta73.github.io/dualita/';
+
 export function linkTavolo(code: string) {
-  return `${window.location.origin}${window.location.pathname}#/tavolo/${code}`;
+  const locale = ['localhost', '127.0.0.1', '[::1]'].includes(window.location.hostname);
+  const base = locale ? INDIRIZZO_PUBBLICO : `${window.location.origin}${window.location.pathname}`;
+  return `${base}#/tavolo/${code}`;
 }
 
 export function Condividi({ code }: { code: string }) {
