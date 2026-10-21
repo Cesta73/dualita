@@ -1,6 +1,6 @@
 // Operazioni sul tavolo di gioco (tutte verificate dal database con la Row Level Security).
 import { FunctionsHttpError } from '@supabase/supabase-js';
-import type { ActionRollInput, ActionRollResult, DamageRollResult, DeathMove, DeathMoveResult } from '../rules';
+import type { ActionRollInput, ActionRollResult, AdversaryAttackInput, AdversaryAttackResult, DamageRollResult, DeathMove, DeathMoveResult } from '../rules';
 import { ensureSession } from './session';
 import { supabase } from './supabase';
 
@@ -10,6 +10,9 @@ export interface GameTable {
   name: string;
   gm_id: string;
   fear_visible: boolean;
+  spotlight_user_id: string | null;
+  spotlight_tracker: boolean;
+  spotlight_tokens: number;
   created_at: string;
 }
 
@@ -20,6 +23,7 @@ export interface TableMember {
   role: 'gm' | 'player';
   hope: number;
   character_id: string | null;
+  tokens: number;
   joined_at: string;
 }
 
@@ -38,7 +42,12 @@ interface RollBase {
 export type ActionRoll = RollBase & { kind: 'azione'; input: ActionRollInput; result: ActionRollResult };
 export type DamageRoll = RollBase & { kind: 'danno'; input: { count: number; sides: number; bonus: number; critical: boolean }; result: DamageRollResult };
 export type DeathRoll = RollBase & { kind: 'morte'; input: { move: DeathMove; level: number }; result: DeathMoveResult };
-export type RollRecord = ActionRoll | DamageRoll | DeathRoll;
+export type AdversaryRoll = RollBase & {
+  kind: 'avversario';
+  input: AdversaryAttackInput & { targetUserId: string; targetName: string; damageType: 'fisico' | 'magico' | 'fisico+magico'; adversaryId: string | null };
+  result: AdversaryAttackResult;
+};
+export type RollRecord = ActionRoll | DamageRoll | DeathRoll | AdversaryRoll;
 
 function fail(error: { message: string } | null): never {
   throw new Error(error?.message ?? 'Errore sconosciuto');

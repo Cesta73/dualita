@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import type { RealtimeChannel } from '@supabase/supabase-js';
 import { supabase } from './supabase';
 import { tableCharacters, type CharacterRow } from './characters';
+import { hiddenDifficulties, type EncounterAdversary, type RollRequest } from './gm';
 import { loadTableState, type GameTable, type RollRecord, type TableMember } from './tables';
 
 export type ConnectionStatus = 'connessione' | 'online' | 'offline';
@@ -15,6 +16,13 @@ export interface TableState {
   rolls: RollRecord[];
   /** personaggi scelti dai giocatori, per id */
   characters: Record<string, CharacterRow>;
+  /** richieste di tiro (il GM le vede tutte, il giocatore solo le sue) */
+  requests: RollRequest[];
+  /** Difficoltà nascoste delle richieste (solo per il GM) */
+  hidden: Record<string, number>;
+  /** avversari in scena e note (solo per il GM: per gli altri restano vuoti) */
+  adversaries: EncounterAdversary[];
+  notes: string;
   /** id degli utenti collegati in questo momento */
   online: Set<string>;
   status: ConnectionStatus;
@@ -22,7 +30,7 @@ export interface TableState {
 }
 
 const empty: TableState = {
-  table: null, members: [], fear: null, rolls: [], characters: {}, online: new Set(), status: 'connessione', error: null,
+  table: null, members: [], fear: null, rolls: [], characters: {}, requests: [], hidden: {}, adversaries: [], notes: '', online: new Set(), status: 'connessione', error: null,
 };
 
 export function useTable(tableId: string | null, userId: string | null) {
@@ -34,8 +42,18 @@ export function useTable(tableId: string | null, userId: string | null) {
     if (!tableId) return;
     try {
       const s = await loadTableState(tableId);
-      const pg = await tableCharacters(s.members.map((m) => m.character_id).filter(Boolean) as string[]);
-      setState((prev) => ({ ...prev, ...s, characters: Object.fromEntries(pg.map((c) => [c.id, c])), error: null }));
+      const [pg, rq, adv, notes] = await Promise.all([
+        tableCharacters(s.members.map((m) => m.character_id).filter(Boolean) as string[]),
+        supabase.from('roll_requests').select('*').eq('table_id', tableId).order('created_at', { ascending: false }).limit(30),
+        supabase.from('encounter_adversaries').select('*').eq('table_id', tableId).order('created_at'),
+        supabase.from('gm_notes').select('notes').eq('table_id', tableId).maybeSingle(),
+      ]);
+      const requests = (rq.data ?? []) as RollRequest[];
+      const hidden = await hiddenDifficulties(requests.filter((r) => r.difficulty_hidden).map((r) => r.id));
+      setState((prev) => ({
+        ...prev, ...s, characters: Object.fromEntries(pg.map((c) => [c.id, c])),
+        requests, hidden, adversaries: (adv.data ?? []) as EncounterAdversary[], notes: notes.data?.notes ?? '', error: null,
+      }));
     } catch (e) {
       setState((prev) => ({ ...prev, error: (e as Error).message }));
     }
@@ -55,6 +73,13 @@ export function useTable(tableId: string | null, userId: string | null) {
       .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'rolls', filter }, (p) => {
         const roll = p.new as RollRecord;
         setState((s) => ({ ...s, rolls: s.rolls.map((r) => (r.id === roll.id ? roll : r)) }));
+      })
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'roll_requests', filter }, () => {
+        void reload();
+      })
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'encounter_adversaries', filter }, async () => {
+        const { data } = await supabase.from('encounter_adversaries').select('*').eq('table_id', tableId).order('created_at');
+        setState((s) => ({ ...s, adversaries: (data ?? []) as EncounterAdversary[] }));
       })
       .on('postgres_changes', { event: '*', schema: 'public', table: 'table_members', filter }, () => {
         // un giocatore è entrato, ha cambiato nome o personaggio: ricarico membri e schede

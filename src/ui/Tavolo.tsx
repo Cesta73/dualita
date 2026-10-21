@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ensureSession, saveName, savedName } from '../net/session';
-import { findMyTable, joinTable } from '../net/tables';
+import { findMyTable, joinTable, type AdversaryRoll } from '../net/tables';
 import { useTable } from '../net/useTable';
 import { Condividi } from './componenti/Condividi';
 import { EsitoTiro } from './componenti/EsitoTiro';
@@ -11,7 +11,9 @@ import { Partecipanti } from './componenti/Partecipanti';
 import { SceltaPersonaggio } from './componenti/SceltaPersonaggio';
 import { Paura } from './componenti/Paura';
 import { Bottone, Riquadro } from './componenti/Riquadro';
+import { RichiestaTiro } from './componenti/RichiestaTiro';
 import { TiraDadi } from './componenti/TiraDadi';
+import { PannelloGM } from './gm/PannelloGM';
 import { SchedaGioco } from './scheda/SchedaGioco';
 
 export default function Tavolo() {
@@ -99,6 +101,19 @@ export default function Tavolo() {
   }, [animaId]);
   const anima = !!ultimo && animaId === ultimo.id;
 
+  // Richiesta di tiro del GM in attesa per me (la più vecchia per prima)
+  const richiestaMia = [...stato.requests].reverse().find((r) => r.status === 'pending' && r.target_user_id === userId) ?? null;
+  // Attacco di un avversario che mi ha colpito (arrivato ora): proposta di segnare i danni
+  const [colpo, setColpo] = useState<AdversaryRoll | null>(null);
+  useEffect(() => {
+    if (!animaId || !ultimo || ultimo.id !== animaId) return;
+    if (ultimo.kind === 'avversario' && ultimo.result.hit && ultimo.input.targetUserId === userId) {
+      setColpo(ultimo);
+      navigator.vibrate?.(300);
+    }
+  }, [animaId, ultimo, userId]);
+  const colpoSubito = colpo && !stato.rolls.find((r) => r.id === colpo.id)?.undone_at ? colpo : null;
+
   const onErrore = (e: Error) => {
     setErrore(e.message);
     setTimeout(() => setErrore(null), 5000);
@@ -148,6 +163,20 @@ export default function Tavolo() {
 
       <div className="grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <div className="min-w-0 space-y-4">
+          {!isGm && io && stato.table.spotlight_user_id === userId && (
+            <p role="status" className="rounded-2xl border-2 border-speranza bg-speranza/10 p-3 text-center font-titolo text-xl text-speranza">★ Hai i riflettori!</p>
+          )}
+          {!isGm && io && richiestaMia && <RichiestaTiro key={richiestaMia.id} richiesta={richiestaMia} personaggio={mioPersonaggio} hope={mioPersonaggio ? mioPersonaggio.hope : io.hope} onErrore={onErrore} />}
+          {!isGm && colpoSubito && (
+            <section role="alert" className="rounded-2xl border-2 border-fallimento bg-fallimento/10 p-3">
+              <p className="font-titolo text-xl text-fallimento">Sei stato colpito!</p>
+              <p>{colpoSubito.label && <>{colpoSubito.label}: </>}<strong>{colpoSubito.result.damage?.total} danni</strong>{colpoSubito.result.critical ? ' (colpo critico)' : ''}. Confrontali con le tue Soglie in "Subisci danno".</p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {mioPersonaggio && <Bottone variante="primario" onClick={() => { setVista('scheda'); setColpo(null); }}>Segna i danni sulla scheda</Bottone>}
+                <Bottone onClick={() => setColpo(null)}>Ok</Bottone>
+              </div>
+            </section>
+          )}
           {!isGm && io && <SceltaPersonaggio tableId={tableId} attuale={mioPersonaggio} onErrore={onErrore} />}
           {!isGm && io && mioPersonaggio && (
             <div className="flex gap-2" role="tablist" aria-label="Vista">
@@ -162,16 +191,11 @@ export default function Tavolo() {
           {!isGm && io && (vista === 'dadi' || !mioPersonaggio) && <TiraDadi tableId={tableId} hope={mioPersonaggio ? mioPersonaggio.hope : io.hope} personaggio={mioPersonaggio} onErrore={onErrore} />}
           {!isGm && mioPersonaggio && vista === 'scheda' && <SchedaGioco pg={mioPersonaggio} tableId={tableId} modificabile onErrore={onErrore} />}
           {isGm && (
-            <Riquadro titolo="Sei il GM">
-              <p className="text-sm text-tenue">
-                I giocatori tirano dai loro telefoni: vedrai qui ogni risultato in tempo reale e la Paura si aggiorna da sola.
-                Nell'elenco "Al tavolo" trovi i personaggi scelti dai giocatori: tocca il nome per aprire la scheda.
-                Le richieste di tiro e gli avversari arriveranno nella Fase 4.
-              </p>
-            </Riquadro>
+            <PannelloGM table={stato.table} members={stato.members} characters={stato.characters} requests={stato.requests}
+              hidden={stato.hidden} adversaries={stato.adversaries} notes={stato.notes} fear={stato.fear} onErrore={onErrore} />
           )}
           <div className="lg:hidden">{ultimo && <EsitoTiro roll={ultimo} nome={nomeDi(ultimo.user_id, ultimo.display_name)} anima={anima} isGm={isGm} onErrore={onErrore} />}</div>
-          <Partecipanti tableId={tableId} members={stato.members} characters={stato.characters} online={stato.online} me={userId} isGm={isGm} onErrore={onErrore} />
+          <Partecipanti tableId={tableId} table={stato.table} members={stato.members} characters={stato.characters} online={stato.online} me={userId} isGm={isGm} onErrore={onErrore} />
         </div>
 
         <div className="space-y-4">

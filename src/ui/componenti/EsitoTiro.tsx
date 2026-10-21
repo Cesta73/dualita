@@ -37,6 +37,21 @@ function descrivi(roll: RollRecord, chi: string): { titolo: string; tono: string
     }
     return { titolo, tono, suggerimento: 'Mossa della Morte (SRD p.42)', righe, totale: null };
   }
+  if (roll.kind === 'avversario') {
+    const r = roll.result;
+    const righe = [`d20: ${r.d20s.join(' / ')}${r.d20s.length > 1 ? ` (si tiene ${r.d20})` : ''} · totale ${r.total} contro Evasione ${r.evasion}`];
+    if (r.hit && r.damage) {
+      righe.push(`${roll.input.targetName} subisce ${r.damage.total} danni ${roll.input.damageType === 'magico' ? 'magici' : roll.input.damageType === 'fisico+magico' ? 'fisici e magici' : 'fisici'}${r.critical ? ' (critico: + massimo dei dadi)' : ''}.`);
+      righe.push(`${roll.input.targetName} li segna con "Subisci danno" sulla propria scheda.`);
+    }
+    return {
+      titolo: r.critical ? 'Colpo critico!' : r.hit ? 'Colpito' : 'Mancato',
+      tono: r.hit ? toni.fallimento : toni.successo,
+      suggerimento: 'Attacco di un avversario (SRD p.63)',
+      righe,
+      totale: r.hit && r.damage ? r.damage.total : r.total,
+    };
+  }
   const r = roll.result;
   return {
     titolo: outcomeTitle[r.outcome],
@@ -57,6 +72,9 @@ function Dadi({ roll, anima, piccolo }: { roll: RollRecord; anima: boolean; picc
       </>
     );
   }
+  if (roll.kind === 'avversario') {
+    return <Dado valore={roll.result.d20} tipo="d6" anima={anima} piccolo={piccolo} />;
+  }
   if (roll.kind === 'danno') {
     const r = (roll as DamageRoll).result;
     return <>{r.dice.slice(0, piccolo ? 2 : 8).map((d, i) => <Dado key={i} valore={d} tipo="d6" anima={anima} piccolo />)}</>;
@@ -74,7 +92,8 @@ export function EsitoTiro({ roll, nome, anima = false, compatto = false, isGm = 
   isGm?: boolean;
   onErrore?: (e: Error) => void;
 }) {
-  const chi = nome ?? roll.display_name;
+  // L'attacco di un avversario lo tira il GM: il dettaglio (chi attacca chi) è nell'etichetta
+  const chi = roll.kind === 'avversario' ? 'GM' : nome ?? roll.display_name;
   const ora = new Date(roll.created_at).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
   const d = descrivi(roll, chi);
   const annullato = !!roll.undone_at;

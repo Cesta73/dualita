@@ -183,6 +183,7 @@ export interface Avversario extends Named {
   descrizioneOriginale: string;
   descrizione?: string;
   motivazioniOriginale: string;
+  motivazioni?: string;
   difficolta: number;
   /** null per i Gregari (Minion); un valore può mancare (es. "4/None") */
   soglie: { grave: number | null; gravissimo: number | null } | null;
@@ -193,11 +194,12 @@ export interface Avversario extends Named {
     /** p.98: un avversario ha "+2d4" come modificatore */
     modificatoreDadi?: { numero: number; dado: number };
     nomeOriginale: string;
+    nome?: string;
     gittata: RangeId;
     danno: { numero: number; dado: number; bonus: number };
     tipoDanno: DamageType | 'fisico+magico';
   };
-  esperienze: { nomeOriginale: string; bonus: number }[];
+  esperienze: { nomeOriginale: string; nome?: string; bonus: number }[];
   capacita: CapacitaAvversario[];
 }
 
